@@ -15,12 +15,20 @@ const client = new SparqlClient({ endpointUrl: 'http://DESKTOP-SQ747CJ:7200/repo
 
 //CREATE THE ARRAY OF FIRST ITEMS TO BE QUERIED
 const queriedElements = ['DistributionElement', 'FurnishingElement', 'BuildingElement', 'ElementComponent'];
+<<<<<<< Updated upstream
 
 console.log(Array.isArray(queriedElements));
 
 //LOGIC FUNCTION
 queriedElements.forEach(function (item) {
   const foundItems = subclassQuery(item);
+=======
+// console.log(Array.isArray(queriedElements));
+
+//LOGIC FUNCTION
+queriedElements.forEach(async function (item) {
+  const foundItems = await subclassQuery(item);
+>>>>>>> Stashed changes
   console.log(foundItems);
   // if (foundItems.length > 0) {
   //   foundItems.forEach(function(foundItem) {
@@ -50,10 +58,13 @@ async function subclassQuery(superclass) {
   WHERE { ?directSub rdfs:subClassOf ifc4:Ifc${superclass} 
   }
   `)
-  //CREATE AN ARRAY OF OBJECTS WITH THE QUERY RESULTS - OVO MI TREBA
+  //CREATE AN ARRAY OF OBJECTS WITH THE QUERY RESULTS - THIS DOES NOT WORK!!!!!!
+  const results = []
   stream.on('data', row => {
-    console.log(row.directSub.value.slice(48));
+    results.push(row.directSub.value.slice(48));
   });
+  await Promise.allSettled(results)
+  return results;
 }
 
 
@@ -84,8 +95,8 @@ async function enumQuery(superclass) {
   `)
 
 
-  //CREATE AN ARRAY OF OBJECTS WITH THE QUERY RESULTS - OVO MI TREBA
- enumStream.on('data', row => {
+  //CREATE AN ARRAY OF OBJECTS WITH THE QUERY RESULTS - THIS DOES NOT WORK!!!!!!
+  enumStream.on('data', row => {
     console.log(row.enum.value.slice(45));
   })
 }
