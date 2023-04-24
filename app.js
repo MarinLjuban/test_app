@@ -1,18 +1,21 @@
-//Import dependencies
+//IMPORT DEPENDENCIES
 import * as fs from 'fs';
 import namespace from '@rdfjs/namespace';
-import SparqlClient from 'sparql-http-client'
+import SparqlClient from 'sparql-http-client';
+import cf from 'clownface';
+import rdf from 'rdf-ext';
 
-//Create the namespace object
+//CREATE THE NAMESPACES
 const ifc4 = namespace('http://ifcowl.openbimstandards.org/IFC4_ADD2#');
-const otl = namespace('https://otl.buildingsmart.org/IFC4_ADD2_TC1/def/');
+// const otl = namespace('https://otl.buildingsmart.org/IFC4_ADD2_TC1/def/');
 
-//Get the data from local endpoint
+//GET THE DATA FROM LOCAL ENDPOINT
 const client = new SparqlClient({ endpointUrl: 'http://DESKTOP-SQ747CJ:7200/repositories/Ifc4Test' })
 
 
-//Create the SPARQL Query
 
+const queriedElement = 'Sensor'
+//CREATE THE SPARQL QUERIES
 async function subclassQuery(superclass) {
   const stream = await client.query.select(`
   PREFIX nen2660: <https://w3id.org/nen2660/def#>
@@ -30,11 +33,12 @@ async function subclassQuery(superclass) {
   }
 
   `)
-  //Write the data to console
+  //CREATE AN ARRAY OF OBJECTS WITH THE QUERY RESULTS - OVO MI TREBA
   stream.on('data', row => {
-    console.log(row.directSub.value.slice(45))
-  })
+    console.log(row.directSub.value.slice(48));
+  });
 }
+
 
 async function enumQuery(superclass) {
   const enumStream = await client.query.select(`
@@ -61,17 +65,36 @@ async function enumQuery(superclass) {
 
   `)
 
-  enumStream.on('data', row => {
-    console.log(row.enum.value.slice(45))
+
+  //CREATE AN ARRAY OF OBJECTS WITH THE QUERY RESULTS - OVO MI TREBA
+ enumStream.on('data', row => {
+    console.log(row.enum.value.slice(45));
   })
 }
 
 
-const queriedElement = 'Door'
+
+
+
+
+
+// //FUNCTION FOR GRAPH CREATION
+// const otl = cf({ dataset: rdf.dataset() });
+
+// otl
+// .namedNode(`otl:${queriedElement}`)
+// .addOut('a', 'owl:Class')
+// .addOut('rdfs:subClassOf', 'otl:BuildingElement');
+
+// for (const quad of otl.dataset) {
+//   console.log(`${quad.subject.value} ${quad.predicate.value} ${quad.object.value}`)
+// }
 
 // console.log(subclassQuery(queriedElement)); 
-console.log(enumQuery(queriedElement)); 
+// console.log(enumQuery(queriedElement)); 
 
+
+//Create the logic function
 // async function sparqlQuery(queriedItem) {
   
 //   subclassQuery(queriedItem);
@@ -81,3 +104,7 @@ console.log(enumQuery(queriedElement));
 //   }
 
 //   sparqlQuery('Window');
+
+
+subclassQuery(`${queriedElement}`);
+enumQuery(`${queriedElement}`);

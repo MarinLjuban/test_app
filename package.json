@@ -2,7 +2,9 @@
   "dependencies": {
     "@rdfjs/fetch": "^3.1.0",
     "@rdfjs/namespace": "^2.0.0",
+    "clownface": "^1.5.1",
     "npm": "^9.6.5",
+    "rdf-ext": "^2.2.0",
     "rdf-utils-fs": "^2.3.0",
     "sparql-http-client": "^2.4.2"
   },
