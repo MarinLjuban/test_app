@@ -6,7 +6,7 @@ import cf from 'clownface';
 import rdf from 'rdf-ext';
 
 //CREATE THE NAMESPACES
-const ifc4 = namespace('http://ifcowl.openbimstandards.org/IFC4_ADD2#');
+// const ifc4 = namespace('http://ifcowl.openbimstandards.org/IFC4_ADD2#');
 // const otl = namespace('https://otl.buildingsmart.org/IFC4_ADD2_TC1/def/');
 
 //CREATE LOCAL SPARQL ENDPOINT
@@ -15,32 +15,8 @@ const client = new SparqlClient({ endpointUrl: 'http://DESKTOP-SQ747CJ:7200/repo
 
 //CREATE THE ARRAY OF FIRST ITEMS TO BE QUERIED
 const queriedElements = ['DistributionElement', 'FurnishingElement', 'BuildingElement', 'ElementComponent'];
-<<<<<<< Updated upstream
 
 console.log(Array.isArray(queriedElements));
-
-//LOGIC FUNCTION
-queriedElements.forEach(function (item) {
-  const foundItems = subclassQuery(item);
-=======
-// console.log(Array.isArray(queriedElements));
-
-//LOGIC FUNCTION
-queriedElements.forEach(async function (item) {
-  const foundItems = await subclassQuery(item);
->>>>>>> Stashed changes
-  console.log(foundItems);
-  // if (foundItems.length > 0) {
-  //   foundItems.forEach(function(foundItem) {
-  //     subclassQuery(foundItem);
-  //   });
-  // } else {
-  //   foundItems.forEach(function(foundItem) {
-  //     enumQuery(foundItem);
-  //   });
-  // }
-});
-
 
 //CREATE THE SPARQL SUBCLASS QUERY
 async function subclassQuery(superclass) {
@@ -90,8 +66,6 @@ async function enumQuery(superclass) {
       FILTER(?enum != ifc:USERDEFINED)
 
   } limit 2000
-
-
   `)
 
 
@@ -103,7 +77,19 @@ async function enumQuery(superclass) {
 
 
 
-
+//LOGIC FUNCTION
+queriedElements.forEach(function (item) {
+  subclassQuery(item);
+  // if (foundItems.length > 0) {
+  //   foundItems.forEach(function(foundItem) {
+  //     subclassQuery(foundItem);
+  //   });
+  // } else {
+  //   foundItems.forEach(function(foundItem) {
+  //     enumQuery(foundItem);
+  //   });
+  // }
+});
 
 
 
