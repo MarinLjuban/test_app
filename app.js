@@ -16,8 +16,6 @@ const client = new SparqlClient({ endpointUrl: 'http://DESKTOP-SQ747CJ:7200/repo
 //CREATE THE ARRAY OF FIRST ITEMS TO BE QUERIED
 const queriedElements = ['DistributionElement', 'FurnishingElement', 'BuildingElement', 'ElementComponent'];
 
-console.log(Array.isArray(queriedElements));
-
 //CREATE THE SPARQL SUBCLASS QUERY
 async function subclassQuery(superclass) {
   const stream = await client.query.select(`
@@ -35,12 +33,9 @@ async function subclassQuery(superclass) {
   }
   `)
   //CREATE AN ARRAY OF OBJECTS WITH THE QUERY RESULTS - THIS DOES NOT WORK!!!!!!
-  const results = []
   stream.on('data', row => {
-    results.push(row.directSub.value.slice(48));
+    console.log(row.directSub.value.slice(48));
   });
-  await Promise.allSettled(results)
-  return results;
 }
 
 
