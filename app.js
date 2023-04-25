@@ -14,11 +14,11 @@ const client = new SparqlClient({ endpointUrl: 'http://DESKTOP-SQ747CJ:7200/repo
 
 
 //CREATE THE ARRAY OF FIRST ITEMS TO BE QUERIED
-const queriedElements = ['DistributionElement', 'FurnishingElement', 'BuildingElement', 'ElementComponent'];
+const queriedElements = ['BuildingElement', 'DistributionElement', 'FurnishingElement', 'ElementComponent'];
 
 //CREATE THE SPARQL SUBCLASS QUERY
-async function subclassQuery(superclass) {
-  const stream = await client.query.select(`
+ async function subclassQuery(superclass) {
+  const classStream = await client.query.select(`
   PREFIX nen2660: <https://w3id.org/nen2660/def#>
   PREFIX ifc4: <http://ifcowl.openbimstandards.org/IFC4_ADD2#>
   PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
@@ -33,14 +33,22 @@ async function subclassQuery(superclass) {
   }
   `)
   //CREATE AN ARRAY OF OBJECTS WITH THE QUERY RESULTS - THIS DOES NOT WORK!!!!!!
-  stream.on('data', row => {
-    console.log(row.directSub.value.slice(48));
-  });
+  let classArray = [];
+
+  return new Promise(resolve => {
+    classStream.on('data', (row) => {
+      classArray.push(row.directSub.value.slice(48));
+    })
+    .on('end', () => {
+      resolve (classArray);
+    });
+})
 }
 
 
 //CREATE THE SPARQL ENUM QUERY
 async function enumQuery(superclass) {
+  
   const enumStream = await client.query.select(`
   PREFIX nen2660: <https://w3id.org/nen2660/def#>
   PREFIX ifc: <http://ifcowl.openbimstandards.org/IFC4_ADD2#>
@@ -63,28 +71,50 @@ async function enumQuery(superclass) {
   } limit 2000
   `)
 
-
+  let enumArray = []
   //CREATE AN ARRAY OF OBJECTS WITH THE QUERY RESULTS - THIS DOES NOT WORK!!!!!!
-  enumStream.on('data', row => {
-    console.log(row.enum.value.slice(45));
-  })
+
+  return new Promise(resolve => {
+    enumStream.on('data', (row) => {
+      enumArray.push(row.enum.value.slice(45));
+    })
+    .on('end', () => {
+      resolve (enumArray);
+    });
+})
 }
+
+
+// const query = await subclassQuery('BuildingElement');
+// console.log(query);
+
+// subclassQuery('BuildingElement').then((enumArray) => {
+//   console.log(enumArray);
+// }).catch((error) => {
+//   console.error(error);
+// });
 
 
 
 //LOGIC FUNCTION
-queriedElements.forEach(function (item) {
-  subclassQuery(item);
-  // if (foundItems.length > 0) {
-  //   foundItems.forEach(function(foundItem) {
-  //     subclassQuery(foundItem);
-  //   });
-  // } else {
-  //   foundItems.forEach(function(foundItem) {
-  //     enumQuery(foundItem);
-  //   });
-  // }
-});
+async function logicFunction(queried) {
+  // remove empty arrays from queried
+
+  for (const item of queried) {
+    let foundItems = await subclassQuery(item);
+    foundItems = foundItems.filter(Boolean);
+    console.log(foundItems);
+    if (foundItems.length > 0) {
+      await logicFunction(foundItems);
+    } else {
+      let enumItems = await enumQuery(item);
+      enumItems = enumItems.filter(Boolean);
+      console.log(enumItems);
+    }
+  }
+}
+
+logicFunction(queriedElements);
 
 
 
