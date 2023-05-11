@@ -9,6 +9,7 @@ import _ from "lodash";
 
 
 
+
 //CREATE THE NAMESPACES
 const ns = {
     ifc: namespace('http://ifcowl.openbimstandards.org/IFC4_ADD2#'),
@@ -89,21 +90,22 @@ async function fullQuery(superclass) {
 
 //CREATE THE NODES
 function createNodeEnum(subject, object) {
+  const prefLabelSymbol = _.startCase(`${object}`) + " " + `${subject}`
   otlGraph
     .namedNode(`otl:${object}-${subject}`)
-    .addOut(otlGraph.namedNode("a"),otlGraph.namedNode("owl:Class"))
+    .addOut(otlGraph.namedNode("rdf:type"),otlGraph.namedNode("owl:Class"))
     .addOut(otlGraph.namedNode("owl:subClassOf"), otlGraph.namedNode(`otl:${object}`))
     .addOut(otlGraph.namedNode("rdfs:seeAlso"), otlGraph.namedNode(`ifc:${subject}`))
-    .addOut(otlGraph.namedNode("skos:prefLabel"), `${object} ${subject}`);
+    .addOut(otlGraph.namedNode("skos:prefLabel"), prefLabelSymbol);
 }
 
 function createNodeClass(subject, nenEntity) {
   otlGraph
     .namedNode(`otl:${subject}`)
-    .addOut(otlGraph.namedNode("a"), otlGraph.namedNode("owl:Class"))
+    .addOut(otlGraph.namedNode("rdf:type"), otlGraph.namedNode("owl:Class"))
     .addOut(otlGraph.namedNode("rdfs:subClassOf"), otlGraph.namedNode(`${nenEntity}`))
     .addOut(otlGraph.namedNode("rdfs:seeAlso"), otlGraph.namedNode(`ifc:Ifc${subject}`))
-    .addOut(otlGraph.namedNode("skos:prefLabel"), `${subject}`);
+    .addOut(otlGraph.namedNode("skos:prefLabel"), _.startCase(`${subject}`));
 }
 
 //CONSOLE LOG
@@ -160,5 +162,4 @@ async function runProgram() {
 }
 
 runProgram();
-
 
