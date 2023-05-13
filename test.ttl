@@ -100,7 +100,7 @@
 <otl:BuildingElementProxy-PARTIAL> <skos:prefLabel> "Building Element Proxy PARTIAL" .
 <otl:BuildingElementProxy> <rdf:type> <owl:Class> .
 <otl:BuildingElementProxy> <rdfs:seeAlso> <ifc:IfcBuildingElementProxy> .
-<otl:BuildingElementProxy> <skos:prefLabel> "Building Element Proxy" .
+<otl:BuildingElementProxy> <skos:prefLabel> "BuildingElementProxy" .
 <otl:BuildingElementProxy> <rdfs:subClassOf> <nen2660:DiscreteObject> .
 <otl:BuildingElementProxy-PROVISIONFORSPACE> <rdf:type> <owl:Class> .
 <otl:BuildingElementProxy-PROVISIONFORSPACE> <owl:subClassOf> <otl:BuildingElementProxy> .
@@ -236,7 +236,7 @@
 <otl:ShadingDevice-JALOUSIE> <skos:prefLabel> "Shading Device JALOUSIE" .
 <otl:ShadingDevice> <rdf:type> <owl:Class> .
 <otl:ShadingDevice> <rdfs:seeAlso> <ifc:IfcShadingDevice> .
-<otl:ShadingDevice> <skos:prefLabel> "Shading Device" .
+<otl:ShadingDevice> <skos:prefLabel> "ShadingDevice" .
 <otl:ShadingDevice> <rdfs:subClassOf> <nen2660:DiscreteObject> .
 <otl:ShadingDevice-SHUTTER> <rdf:type> <owl:Class> .
 <otl:ShadingDevice-SHUTTER> <owl:subClassOf> <otl:ShadingDevice> .
@@ -372,7 +372,7 @@
 <otl:RampFlight-STRAIGHT> <skos:prefLabel> "Ramp Flight STRAIGHT" .
 <otl:RampFlight> <rdf:type> <owl:Class> .
 <otl:RampFlight> <rdfs:seeAlso> <ifc:IfcRampFlight> .
-<otl:RampFlight> <skos:prefLabel> "Ramp Flight" .
+<otl:RampFlight> <skos:prefLabel> "RampFlight" .
 <otl:RampFlight> <rdfs:subClassOf> <nen2660:DiscreteObject> .
 <otl:RampFlight-SPIRAL> <rdf:type> <owl:Class> .
 <otl:RampFlight-SPIRAL> <owl:subClassOf> <otl:RampFlight> .
@@ -412,7 +412,7 @@
 <otl:StairFlight-STRAIGHT> <skos:prefLabel> "Stair Flight STRAIGHT" .
 <otl:StairFlight> <rdf:type> <owl:Class> .
 <otl:StairFlight> <rdfs:seeAlso> <ifc:IfcStairFlight> .
-<otl:StairFlight> <skos:prefLabel> "Stair Flight" .
+<otl:StairFlight> <skos:prefLabel> "StairFlight" .
 <otl:StairFlight> <rdfs:subClassOf> <nen2660:DiscreteObject> .
 <otl:StairFlight-CURVED> <rdf:type> <owl:Class> .
 <otl:StairFlight-CURVED> <owl:subClassOf> <otl:StairFlight> .
@@ -680,7 +680,7 @@
 <otl:FlowInstrument-VOLTMETER_RMS> <skos:prefLabel> "Flow Instrument VOLTMETER_RMS" .
 <otl:FlowInstrument> <rdf:type> <owl:Class> .
 <otl:FlowInstrument> <rdfs:seeAlso> <ifc:IfcFlowInstrument> .
-<otl:FlowInstrument> <skos:prefLabel> "Flow Instrument" .
+<otl:FlowInstrument> <skos:prefLabel> "FlowInstrument" .
 <otl:FlowInstrument> <rdfs:subClassOf> <nen2660:DiscreteObject> .
 <otl:FlowInstrument-POWERFACTORMETER> <rdf:type> <owl:Class> .
 <otl:FlowInstrument-POWERFACTORMETER> <owl:subClassOf> <otl:FlowInstrument> .
@@ -816,7 +816,7 @@
 <otl:ProtectiveDeviceTrippingUnit-ELECTRONIC> <skos:prefLabel> "Protective Device Tripping Unit ELECTRONIC" .
 <otl:ProtectiveDeviceTrippingUnit> <rdf:type> <owl:Class> .
 <otl:ProtectiveDeviceTrippingUnit> <rdfs:seeAlso> <ifc:IfcProtectiveDeviceTrippingUnit> .
-<otl:ProtectiveDeviceTrippingUnit> <skos:prefLabel> "Protective Device Tripping Unit" .
+<otl:ProtectiveDeviceTrippingUnit> <skos:prefLabel> "ProtectiveDeviceTrippingUnit" .
 <otl:ProtectiveDeviceTrippingUnit> <rdfs:subClassOf> <nen2660:DiscreteObject> .
 <otl:ProtectiveDeviceTrippingUnit-RESIDUALCURRENT> <rdf:type> <owl:Class> .
 <otl:ProtectiveDeviceTrippingUnit-RESIDUALCURRENT> <owl:subClassOf> <otl:ProtectiveDeviceTrippingUnit> .
@@ -864,7 +864,7 @@
 <otl:UnitaryControlElement-ALARMPANEL> <skos:prefLabel> "Unitary Control Element ALARMPANEL" .
 <otl:UnitaryControlElement> <rdf:type> <owl:Class> .
 <otl:UnitaryControlElement> <rdfs:seeAlso> <ifc:IfcUnitaryControlElement> .
-<otl:UnitaryControlElement> <skos:prefLabel> "Unitary Control Element" .
+<otl:UnitaryControlElement> <skos:prefLabel> "UnitaryControlElement" .
 <otl:UnitaryControlElement> <rdfs:subClassOf> <nen2660:DiscreteObject> .
 <otl:UnitaryControlElement-CONTROLPANEL> <rdf:type> <owl:Class> .
 <otl:UnitaryControlElement-CONTROLPANEL> <owl:subClassOf> <otl:UnitaryControlElement> .
@@ -924,7 +924,7 @@
 <otl:DistributionChamberElement-SUMP> <skos:prefLabel> "Distribution Chamber Element SUMP" .
 <otl:DistributionChamberElement> <rdf:type> <owl:Class> .
 <otl:DistributionChamberElement> <rdfs:seeAlso> <ifc:IfcDistributionChamberElement> .
-<otl:DistributionChamberElement> <skos:prefLabel> "Distribution Chamber Element" .
+<otl:DistributionChamberElement> <skos:prefLabel> "DistributionChamberElement" .
 <otl:DistributionChamberElement> <rdfs:subClassOf> <nen2660:DiscreteObject> .
 <otl:DistributionChamberElement-TRENCH> <rdf:type> <owl:Class> .
 <otl:DistributionChamberElement-TRENCH> <owl:subClassOf> <otl:DistributionChamberElement> .
@@ -960,7 +960,7 @@
 <otl:SpaceHeater-CONVECTOR> <skos:prefLabel> "Space Heater CONVECTOR" .
 <otl:SpaceHeater> <rdf:type> <owl:Class> .
 <otl:SpaceHeater> <rdfs:seeAlso> <ifc:IfcSpaceHeater> .
-<otl:SpaceHeater> <skos:prefLabel> "Space Heater" .
+<otl:SpaceHeater> <skos:prefLabel> "SpaceHeater" .
 <otl:SpaceHeater> <rdfs:subClassOf> <nen2660:DiscreteObject> .
 <otl:SpaceHeater-RADIATOR> <rdf:type> <owl:Class> .
 <otl:SpaceHeater-RADIATOR> <owl:subClassOf> <otl:SpaceHeater> .
@@ -972,7 +972,7 @@
 <otl:StackTerminal-COWL> <skos:prefLabel> "Stack Terminal COWL" .
 <otl:StackTerminal> <rdf:type> <owl:Class> .
 <otl:StackTerminal> <rdfs:seeAlso> <ifc:IfcStackTerminal> .
-<otl:StackTerminal> <skos:prefLabel> "Stack Terminal" .
+<otl:StackTerminal> <skos:prefLabel> "StackTerminal" .
 <otl:StackTerminal> <rdfs:subClassOf> <nen2660:DiscreteObject> .
 <otl:StackTerminal-RAINWATERHOPPER> <rdf:type> <owl:Class> .
 <otl:StackTerminal-RAINWATERHOPPER> <owl:subClassOf> <otl:StackTerminal> .
@@ -1028,7 +1028,7 @@
 <otl:AirTerminal-REGISTER> <skos:prefLabel> "Air Terminal REGISTER" .
 <otl:AirTerminal> <rdf:type> <owl:Class> .
 <otl:AirTerminal> <rdfs:seeAlso> <ifc:IfcAirTerminal> .
-<otl:AirTerminal> <skos:prefLabel> "Air Terminal" .
+<otl:AirTerminal> <skos:prefLabel> "AirTerminal" .
 <otl:AirTerminal> <rdfs:subClassOf> <nen2660:DiscreteObject> .
 <otl:AirTerminal-LOUVRE> <rdf:type> <owl:Class> .
 <otl:AirTerminal-LOUVRE> <owl:subClassOf> <otl:AirTerminal> .
@@ -1048,7 +1048,7 @@
 <otl:LightFixture-POINTSOURCE> <skos:prefLabel> "Light Fixture POINTSOURCE" .
 <otl:LightFixture> <rdf:type> <owl:Class> .
 <otl:LightFixture> <rdfs:seeAlso> <ifc:IfcLightFixture> .
-<otl:LightFixture> <skos:prefLabel> "Light Fixture" .
+<otl:LightFixture> <skos:prefLabel> "LightFixture" .
 <otl:LightFixture> <rdfs:subClassOf> <nen2660:DiscreteObject> .
 <otl:LightFixture-DIRECTIONSOURCE> <rdf:type> <owl:Class> .
 <otl:LightFixture-DIRECTIONSOURCE> <owl:subClassOf> <otl:LightFixture> .
@@ -1064,7 +1064,7 @@
 <otl:CommunicationsAppliance-REPEATER> <skos:prefLabel> "Communications Appliance REPEATER" .
 <otl:CommunicationsAppliance> <rdf:type> <owl:Class> .
 <otl:CommunicationsAppliance> <rdfs:seeAlso> <ifc:IfcCommunicationsAppliance> .
-<otl:CommunicationsAppliance> <skos:prefLabel> "Communications Appliance" .
+<otl:CommunicationsAppliance> <skos:prefLabel> "CommunicationsAppliance" .
 <otl:CommunicationsAppliance> <rdfs:subClassOf> <nen2660:DiscreteObject> .
 <otl:CommunicationsAppliance-NETWORKAPPLIANCE> <rdf:type> <owl:Class> .
 <otl:CommunicationsAppliance-NETWORKAPPLIANCE> <owl:subClassOf> <otl:CommunicationsAppliance> .
@@ -1116,7 +1116,7 @@
 <otl:AudioVisualAppliance-SPEAKER> <skos:prefLabel> "Audio Visual Appliance SPEAKER" .
 <otl:AudioVisualAppliance> <rdf:type> <owl:Class> .
 <otl:AudioVisualAppliance> <rdfs:seeAlso> <ifc:IfcAudioVisualAppliance> .
-<otl:AudioVisualAppliance> <skos:prefLabel> "Audio Visual Appliance" .
+<otl:AudioVisualAppliance> <skos:prefLabel> "AudioVisualAppliance" .
 <otl:AudioVisualAppliance> <rdfs:subClassOf> <nen2660:DiscreteObject> .
 <otl:AudioVisualAppliance-DISPLAY> <rdf:type> <owl:Class> .
 <otl:AudioVisualAppliance-DISPLAY> <owl:subClassOf> <otl:AudioVisualAppliance> .
@@ -1188,7 +1188,7 @@
 <otl:FireSuppressionTerminal-HOSEREEL> <skos:prefLabel> "Fire Suppression Terminal HOSEREEL" .
 <otl:FireSuppressionTerminal> <rdf:type> <owl:Class> .
 <otl:FireSuppressionTerminal> <rdfs:seeAlso> <ifc:IfcFireSuppressionTerminal> .
-<otl:FireSuppressionTerminal> <skos:prefLabel> "Fire Suppression Terminal" .
+<otl:FireSuppressionTerminal> <skos:prefLabel> "FireSuppressionTerminal" .
 <otl:FireSuppressionTerminal> <rdfs:subClassOf> <nen2660:DiscreteObject> .
 <otl:FireSuppressionTerminal-SPRINKLERDEFLECTOR> <rdf:type> <owl:Class> .
 <otl:FireSuppressionTerminal-SPRINKLERDEFLECTOR> <owl:subClassOf> <otl:FireSuppressionTerminal> .
@@ -1212,7 +1212,7 @@
 <otl:WasteTerminal-WASTEDISPOSALUNIT> <skos:prefLabel> "Waste Terminal WASTEDISPOSALUNIT" .
 <otl:WasteTerminal> <rdf:type> <owl:Class> .
 <otl:WasteTerminal> <rdfs:seeAlso> <ifc:IfcWasteTerminal> .
-<otl:WasteTerminal> <skos:prefLabel> "Waste Terminal" .
+<otl:WasteTerminal> <skos:prefLabel> "WasteTerminal" .
 <otl:WasteTerminal> <rdfs:subClassOf> <nen2660:DiscreteObject> .
 <otl:WasteTerminal-GULLYSUMP> <rdf:type> <owl:Class> .
 <otl:WasteTerminal-GULLYSUMP> <owl:subClassOf> <otl:WasteTerminal> .
@@ -1244,7 +1244,7 @@
 <otl:MedicalDevice-AIRSTATION> <skos:prefLabel> "Medical Device AIRSTATION" .
 <otl:MedicalDevice> <rdf:type> <owl:Class> .
 <otl:MedicalDevice> <rdfs:seeAlso> <ifc:IfcMedicalDevice> .
-<otl:MedicalDevice> <skos:prefLabel> "Medical Device" .
+<otl:MedicalDevice> <skos:prefLabel> "MedicalDevice" .
 <otl:MedicalDevice> <rdfs:subClassOf> <nen2660:DiscreteObject> .
 <otl:MedicalDevice-OXYGENGENERATOR> <rdf:type> <owl:Class> .
 <otl:MedicalDevice-OXYGENGENERATOR> <owl:subClassOf> <otl:MedicalDevice> .
@@ -1268,7 +1268,7 @@
 <otl:ElectricAppliance-TUMBLEDRYER> <skos:prefLabel> "Electric Appliance TUMBLEDRYER" .
 <otl:ElectricAppliance> <rdf:type> <owl:Class> .
 <otl:ElectricAppliance> <rdfs:seeAlso> <ifc:IfcElectricAppliance> .
-<otl:ElectricAppliance> <skos:prefLabel> "Electric Appliance" .
+<otl:ElectricAppliance> <skos:prefLabel> "ElectricAppliance" .
 <otl:ElectricAppliance> <rdfs:subClassOf> <nen2660:DiscreteObject> .
 <otl:ElectricAppliance-VENDINGMACHINE> <rdf:type> <owl:Class> .
 <otl:ElectricAppliance-VENDINGMACHINE> <owl:subClassOf> <otl:ElectricAppliance> .
@@ -1336,7 +1336,7 @@
 <otl:SanitaryTerminal-WASHHANDBASIN> <skos:prefLabel> "Sanitary Terminal WASHHANDBASIN" .
 <otl:SanitaryTerminal> <rdf:type> <owl:Class> .
 <otl:SanitaryTerminal> <rdfs:seeAlso> <ifc:IfcSanitaryTerminal> .
-<otl:SanitaryTerminal> <skos:prefLabel> "Sanitary Terminal" .
+<otl:SanitaryTerminal> <skos:prefLabel> "SanitaryTerminal" .
 <otl:SanitaryTerminal> <rdfs:subClassOf> <nen2660:DiscreteObject> .
 <otl:SanitaryTerminal-WCSEAT> <rdf:type> <owl:Class> .
 <otl:SanitaryTerminal-WCSEAT> <owl:subClassOf> <otl:SanitaryTerminal> .
@@ -1412,7 +1412,7 @@
 <otl:HeatExchanger-SHELLANDTUBE> <skos:prefLabel> "Heat Exchanger SHELLANDTUBE" .
 <otl:HeatExchanger> <rdf:type> <owl:Class> .
 <otl:HeatExchanger> <rdfs:seeAlso> <ifc:IfcHeatExchanger> .
-<otl:HeatExchanger> <skos:prefLabel> "Heat Exchanger" .
+<otl:HeatExchanger> <skos:prefLabel> "HeatExchanger" .
 <otl:HeatExchanger> <rdfs:subClassOf> <nen2660:DiscreteObject> .
 <otl:HeatExchanger-PLATE> <rdf:type> <owl:Class> .
 <otl:HeatExchanger-PLATE> <owl:subClassOf> <otl:HeatExchanger> .
@@ -1424,7 +1424,7 @@
 <otl:ElectricMotor-INDUCTION> <skos:prefLabel> "Electric Motor INDUCTION" .
 <otl:ElectricMotor> <rdf:type> <owl:Class> .
 <otl:ElectricMotor> <rdfs:seeAlso> <ifc:IfcElectricMotor> .
-<otl:ElectricMotor> <skos:prefLabel> "Electric Motor" .
+<otl:ElectricMotor> <skos:prefLabel> "ElectricMotor" .
 <otl:ElectricMotor> <rdfs:subClassOf> <nen2660:DiscreteObject> .
 <otl:ElectricMotor-RELUCTANCESYNCHRONOUS> <rdf:type> <owl:Class> .
 <otl:ElectricMotor-RELUCTANCESYNCHRONOUS> <owl:subClassOf> <otl:ElectricMotor> .
@@ -1448,7 +1448,7 @@
 <otl:MotorConnection-DIRECTDRIVE> <skos:prefLabel> "Motor Connection DIRECTDRIVE" .
 <otl:MotorConnection> <rdf:type> <owl:Class> .
 <otl:MotorConnection> <rdfs:seeAlso> <ifc:IfcMotorConnection> .
-<otl:MotorConnection> <skos:prefLabel> "Motor Connection" .
+<otl:MotorConnection> <skos:prefLabel> "MotorConnection" .
 <otl:MotorConnection> <rdfs:subClassOf> <nen2660:DiscreteObject> .
 <otl:MotorConnection-BELTDRIVE> <rdf:type> <owl:Class> .
 <otl:MotorConnection-BELTDRIVE> <owl:subClassOf> <otl:MotorConnection> .
@@ -1464,7 +1464,7 @@
 <otl:UnitaryEquipment-SPLITSYSTEM> <skos:prefLabel> "Unitary Equipment SPLITSYSTEM" .
 <otl:UnitaryEquipment> <rdf:type> <owl:Class> .
 <otl:UnitaryEquipment> <rdfs:seeAlso> <ifc:IfcUnitaryEquipment> .
-<otl:UnitaryEquipment> <skos:prefLabel> "Unitary Equipment" .
+<otl:UnitaryEquipment> <skos:prefLabel> "UnitaryEquipment" .
 <otl:UnitaryEquipment> <rdfs:subClassOf> <nen2660:DiscreteObject> .
 <otl:UnitaryEquipment-ROOFTOPUNIT> <rdf:type> <owl:Class> .
 <otl:UnitaryEquipment-ROOFTOPUNIT> <owl:subClassOf> <otl:UnitaryEquipment> .
@@ -1516,7 +1516,7 @@
 <otl:TubeBundle-FINNED> <skos:prefLabel> "Tube Bundle FINNED" .
 <otl:TubeBundle> <rdf:type> <owl:Class> .
 <otl:TubeBundle> <rdfs:seeAlso> <ifc:IfcTubeBundle> .
-<otl:TubeBundle> <skos:prefLabel> "Tube Bundle" .
+<otl:TubeBundle> <skos:prefLabel> "TubeBundle" .
 <otl:TubeBundle> <rdfs:subClassOf> <nen2660:DiscreteObject> .
 <otl:Humidifier-ASSISTEDELECTRIC> <rdf:type> <owl:Class> .
 <otl:Humidifier-ASSISTEDELECTRIC> <owl:subClassOf> <otl:Humidifier> .
@@ -1580,7 +1580,7 @@
 <otl:ElectricGenerator-CHP> <skos:prefLabel> "Electric Generator CHP" .
 <otl:ElectricGenerator> <rdf:type> <owl:Class> .
 <otl:ElectricGenerator> <rdfs:seeAlso> <ifc:IfcElectricGenerator> .
-<otl:ElectricGenerator> <skos:prefLabel> "Electric Generator" .
+<otl:ElectricGenerator> <skos:prefLabel> "ElectricGenerator" .
 <otl:ElectricGenerator> <rdfs:subClassOf> <nen2660:DiscreteObject> .
 <otl:ElectricGenerator-STANDALONE> <rdf:type> <owl:Class> .
 <otl:ElectricGenerator-STANDALONE> <owl:subClassOf> <otl:ElectricGenerator> .
@@ -1596,7 +1596,7 @@
 <otl:CoolingTower-NATURALDRAFT> <skos:prefLabel> "Cooling Tower NATURALDRAFT" .
 <otl:CoolingTower> <rdf:type> <owl:Class> .
 <otl:CoolingTower> <rdfs:seeAlso> <ifc:IfcCoolingTower> .
-<otl:CoolingTower> <skos:prefLabel> "Cooling Tower" .
+<otl:CoolingTower> <skos:prefLabel> "CoolingTower" .
 <otl:CoolingTower> <rdfs:subClassOf> <nen2660:DiscreteObject> .
 <otl:CoolingTower-MECHANICALINDUCEDDRAFT> <rdf:type> <owl:Class> .
 <otl:CoolingTower-MECHANICALINDUCEDDRAFT> <owl:subClassOf> <otl:CoolingTower> .
@@ -1612,7 +1612,7 @@
 <otl:CooledBeam-ACTIVE> <skos:prefLabel> "Cooled Beam ACTIVE" .
 <otl:CooledBeam> <rdf:type> <owl:Class> .
 <otl:CooledBeam> <rdfs:seeAlso> <ifc:IfcCooledBeam> .
-<otl:CooledBeam> <skos:prefLabel> "Cooled Beam" .
+<otl:CooledBeam> <skos:prefLabel> "CooledBeam" .
 <otl:CooledBeam> <rdfs:subClassOf> <nen2660:DiscreteObject> .
 <otl:CooledBeam-PASSIVE> <rdf:type> <owl:Class> .
 <otl:CooledBeam-PASSIVE> <owl:subClassOf> <otl:CooledBeam> .
@@ -1652,7 +1652,7 @@
 <otl:AirToAirHeatRecovery-HEATPIPE> <skos:prefLabel> "Air To Air Heat Recovery HEATPIPE" .
 <otl:AirToAirHeatRecovery> <rdf:type> <owl:Class> .
 <otl:AirToAirHeatRecovery> <rdfs:seeAlso> <ifc:IfcAirToAirHeatRecovery> .
-<otl:AirToAirHeatRecovery> <skos:prefLabel> "Air To Air Heat Recovery" .
+<otl:AirToAirHeatRecovery> <skos:prefLabel> "AirToAirHeatRecovery" .
 <otl:AirToAirHeatRecovery> <rdfs:subClassOf> <nen2660:DiscreteObject> .
 <otl:AirToAirHeatRecovery-TWINTOWERENTHALPYRECOVERYLOOPS> <rdf:type> <owl:Class> .
 <otl:AirToAirHeatRecovery-TWINTOWERENTHALPYRECOVERYLOOPS> <owl:subClassOf> <otl:AirToAirHeatRecovery> .
@@ -1724,7 +1724,7 @@
 <otl:EvaporativeCooler-DIRECTEVAPORATIVERANDOMMEDIAAIRCOOLER> <skos:prefLabel> "Evaporative Cooler DIRECTEVAPORATIVERANDOMMEDIAAIRCOOLER" .
 <otl:EvaporativeCooler> <rdf:type> <owl:Class> .
 <otl:EvaporativeCooler> <rdfs:seeAlso> <ifc:IfcEvaporativeCooler> .
-<otl:EvaporativeCooler> <skos:prefLabel> "Evaporative Cooler" .
+<otl:EvaporativeCooler> <skos:prefLabel> "EvaporativeCooler" .
 <otl:EvaporativeCooler> <rdfs:subClassOf> <nen2660:DiscreteObject> .
 <otl:EvaporativeCooler-DIRECTEVAPORATIVEPACKAGEDROTARYAIRCOOLER> <rdf:type> <owl:Class> .
 <otl:EvaporativeCooler-DIRECTEVAPORATIVEPACKAGEDROTARYAIRCOOLER> <owl:subClassOf> <otl:EvaporativeCooler> .
@@ -1764,7 +1764,7 @@
 <otl:SolarDevice-SOLARPANEL> <skos:prefLabel> "Solar Device SOLARPANEL" .
 <otl:SolarDevice> <rdf:type> <owl:Class> .
 <otl:SolarDevice> <rdfs:seeAlso> <ifc:IfcSolarDevice> .
-<otl:SolarDevice> <skos:prefLabel> "Solar Device" .
+<otl:SolarDevice> <skos:prefLabel> "SolarDevice" .
 <otl:SolarDevice> <rdfs:subClassOf> <nen2660:DiscreteObject> .
 <otl:SolarDevice-SOLARCOLLECTOR> <rdf:type> <owl:Class> .
 <otl:SolarDevice-SOLARCOLLECTOR> <owl:subClassOf> <otl:SolarDevice> .
@@ -1832,7 +1832,7 @@
 <otl:DuctSilencer-ROUND> <skos:prefLabel> "Duct Silencer ROUND" .
 <otl:DuctSilencer> <rdf:type> <owl:Class> .
 <otl:DuctSilencer> <rdfs:seeAlso> <ifc:IfcDuctSilencer> .
-<otl:DuctSilencer> <skos:prefLabel> "Duct Silencer" .
+<otl:DuctSilencer> <skos:prefLabel> "DuctSilencer" .
 <otl:DuctSilencer> <rdfs:subClassOf> <nen2660:DiscreteObject> .
 <otl:DuctSilencer-RECTANGULAR> <rdf:type> <owl:Class> .
 <otl:DuctSilencer-RECTANGULAR> <owl:subClassOf> <otl:DuctSilencer> .
@@ -1876,7 +1876,7 @@
 <otl:SwitchingDevice-MOMENTARYSWITCH> <skos:prefLabel> "Switching Device MOMENTARYSWITCH" .
 <otl:SwitchingDevice> <rdf:type> <owl:Class> .
 <otl:SwitchingDevice> <rdfs:seeAlso> <ifc:IfcSwitchingDevice> .
-<otl:SwitchingDevice> <skos:prefLabel> "Switching Device" .
+<otl:SwitchingDevice> <skos:prefLabel> "SwitchingDevice" .
 <otl:SwitchingDevice> <rdfs:subClassOf> <nen2660:DiscreteObject> .
 <otl:SwitchingDevice-CONTACTOR> <rdf:type> <owl:Class> .
 <otl:SwitchingDevice-CONTACTOR> <owl:subClassOf> <otl:SwitchingDevice> .
@@ -2004,7 +2004,7 @@
 <otl:ElectricDistributionBoard-SWITCHBOARD> <skos:prefLabel> "Electric Distribution Board SWITCHBOARD" .
 <otl:ElectricDistributionBoard> <rdf:type> <owl:Class> .
 <otl:ElectricDistributionBoard> <rdfs:seeAlso> <ifc:IfcElectricDistributionBoard> .
-<otl:ElectricDistributionBoard> <skos:prefLabel> "Electric Distribution Board" .
+<otl:ElectricDistributionBoard> <skos:prefLabel> "ElectricDistributionBoard" .
 <otl:ElectricDistributionBoard> <rdfs:subClassOf> <nen2660:DiscreteObject> .
 <otl:ElectricDistributionBoard-DISTRIBUTIONBOARD> <rdf:type> <owl:Class> .
 <otl:ElectricDistributionBoard-DISTRIBUTIONBOARD> <owl:subClassOf> <otl:ElectricDistributionBoard> .
@@ -2024,7 +2024,7 @@
 <otl:FlowMeter-GASMETER> <skos:prefLabel> "Flow Meter GASMETER" .
 <otl:FlowMeter> <rdf:type> <owl:Class> .
 <otl:FlowMeter> <rdfs:seeAlso> <ifc:IfcFlowMeter> .
-<otl:FlowMeter> <skos:prefLabel> "Flow Meter" .
+<otl:FlowMeter> <skos:prefLabel> "FlowMeter" .
 <otl:FlowMeter> <rdfs:subClassOf> <nen2660:DiscreteObject> .
 <otl:FlowMeter-ENERGYMETER> <rdf:type> <owl:Class> .
 <otl:FlowMeter-ENERGYMETER> <owl:subClassOf> <otl:FlowMeter> .
@@ -2092,7 +2092,7 @@
 <otl:AirTerminalBox-VARIABLEFLOWPRESSUREINDEPENDANT> <skos:prefLabel> "Air Terminal Box VARIABLEFLOWPRESSUREINDEPENDANT" .
 <otl:AirTerminalBox> <rdf:type> <owl:Class> .
 <otl:AirTerminalBox> <rdfs:seeAlso> <ifc:IfcAirTerminalBox> .
-<otl:AirTerminalBox> <skos:prefLabel> "Air Terminal Box" .
+<otl:AirTerminalBox> <skos:prefLabel> "AirTerminalBox" .
 <otl:AirTerminalBox> <rdfs:subClassOf> <nen2660:DiscreteObject> .
 <otl:AirTerminalBox-VARIABLEFLOWPRESSUREDEPENDANT> <rdf:type> <owl:Class> .
 <otl:AirTerminalBox-VARIABLEFLOWPRESSUREDEPENDANT> <owl:subClassOf> <otl:AirTerminalBox> .
@@ -2108,7 +2108,7 @@
 <otl:ElectricTimeControl-TIMECLOCK> <skos:prefLabel> "Electric Time Control TIMECLOCK" .
 <otl:ElectricTimeControl> <rdf:type> <owl:Class> .
 <otl:ElectricTimeControl> <rdfs:seeAlso> <ifc:IfcElectricTimeControl> .
-<otl:ElectricTimeControl> <skos:prefLabel> "Electric Time Control" .
+<otl:ElectricTimeControl> <skos:prefLabel> "ElectricTimeControl" .
 <otl:ElectricTimeControl> <rdfs:subClassOf> <nen2660:DiscreteObject> .
 <otl:ElectricTimeControl-TIMEDELAY> <rdf:type> <owl:Class> .
 <otl:ElectricTimeControl-TIMEDELAY> <owl:subClassOf> <otl:ElectricTimeControl> .
@@ -2124,7 +2124,7 @@
 <otl:ProtectiveDevice-EARTHINGSWITCH> <skos:prefLabel> "Protective Device EARTHINGSWITCH" .
 <otl:ProtectiveDevice> <rdf:type> <owl:Class> .
 <otl:ProtectiveDevice> <rdfs:seeAlso> <ifc:IfcProtectiveDevice> .
-<otl:ProtectiveDevice> <skos:prefLabel> "Protective Device" .
+<otl:ProtectiveDevice> <skos:prefLabel> "ProtectiveDevice" .
 <otl:ProtectiveDevice> <rdfs:subClassOf> <nen2660:DiscreteObject> .
 <otl:ProtectiveDevice-RESIDUALCURRENTSWITCH> <rdf:type> <owl:Class> .
 <otl:ProtectiveDevice-RESIDUALCURRENTSWITCH> <owl:subClassOf> <otl:ProtectiveDevice> .
@@ -2156,7 +2156,7 @@
 <otl:PipeSegment-CULVERT> <skos:prefLabel> "Pipe Segment CULVERT" .
 <otl:PipeSegment> <rdf:type> <owl:Class> .
 <otl:PipeSegment> <rdfs:seeAlso> <ifc:IfcPipeSegment> .
-<otl:PipeSegment> <skos:prefLabel> "Pipe Segment" .
+<otl:PipeSegment> <skos:prefLabel> "PipeSegment" .
 <otl:PipeSegment> <rdfs:subClassOf> <nen2660:DiscreteObject> .
 <otl:PipeSegment-GUTTER> <rdf:type> <owl:Class> .
 <otl:PipeSegment-GUTTER> <owl:subClassOf> <otl:PipeSegment> .
@@ -2180,7 +2180,7 @@
 <otl:CableSegment-CONDUCTORSEGMENT> <skos:prefLabel> "Cable Segment CONDUCTORSEGMENT" .
 <otl:CableSegment> <rdf:type> <owl:Class> .
 <otl:CableSegment> <rdfs:seeAlso> <ifc:IfcCableSegment> .
-<otl:CableSegment> <skos:prefLabel> "Cable Segment" .
+<otl:CableSegment> <skos:prefLabel> "CableSegment" .
 <otl:CableSegment> <rdfs:subClassOf> <nen2660:DiscreteObject> .
 <otl:CableSegment-CORESEGMENT> <rdf:type> <owl:Class> .
 <otl:CableSegment-CORESEGMENT> <owl:subClassOf> <otl:CableSegment> .
@@ -2200,7 +2200,7 @@
 <otl:CableCarrierSegment-CONDUITSEGMENT> <skos:prefLabel> "Cable Carrier Segment CONDUITSEGMENT" .
 <otl:CableCarrierSegment> <rdf:type> <owl:Class> .
 <otl:CableCarrierSegment> <rdfs:seeAlso> <ifc:IfcCableCarrierSegment> .
-<otl:CableCarrierSegment> <skos:prefLabel> "Cable Carrier Segment" .
+<otl:CableCarrierSegment> <skos:prefLabel> "CableCarrierSegment" .
 <otl:CableCarrierSegment> <rdfs:subClassOf> <nen2660:DiscreteObject> .
 <otl:CableCarrierSegment-CABLELADDERSEGMENT> <rdf:type> <owl:Class> .
 <otl:CableCarrierSegment-CABLELADDERSEGMENT> <owl:subClassOf> <otl:CableCarrierSegment> .
@@ -2220,7 +2220,7 @@
 <otl:DuctSegment-RIGIDSEGMENT> <skos:prefLabel> "Duct Segment RIGIDSEGMENT" .
 <otl:DuctSegment> <rdf:type> <owl:Class> .
 <otl:DuctSegment> <rdfs:seeAlso> <ifc:IfcDuctSegment> .
-<otl:DuctSegment> <skos:prefLabel> "Duct Segment" .
+<otl:DuctSegment> <skos:prefLabel> "DuctSegment" .
 <otl:DuctSegment> <rdfs:subClassOf> <nen2660:DiscreteObject> .
 <otl:DuctSegment-FLEXIBLESEGMENT> <rdf:type> <owl:Class> .
 <otl:DuctSegment-FLEXIBLESEGMENT> <owl:subClassOf> <otl:DuctSegment> .
@@ -2232,7 +2232,7 @@
 <otl:DuctFitting-EXIT> <skos:prefLabel> "Duct Fitting EXIT" .
 <otl:DuctFitting> <rdf:type> <owl:Class> .
 <otl:DuctFitting> <rdfs:seeAlso> <ifc:IfcDuctFitting> .
-<otl:DuctFitting> <skos:prefLabel> "Duct Fitting" .
+<otl:DuctFitting> <skos:prefLabel> "DuctFitting" .
 <otl:DuctFitting> <rdfs:subClassOf> <nen2660:DiscreteObject> .
 <otl:DuctFitting-TRANSITION> <rdf:type> <owl:Class> .
 <otl:DuctFitting-TRANSITION> <owl:subClassOf> <otl:DuctFitting> .
@@ -2264,7 +2264,7 @@
 <otl:JunctionBox-POWER> <skos:prefLabel> "Junction Box POWER" .
 <otl:JunctionBox> <rdf:type> <owl:Class> .
 <otl:JunctionBox> <rdfs:seeAlso> <ifc:IfcJunctionBox> .
-<otl:JunctionBox> <skos:prefLabel> "Junction Box" .
+<otl:JunctionBox> <skos:prefLabel> "JunctionBox" .
 <otl:JunctionBox> <rdfs:subClassOf> <nen2660:DiscreteObject> .
 <otl:JunctionBox-DATA> <rdf:type> <owl:Class> .
 <otl:JunctionBox-DATA> <owl:subClassOf> <otl:JunctionBox> .
@@ -2276,7 +2276,7 @@
 <otl:CableFitting-EXIT> <skos:prefLabel> "Cable Fitting EXIT" .
 <otl:CableFitting> <rdf:type> <owl:Class> .
 <otl:CableFitting> <rdfs:seeAlso> <ifc:IfcCableFitting> .
-<otl:CableFitting> <skos:prefLabel> "Cable Fitting" .
+<otl:CableFitting> <skos:prefLabel> "CableFitting" .
 <otl:CableFitting> <rdfs:subClassOf> <nen2660:DiscreteObject> .
 <otl:CableFitting-TRANSITION> <rdf:type> <owl:Class> .
 <otl:CableFitting-TRANSITION> <owl:subClassOf> <otl:CableFitting> .
@@ -2300,7 +2300,7 @@
 <otl:PipeFitting-EXIT> <skos:prefLabel> "Pipe Fitting EXIT" .
 <otl:PipeFitting> <rdf:type> <owl:Class> .
 <otl:PipeFitting> <rdfs:seeAlso> <ifc:IfcPipeFitting> .
-<otl:PipeFitting> <skos:prefLabel> "Pipe Fitting" .
+<otl:PipeFitting> <skos:prefLabel> "PipeFitting" .
 <otl:PipeFitting> <rdfs:subClassOf> <nen2660:DiscreteObject> .
 <otl:PipeFitting-TRANSITION> <rdf:type> <owl:Class> .
 <otl:PipeFitting-TRANSITION> <owl:subClassOf> <otl:PipeFitting> .
@@ -2332,7 +2332,7 @@
 <otl:CableCarrierFitting-TEE> <skos:prefLabel> "Cable Carrier Fitting TEE" .
 <otl:CableCarrierFitting> <rdf:type> <owl:Class> .
 <otl:CableCarrierFitting> <rdfs:seeAlso> <ifc:IfcCableCarrierFitting> .
-<otl:CableCarrierFitting> <skos:prefLabel> "Cable Carrier Fitting" .
+<otl:CableCarrierFitting> <skos:prefLabel> "CableCarrierFitting" .
 <otl:CableCarrierFitting> <rdfs:subClassOf> <nen2660:DiscreteObject> .
 <otl:CableCarrierFitting-CROSS> <rdf:type> <owl:Class> .
 <otl:CableCarrierFitting-CROSS> <owl:subClassOf> <otl:CableCarrierFitting> .
@@ -2512,7 +2512,7 @@
 <otl:ElectricFlowStorageDevice-UPS> <skos:prefLabel> "Electric Flow Storage Device UPS" .
 <otl:ElectricFlowStorageDevice> <rdf:type> <owl:Class> .
 <otl:ElectricFlowStorageDevice> <rdfs:seeAlso> <ifc:IfcElectricFlowStorageDevice> .
-<otl:ElectricFlowStorageDevice> <skos:prefLabel> "Electric Flow Storage Device" .
+<otl:ElectricFlowStorageDevice> <skos:prefLabel> "ElectricFlowStorageDevice" .
 <otl:ElectricFlowStorageDevice> <rdfs:subClassOf> <nen2660:DiscreteObject> .
 <otl:ElectricFlowStorageDevice-HARMONICFILTER> <rdf:type> <owl:Class> .
 <otl:ElectricFlowStorageDevice-HARMONICFILTER> <owl:subClassOf> <otl:ElectricFlowStorageDevice> .
@@ -2568,7 +2568,7 @@
 <otl:SystemFurnitureElement-WORKSURFACE> <skos:prefLabel> "System Furniture Element WORKSURFACE" .
 <otl:SystemFurnitureElement> <rdf:type> <owl:Class> .
 <otl:SystemFurnitureElement> <rdfs:seeAlso> <ifc:IfcSystemFurnitureElement> .
-<otl:SystemFurnitureElement> <skos:prefLabel> "System Furniture Element" .
+<otl:SystemFurnitureElement> <skos:prefLabel> "SystemFurnitureElement" .
 <otl:SystemFurnitureElement> <rdfs:subClassOf> <nen2660:DiscreteObject> .
 <otl:SystemFurnitureElement-PANEL> <rdf:type> <owl:Class> .
 <otl:SystemFurnitureElement-PANEL> <owl:subClassOf> <otl:SystemFurnitureElement> .
@@ -2596,7 +2596,7 @@
 <otl:BuildingElementPart-INSULATION> <skos:prefLabel> "Building Element Part INSULATION" .
 <otl:BuildingElementPart> <rdf:type> <owl:Class> .
 <otl:BuildingElementPart> <rdfs:seeAlso> <ifc:IfcBuildingElementPart> .
-<otl:BuildingElementPart> <skos:prefLabel> "Building Element Part" .
+<otl:BuildingElementPart> <skos:prefLabel> "BuildingElementPart" .
 <otl:BuildingElementPart> <rdfs:subClassOf> <nen2660:DiscreteObject> .
 <otl:BuildingElementPart-PRECASTPANEL> <rdf:type> <owl:Class> .
 <otl:BuildingElementPart-PRECASTPANEL> <owl:subClassOf> <otl:BuildingElementPart> .
@@ -2608,7 +2608,7 @@
 <otl:MechanicalFastener-SHEARCONNECTOR> <skos:prefLabel> "Mechanical Fastener SHEARCONNECTOR" .
 <otl:MechanicalFastener> <rdf:type> <owl:Class> .
 <otl:MechanicalFastener> <rdfs:seeAlso> <ifc:IfcMechanicalFastener> .
-<otl:MechanicalFastener> <skos:prefLabel> "Mechanical Fastener" .
+<otl:MechanicalFastener> <skos:prefLabel> "MechanicalFastener" .
 <otl:MechanicalFastener> <rdfs:subClassOf> <nen2660:DiscreteObject> .
 <otl:MechanicalFastener-DOWEL> <rdf:type> <owl:Class> .
 <otl:MechanicalFastener-DOWEL> <owl:subClassOf> <otl:MechanicalFastener> .
@@ -2652,7 +2652,7 @@
 <otl:DiscreteAccessory-ANCHORPLATE> <skos:prefLabel> "Discrete Accessory ANCHORPLATE" .
 <otl:DiscreteAccessory> <rdf:type> <owl:Class> .
 <otl:DiscreteAccessory> <rdfs:seeAlso> <ifc:IfcDiscreteAccessory> .
-<otl:DiscreteAccessory> <skos:prefLabel> "Discrete Accessory" .
+<otl:DiscreteAccessory> <skos:prefLabel> "DiscreteAccessory" .
 <otl:DiscreteAccessory> <rdfs:subClassOf> <nen2660:DiscreteObject> .
 <otl:DiscreteAccessory-BRACKET> <rdf:type> <owl:Class> .
 <otl:DiscreteAccessory-BRACKET> <owl:subClassOf> <otl:DiscreteAccessory> .
@@ -2668,7 +2668,7 @@
 <otl:VibrationIsolator-COMPRESSION> <skos:prefLabel> "Vibration Isolator COMPRESSION" .
 <otl:VibrationIsolator> <rdf:type> <owl:Class> .
 <otl:VibrationIsolator> <rdfs:seeAlso> <ifc:IfcVibrationIsolator> .
-<otl:VibrationIsolator> <skos:prefLabel> "Vibration Isolator" .
+<otl:VibrationIsolator> <skos:prefLabel> "VibrationIsolator" .
 <otl:VibrationIsolator> <rdfs:subClassOf> <nen2660:DiscreteObject> .
 <otl:VibrationIsolator-SPRING> <rdf:type> <owl:Class> .
 <otl:VibrationIsolator-SPRING> <owl:subClassOf> <otl:VibrationIsolator> .
@@ -2700,7 +2700,7 @@
 <otl:TendonAnchor-TENSIONING_END> <skos:prefLabel> "Tendon Anchor TENSIONING_END" .
 <otl:TendonAnchor> <rdf:type> <owl:Class> .
 <otl:TendonAnchor> <rdfs:seeAlso> <ifc:IfcTendonAnchor> .
-<otl:TendonAnchor> <skos:prefLabel> "Tendon Anchor" .
+<otl:TendonAnchor> <skos:prefLabel> "TendonAnchor" .
 <otl:TendonAnchor> <rdfs:subClassOf> <nen2660:DiscreteObject> .
 <otl:TendonAnchor-FIXED_END> <rdf:type> <owl:Class> .
 <otl:TendonAnchor-FIXED_END> <owl:subClassOf> <otl:TendonAnchor> .
@@ -2716,7 +2716,7 @@
 <otl:ReinforcingBar-PUNCHING> <skos:prefLabel> "Reinforcing Bar PUNCHING" .
 <otl:ReinforcingBar> <rdf:type> <owl:Class> .
 <otl:ReinforcingBar> <rdfs:seeAlso> <ifc:IfcReinforcingBar> .
-<otl:ReinforcingBar> <skos:prefLabel> "Reinforcing Bar" .
+<otl:ReinforcingBar> <skos:prefLabel> "ReinforcingBar" .
 <otl:ReinforcingBar> <rdfs:subClassOf> <nen2660:DiscreteObject> .
 <otl:ReinforcingBar-LIGATURE> <rdf:type> <owl:Class> .
 <otl:ReinforcingBar-LIGATURE> <owl:subClassOf> <otl:ReinforcingBar> .
@@ -2760,7 +2760,7 @@
 <otl:SpatialStructureElement-PARTIAL> <skos:prefLabel> "Spatial Structure Element PARTIAL" .
 <otl:SpatialStructureElement> <rdf:type> <owl:Class> .
 <otl:SpatialStructureElement> <rdfs:seeAlso> <ifc:IfcSpatialStructureElement> .
-<otl:SpatialStructureElement> <skos:prefLabel> "Spatial Structure Element" .
+<otl:SpatialStructureElement> <skos:prefLabel> "SpatialStructureElement" .
 <otl:SpatialStructureElement> <rdfs:subClassOf> <nen2660:SpatialRegion> .
 <otl:SpatialStructureElement-ELEMENT> <rdf:type> <owl:Class> .
 <otl:SpatialStructureElement-ELEMENT> <owl:subClassOf> <otl:SpatialStructureElement> .
@@ -2776,7 +2776,7 @@
 <otl:SpatialZone-OCCUPANCY> <skos:prefLabel> "Spatial Zone OCCUPANCY" .
 <otl:SpatialZone> <rdf:type> <owl:Class> .
 <otl:SpatialZone> <rdfs:seeAlso> <ifc:IfcSpatialZone> .
-<otl:SpatialZone> <skos:prefLabel> "Spatial Zone" .
+<otl:SpatialZone> <skos:prefLabel> "SpatialZone" .
 <otl:SpatialZone> <rdfs:subClassOf> <nen2660:SpatialRegion> .
 <otl:SpatialZone-CONSTRUCTION> <rdf:type> <owl:Class> .
 <otl:SpatialZone-CONSTRUCTION> <owl:subClassOf> <otl:SpatialZone> .
@@ -2836,7 +2836,7 @@
 <otl:ExternalSpatialElement-EXTERNAL> <skos:prefLabel> "External Spatial Element EXTERNAL" .
 <otl:ExternalSpatialElement> <rdf:type> <owl:Class> .
 <otl:ExternalSpatialElement> <rdfs:seeAlso> <ifc:IfcExternalSpatialElement> .
-<otl:ExternalSpatialElement> <skos:prefLabel> "External Spatial Element" .
+<otl:ExternalSpatialElement> <skos:prefLabel> "ExternalSpatialElement" .
 <otl:ExternalSpatialElement> <rdfs:subClassOf> <nen2660:SpatialRegion> .
 <otl:ExternalSpatialElement-EXTERNAL_FIRE> <rdf:type> <owl:Class> .
 <otl:ExternalSpatialElement-EXTERNAL_FIRE> <owl:subClassOf> <otl:ExternalSpatialElement> .

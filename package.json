@@ -3,14 +3,17 @@
     "@frogcat/ttl2jsonld": "^0.0.9",
     "@rdfjs/fetch": "^3.1.0",
     "@rdfjs/namespace": "^2.0.0",
+    "@rdfjs/serializer-jsonld-ext": "^4.0.0",
     "clownface": "^1.5.1",
     "d3-sparql": "^2.0.0",
+    "jsonld": "^8.1.1",
     "lodash": "^4.17.21",
     "lodash.startcase": "^4.4.0",
     "npm": "^9.6.5",
     "rdf-ext": "^2.2.0",
     "rdf-utils-fs": "^2.3.0",
-    "sparql-http-client": "^2.4.2"
+    "sparql-http-client": "^2.4.2",
+    "web-ifc": "^0.0.40"
   },
   "name": "test",
   "version": "1.0.0",

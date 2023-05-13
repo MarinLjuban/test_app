@@ -4,10 +4,7 @@ import cf from "clownface";
 import rdf from "rdf-ext";
 import toFile from "rdf-utils-fs/toFile.js";
 import _ from "lodash";
-
-
-
-
+import * as jsonld from 'jsonld';
 
 
 //CREATE THE NAMESPACES
@@ -17,6 +14,7 @@ const ns = {
     otl: namespace('https://otl.buildingsmart.org/IFC4_ADD2_TC1/def/'),
     owl: namespace('http://www.w3.org/2002/07/owl#')
   }
+
 
 //CREATE LOCAL SPARQL ENDPOINT
 const client = new SparqlClient({
@@ -90,22 +88,27 @@ async function fullQuery(superclass) {
 
 //CREATE THE NODES
 function createNodeEnum(subject, object) {
-  const prefLabelSymbol = _.startCase(`${object}`) + " " + `${subject}`
+  const prefLabel = otlGraph.literal(_.startCase(`${object}`) + " " + `${subject}`)
+  prefLabel.language = "en"
   otlGraph
     .namedNode(`otl:${object}-${subject}`)
     .addOut(otlGraph.namedNode("rdf:type"),otlGraph.namedNode("owl:Class"))
     .addOut(otlGraph.namedNode("owl:subClassOf"), otlGraph.namedNode(`otl:${object}`))
     .addOut(otlGraph.namedNode("rdfs:seeAlso"), otlGraph.namedNode(`ifc:${subject}`))
-    .addOut(otlGraph.namedNode("skos:prefLabel"), prefLabelSymbol);
+    .addOut(otlGraph.namedNode("skos:prefLabel"), prefLabel);
 }
 
 function createNodeClass(subject, nenEntity) {
+    const prefLabel = otlGraph.literal(`${subject}`)
+    prefLabel.language = "en"
+
+    // console.log(prefLabel);
   otlGraph
     .namedNode(`otl:${subject}`)
     .addOut(otlGraph.namedNode("rdf:type"), otlGraph.namedNode("owl:Class"))
     .addOut(otlGraph.namedNode("rdfs:subClassOf"), otlGraph.namedNode(`${nenEntity}`))
     .addOut(otlGraph.namedNode("rdfs:seeAlso"), otlGraph.namedNode(`ifc:Ifc${subject}`))
-    .addOut(otlGraph.namedNode("skos:prefLabel"), _.startCase(`${subject}`));
+    .addOut(otlGraph.namedNode("skos:prefLabel"), prefLabel)
 }
 
 //CONSOLE LOG
@@ -162,4 +165,3 @@ async function runProgram() {
 }
 
 runProgram();
-
