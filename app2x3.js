@@ -10,15 +10,15 @@ import { rdf as rdff } from '@tpluscode/rdf-ns-builders'
 
 //CREATE THE NAMESPACES
 const ns = {
-  ifc: namespace('http://ifcowl.openbimstandards.org/IFC4_ADD2#'),
-  otl: namespace('https://otl.buildingsmart.org/IFC4_ADD2_TC1/def/'),
+  ifc: namespace('http://ifcowl.openbimstandards.org/IFC2X3_TC1#'),
+  otl: namespace('https://otl.buildingsmart.org/IFC2X3_TC1/def/'),
   nen2660term: namespace('https://w3id.org/nen2660/term#')
 }
 
 
 //CREATE LOCAL SPARQL ENDPOINT
 const client = new SparqlClient({
-  endpointUrl: "http://DESKTOP-SQ747CJ:7200/repositories/IFC",
+  endpointUrl: "http://DESKTOP-SQ747CJ:7200/repositories/IFC2x3",
 });
 
 //CREATE GRAPH
@@ -43,7 +43,7 @@ const IfcToDiscreteObjectArray = [
 async function fullQuery(superclass) {
   const classStream = await client.query.select(`
   PREFIX nen2660: <https://w3id.org/nen2660/def#>
-  PREFIX ifc: <http://ifcowl.openbimstandards.org/IFC4_ADD2#>
+  PREFIX ifc: <http://ifcowl.openbimstandards.org/IFC2X3_TC1#>
   PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
   PREFIX expr: <https://w3id.org/express#>
   PREFIX zh: <https://w3id.org/ziekenhuis/def#>
@@ -133,11 +133,11 @@ async function logicFunction(queried) {
       for (const item of foundItems) {
         if (item.enum?.value != undefined) {
           createNodeEnum(
-            item.enum?.value.slice(45),
-            item.subObject?.value.slice(48)
+            item.enum?.value.slice(46),
+            item.subObject?.value.slice(49)
           );
           createNodeClass(
-            item.subObject?.value.slice(45),
+            item.subObject?.value.slice(46),
             ns.nen2660term.DiscreteObject.value
           );
         }
@@ -148,11 +148,11 @@ async function logicFunction(queried) {
       for (const item of foundItems) {
         if (item.enum?.value != undefined) {
           createNodeEnum(
-            item.enum?.value.slice(45),
-            item.subObject?.value.slice(48)
+            item.enum?.value.slice(46),
+            item.subObject?.value.slice(49)
           );
           createNodeClass(
-            item.subObject?.value.slice(45),
+            item.subObject?.value.slice(46),
             ns.nen2660term.SpatialRegion.value
           );
         }
@@ -165,8 +165,8 @@ async function logicFunction(queried) {
 async function runProgram() {
   await logicFunction(queriedElements);
   await logGraph();
-  await toFile(otlGraph.dataset.toStream(), "test.ttl");
-  await toFile(otlGraph.dataset.toStream(), "test.jsonld");
+  await toFile(otlGraph.dataset.toStream(), "test2x3.ttl");
+  await toFile(otlGraph.dataset.toStream(), "testx3.jsonld");
 }
 
 runProgram();
