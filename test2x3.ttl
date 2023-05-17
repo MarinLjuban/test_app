@@ -1,384 +1,384 @@
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Slab-ROOF> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Slab-ROOF> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://otl.buildingsmart.org/IFC2X3_TC1/def/Slab> .
-<https://otl.buildingsmart.org/IFC2X3_TC1/def/Slab-ROOF> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://ifcowl.openbimstandards.org/IFC2X3_TC1#ROOF> .
+<https://otl.buildingsmart.org/IFC2X3_TC1/def/Slab-ROOF> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://standards.buildingsmart.org/IFC/DEV/IFC2x3/TC1/OWL/#ROOF> .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Slab-ROOF> <http://www.w3.org/2004/02/skos/core#prefLabel> "Slab ROOF"@en .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Slab> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Slab> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/nen2660/term#DiscreteObject> .
-<https://otl.buildingsmart.org/IFC2X3_TC1/def/Slab> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://ifcowl.openbimstandards.org/IFC2X3_TC1#IfcSlab> .
+<https://otl.buildingsmart.org/IFC2X3_TC1/def/Slab> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://standards.buildingsmart.org/IFC/DEV/IFC2x3/TC1/OWL/#IfcSlab> .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Slab> <http://www.w3.org/2004/02/skos/core#prefLabel> "Slab"@en .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Slab-LANDING> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Slab-LANDING> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://otl.buildingsmart.org/IFC2X3_TC1/def/Slab> .
-<https://otl.buildingsmart.org/IFC2X3_TC1/def/Slab-LANDING> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://ifcowl.openbimstandards.org/IFC2X3_TC1#LANDING> .
+<https://otl.buildingsmart.org/IFC2X3_TC1/def/Slab-LANDING> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://standards.buildingsmart.org/IFC/DEV/IFC2x3/TC1/OWL/#LANDING> .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Slab-LANDING> <http://www.w3.org/2004/02/skos/core#prefLabel> "Slab LANDING"@en .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Slab-FLOOR> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Slab-FLOOR> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://otl.buildingsmart.org/IFC2X3_TC1/def/Slab> .
-<https://otl.buildingsmart.org/IFC2X3_TC1/def/Slab-FLOOR> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://ifcowl.openbimstandards.org/IFC2X3_TC1#FLOOR> .
+<https://otl.buildingsmart.org/IFC2X3_TC1/def/Slab-FLOOR> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://standards.buildingsmart.org/IFC/DEV/IFC2x3/TC1/OWL/#FLOOR> .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Slab-FLOOR> <http://www.w3.org/2004/02/skos/core#prefLabel> "Slab FLOOR"@en .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Slab-BASESLAB> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Slab-BASESLAB> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://otl.buildingsmart.org/IFC2X3_TC1/def/Slab> .
-<https://otl.buildingsmart.org/IFC2X3_TC1/def/Slab-BASESLAB> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://ifcowl.openbimstandards.org/IFC2X3_TC1#BASESLAB> .
+<https://otl.buildingsmart.org/IFC2X3_TC1/def/Slab-BASESLAB> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://standards.buildingsmart.org/IFC/DEV/IFC2x3/TC1/OWL/#BASESLAB> .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Slab-BASESLAB> <http://www.w3.org/2004/02/skos/core#prefLabel> "Slab BASESLAB"@en .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Stair-TWO_QUARTER_TURN_STAIR> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Stair-TWO_QUARTER_TURN_STAIR> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://otl.buildingsmart.org/IFC2X3_TC1/def/Stair> .
-<https://otl.buildingsmart.org/IFC2X3_TC1/def/Stair-TWO_QUARTER_TURN_STAIR> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://ifcowl.openbimstandards.org/IFC2X3_TC1#TWO_QUARTER_TURN_STAIR> .
+<https://otl.buildingsmart.org/IFC2X3_TC1/def/Stair-TWO_QUARTER_TURN_STAIR> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://standards.buildingsmart.org/IFC/DEV/IFC2x3/TC1/OWL/#TWO_QUARTER_TURN_STAIR> .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Stair-TWO_QUARTER_TURN_STAIR> <http://www.w3.org/2004/02/skos/core#prefLabel> "Stair TWO QUARTER TURN STAIR"@en .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Stair> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Stair> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/nen2660/term#DiscreteObject> .
-<https://otl.buildingsmart.org/IFC2X3_TC1/def/Stair> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://ifcowl.openbimstandards.org/IFC2X3_TC1#IfcStair> .
+<https://otl.buildingsmart.org/IFC2X3_TC1/def/Stair> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://standards.buildingsmart.org/IFC/DEV/IFC2x3/TC1/OWL/#IfcStair> .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Stair> <http://www.w3.org/2004/02/skos/core#prefLabel> "Stair"@en .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Stair-HALF_TURN_STAIR> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Stair-HALF_TURN_STAIR> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://otl.buildingsmart.org/IFC2X3_TC1/def/Stair> .
-<https://otl.buildingsmart.org/IFC2X3_TC1/def/Stair-HALF_TURN_STAIR> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://ifcowl.openbimstandards.org/IFC2X3_TC1#HALF_TURN_STAIR> .
+<https://otl.buildingsmart.org/IFC2X3_TC1/def/Stair-HALF_TURN_STAIR> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://standards.buildingsmart.org/IFC/DEV/IFC2x3/TC1/OWL/#HALF_TURN_STAIR> .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Stair-HALF_TURN_STAIR> <http://www.w3.org/2004/02/skos/core#prefLabel> "Stair HALF TURN STAIR"@en .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Stair-TWO_CURVED_RUN_STAIR> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Stair-TWO_CURVED_RUN_STAIR> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://otl.buildingsmart.org/IFC2X3_TC1/def/Stair> .
-<https://otl.buildingsmart.org/IFC2X3_TC1/def/Stair-TWO_CURVED_RUN_STAIR> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://ifcowl.openbimstandards.org/IFC2X3_TC1#TWO_CURVED_RUN_STAIR> .
+<https://otl.buildingsmart.org/IFC2X3_TC1/def/Stair-TWO_CURVED_RUN_STAIR> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://standards.buildingsmart.org/IFC/DEV/IFC2x3/TC1/OWL/#TWO_CURVED_RUN_STAIR> .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Stair-TWO_CURVED_RUN_STAIR> <http://www.w3.org/2004/02/skos/core#prefLabel> "Stair TWO CURVED RUN STAIR"@en .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Stair-STRAIGHT_RUN_STAIR> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Stair-STRAIGHT_RUN_STAIR> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://otl.buildingsmart.org/IFC2X3_TC1/def/Stair> .
-<https://otl.buildingsmart.org/IFC2X3_TC1/def/Stair-STRAIGHT_RUN_STAIR> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://ifcowl.openbimstandards.org/IFC2X3_TC1#STRAIGHT_RUN_STAIR> .
+<https://otl.buildingsmart.org/IFC2X3_TC1/def/Stair-STRAIGHT_RUN_STAIR> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://standards.buildingsmart.org/IFC/DEV/IFC2x3/TC1/OWL/#STRAIGHT_RUN_STAIR> .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Stair-STRAIGHT_RUN_STAIR> <http://www.w3.org/2004/02/skos/core#prefLabel> "Stair STRAIGHT RUN STAIR"@en .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Stair-CURVED_RUN_STAIR> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Stair-CURVED_RUN_STAIR> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://otl.buildingsmart.org/IFC2X3_TC1/def/Stair> .
-<https://otl.buildingsmart.org/IFC2X3_TC1/def/Stair-CURVED_RUN_STAIR> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://ifcowl.openbimstandards.org/IFC2X3_TC1#CURVED_RUN_STAIR> .
+<https://otl.buildingsmart.org/IFC2X3_TC1/def/Stair-CURVED_RUN_STAIR> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://standards.buildingsmart.org/IFC/DEV/IFC2x3/TC1/OWL/#CURVED_RUN_STAIR> .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Stair-CURVED_RUN_STAIR> <http://www.w3.org/2004/02/skos/core#prefLabel> "Stair CURVED RUN STAIR"@en .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Stair-QUARTER_TURN_STAIR> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Stair-QUARTER_TURN_STAIR> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://otl.buildingsmart.org/IFC2X3_TC1/def/Stair> .
-<https://otl.buildingsmart.org/IFC2X3_TC1/def/Stair-QUARTER_TURN_STAIR> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://ifcowl.openbimstandards.org/IFC2X3_TC1#QUARTER_TURN_STAIR> .
+<https://otl.buildingsmart.org/IFC2X3_TC1/def/Stair-QUARTER_TURN_STAIR> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://standards.buildingsmart.org/IFC/DEV/IFC2x3/TC1/OWL/#QUARTER_TURN_STAIR> .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Stair-QUARTER_TURN_STAIR> <http://www.w3.org/2004/02/skos/core#prefLabel> "Stair QUARTER TURN STAIR"@en .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Stair-THREE_QUARTER_TURN_STAIR> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Stair-THREE_QUARTER_TURN_STAIR> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://otl.buildingsmart.org/IFC2X3_TC1/def/Stair> .
-<https://otl.buildingsmart.org/IFC2X3_TC1/def/Stair-THREE_QUARTER_TURN_STAIR> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://ifcowl.openbimstandards.org/IFC2X3_TC1#THREE_QUARTER_TURN_STAIR> .
+<https://otl.buildingsmart.org/IFC2X3_TC1/def/Stair-THREE_QUARTER_TURN_STAIR> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://standards.buildingsmart.org/IFC/DEV/IFC2x3/TC1/OWL/#THREE_QUARTER_TURN_STAIR> .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Stair-THREE_QUARTER_TURN_STAIR> <http://www.w3.org/2004/02/skos/core#prefLabel> "Stair THREE QUARTER TURN STAIR"@en .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Stair-HALF_WINDING_STAIR> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Stair-HALF_WINDING_STAIR> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://otl.buildingsmart.org/IFC2X3_TC1/def/Stair> .
-<https://otl.buildingsmart.org/IFC2X3_TC1/def/Stair-HALF_WINDING_STAIR> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://ifcowl.openbimstandards.org/IFC2X3_TC1#HALF_WINDING_STAIR> .
+<https://otl.buildingsmart.org/IFC2X3_TC1/def/Stair-HALF_WINDING_STAIR> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://standards.buildingsmart.org/IFC/DEV/IFC2x3/TC1/OWL/#HALF_WINDING_STAIR> .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Stair-HALF_WINDING_STAIR> <http://www.w3.org/2004/02/skos/core#prefLabel> "Stair HALF WINDING STAIR"@en .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Stair-DOUBLE_RETURN_STAIR> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Stair-DOUBLE_RETURN_STAIR> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://otl.buildingsmart.org/IFC2X3_TC1/def/Stair> .
-<https://otl.buildingsmart.org/IFC2X3_TC1/def/Stair-DOUBLE_RETURN_STAIR> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://ifcowl.openbimstandards.org/IFC2X3_TC1#DOUBLE_RETURN_STAIR> .
+<https://otl.buildingsmart.org/IFC2X3_TC1/def/Stair-DOUBLE_RETURN_STAIR> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://standards.buildingsmart.org/IFC/DEV/IFC2x3/TC1/OWL/#DOUBLE_RETURN_STAIR> .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Stair-DOUBLE_RETURN_STAIR> <http://www.w3.org/2004/02/skos/core#prefLabel> "Stair DOUBLE RETURN STAIR"@en .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Stair-QUARTER_WINDING_STAIR> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Stair-QUARTER_WINDING_STAIR> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://otl.buildingsmart.org/IFC2X3_TC1/def/Stair> .
-<https://otl.buildingsmart.org/IFC2X3_TC1/def/Stair-QUARTER_WINDING_STAIR> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://ifcowl.openbimstandards.org/IFC2X3_TC1#QUARTER_WINDING_STAIR> .
+<https://otl.buildingsmart.org/IFC2X3_TC1/def/Stair-QUARTER_WINDING_STAIR> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://standards.buildingsmart.org/IFC/DEV/IFC2x3/TC1/OWL/#QUARTER_WINDING_STAIR> .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Stair-QUARTER_WINDING_STAIR> <http://www.w3.org/2004/02/skos/core#prefLabel> "Stair QUARTER WINDING STAIR"@en .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Stair-SPIRAL_STAIR> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Stair-SPIRAL_STAIR> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://otl.buildingsmart.org/IFC2X3_TC1/def/Stair> .
-<https://otl.buildingsmart.org/IFC2X3_TC1/def/Stair-SPIRAL_STAIR> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://ifcowl.openbimstandards.org/IFC2X3_TC1#SPIRAL_STAIR> .
+<https://otl.buildingsmart.org/IFC2X3_TC1/def/Stair-SPIRAL_STAIR> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://standards.buildingsmart.org/IFC/DEV/IFC2x3/TC1/OWL/#SPIRAL_STAIR> .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Stair-SPIRAL_STAIR> <http://www.w3.org/2004/02/skos/core#prefLabel> "Stair SPIRAL STAIR"@en .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Stair-TWO_STRAIGHT_RUN_STAIR> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Stair-TWO_STRAIGHT_RUN_STAIR> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://otl.buildingsmart.org/IFC2X3_TC1/def/Stair> .
-<https://otl.buildingsmart.org/IFC2X3_TC1/def/Stair-TWO_STRAIGHT_RUN_STAIR> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://ifcowl.openbimstandards.org/IFC2X3_TC1#TWO_STRAIGHT_RUN_STAIR> .
+<https://otl.buildingsmart.org/IFC2X3_TC1/def/Stair-TWO_STRAIGHT_RUN_STAIR> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://standards.buildingsmart.org/IFC/DEV/IFC2x3/TC1/OWL/#TWO_STRAIGHT_RUN_STAIR> .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Stair-TWO_STRAIGHT_RUN_STAIR> <http://www.w3.org/2004/02/skos/core#prefLabel> "Stair TWO STRAIGHT RUN STAIR"@en .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Stair-TWO_QUARTER_WINDING_STAIR> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Stair-TWO_QUARTER_WINDING_STAIR> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://otl.buildingsmart.org/IFC2X3_TC1/def/Stair> .
-<https://otl.buildingsmart.org/IFC2X3_TC1/def/Stair-TWO_QUARTER_WINDING_STAIR> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://ifcowl.openbimstandards.org/IFC2X3_TC1#TWO_QUARTER_WINDING_STAIR> .
+<https://otl.buildingsmart.org/IFC2X3_TC1/def/Stair-TWO_QUARTER_WINDING_STAIR> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://standards.buildingsmart.org/IFC/DEV/IFC2x3/TC1/OWL/#TWO_QUARTER_WINDING_STAIR> .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Stair-TWO_QUARTER_WINDING_STAIR> <http://www.w3.org/2004/02/skos/core#prefLabel> "Stair TWO QUARTER WINDING STAIR"@en .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Stair-THREE_QUARTER_WINDING_STAIR> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Stair-THREE_QUARTER_WINDING_STAIR> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://otl.buildingsmart.org/IFC2X3_TC1/def/Stair> .
-<https://otl.buildingsmart.org/IFC2X3_TC1/def/Stair-THREE_QUARTER_WINDING_STAIR> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://ifcowl.openbimstandards.org/IFC2X3_TC1#THREE_QUARTER_WINDING_STAIR> .
+<https://otl.buildingsmart.org/IFC2X3_TC1/def/Stair-THREE_QUARTER_WINDING_STAIR> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://standards.buildingsmart.org/IFC/DEV/IFC2x3/TC1/OWL/#THREE_QUARTER_WINDING_STAIR> .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Stair-THREE_QUARTER_WINDING_STAIR> <http://www.w3.org/2004/02/skos/core#prefLabel> "Stair THREE QUARTER WINDING STAIR"@en .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Ramp-TWO_QUARTER_TURN_RAMP> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Ramp-TWO_QUARTER_TURN_RAMP> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://otl.buildingsmart.org/IFC2X3_TC1/def/Ramp> .
-<https://otl.buildingsmart.org/IFC2X3_TC1/def/Ramp-TWO_QUARTER_TURN_RAMP> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://ifcowl.openbimstandards.org/IFC2X3_TC1#TWO_QUARTER_TURN_RAMP> .
+<https://otl.buildingsmart.org/IFC2X3_TC1/def/Ramp-TWO_QUARTER_TURN_RAMP> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://standards.buildingsmart.org/IFC/DEV/IFC2x3/TC1/OWL/#TWO_QUARTER_TURN_RAMP> .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Ramp-TWO_QUARTER_TURN_RAMP> <http://www.w3.org/2004/02/skos/core#prefLabel> "Ramp TWO QUARTER TURN RAMP"@en .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Ramp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Ramp> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/nen2660/term#DiscreteObject> .
-<https://otl.buildingsmart.org/IFC2X3_TC1/def/Ramp> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://ifcowl.openbimstandards.org/IFC2X3_TC1#IfcRamp> .
+<https://otl.buildingsmart.org/IFC2X3_TC1/def/Ramp> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://standards.buildingsmart.org/IFC/DEV/IFC2x3/TC1/OWL/#IfcRamp> .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Ramp> <http://www.w3.org/2004/02/skos/core#prefLabel> "Ramp"@en .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Ramp-QUARTER_TURN_RAMP> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Ramp-QUARTER_TURN_RAMP> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://otl.buildingsmart.org/IFC2X3_TC1/def/Ramp> .
-<https://otl.buildingsmart.org/IFC2X3_TC1/def/Ramp-QUARTER_TURN_RAMP> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://ifcowl.openbimstandards.org/IFC2X3_TC1#QUARTER_TURN_RAMP> .
+<https://otl.buildingsmart.org/IFC2X3_TC1/def/Ramp-QUARTER_TURN_RAMP> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://standards.buildingsmart.org/IFC/DEV/IFC2x3/TC1/OWL/#QUARTER_TURN_RAMP> .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Ramp-QUARTER_TURN_RAMP> <http://www.w3.org/2004/02/skos/core#prefLabel> "Ramp QUARTER TURN RAMP"@en .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Ramp-HALF_TURN_RAMP> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Ramp-HALF_TURN_RAMP> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://otl.buildingsmart.org/IFC2X3_TC1/def/Ramp> .
-<https://otl.buildingsmart.org/IFC2X3_TC1/def/Ramp-HALF_TURN_RAMP> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://ifcowl.openbimstandards.org/IFC2X3_TC1#HALF_TURN_RAMP> .
+<https://otl.buildingsmart.org/IFC2X3_TC1/def/Ramp-HALF_TURN_RAMP> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://standards.buildingsmart.org/IFC/DEV/IFC2x3/TC1/OWL/#HALF_TURN_RAMP> .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Ramp-HALF_TURN_RAMP> <http://www.w3.org/2004/02/skos/core#prefLabel> "Ramp HALF TURN RAMP"@en .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Ramp-SPIRAL_RAMP> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Ramp-SPIRAL_RAMP> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://otl.buildingsmart.org/IFC2X3_TC1/def/Ramp> .
-<https://otl.buildingsmart.org/IFC2X3_TC1/def/Ramp-SPIRAL_RAMP> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://ifcowl.openbimstandards.org/IFC2X3_TC1#SPIRAL_RAMP> .
+<https://otl.buildingsmart.org/IFC2X3_TC1/def/Ramp-SPIRAL_RAMP> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://standards.buildingsmart.org/IFC/DEV/IFC2x3/TC1/OWL/#SPIRAL_RAMP> .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Ramp-SPIRAL_RAMP> <http://www.w3.org/2004/02/skos/core#prefLabel> "Ramp SPIRAL RAMP"@en .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Ramp-TWO_STRAIGHT_RUN_RAMP> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Ramp-TWO_STRAIGHT_RUN_RAMP> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://otl.buildingsmart.org/IFC2X3_TC1/def/Ramp> .
-<https://otl.buildingsmart.org/IFC2X3_TC1/def/Ramp-TWO_STRAIGHT_RUN_RAMP> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://ifcowl.openbimstandards.org/IFC2X3_TC1#TWO_STRAIGHT_RUN_RAMP> .
+<https://otl.buildingsmart.org/IFC2X3_TC1/def/Ramp-TWO_STRAIGHT_RUN_RAMP> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://standards.buildingsmart.org/IFC/DEV/IFC2x3/TC1/OWL/#TWO_STRAIGHT_RUN_RAMP> .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Ramp-TWO_STRAIGHT_RUN_RAMP> <http://www.w3.org/2004/02/skos/core#prefLabel> "Ramp TWO STRAIGHT RUN RAMP"@en .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Ramp-STRAIGHT_RUN_RAMP> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Ramp-STRAIGHT_RUN_RAMP> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://otl.buildingsmart.org/IFC2X3_TC1/def/Ramp> .
-<https://otl.buildingsmart.org/IFC2X3_TC1/def/Ramp-STRAIGHT_RUN_RAMP> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://ifcowl.openbimstandards.org/IFC2X3_TC1#STRAIGHT_RUN_RAMP> .
+<https://otl.buildingsmart.org/IFC2X3_TC1/def/Ramp-STRAIGHT_RUN_RAMP> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://standards.buildingsmart.org/IFC/DEV/IFC2x3/TC1/OWL/#STRAIGHT_RUN_RAMP> .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Ramp-STRAIGHT_RUN_RAMP> <http://www.w3.org/2004/02/skos/core#prefLabel> "Ramp STRAIGHT RUN RAMP"@en .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Footing-PAD_FOOTING> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Footing-PAD_FOOTING> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://otl.buildingsmart.org/IFC2X3_TC1/def/Footing> .
-<https://otl.buildingsmart.org/IFC2X3_TC1/def/Footing-PAD_FOOTING> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://ifcowl.openbimstandards.org/IFC2X3_TC1#PAD_FOOTING> .
+<https://otl.buildingsmart.org/IFC2X3_TC1/def/Footing-PAD_FOOTING> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://standards.buildingsmart.org/IFC/DEV/IFC2x3/TC1/OWL/#PAD_FOOTING> .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Footing-PAD_FOOTING> <http://www.w3.org/2004/02/skos/core#prefLabel> "Footing PAD FOOTING"@en .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Footing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Footing> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/nen2660/term#DiscreteObject> .
-<https://otl.buildingsmart.org/IFC2X3_TC1/def/Footing> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://ifcowl.openbimstandards.org/IFC2X3_TC1#IfcFooting> .
+<https://otl.buildingsmart.org/IFC2X3_TC1/def/Footing> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://standards.buildingsmart.org/IFC/DEV/IFC2x3/TC1/OWL/#IfcFooting> .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Footing> <http://www.w3.org/2004/02/skos/core#prefLabel> "Footing"@en .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Footing-STRIP_FOOTING> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Footing-STRIP_FOOTING> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://otl.buildingsmart.org/IFC2X3_TC1/def/Footing> .
-<https://otl.buildingsmart.org/IFC2X3_TC1/def/Footing-STRIP_FOOTING> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://ifcowl.openbimstandards.org/IFC2X3_TC1#STRIP_FOOTING> .
+<https://otl.buildingsmart.org/IFC2X3_TC1/def/Footing-STRIP_FOOTING> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://standards.buildingsmart.org/IFC/DEV/IFC2x3/TC1/OWL/#STRIP_FOOTING> .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Footing-STRIP_FOOTING> <http://www.w3.org/2004/02/skos/core#prefLabel> "Footing STRIP FOOTING"@en .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Footing-PILE_CAP> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Footing-PILE_CAP> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://otl.buildingsmart.org/IFC2X3_TC1/def/Footing> .
-<https://otl.buildingsmart.org/IFC2X3_TC1/def/Footing-PILE_CAP> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://ifcowl.openbimstandards.org/IFC2X3_TC1#PILE_CAP> .
+<https://otl.buildingsmart.org/IFC2X3_TC1/def/Footing-PILE_CAP> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://standards.buildingsmart.org/IFC/DEV/IFC2x3/TC1/OWL/#PILE_CAP> .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Footing-PILE_CAP> <http://www.w3.org/2004/02/skos/core#prefLabel> "Footing PILE CAP"@en .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Footing-FOOTING_BEAM> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Footing-FOOTING_BEAM> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://otl.buildingsmart.org/IFC2X3_TC1/def/Footing> .
-<https://otl.buildingsmart.org/IFC2X3_TC1/def/Footing-FOOTING_BEAM> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://ifcowl.openbimstandards.org/IFC2X3_TC1#FOOTING_BEAM> .
+<https://otl.buildingsmart.org/IFC2X3_TC1/def/Footing-FOOTING_BEAM> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://standards.buildingsmart.org/IFC/DEV/IFC2x3/TC1/OWL/#FOOTING_BEAM> .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Footing-FOOTING_BEAM> <http://www.w3.org/2004/02/skos/core#prefLabel> "Footing FOOTING BEAM"@en .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Railing-GUARDRAIL> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Railing-GUARDRAIL> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://otl.buildingsmart.org/IFC2X3_TC1/def/Railing> .
-<https://otl.buildingsmart.org/IFC2X3_TC1/def/Railing-GUARDRAIL> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://ifcowl.openbimstandards.org/IFC2X3_TC1#GUARDRAIL> .
+<https://otl.buildingsmart.org/IFC2X3_TC1/def/Railing-GUARDRAIL> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://standards.buildingsmart.org/IFC/DEV/IFC2x3/TC1/OWL/#GUARDRAIL> .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Railing-GUARDRAIL> <http://www.w3.org/2004/02/skos/core#prefLabel> "Railing GUARDRAIL"@en .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Railing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Railing> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/nen2660/term#DiscreteObject> .
-<https://otl.buildingsmart.org/IFC2X3_TC1/def/Railing> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://ifcowl.openbimstandards.org/IFC2X3_TC1#IfcRailing> .
+<https://otl.buildingsmart.org/IFC2X3_TC1/def/Railing> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://standards.buildingsmart.org/IFC/DEV/IFC2x3/TC1/OWL/#IfcRailing> .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Railing> <http://www.w3.org/2004/02/skos/core#prefLabel> "Railing"@en .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Railing-HANDRAIL> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Railing-HANDRAIL> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://otl.buildingsmart.org/IFC2X3_TC1/def/Railing> .
-<https://otl.buildingsmart.org/IFC2X3_TC1/def/Railing-HANDRAIL> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://ifcowl.openbimstandards.org/IFC2X3_TC1#HANDRAIL> .
+<https://otl.buildingsmart.org/IFC2X3_TC1/def/Railing-HANDRAIL> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://standards.buildingsmart.org/IFC/DEV/IFC2x3/TC1/OWL/#HANDRAIL> .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Railing-HANDRAIL> <http://www.w3.org/2004/02/skos/core#prefLabel> "Railing HANDRAIL"@en .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Railing-BALUSTRADE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Railing-BALUSTRADE> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://otl.buildingsmart.org/IFC2X3_TC1/def/Railing> .
-<https://otl.buildingsmart.org/IFC2X3_TC1/def/Railing-BALUSTRADE> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://ifcowl.openbimstandards.org/IFC2X3_TC1#BALUSTRADE> .
+<https://otl.buildingsmart.org/IFC2X3_TC1/def/Railing-BALUSTRADE> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://standards.buildingsmart.org/IFC/DEV/IFC2x3/TC1/OWL/#BALUSTRADE> .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Railing-BALUSTRADE> <http://www.w3.org/2004/02/skos/core#prefLabel> "Railing BALUSTRADE"@en .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Pile-CAST_IN_PLACE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Pile-CAST_IN_PLACE> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://otl.buildingsmart.org/IFC2X3_TC1/def/Pile> .
-<https://otl.buildingsmart.org/IFC2X3_TC1/def/Pile-CAST_IN_PLACE> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://ifcowl.openbimstandards.org/IFC2X3_TC1#CAST_IN_PLACE> .
+<https://otl.buildingsmart.org/IFC2X3_TC1/def/Pile-CAST_IN_PLACE> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://standards.buildingsmart.org/IFC/DEV/IFC2x3/TC1/OWL/#CAST_IN_PLACE> .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Pile-CAST_IN_PLACE> <http://www.w3.org/2004/02/skos/core#prefLabel> "Pile CAST IN PLACE"@en .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Pile> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Pile> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/nen2660/term#DiscreteObject> .
-<https://otl.buildingsmart.org/IFC2X3_TC1/def/Pile> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://ifcowl.openbimstandards.org/IFC2X3_TC1#IfcPile> .
+<https://otl.buildingsmart.org/IFC2X3_TC1/def/Pile> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://standards.buildingsmart.org/IFC/DEV/IFC2x3/TC1/OWL/#IfcPile> .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Pile> <http://www.w3.org/2004/02/skos/core#prefLabel> "Pile"@en .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Pile-PRECAST_CONCRETE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Pile-PRECAST_CONCRETE> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://otl.buildingsmart.org/IFC2X3_TC1/def/Pile> .
-<https://otl.buildingsmart.org/IFC2X3_TC1/def/Pile-PRECAST_CONCRETE> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://ifcowl.openbimstandards.org/IFC2X3_TC1#PRECAST_CONCRETE> .
+<https://otl.buildingsmart.org/IFC2X3_TC1/def/Pile-PRECAST_CONCRETE> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://standards.buildingsmart.org/IFC/DEV/IFC2x3/TC1/OWL/#PRECAST_CONCRETE> .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Pile-PRECAST_CONCRETE> <http://www.w3.org/2004/02/skos/core#prefLabel> "Pile PRECAST CONCRETE"@en .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Pile-COMPOSITE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Pile-COMPOSITE> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://otl.buildingsmart.org/IFC2X3_TC1/def/Pile> .
-<https://otl.buildingsmart.org/IFC2X3_TC1/def/Pile-COMPOSITE> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://ifcowl.openbimstandards.org/IFC2X3_TC1#COMPOSITE> .
+<https://otl.buildingsmart.org/IFC2X3_TC1/def/Pile-COMPOSITE> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://standards.buildingsmart.org/IFC/DEV/IFC2x3/TC1/OWL/#COMPOSITE> .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Pile-COMPOSITE> <http://www.w3.org/2004/02/skos/core#prefLabel> "Pile COMPOSITE"@en .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Pile-PREFAB_STEEL> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Pile-PREFAB_STEEL> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://otl.buildingsmart.org/IFC2X3_TC1/def/Pile> .
-<https://otl.buildingsmart.org/IFC2X3_TC1/def/Pile-PREFAB_STEEL> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://ifcowl.openbimstandards.org/IFC2X3_TC1#PREFAB_STEEL> .
+<https://otl.buildingsmart.org/IFC2X3_TC1/def/Pile-PREFAB_STEEL> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://standards.buildingsmart.org/IFC/DEV/IFC2x3/TC1/OWL/#PREFAB_STEEL> .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Pile-PREFAB_STEEL> <http://www.w3.org/2004/02/skos/core#prefLabel> "Pile PREFAB STEEL"@en .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Pile-FRICTION> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Pile-FRICTION> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://otl.buildingsmart.org/IFC2X3_TC1/def/Pile> .
-<https://otl.buildingsmart.org/IFC2X3_TC1/def/Pile-FRICTION> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://ifcowl.openbimstandards.org/IFC2X3_TC1#FRICTION> .
+<https://otl.buildingsmart.org/IFC2X3_TC1/def/Pile-FRICTION> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://standards.buildingsmart.org/IFC/DEV/IFC2x3/TC1/OWL/#FRICTION> .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Pile-FRICTION> <http://www.w3.org/2004/02/skos/core#prefLabel> "Pile FRICTION"@en .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Pile-COHESION> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Pile-COHESION> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://otl.buildingsmart.org/IFC2X3_TC1/def/Pile> .
-<https://otl.buildingsmart.org/IFC2X3_TC1/def/Pile-COHESION> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://ifcowl.openbimstandards.org/IFC2X3_TC1#COHESION> .
+<https://otl.buildingsmart.org/IFC2X3_TC1/def/Pile-COHESION> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://standards.buildingsmart.org/IFC/DEV/IFC2x3/TC1/OWL/#COHESION> .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Pile-COHESION> <http://www.w3.org/2004/02/skos/core#prefLabel> "Pile COHESION"@en .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Pile-SUPPORT> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Pile-SUPPORT> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://otl.buildingsmart.org/IFC2X3_TC1/def/Pile> .
-<https://otl.buildingsmart.org/IFC2X3_TC1/def/Pile-SUPPORT> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://ifcowl.openbimstandards.org/IFC2X3_TC1#SUPPORT> .
+<https://otl.buildingsmart.org/IFC2X3_TC1/def/Pile-SUPPORT> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://standards.buildingsmart.org/IFC/DEV/IFC2x3/TC1/OWL/#SUPPORT> .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Pile-SUPPORT> <http://www.w3.org/2004/02/skos/core#prefLabel> "Pile SUPPORT"@en .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Roof-GAMBREL_ROOF> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Roof-GAMBREL_ROOF> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://otl.buildingsmart.org/IFC2X3_TC1/def/Roof> .
-<https://otl.buildingsmart.org/IFC2X3_TC1/def/Roof-GAMBREL_ROOF> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://ifcowl.openbimstandards.org/IFC2X3_TC1#GAMBREL_ROOF> .
+<https://otl.buildingsmart.org/IFC2X3_TC1/def/Roof-GAMBREL_ROOF> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://standards.buildingsmart.org/IFC/DEV/IFC2x3/TC1/OWL/#GAMBREL_ROOF> .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Roof-GAMBREL_ROOF> <http://www.w3.org/2004/02/skos/core#prefLabel> "Roof GAMBREL ROOF"@en .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Roof> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Roof> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/nen2660/term#DiscreteObject> .
-<https://otl.buildingsmart.org/IFC2X3_TC1/def/Roof> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://ifcowl.openbimstandards.org/IFC2X3_TC1#IfcRoof> .
+<https://otl.buildingsmart.org/IFC2X3_TC1/def/Roof> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://standards.buildingsmart.org/IFC/DEV/IFC2x3/TC1/OWL/#IfcRoof> .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Roof> <http://www.w3.org/2004/02/skos/core#prefLabel> "Roof"@en .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Roof-HIP_ROOF> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Roof-HIP_ROOF> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://otl.buildingsmart.org/IFC2X3_TC1/def/Roof> .
-<https://otl.buildingsmart.org/IFC2X3_TC1/def/Roof-HIP_ROOF> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://ifcowl.openbimstandards.org/IFC2X3_TC1#HIP_ROOF> .
+<https://otl.buildingsmart.org/IFC2X3_TC1/def/Roof-HIP_ROOF> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://standards.buildingsmart.org/IFC/DEV/IFC2x3/TC1/OWL/#HIP_ROOF> .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Roof-HIP_ROOF> <http://www.w3.org/2004/02/skos/core#prefLabel> "Roof HIP ROOF"@en .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Roof-HIPPED_GABLE_ROOF> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Roof-HIPPED_GABLE_ROOF> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://otl.buildingsmart.org/IFC2X3_TC1/def/Roof> .
-<https://otl.buildingsmart.org/IFC2X3_TC1/def/Roof-HIPPED_GABLE_ROOF> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://ifcowl.openbimstandards.org/IFC2X3_TC1#HIPPED_GABLE_ROOF> .
+<https://otl.buildingsmart.org/IFC2X3_TC1/def/Roof-HIPPED_GABLE_ROOF> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://standards.buildingsmart.org/IFC/DEV/IFC2x3/TC1/OWL/#HIPPED_GABLE_ROOF> .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Roof-HIPPED_GABLE_ROOF> <http://www.w3.org/2004/02/skos/core#prefLabel> "Roof HIPPED GABLE ROOF"@en .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Roof-FLAT_ROOF> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Roof-FLAT_ROOF> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://otl.buildingsmart.org/IFC2X3_TC1/def/Roof> .
-<https://otl.buildingsmart.org/IFC2X3_TC1/def/Roof-FLAT_ROOF> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://ifcowl.openbimstandards.org/IFC2X3_TC1#FLAT_ROOF> .
+<https://otl.buildingsmart.org/IFC2X3_TC1/def/Roof-FLAT_ROOF> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://standards.buildingsmart.org/IFC/DEV/IFC2x3/TC1/OWL/#FLAT_ROOF> .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Roof-FLAT_ROOF> <http://www.w3.org/2004/02/skos/core#prefLabel> "Roof FLAT ROOF"@en .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Roof-PAVILION_ROOF> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Roof-PAVILION_ROOF> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://otl.buildingsmart.org/IFC2X3_TC1/def/Roof> .
-<https://otl.buildingsmart.org/IFC2X3_TC1/def/Roof-PAVILION_ROOF> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://ifcowl.openbimstandards.org/IFC2X3_TC1#PAVILION_ROOF> .
+<https://otl.buildingsmart.org/IFC2X3_TC1/def/Roof-PAVILION_ROOF> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://standards.buildingsmart.org/IFC/DEV/IFC2x3/TC1/OWL/#PAVILION_ROOF> .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Roof-PAVILION_ROOF> <http://www.w3.org/2004/02/skos/core#prefLabel> "Roof PAVILION ROOF"@en .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Roof-DOME_ROOF> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Roof-DOME_ROOF> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://otl.buildingsmart.org/IFC2X3_TC1/def/Roof> .
-<https://otl.buildingsmart.org/IFC2X3_TC1/def/Roof-DOME_ROOF> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://ifcowl.openbimstandards.org/IFC2X3_TC1#DOME_ROOF> .
+<https://otl.buildingsmart.org/IFC2X3_TC1/def/Roof-DOME_ROOF> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://standards.buildingsmart.org/IFC/DEV/IFC2x3/TC1/OWL/#DOME_ROOF> .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Roof-DOME_ROOF> <http://www.w3.org/2004/02/skos/core#prefLabel> "Roof DOME ROOF"@en .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Roof-MANSARD_ROOF> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Roof-MANSARD_ROOF> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://otl.buildingsmart.org/IFC2X3_TC1/def/Roof> .
-<https://otl.buildingsmart.org/IFC2X3_TC1/def/Roof-MANSARD_ROOF> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://ifcowl.openbimstandards.org/IFC2X3_TC1#MANSARD_ROOF> .
+<https://otl.buildingsmart.org/IFC2X3_TC1/def/Roof-MANSARD_ROOF> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://standards.buildingsmart.org/IFC/DEV/IFC2x3/TC1/OWL/#MANSARD_ROOF> .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Roof-MANSARD_ROOF> <http://www.w3.org/2004/02/skos/core#prefLabel> "Roof MANSARD ROOF"@en .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Roof-BUTTERFLY_ROOF> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Roof-BUTTERFLY_ROOF> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://otl.buildingsmart.org/IFC2X3_TC1/def/Roof> .
-<https://otl.buildingsmart.org/IFC2X3_TC1/def/Roof-BUTTERFLY_ROOF> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://ifcowl.openbimstandards.org/IFC2X3_TC1#BUTTERFLY_ROOF> .
+<https://otl.buildingsmart.org/IFC2X3_TC1/def/Roof-BUTTERFLY_ROOF> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://standards.buildingsmart.org/IFC/DEV/IFC2x3/TC1/OWL/#BUTTERFLY_ROOF> .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Roof-BUTTERFLY_ROOF> <http://www.w3.org/2004/02/skos/core#prefLabel> "Roof BUTTERFLY ROOF"@en .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Roof-FREEFORM> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Roof-FREEFORM> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://otl.buildingsmart.org/IFC2X3_TC1/def/Roof> .
-<https://otl.buildingsmart.org/IFC2X3_TC1/def/Roof-FREEFORM> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://ifcowl.openbimstandards.org/IFC2X3_TC1#FREEFORM> .
+<https://otl.buildingsmart.org/IFC2X3_TC1/def/Roof-FREEFORM> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://standards.buildingsmart.org/IFC/DEV/IFC2x3/TC1/OWL/#FREEFORM> .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Roof-FREEFORM> <http://www.w3.org/2004/02/skos/core#prefLabel> "Roof FREEFORM"@en .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Roof-GABLE_ROOF> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Roof-GABLE_ROOF> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://otl.buildingsmart.org/IFC2X3_TC1/def/Roof> .
-<https://otl.buildingsmart.org/IFC2X3_TC1/def/Roof-GABLE_ROOF> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://ifcowl.openbimstandards.org/IFC2X3_TC1#GABLE_ROOF> .
+<https://otl.buildingsmart.org/IFC2X3_TC1/def/Roof-GABLE_ROOF> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://standards.buildingsmart.org/IFC/DEV/IFC2x3/TC1/OWL/#GABLE_ROOF> .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Roof-GABLE_ROOF> <http://www.w3.org/2004/02/skos/core#prefLabel> "Roof GABLE ROOF"@en .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Roof-SHED_ROOF> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Roof-SHED_ROOF> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://otl.buildingsmart.org/IFC2X3_TC1/def/Roof> .
-<https://otl.buildingsmart.org/IFC2X3_TC1/def/Roof-SHED_ROOF> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://ifcowl.openbimstandards.org/IFC2X3_TC1#SHED_ROOF> .
+<https://otl.buildingsmart.org/IFC2X3_TC1/def/Roof-SHED_ROOF> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://standards.buildingsmart.org/IFC/DEV/IFC2x3/TC1/OWL/#SHED_ROOF> .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Roof-SHED_ROOF> <http://www.w3.org/2004/02/skos/core#prefLabel> "Roof SHED ROOF"@en .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Roof-BARREL_ROOF> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Roof-BARREL_ROOF> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://otl.buildingsmart.org/IFC2X3_TC1/def/Roof> .
-<https://otl.buildingsmart.org/IFC2X3_TC1/def/Roof-BARREL_ROOF> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://ifcowl.openbimstandards.org/IFC2X3_TC1#BARREL_ROOF> .
+<https://otl.buildingsmart.org/IFC2X3_TC1/def/Roof-BARREL_ROOF> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://standards.buildingsmart.org/IFC/DEV/IFC2x3/TC1/OWL/#BARREL_ROOF> .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Roof-BARREL_ROOF> <http://www.w3.org/2004/02/skos/core#prefLabel> "Roof BARREL ROOF"@en .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Roof-RAINBOW_ROOF> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Roof-RAINBOW_ROOF> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://otl.buildingsmart.org/IFC2X3_TC1/def/Roof> .
-<https://otl.buildingsmart.org/IFC2X3_TC1/def/Roof-RAINBOW_ROOF> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://ifcowl.openbimstandards.org/IFC2X3_TC1#RAINBOW_ROOF> .
+<https://otl.buildingsmart.org/IFC2X3_TC1/def/Roof-RAINBOW_ROOF> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://standards.buildingsmart.org/IFC/DEV/IFC2x3/TC1/OWL/#RAINBOW_ROOF> .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Roof-RAINBOW_ROOF> <http://www.w3.org/2004/02/skos/core#prefLabel> "Roof RAINBOW ROOF"@en .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Covering-CLADDING> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Covering-CLADDING> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://otl.buildingsmart.org/IFC2X3_TC1/def/Covering> .
-<https://otl.buildingsmart.org/IFC2X3_TC1/def/Covering-CLADDING> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://ifcowl.openbimstandards.org/IFC2X3_TC1#CLADDING> .
+<https://otl.buildingsmart.org/IFC2X3_TC1/def/Covering-CLADDING> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://standards.buildingsmart.org/IFC/DEV/IFC2x3/TC1/OWL/#CLADDING> .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Covering-CLADDING> <http://www.w3.org/2004/02/skos/core#prefLabel> "Covering CLADDING"@en .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Covering> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Covering> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/nen2660/term#DiscreteObject> .
-<https://otl.buildingsmart.org/IFC2X3_TC1/def/Covering> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://ifcowl.openbimstandards.org/IFC2X3_TC1#IfcCovering> .
+<https://otl.buildingsmart.org/IFC2X3_TC1/def/Covering> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://standards.buildingsmart.org/IFC/DEV/IFC2x3/TC1/OWL/#IfcCovering> .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Covering> <http://www.w3.org/2004/02/skos/core#prefLabel> "Covering"@en .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Covering-SLEEVING> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Covering-SLEEVING> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://otl.buildingsmart.org/IFC2X3_TC1/def/Covering> .
-<https://otl.buildingsmart.org/IFC2X3_TC1/def/Covering-SLEEVING> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://ifcowl.openbimstandards.org/IFC2X3_TC1#SLEEVING> .
+<https://otl.buildingsmart.org/IFC2X3_TC1/def/Covering-SLEEVING> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://standards.buildingsmart.org/IFC/DEV/IFC2x3/TC1/OWL/#SLEEVING> .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Covering-SLEEVING> <http://www.w3.org/2004/02/skos/core#prefLabel> "Covering SLEEVING"@en .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Covering-CEILING> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Covering-CEILING> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://otl.buildingsmart.org/IFC2X3_TC1/def/Covering> .
-<https://otl.buildingsmart.org/IFC2X3_TC1/def/Covering-CEILING> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://ifcowl.openbimstandards.org/IFC2X3_TC1#CEILING> .
+<https://otl.buildingsmart.org/IFC2X3_TC1/def/Covering-CEILING> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://standards.buildingsmart.org/IFC/DEV/IFC2x3/TC1/OWL/#CEILING> .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Covering-CEILING> <http://www.w3.org/2004/02/skos/core#prefLabel> "Covering CEILING"@en .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Covering-WRAPPING> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Covering-WRAPPING> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://otl.buildingsmart.org/IFC2X3_TC1/def/Covering> .
-<https://otl.buildingsmart.org/IFC2X3_TC1/def/Covering-WRAPPING> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://ifcowl.openbimstandards.org/IFC2X3_TC1#WRAPPING> .
+<https://otl.buildingsmart.org/IFC2X3_TC1/def/Covering-WRAPPING> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://standards.buildingsmart.org/IFC/DEV/IFC2x3/TC1/OWL/#WRAPPING> .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Covering-WRAPPING> <http://www.w3.org/2004/02/skos/core#prefLabel> "Covering WRAPPING"@en .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Covering-MEMBRANE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Covering-MEMBRANE> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://otl.buildingsmart.org/IFC2X3_TC1/def/Covering> .
-<https://otl.buildingsmart.org/IFC2X3_TC1/def/Covering-MEMBRANE> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://ifcowl.openbimstandards.org/IFC2X3_TC1#MEMBRANE> .
+<https://otl.buildingsmart.org/IFC2X3_TC1/def/Covering-MEMBRANE> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://standards.buildingsmart.org/IFC/DEV/IFC2x3/TC1/OWL/#MEMBRANE> .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Covering-MEMBRANE> <http://www.w3.org/2004/02/skos/core#prefLabel> "Covering MEMBRANE"@en .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Covering-INSULATION> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Covering-INSULATION> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://otl.buildingsmart.org/IFC2X3_TC1/def/Covering> .
-<https://otl.buildingsmart.org/IFC2X3_TC1/def/Covering-INSULATION> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://ifcowl.openbimstandards.org/IFC2X3_TC1#INSULATION> .
+<https://otl.buildingsmart.org/IFC2X3_TC1/def/Covering-INSULATION> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://standards.buildingsmart.org/IFC/DEV/IFC2x3/TC1/OWL/#INSULATION> .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Covering-INSULATION> <http://www.w3.org/2004/02/skos/core#prefLabel> "Covering INSULATION"@en .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Covering-FLOORING> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Covering-FLOORING> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://otl.buildingsmart.org/IFC2X3_TC1/def/Covering> .
-<https://otl.buildingsmart.org/IFC2X3_TC1/def/Covering-FLOORING> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://ifcowl.openbimstandards.org/IFC2X3_TC1#FLOORING> .
+<https://otl.buildingsmart.org/IFC2X3_TC1/def/Covering-FLOORING> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://standards.buildingsmart.org/IFC/DEV/IFC2x3/TC1/OWL/#FLOORING> .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Covering-FLOORING> <http://www.w3.org/2004/02/skos/core#prefLabel> "Covering FLOORING"@en .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Covering-ROOFING> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Covering-ROOFING> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://otl.buildingsmart.org/IFC2X3_TC1/def/Covering> .
-<https://otl.buildingsmart.org/IFC2X3_TC1/def/Covering-ROOFING> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://ifcowl.openbimstandards.org/IFC2X3_TC1#ROOFING> .
+<https://otl.buildingsmart.org/IFC2X3_TC1/def/Covering-ROOFING> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://standards.buildingsmart.org/IFC/DEV/IFC2x3/TC1/OWL/#ROOFING> .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Covering-ROOFING> <http://www.w3.org/2004/02/skos/core#prefLabel> "Covering ROOFING"@en .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/BuildingElementProxy-PARTIAL> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/BuildingElementProxy-PARTIAL> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://otl.buildingsmart.org/IFC2X3_TC1/def/BuildingElementProxy> .
-<https://otl.buildingsmart.org/IFC2X3_TC1/def/BuildingElementProxy-PARTIAL> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://ifcowl.openbimstandards.org/IFC2X3_TC1#PARTIAL> .
+<https://otl.buildingsmart.org/IFC2X3_TC1/def/BuildingElementProxy-PARTIAL> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://standards.buildingsmart.org/IFC/DEV/IFC2x3/TC1/OWL/#PARTIAL> .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/BuildingElementProxy-PARTIAL> <http://www.w3.org/2004/02/skos/core#prefLabel> "Building Element Proxy PARTIAL"@en .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/BuildingElementProxy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/BuildingElementProxy> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/nen2660/term#DiscreteObject> .
-<https://otl.buildingsmart.org/IFC2X3_TC1/def/BuildingElementProxy> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://ifcowl.openbimstandards.org/IFC2X3_TC1#IfcBuildingElementProxy> .
+<https://otl.buildingsmart.org/IFC2X3_TC1/def/BuildingElementProxy> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://standards.buildingsmart.org/IFC/DEV/IFC2x3/TC1/OWL/#IfcBuildingElementProxy> .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/BuildingElementProxy> <http://www.w3.org/2004/02/skos/core#prefLabel> "Building Element Proxy"@en .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/BuildingElementProxy-ELEMENT> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/BuildingElementProxy-ELEMENT> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://otl.buildingsmart.org/IFC2X3_TC1/def/BuildingElementProxy> .
-<https://otl.buildingsmart.org/IFC2X3_TC1/def/BuildingElementProxy-ELEMENT> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://ifcowl.openbimstandards.org/IFC2X3_TC1#ELEMENT> .
+<https://otl.buildingsmart.org/IFC2X3_TC1/def/BuildingElementProxy-ELEMENT> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://standards.buildingsmart.org/IFC/DEV/IFC2x3/TC1/OWL/#ELEMENT> .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/BuildingElementProxy-ELEMENT> <http://www.w3.org/2004/02/skos/core#prefLabel> "Building Element Proxy ELEMENT"@en .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/BuildingElementProxy-COMPLEX> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/BuildingElementProxy-COMPLEX> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://otl.buildingsmart.org/IFC2X3_TC1/def/BuildingElementProxy> .
-<https://otl.buildingsmart.org/IFC2X3_TC1/def/BuildingElementProxy-COMPLEX> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://ifcowl.openbimstandards.org/IFC2X3_TC1#COMPLEX> .
+<https://otl.buildingsmart.org/IFC2X3_TC1/def/BuildingElementProxy-COMPLEX> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://standards.buildingsmart.org/IFC/DEV/IFC2x3/TC1/OWL/#COMPLEX> .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/BuildingElementProxy-COMPLEX> <http://www.w3.org/2004/02/skos/core#prefLabel> "Building Element Proxy COMPLEX"@en .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Tendon-WIRE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Tendon-WIRE> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://otl.buildingsmart.org/IFC2X3_TC1/def/Tendon> .
-<https://otl.buildingsmart.org/IFC2X3_TC1/def/Tendon-WIRE> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://ifcowl.openbimstandards.org/IFC2X3_TC1#WIRE> .
+<https://otl.buildingsmart.org/IFC2X3_TC1/def/Tendon-WIRE> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://standards.buildingsmart.org/IFC/DEV/IFC2x3/TC1/OWL/#WIRE> .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Tendon-WIRE> <http://www.w3.org/2004/02/skos/core#prefLabel> "Tendon WIRE"@en .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Tendon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Tendon> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/nen2660/term#DiscreteObject> .
-<https://otl.buildingsmart.org/IFC2X3_TC1/def/Tendon> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://ifcowl.openbimstandards.org/IFC2X3_TC1#IfcTendon> .
+<https://otl.buildingsmart.org/IFC2X3_TC1/def/Tendon> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://standards.buildingsmart.org/IFC/DEV/IFC2x3/TC1/OWL/#IfcTendon> .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Tendon> <http://www.w3.org/2004/02/skos/core#prefLabel> "Tendon"@en .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Tendon-COATED> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Tendon-COATED> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://otl.buildingsmart.org/IFC2X3_TC1/def/Tendon> .
-<https://otl.buildingsmart.org/IFC2X3_TC1/def/Tendon-COATED> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://ifcowl.openbimstandards.org/IFC2X3_TC1#COATED> .
+<https://otl.buildingsmart.org/IFC2X3_TC1/def/Tendon-COATED> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://standards.buildingsmart.org/IFC/DEV/IFC2x3/TC1/OWL/#COATED> .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Tendon-COATED> <http://www.w3.org/2004/02/skos/core#prefLabel> "Tendon COATED"@en .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Tendon-STRAND> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Tendon-STRAND> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://otl.buildingsmart.org/IFC2X3_TC1/def/Tendon> .
-<https://otl.buildingsmart.org/IFC2X3_TC1/def/Tendon-STRAND> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://ifcowl.openbimstandards.org/IFC2X3_TC1#STRAND> .
+<https://otl.buildingsmart.org/IFC2X3_TC1/def/Tendon-STRAND> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://standards.buildingsmart.org/IFC/DEV/IFC2x3/TC1/OWL/#STRAND> .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Tendon-STRAND> <http://www.w3.org/2004/02/skos/core#prefLabel> "Tendon STRAND"@en .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Tendon-BAR> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Tendon-BAR> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://otl.buildingsmart.org/IFC2X3_TC1/def/Tendon> .
-<https://otl.buildingsmart.org/IFC2X3_TC1/def/Tendon-BAR> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://ifcowl.openbimstandards.org/IFC2X3_TC1#BAR> .
+<https://otl.buildingsmart.org/IFC2X3_TC1/def/Tendon-BAR> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://standards.buildingsmart.org/IFC/DEV/IFC2x3/TC1/OWL/#BAR> .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/Tendon-BAR> <http://www.w3.org/2004/02/skos/core#prefLabel> "Tendon BAR"@en .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/ReinforcingBar-TEXTURED> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/ReinforcingBar-TEXTURED> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://otl.buildingsmart.org/IFC2X3_TC1/def/ReinforcingBar> .
-<https://otl.buildingsmart.org/IFC2X3_TC1/def/ReinforcingBar-TEXTURED> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://ifcowl.openbimstandards.org/IFC2X3_TC1#TEXTURED> .
+<https://otl.buildingsmart.org/IFC2X3_TC1/def/ReinforcingBar-TEXTURED> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://standards.buildingsmart.org/IFC/DEV/IFC2x3/TC1/OWL/#TEXTURED> .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/ReinforcingBar-TEXTURED> <http://www.w3.org/2004/02/skos/core#prefLabel> "Reinforcing Bar TEXTURED"@en .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/ReinforcingBar> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/ReinforcingBar> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/nen2660/term#DiscreteObject> .
-<https://otl.buildingsmart.org/IFC2X3_TC1/def/ReinforcingBar> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://ifcowl.openbimstandards.org/IFC2X3_TC1#IfcReinforcingBar> .
+<https://otl.buildingsmart.org/IFC2X3_TC1/def/ReinforcingBar> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://standards.buildingsmart.org/IFC/DEV/IFC2x3/TC1/OWL/#IfcReinforcingBar> .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/ReinforcingBar> <http://www.w3.org/2004/02/skos/core#prefLabel> "Reinforcing Bar"@en .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/ReinforcingBar-PLAIN> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/ReinforcingBar-PLAIN> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://otl.buildingsmart.org/IFC2X3_TC1/def/ReinforcingBar> .
-<https://otl.buildingsmart.org/IFC2X3_TC1/def/ReinforcingBar-PLAIN> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://ifcowl.openbimstandards.org/IFC2X3_TC1#PLAIN> .
+<https://otl.buildingsmart.org/IFC2X3_TC1/def/ReinforcingBar-PLAIN> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://standards.buildingsmart.org/IFC/DEV/IFC2x3/TC1/OWL/#PLAIN> .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/ReinforcingBar-PLAIN> <http://www.w3.org/2004/02/skos/core#prefLabel> "Reinforcing Bar PLAIN"@en .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/ReinforcingBar-LIGATURE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/ReinforcingBar-LIGATURE> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://otl.buildingsmart.org/IFC2X3_TC1/def/ReinforcingBar> .
-<https://otl.buildingsmart.org/IFC2X3_TC1/def/ReinforcingBar-LIGATURE> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://ifcowl.openbimstandards.org/IFC2X3_TC1#LIGATURE> .
+<https://otl.buildingsmart.org/IFC2X3_TC1/def/ReinforcingBar-LIGATURE> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://standards.buildingsmart.org/IFC/DEV/IFC2x3/TC1/OWL/#LIGATURE> .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/ReinforcingBar-LIGATURE> <http://www.w3.org/2004/02/skos/core#prefLabel> "Reinforcing Bar LIGATURE"@en .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/ReinforcingBar-RING> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/ReinforcingBar-RING> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://otl.buildingsmart.org/IFC2X3_TC1/def/ReinforcingBar> .
-<https://otl.buildingsmart.org/IFC2X3_TC1/def/ReinforcingBar-RING> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://ifcowl.openbimstandards.org/IFC2X3_TC1#RING> .
+<https://otl.buildingsmart.org/IFC2X3_TC1/def/ReinforcingBar-RING> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://standards.buildingsmart.org/IFC/DEV/IFC2x3/TC1/OWL/#RING> .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/ReinforcingBar-RING> <http://www.w3.org/2004/02/skos/core#prefLabel> "Reinforcing Bar RING"@en .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/ReinforcingBar-PUNCHING> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/ReinforcingBar-PUNCHING> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://otl.buildingsmart.org/IFC2X3_TC1/def/ReinforcingBar> .
-<https://otl.buildingsmart.org/IFC2X3_TC1/def/ReinforcingBar-PUNCHING> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://ifcowl.openbimstandards.org/IFC2X3_TC1#PUNCHING> .
+<https://otl.buildingsmart.org/IFC2X3_TC1/def/ReinforcingBar-PUNCHING> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://standards.buildingsmart.org/IFC/DEV/IFC2x3/TC1/OWL/#PUNCHING> .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/ReinforcingBar-PUNCHING> <http://www.w3.org/2004/02/skos/core#prefLabel> "Reinforcing Bar PUNCHING"@en .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/ReinforcingBar-MAIN> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/ReinforcingBar-MAIN> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://otl.buildingsmart.org/IFC2X3_TC1/def/ReinforcingBar> .
-<https://otl.buildingsmart.org/IFC2X3_TC1/def/ReinforcingBar-MAIN> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://ifcowl.openbimstandards.org/IFC2X3_TC1#MAIN> .
+<https://otl.buildingsmart.org/IFC2X3_TC1/def/ReinforcingBar-MAIN> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://standards.buildingsmart.org/IFC/DEV/IFC2x3/TC1/OWL/#MAIN> .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/ReinforcingBar-MAIN> <http://www.w3.org/2004/02/skos/core#prefLabel> "Reinforcing Bar MAIN"@en .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/ReinforcingBar-SHEAR> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/ReinforcingBar-SHEAR> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://otl.buildingsmart.org/IFC2X3_TC1/def/ReinforcingBar> .
-<https://otl.buildingsmart.org/IFC2X3_TC1/def/ReinforcingBar-SHEAR> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://ifcowl.openbimstandards.org/IFC2X3_TC1#SHEAR> .
+<https://otl.buildingsmart.org/IFC2X3_TC1/def/ReinforcingBar-SHEAR> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://standards.buildingsmart.org/IFC/DEV/IFC2x3/TC1/OWL/#SHEAR> .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/ReinforcingBar-SHEAR> <http://www.w3.org/2004/02/skos/core#prefLabel> "Reinforcing Bar SHEAR"@en .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/ReinforcingBar-STUD> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/ReinforcingBar-STUD> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://otl.buildingsmart.org/IFC2X3_TC1/def/ReinforcingBar> .
-<https://otl.buildingsmart.org/IFC2X3_TC1/def/ReinforcingBar-STUD> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://ifcowl.openbimstandards.org/IFC2X3_TC1#STUD> .
+<https://otl.buildingsmart.org/IFC2X3_TC1/def/ReinforcingBar-STUD> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://standards.buildingsmart.org/IFC/DEV/IFC2x3/TC1/OWL/#STUD> .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/ReinforcingBar-STUD> <http://www.w3.org/2004/02/skos/core#prefLabel> "Reinforcing Bar STUD"@en .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/ReinforcingBar-EDGE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/ReinforcingBar-EDGE> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://otl.buildingsmart.org/IFC2X3_TC1/def/ReinforcingBar> .
-<https://otl.buildingsmart.org/IFC2X3_TC1/def/ReinforcingBar-EDGE> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://ifcowl.openbimstandards.org/IFC2X3_TC1#EDGE> .
+<https://otl.buildingsmart.org/IFC2X3_TC1/def/ReinforcingBar-EDGE> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://standards.buildingsmart.org/IFC/DEV/IFC2x3/TC1/OWL/#EDGE> .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/ReinforcingBar-EDGE> <http://www.w3.org/2004/02/skos/core#prefLabel> "Reinforcing Bar EDGE"@en .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/ElectricDistributionPoint-CONSUMERUNIT> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/ElectricDistributionPoint-CONSUMERUNIT> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://otl.buildingsmart.org/IFC2X3_TC1/def/ElectricDistributionPoint> .
-<https://otl.buildingsmart.org/IFC2X3_TC1/def/ElectricDistributionPoint-CONSUMERUNIT> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://ifcowl.openbimstandards.org/IFC2X3_TC1#CONSUMERUNIT> .
+<https://otl.buildingsmart.org/IFC2X3_TC1/def/ElectricDistributionPoint-CONSUMERUNIT> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://standards.buildingsmart.org/IFC/DEV/IFC2x3/TC1/OWL/#CONSUMERUNIT> .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/ElectricDistributionPoint-CONSUMERUNIT> <http://www.w3.org/2004/02/skos/core#prefLabel> "Electric Distribution Point CONSUMERUNIT"@en .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/ElectricDistributionPoint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/ElectricDistributionPoint> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/nen2660/term#DiscreteObject> .
-<https://otl.buildingsmart.org/IFC2X3_TC1/def/ElectricDistributionPoint> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://ifcowl.openbimstandards.org/IFC2X3_TC1#IfcElectricDistributionPoint> .
+<https://otl.buildingsmart.org/IFC2X3_TC1/def/ElectricDistributionPoint> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://standards.buildingsmart.org/IFC/DEV/IFC2x3/TC1/OWL/#IfcElectricDistributionPoint> .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/ElectricDistributionPoint> <http://www.w3.org/2004/02/skos/core#prefLabel> "Electric Distribution Point"@en .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/ElectricDistributionPoint-ALARMPANEL> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/ElectricDistributionPoint-ALARMPANEL> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://otl.buildingsmart.org/IFC2X3_TC1/def/ElectricDistributionPoint> .
-<https://otl.buildingsmart.org/IFC2X3_TC1/def/ElectricDistributionPoint-ALARMPANEL> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://ifcowl.openbimstandards.org/IFC2X3_TC1#ALARMPANEL> .
+<https://otl.buildingsmart.org/IFC2X3_TC1/def/ElectricDistributionPoint-ALARMPANEL> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://standards.buildingsmart.org/IFC/DEV/IFC2x3/TC1/OWL/#ALARMPANEL> .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/ElectricDistributionPoint-ALARMPANEL> <http://www.w3.org/2004/02/skos/core#prefLabel> "Electric Distribution Point ALARMPANEL"@en .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/ElectricDistributionPoint-SWITCHBOARD> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/ElectricDistributionPoint-SWITCHBOARD> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://otl.buildingsmart.org/IFC2X3_TC1/def/ElectricDistributionPoint> .
-<https://otl.buildingsmart.org/IFC2X3_TC1/def/ElectricDistributionPoint-SWITCHBOARD> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://ifcowl.openbimstandards.org/IFC2X3_TC1#SWITCHBOARD> .
+<https://otl.buildingsmart.org/IFC2X3_TC1/def/ElectricDistributionPoint-SWITCHBOARD> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://standards.buildingsmart.org/IFC/DEV/IFC2x3/TC1/OWL/#SWITCHBOARD> .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/ElectricDistributionPoint-SWITCHBOARD> <http://www.w3.org/2004/02/skos/core#prefLabel> "Electric Distribution Point SWITCHBOARD"@en .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/ElectricDistributionPoint-MIMICPANEL> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/ElectricDistributionPoint-MIMICPANEL> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://otl.buildingsmart.org/IFC2X3_TC1/def/ElectricDistributionPoint> .
-<https://otl.buildingsmart.org/IFC2X3_TC1/def/ElectricDistributionPoint-MIMICPANEL> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://ifcowl.openbimstandards.org/IFC2X3_TC1#MIMICPANEL> .
+<https://otl.buildingsmart.org/IFC2X3_TC1/def/ElectricDistributionPoint-MIMICPANEL> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://standards.buildingsmart.org/IFC/DEV/IFC2x3/TC1/OWL/#MIMICPANEL> .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/ElectricDistributionPoint-MIMICPANEL> <http://www.w3.org/2004/02/skos/core#prefLabel> "Electric Distribution Point MIMICPANEL"@en .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/ElectricDistributionPoint-DISTRIBUTIONBOARD> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/ElectricDistributionPoint-DISTRIBUTIONBOARD> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://otl.buildingsmart.org/IFC2X3_TC1/def/ElectricDistributionPoint> .
-<https://otl.buildingsmart.org/IFC2X3_TC1/def/ElectricDistributionPoint-DISTRIBUTIONBOARD> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://ifcowl.openbimstandards.org/IFC2X3_TC1#DISTRIBUTIONBOARD> .
+<https://otl.buildingsmart.org/IFC2X3_TC1/def/ElectricDistributionPoint-DISTRIBUTIONBOARD> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://standards.buildingsmart.org/IFC/DEV/IFC2x3/TC1/OWL/#DISTRIBUTIONBOARD> .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/ElectricDistributionPoint-DISTRIBUTIONBOARD> <http://www.w3.org/2004/02/skos/core#prefLabel> "Electric Distribution Point DISTRIBUTIONBOARD"@en .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/ElectricDistributionPoint-CONTROLPANEL> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/ElectricDistributionPoint-CONTROLPANEL> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://otl.buildingsmart.org/IFC2X3_TC1/def/ElectricDistributionPoint> .
-<https://otl.buildingsmart.org/IFC2X3_TC1/def/ElectricDistributionPoint-CONTROLPANEL> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://ifcowl.openbimstandards.org/IFC2X3_TC1#CONTROLPANEL> .
+<https://otl.buildingsmart.org/IFC2X3_TC1/def/ElectricDistributionPoint-CONTROLPANEL> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://standards.buildingsmart.org/IFC/DEV/IFC2x3/TC1/OWL/#CONTROLPANEL> .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/ElectricDistributionPoint-CONTROLPANEL> <http://www.w3.org/2004/02/skos/core#prefLabel> "Electric Distribution Point CONTROLPANEL"@en .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/ElectricDistributionPoint-GASDETECTORPANEL> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/ElectricDistributionPoint-GASDETECTORPANEL> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://otl.buildingsmart.org/IFC2X3_TC1/def/ElectricDistributionPoint> .
-<https://otl.buildingsmart.org/IFC2X3_TC1/def/ElectricDistributionPoint-GASDETECTORPANEL> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://ifcowl.openbimstandards.org/IFC2X3_TC1#GASDETECTORPANEL> .
+<https://otl.buildingsmart.org/IFC2X3_TC1/def/ElectricDistributionPoint-GASDETECTORPANEL> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://standards.buildingsmart.org/IFC/DEV/IFC2x3/TC1/OWL/#GASDETECTORPANEL> .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/ElectricDistributionPoint-GASDETECTORPANEL> <http://www.w3.org/2004/02/skos/core#prefLabel> "Electric Distribution Point GASDETECTORPANEL"@en .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/ElectricDistributionPoint-MOTORCONTROLCENTRE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/ElectricDistributionPoint-MOTORCONTROLCENTRE> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://otl.buildingsmart.org/IFC2X3_TC1/def/ElectricDistributionPoint> .
-<https://otl.buildingsmart.org/IFC2X3_TC1/def/ElectricDistributionPoint-MOTORCONTROLCENTRE> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://ifcowl.openbimstandards.org/IFC2X3_TC1#MOTORCONTROLCENTRE> .
+<https://otl.buildingsmart.org/IFC2X3_TC1/def/ElectricDistributionPoint-MOTORCONTROLCENTRE> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://standards.buildingsmart.org/IFC/DEV/IFC2x3/TC1/OWL/#MOTORCONTROLCENTRE> .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/ElectricDistributionPoint-MOTORCONTROLCENTRE> <http://www.w3.org/2004/02/skos/core#prefLabel> "Electric Distribution Point MOTORCONTROLCENTRE"@en .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/ElectricDistributionPoint-INDICATORPANEL> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/ElectricDistributionPoint-INDICATORPANEL> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://otl.buildingsmart.org/IFC2X3_TC1/def/ElectricDistributionPoint> .
-<https://otl.buildingsmart.org/IFC2X3_TC1/def/ElectricDistributionPoint-INDICATORPANEL> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://ifcowl.openbimstandards.org/IFC2X3_TC1#INDICATORPANEL> .
+<https://otl.buildingsmart.org/IFC2X3_TC1/def/ElectricDistributionPoint-INDICATORPANEL> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://standards.buildingsmart.org/IFC/DEV/IFC2x3/TC1/OWL/#INDICATORPANEL> .
 <https://otl.buildingsmart.org/IFC2X3_TC1/def/ElectricDistributionPoint-INDICATORPANEL> <http://www.w3.org/2004/02/skos/core#prefLabel> "Electric Distribution Point INDICATORPANEL"@en .

@@ -10,7 +10,7 @@ import { rdf as rdff } from '@tpluscode/rdf-ns-builders'
 
 //CREATE THE NAMESPACES
 const ns = {
-  ifc: namespace('http://ifcowl.openbimstandards.org/IFC4_ADD2#'),
+  ifc: namespace('https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2/OWL#'),
   otl: namespace('https://otl.buildingsmart.org/IFC4_ADD2_TC1/def/'),
   nen2660term: namespace('https://w3id.org/nen2660/term#')
 }
