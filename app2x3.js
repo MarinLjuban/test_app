@@ -166,7 +166,7 @@ async function runProgram() {
   await logicFunction(queriedElements);
   await logGraph();
   await toFile(otlGraph.dataset.toStream(), "test2x3.ttl");
-  await toFile(otlGraph.dataset.toStream(), "testx3.jsonld");
+  await toFile(otlGraph.dataset.toStream(), "test2x3.jsonld");
 }
 
 runProgram();
