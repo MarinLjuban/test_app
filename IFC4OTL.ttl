@@ -1,0 +1,3743 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix ifc: <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2/OWL#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix otl: <https://otl.buildingsmart.org/IFC4_ADD2_TC1/def/> .
+@prefix nen2660term: <https://w3id.org/nen2660/term#> .
+
+otl:BuildingElement a owl:Class ;
+	rdfs:subClassOf nen2660term:DiscreteObject ;
+	rdfs:seeAlso ifc:IfcBuildingElement ;
+	skos:prefLabel "Building Element"@en .
+
+otl:Covering-INSULATION a owl:Class ;
+	rdfs:subClassOf otl:Covering ;
+	rdfs:seeAlso ifc:INSULATION ;
+	skos:prefLabel "Covering INSULATION"@en .
+
+otl:Covering a owl:Class ;
+	rdfs:subClassOf nen2660term:DiscreteObject ;
+	rdfs:seeAlso ifc:IfcCovering ;
+	skos:prefLabel "Covering"@en .
+
+otl:Covering-MEMBRANE a owl:Class ;
+	rdfs:subClassOf otl:Covering ;
+	rdfs:seeAlso ifc:MEMBRANE ;
+	skos:prefLabel "Covering MEMBRANE"@en .
+
+otl:Covering-SLEEVING a owl:Class ;
+	rdfs:subClassOf otl:Covering ;
+	rdfs:seeAlso ifc:SLEEVING ;
+	skos:prefLabel "Covering SLEEVING"@en .
+
+otl:Covering-MOLDING a owl:Class ;
+	rdfs:subClassOf otl:Covering ;
+	rdfs:seeAlso ifc:MOLDING ;
+	skos:prefLabel "Covering MOLDING"@en .
+
+otl:Covering-WRAPPING a owl:Class ;
+	rdfs:subClassOf otl:Covering ;
+	rdfs:seeAlso ifc:WRAPPING ;
+	skos:prefLabel "Covering WRAPPING"@en .
+
+otl:Covering-CEILING a owl:Class ;
+	rdfs:subClassOf otl:Covering ;
+	rdfs:seeAlso ifc:CEILING ;
+	skos:prefLabel "Covering CEILING"@en .
+
+otl:Covering-ROOFING a owl:Class ;
+	rdfs:subClassOf otl:Covering ;
+	rdfs:seeAlso ifc:ROOFING ;
+	skos:prefLabel "Covering ROOFING"@en .
+
+otl:Covering-FLOORING a owl:Class ;
+	rdfs:subClassOf otl:Covering ;
+	rdfs:seeAlso ifc:FLOORING ;
+	skos:prefLabel "Covering FLOORING"@en .
+
+otl:Covering-SKIRTINGBOARD a owl:Class ;
+	rdfs:subClassOf otl:Covering ;
+	rdfs:seeAlso ifc:SKIRTINGBOARD ;
+	skos:prefLabel "Covering SKIRTINGBOARD"@en .
+
+otl:Covering-CLADDING a owl:Class ;
+	rdfs:subClassOf otl:Covering ;
+	rdfs:seeAlso ifc:CLADDING ;
+	skos:prefLabel "Covering CLADDING"@en .
+
+otl:Window-TRIPLE_PANEL_RIGHT a owl:Class ;
+	rdfs:subClassOf otl:Window ;
+	rdfs:seeAlso ifc:TRIPLE_PANEL_RIGHT ;
+	skos:prefLabel "Window TRIPLE PANEL RIGHT"@en .
+
+otl:Window a owl:Class ;
+	rdfs:subClassOf nen2660term:DiscreteObject ;
+	rdfs:seeAlso ifc:IfcWindow ;
+	skos:prefLabel "Window"@en .
+
+otl:Window-DOUBLE_PANEL_VERTICAL a owl:Class ;
+	rdfs:subClassOf otl:Window ;
+	rdfs:seeAlso ifc:DOUBLE_PANEL_VERTICAL ;
+	skos:prefLabel "Window DOUBLE PANEL VERTICAL"@en .
+
+otl:Window-TRIPLE_PANEL_HORIZONTAL a owl:Class ;
+	rdfs:subClassOf otl:Window ;
+	rdfs:seeAlso ifc:TRIPLE_PANEL_HORIZONTAL ;
+	skos:prefLabel "Window TRIPLE PANEL HORIZONTAL"@en .
+
+otl:Window-TRIPLE_PANEL_VERTICAL a owl:Class ;
+	rdfs:subClassOf otl:Window ;
+	rdfs:seeAlso ifc:TRIPLE_PANEL_VERTICAL ;
+	skos:prefLabel "Window TRIPLE PANEL VERTICAL"@en .
+
+otl:Window-TRIPLE_PANEL_BOTTOM a owl:Class ;
+	rdfs:subClassOf otl:Window ;
+	rdfs:seeAlso ifc:TRIPLE_PANEL_BOTTOM ;
+	skos:prefLabel "Window TRIPLE PANEL BOTTOM"@en .
+
+otl:Window-TRIPLE_PANEL_TOP a owl:Class ;
+	rdfs:subClassOf otl:Window ;
+	rdfs:seeAlso ifc:TRIPLE_PANEL_TOP ;
+	skos:prefLabel "Window TRIPLE PANEL TOP"@en .
+
+otl:Window-SINGLE_PANEL a owl:Class ;
+	rdfs:subClassOf otl:Window ;
+	rdfs:seeAlso ifc:SINGLE_PANEL ;
+	skos:prefLabel "Window SINGLE PANEL"@en .
+
+otl:Window-DOUBLE_PANEL_HORIZONTAL a owl:Class ;
+	rdfs:subClassOf otl:Window ;
+	rdfs:seeAlso ifc:DOUBLE_PANEL_HORIZONTAL ;
+	skos:prefLabel "Window DOUBLE PANEL HORIZONTAL"@en .
+
+otl:Window-TRIPLE_PANEL_LEFT a owl:Class ;
+	rdfs:subClassOf otl:Window ;
+	rdfs:seeAlso ifc:TRIPLE_PANEL_LEFT ;
+	skos:prefLabel "Window TRIPLE PANEL LEFT"@en .
+
+otl:Window-SKYLIGHT a owl:Class ;
+	rdfs:subClassOf otl:Window ;
+	rdfs:seeAlso ifc:SKYLIGHT ;
+	skos:prefLabel "Window SKYLIGHT"@en .
+
+otl:Window-WINDOW a owl:Class ;
+	rdfs:subClassOf otl:Window ;
+	rdfs:seeAlso ifc:WINDOW ;
+	skos:prefLabel "Window WINDOW"@en .
+
+otl:Window-LIGHTDOME a owl:Class ;
+	rdfs:subClassOf otl:Window ;
+	rdfs:seeAlso ifc:LIGHTDOME ;
+	skos:prefLabel "Window LIGHTDOME"@en .
+
+otl:BuildingElementProxy-PARTIAL a owl:Class ;
+	rdfs:subClassOf otl:BuildingElementProxy ;
+	rdfs:seeAlso ifc:PARTIAL ;
+	skos:prefLabel "Building Element Proxy PARTIAL"@en .
+
+otl:BuildingElementProxy a owl:Class ;
+	rdfs:subClassOf nen2660term:DiscreteObject ;
+	rdfs:seeAlso ifc:IfcBuildingElementProxy ;
+	skos:prefLabel "Building Element Proxy"@en .
+
+otl:BuildingElementProxy-PROVISIONFORSPACE a owl:Class ;
+	rdfs:subClassOf otl:BuildingElementProxy ;
+	rdfs:seeAlso ifc:PROVISIONFORSPACE ;
+	skos:prefLabel "Building Element Proxy PROVISIONFORSPACE"@en .
+
+otl:BuildingElementProxy-ELEMENT a owl:Class ;
+	rdfs:subClassOf otl:BuildingElementProxy ;
+	rdfs:seeAlso ifc:ELEMENT ;
+	skos:prefLabel "Building Element Proxy ELEMENT"@en .
+
+otl:BuildingElementProxy-COMPLEX a owl:Class ;
+	rdfs:subClassOf otl:BuildingElementProxy ;
+	rdfs:seeAlso ifc:COMPLEX ;
+	skos:prefLabel "Building Element Proxy COMPLEX"@en .
+
+otl:BuildingElementProxy-PROVISIONFORVOID a owl:Class ;
+	rdfs:subClassOf otl:BuildingElementProxy ;
+	rdfs:seeAlso ifc:PROVISIONFORVOID ;
+	skos:prefLabel "Building Element Proxy PROVISIONFORVOID"@en .
+
+otl:Member-RAFTER a owl:Class ;
+	rdfs:subClassOf otl:Member ;
+	rdfs:seeAlso ifc:RAFTER ;
+	skos:prefLabel "Member RAFTER"@en .
+
+otl:Member a owl:Class ;
+	rdfs:subClassOf nen2660term:DiscreteObject ;
+	rdfs:seeAlso ifc:IfcMember ;
+	skos:prefLabel "Member"@en .
+
+otl:Member-MULLION a owl:Class ;
+	rdfs:subClassOf otl:Member ;
+	rdfs:seeAlso ifc:MULLION ;
+	skos:prefLabel "Member MULLION"@en .
+
+otl:Member-STRUT a owl:Class ;
+	rdfs:subClassOf otl:Member ;
+	rdfs:seeAlso ifc:STRUT ;
+	skos:prefLabel "Member STRUT"@en .
+
+otl:Member-STUD a owl:Class ;
+	rdfs:subClassOf otl:Member ;
+	rdfs:seeAlso ifc:STUD ;
+	skos:prefLabel "Member STUD"@en .
+
+otl:Member-STRINGER a owl:Class ;
+	rdfs:subClassOf otl:Member ;
+	rdfs:seeAlso ifc:STRINGER ;
+	skos:prefLabel "Member STRINGER"@en .
+
+otl:Member-MEMBER a owl:Class ;
+	rdfs:subClassOf otl:Member ;
+	rdfs:seeAlso ifc:MEMBER ;
+	skos:prefLabel "Member MEMBER"@en .
+
+otl:Member-PURLIN a owl:Class ;
+	rdfs:subClassOf otl:Member ;
+	rdfs:seeAlso ifc:PURLIN ;
+	skos:prefLabel "Member PURLIN"@en .
+
+otl:Member-BRACE a owl:Class ;
+	rdfs:subClassOf otl:Member ;
+	rdfs:seeAlso ifc:BRACE ;
+	skos:prefLabel "Member BRACE"@en .
+
+otl:Member-CHORD a owl:Class ;
+	rdfs:subClassOf otl:Member ;
+	rdfs:seeAlso ifc:CHORD ;
+	skos:prefLabel "Member CHORD"@en .
+
+otl:Member-COLLAR a owl:Class ;
+	rdfs:subClassOf otl:Member ;
+	rdfs:seeAlso ifc:COLLAR ;
+	skos:prefLabel "Member COLLAR"@en .
+
+otl:Member-PLATE a owl:Class ;
+	rdfs:subClassOf otl:Member ;
+	rdfs:seeAlso ifc:PLATE ;
+	skos:prefLabel "Member PLATE"@en .
+
+otl:Member-POST a owl:Class ;
+	rdfs:subClassOf otl:Member ;
+	rdfs:seeAlso ifc:POST ;
+	skos:prefLabel "Member POST"@en .
+
+otl:Wall-SHEAR a owl:Class ;
+	rdfs:subClassOf otl:Wall ;
+	rdfs:seeAlso ifc:SHEAR ;
+	skos:prefLabel "Wall SHEAR"@en .
+
+otl:Wall a owl:Class ;
+	rdfs:subClassOf nen2660term:DiscreteObject ;
+	rdfs:seeAlso ifc:IfcWall ;
+	skos:prefLabel "Wall"@en .
+
+otl:Wall-SOLIDWALL a owl:Class ;
+	rdfs:subClassOf otl:Wall ;
+	rdfs:seeAlso ifc:SOLIDWALL ;
+	skos:prefLabel "Wall SOLIDWALL"@en .
+
+otl:Wall-MOVABLE a owl:Class ;
+	rdfs:subClassOf otl:Wall ;
+	rdfs:seeAlso ifc:MOVABLE ;
+	skos:prefLabel "Wall MOVABLE"@en .
+
+otl:Wall-PLUMBINGWALL a owl:Class ;
+	rdfs:subClassOf otl:Wall ;
+	rdfs:seeAlso ifc:PLUMBINGWALL ;
+	skos:prefLabel "Wall PLUMBINGWALL"@en .
+
+otl:Wall-POLYGONAL a owl:Class ;
+	rdfs:subClassOf otl:Wall ;
+	rdfs:seeAlso ifc:POLYGONAL ;
+	skos:prefLabel "Wall POLYGONAL"@en .
+
+otl:Wall-STANDARD a owl:Class ;
+	rdfs:subClassOf otl:Wall ;
+	rdfs:seeAlso ifc:STANDARD ;
+	skos:prefLabel "Wall STANDARD"@en .
+
+otl:Wall-PARAPET a owl:Class ;
+	rdfs:subClassOf otl:Wall ;
+	rdfs:seeAlso ifc:PARAPET ;
+	skos:prefLabel "Wall PARAPET"@en .
+
+otl:Wall-PARTITIONING a owl:Class ;
+	rdfs:subClassOf otl:Wall ;
+	rdfs:seeAlso ifc:PARTITIONING ;
+	skos:prefLabel "Wall PARTITIONING"@en .
+
+otl:Wall-ELEMENTEDWALL a owl:Class ;
+	rdfs:subClassOf otl:Wall ;
+	rdfs:seeAlso ifc:ELEMENTEDWALL ;
+	skos:prefLabel "Wall ELEMENTEDWALL"@en .
+
+otl:Slab-ROOF a owl:Class ;
+	rdfs:subClassOf otl:Slab ;
+	rdfs:seeAlso ifc:ROOF ;
+	skos:prefLabel "Slab ROOF"@en .
+
+otl:Slab a owl:Class ;
+	rdfs:subClassOf nen2660term:DiscreteObject ;
+	rdfs:seeAlso ifc:IfcSlab ;
+	skos:prefLabel "Slab"@en .
+
+otl:Slab-FLOOR a owl:Class ;
+	rdfs:subClassOf otl:Slab ;
+	rdfs:seeAlso ifc:FLOOR ;
+	skos:prefLabel "Slab FLOOR"@en .
+
+otl:Slab-LANDING a owl:Class ;
+	rdfs:subClassOf otl:Slab ;
+	rdfs:seeAlso ifc:LANDING ;
+	skos:prefLabel "Slab LANDING"@en .
+
+otl:Slab-BASESLAB a owl:Class ;
+	rdfs:subClassOf otl:Slab ;
+	rdfs:seeAlso ifc:BASESLAB ;
+	skos:prefLabel "Slab BASESLAB"@en .
+
+otl:ShadingDevice-JALOUSIE a owl:Class ;
+	rdfs:subClassOf otl:ShadingDevice ;
+	rdfs:seeAlso ifc:JALOUSIE ;
+	skos:prefLabel "Shading Device JALOUSIE"@en .
+
+otl:ShadingDevice a owl:Class ;
+	rdfs:subClassOf nen2660term:DiscreteObject ;
+	rdfs:seeAlso ifc:IfcShadingDevice ;
+	skos:prefLabel "Shading Device"@en .
+
+otl:ShadingDevice-SHUTTER a owl:Class ;
+	rdfs:subClassOf otl:ShadingDevice ;
+	rdfs:seeAlso ifc:SHUTTER ;
+	skos:prefLabel "Shading Device SHUTTER"@en .
+
+otl:ShadingDevice-AWNING a owl:Class ;
+	rdfs:subClassOf otl:ShadingDevice ;
+	rdfs:seeAlso ifc:AWNING ;
+	skos:prefLabel "Shading Device AWNING"@en .
+
+otl:CurtainWall a owl:Class ;
+	rdfs:subClassOf nen2660term:DiscreteObject ;
+	rdfs:seeAlso ifc:IfcCurtainWall ;
+	skos:prefLabel "Curtain Wall"@en .
+
+otl:Plate-CURTAIN_PANEL a owl:Class ;
+	rdfs:subClassOf otl:Plate ;
+	rdfs:seeAlso ifc:CURTAIN_PANEL ;
+	skos:prefLabel "Plate CURTAIN PANEL"@en .
+
+otl:Plate a owl:Class ;
+	rdfs:subClassOf nen2660term:DiscreteObject ;
+	rdfs:seeAlso ifc:IfcPlate ;
+	skos:prefLabel "Plate"@en .
+
+otl:Plate-SHEET a owl:Class ;
+	rdfs:subClassOf otl:Plate ;
+	rdfs:seeAlso ifc:SHEET ;
+	skos:prefLabel "Plate SHEET"@en .
+
+otl:Footing-PAD_FOOTING a owl:Class ;
+	rdfs:subClassOf otl:Footing ;
+	rdfs:seeAlso ifc:PAD_FOOTING ;
+	skos:prefLabel "Footing PAD FOOTING"@en .
+
+otl:Footing a owl:Class ;
+	rdfs:subClassOf nen2660term:DiscreteObject ;
+	rdfs:seeAlso ifc:IfcFooting ;
+	skos:prefLabel "Footing"@en .
+
+otl:Footing-CAISSON_FOUNDATION a owl:Class ;
+	rdfs:subClassOf otl:Footing ;
+	rdfs:seeAlso ifc:CAISSON_FOUNDATION ;
+	skos:prefLabel "Footing CAISSON FOUNDATION"@en .
+
+otl:Footing-FOOTING_BEAM a owl:Class ;
+	rdfs:subClassOf otl:Footing ;
+	rdfs:seeAlso ifc:FOOTING_BEAM ;
+	skos:prefLabel "Footing FOOTING BEAM"@en .
+
+otl:Footing-PILE_CAP a owl:Class ;
+	rdfs:subClassOf otl:Footing ;
+	rdfs:seeAlso ifc:PILE_CAP ;
+	skos:prefLabel "Footing PILE CAP"@en .
+
+otl:Footing-STRIP_FOOTING a owl:Class ;
+	rdfs:subClassOf otl:Footing ;
+	rdfs:seeAlso ifc:STRIP_FOOTING ;
+	skos:prefLabel "Footing STRIP FOOTING"@en .
+
+otl:Roof-DOME_ROOF a owl:Class ;
+	rdfs:subClassOf otl:Roof ;
+	rdfs:seeAlso ifc:DOME_ROOF ;
+	skos:prefLabel "Roof DOME ROOF"@en .
+
+otl:Roof a owl:Class ;
+	rdfs:subClassOf nen2660term:DiscreteObject ;
+	rdfs:seeAlso ifc:IfcRoof ;
+	skos:prefLabel "Roof"@en .
+
+otl:Roof-SHED_ROOF a owl:Class ;
+	rdfs:subClassOf otl:Roof ;
+	rdfs:seeAlso ifc:SHED_ROOF ;
+	skos:prefLabel "Roof SHED ROOF"@en .
+
+otl:Roof-PAVILION_ROOF a owl:Class ;
+	rdfs:subClassOf otl:Roof ;
+	rdfs:seeAlso ifc:PAVILION_ROOF ;
+	skos:prefLabel "Roof PAVILION ROOF"@en .
+
+otl:Roof-HIP_ROOF a owl:Class ;
+	rdfs:subClassOf otl:Roof ;
+	rdfs:seeAlso ifc:HIP_ROOF ;
+	skos:prefLabel "Roof HIP ROOF"@en .
+
+otl:Roof-BUTTERFLY_ROOF a owl:Class ;
+	rdfs:subClassOf otl:Roof ;
+	rdfs:seeAlso ifc:BUTTERFLY_ROOF ;
+	skos:prefLabel "Roof BUTTERFLY ROOF"@en .
+
+otl:Roof-GABLE_ROOF a owl:Class ;
+	rdfs:subClassOf otl:Roof ;
+	rdfs:seeAlso ifc:GABLE_ROOF ;
+	skos:prefLabel "Roof GABLE ROOF"@en .
+
+otl:Roof-MANSARD_ROOF a owl:Class ;
+	rdfs:subClassOf otl:Roof ;
+	rdfs:seeAlso ifc:MANSARD_ROOF ;
+	skos:prefLabel "Roof MANSARD ROOF"@en .
+
+otl:Roof-RAINBOW_ROOF a owl:Class ;
+	rdfs:subClassOf otl:Roof ;
+	rdfs:seeAlso ifc:RAINBOW_ROOF ;
+	skos:prefLabel "Roof RAINBOW ROOF"@en .
+
+otl:Roof-BARREL_ROOF a owl:Class ;
+	rdfs:subClassOf otl:Roof ;
+	rdfs:seeAlso ifc:BARREL_ROOF ;
+	skos:prefLabel "Roof BARREL ROOF"@en .
+
+otl:Roof-HIPPED_GABLE_ROOF a owl:Class ;
+	rdfs:subClassOf otl:Roof ;
+	rdfs:seeAlso ifc:HIPPED_GABLE_ROOF ;
+	skos:prefLabel "Roof HIPPED GABLE ROOF"@en .
+
+otl:Roof-GAMBREL_ROOF a owl:Class ;
+	rdfs:subClassOf otl:Roof ;
+	rdfs:seeAlso ifc:GAMBREL_ROOF ;
+	skos:prefLabel "Roof GAMBREL ROOF"@en .
+
+otl:Roof-FLAT_ROOF a owl:Class ;
+	rdfs:subClassOf otl:Roof ;
+	rdfs:seeAlso ifc:FLAT_ROOF ;
+	skos:prefLabel "Roof FLAT ROOF"@en .
+
+otl:Roof-FREEFORM a owl:Class ;
+	rdfs:subClassOf otl:Roof ;
+	rdfs:seeAlso ifc:FREEFORM ;
+	skos:prefLabel "Roof FREEFORM"@en .
+
+otl:Ramp-TWO_STRAIGHT_RUN_RAMP a owl:Class ;
+	rdfs:subClassOf otl:Ramp ;
+	rdfs:seeAlso ifc:TWO_STRAIGHT_RUN_RAMP ;
+	skos:prefLabel "Ramp TWO STRAIGHT RUN RAMP"@en .
+
+otl:Ramp a owl:Class ;
+	rdfs:subClassOf nen2660term:DiscreteObject ;
+	rdfs:seeAlso ifc:IfcRamp ;
+	skos:prefLabel "Ramp"@en .
+
+otl:Ramp-TWO_QUARTER_TURN_RAMP a owl:Class ;
+	rdfs:subClassOf otl:Ramp ;
+	rdfs:seeAlso ifc:TWO_QUARTER_TURN_RAMP ;
+	skos:prefLabel "Ramp TWO QUARTER TURN RAMP"@en .
+
+otl:Ramp-SPIRAL_RAMP a owl:Class ;
+	rdfs:subClassOf otl:Ramp ;
+	rdfs:seeAlso ifc:SPIRAL_RAMP ;
+	skos:prefLabel "Ramp SPIRAL RAMP"@en .
+
+otl:Ramp-STRAIGHT_RUN_RAMP a owl:Class ;
+	rdfs:subClassOf otl:Ramp ;
+	rdfs:seeAlso ifc:STRAIGHT_RUN_RAMP ;
+	skos:prefLabel "Ramp STRAIGHT RUN RAMP"@en .
+
+otl:Ramp-HALF_TURN_RAMP a owl:Class ;
+	rdfs:subClassOf otl:Ramp ;
+	rdfs:seeAlso ifc:HALF_TURN_RAMP ;
+	skos:prefLabel "Ramp HALF TURN RAMP"@en .
+
+otl:Ramp-QUARTER_TURN_RAMP a owl:Class ;
+	rdfs:subClassOf otl:Ramp ;
+	rdfs:seeAlso ifc:QUARTER_TURN_RAMP ;
+	skos:prefLabel "Ramp QUARTER TURN RAMP"@en .
+
+otl:RampFlight-STRAIGHT a owl:Class ;
+	rdfs:subClassOf otl:RampFlight ;
+	rdfs:seeAlso ifc:STRAIGHT ;
+	skos:prefLabel "Ramp Flight STRAIGHT"@en .
+
+otl:RampFlight a owl:Class ;
+	rdfs:subClassOf nen2660term:DiscreteObject ;
+	rdfs:seeAlso ifc:IfcRampFlight ;
+	skos:prefLabel "Ramp Flight"@en .
+
+otl:RampFlight-SPIRAL a owl:Class ;
+	rdfs:subClassOf otl:RampFlight ;
+	rdfs:seeAlso ifc:SPIRAL ;
+	skos:prefLabel "Ramp Flight SPIRAL"@en .
+
+otl:Column-PILASTER a owl:Class ;
+	rdfs:subClassOf otl:Column ;
+	rdfs:seeAlso ifc:PILASTER ;
+	skos:prefLabel "Column PILASTER"@en .
+
+otl:Column a owl:Class ;
+	rdfs:subClassOf nen2660term:DiscreteObject ;
+	rdfs:seeAlso ifc:IfcColumn ;
+	skos:prefLabel "Column"@en .
+
+otl:Column-COLUMN a owl:Class ;
+	rdfs:subClassOf otl:Column ;
+	rdfs:seeAlso ifc:COLUMN ;
+	skos:prefLabel "Column COLUMN"@en .
+
+otl:Railing-BALUSTRADE a owl:Class ;
+	rdfs:subClassOf otl:Railing ;
+	rdfs:seeAlso ifc:BALUSTRADE ;
+	skos:prefLabel "Railing BALUSTRADE"@en .
+
+otl:Railing a owl:Class ;
+	rdfs:subClassOf nen2660term:DiscreteObject ;
+	rdfs:seeAlso ifc:IfcRailing ;
+	skos:prefLabel "Railing"@en .
+
+otl:Railing-HANDRAIL a owl:Class ;
+	rdfs:subClassOf otl:Railing ;
+	rdfs:seeAlso ifc:HANDRAIL ;
+	skos:prefLabel "Railing HANDRAIL"@en .
+
+otl:Railing-GUARDRAIL a owl:Class ;
+	rdfs:subClassOf otl:Railing ;
+	rdfs:seeAlso ifc:GUARDRAIL ;
+	skos:prefLabel "Railing GUARDRAIL"@en .
+
+otl:StairFlight-STRAIGHT a owl:Class ;
+	rdfs:subClassOf otl:StairFlight ;
+	rdfs:seeAlso ifc:STRAIGHT ;
+	skos:prefLabel "Stair Flight STRAIGHT"@en .
+
+otl:StairFlight a owl:Class ;
+	rdfs:subClassOf nen2660term:DiscreteObject ;
+	rdfs:seeAlso ifc:IfcStairFlight ;
+	skos:prefLabel "Stair Flight"@en .
+
+otl:StairFlight-CURVED a owl:Class ;
+	rdfs:subClassOf otl:StairFlight ;
+	rdfs:seeAlso ifc:CURVED ;
+	skos:prefLabel "Stair Flight CURVED"@en .
+
+otl:StairFlight-WINDER a owl:Class ;
+	rdfs:subClassOf otl:StairFlight ;
+	rdfs:seeAlso ifc:WINDER ;
+	skos:prefLabel "Stair Flight WINDER"@en .
+
+otl:StairFlight-FREEFORM a owl:Class ;
+	rdfs:subClassOf otl:StairFlight ;
+	rdfs:seeAlso ifc:FREEFORM ;
+	skos:prefLabel "Stair Flight FREEFORM"@en .
+
+otl:StairFlight-SPIRAL a owl:Class ;
+	rdfs:subClassOf otl:StairFlight ;
+	rdfs:seeAlso ifc:SPIRAL ;
+	skos:prefLabel "Stair Flight SPIRAL"@en .
+
+otl:Pile-CAST_IN_PLACE a owl:Class ;
+	rdfs:subClassOf otl:Pile ;
+	rdfs:seeAlso ifc:CAST_IN_PLACE ;
+	skos:prefLabel "Pile CAST IN PLACE"@en .
+
+otl:Pile a owl:Class ;
+	rdfs:subClassOf nen2660term:DiscreteObject ;
+	rdfs:seeAlso ifc:IfcPile ;
+	skos:prefLabel "Pile"@en .
+
+otl:Pile-COMPOSITE a owl:Class ;
+	rdfs:subClassOf otl:Pile ;
+	rdfs:seeAlso ifc:COMPOSITE ;
+	skos:prefLabel "Pile COMPOSITE"@en .
+
+otl:Pile-PREFAB_STEEL a owl:Class ;
+	rdfs:subClassOf otl:Pile ;
+	rdfs:seeAlso ifc:PREFAB_STEEL ;
+	skos:prefLabel "Pile PREFAB STEEL"@en .
+
+otl:Pile-PRECAST_CONCRETE a owl:Class ;
+	rdfs:subClassOf otl:Pile ;
+	rdfs:seeAlso ifc:PRECAST_CONCRETE ;
+	skos:prefLabel "Pile PRECAST CONCRETE"@en .
+
+otl:Pile-BORED a owl:Class ;
+	rdfs:subClassOf otl:Pile ;
+	rdfs:seeAlso ifc:BORED ;
+	skos:prefLabel "Pile BORED"@en .
+
+otl:Pile-FRICTION a owl:Class ;
+	rdfs:subClassOf otl:Pile ;
+	rdfs:seeAlso ifc:FRICTION ;
+	skos:prefLabel "Pile FRICTION"@en .
+
+otl:Pile-JETGROUTING a owl:Class ;
+	rdfs:subClassOf otl:Pile ;
+	rdfs:seeAlso ifc:JETGROUTING ;
+	skos:prefLabel "Pile JETGROUTING"@en .
+
+otl:Pile-COHESION a owl:Class ;
+	rdfs:subClassOf otl:Pile ;
+	rdfs:seeAlso ifc:COHESION ;
+	skos:prefLabel "Pile COHESION"@en .
+
+otl:Pile-SUPPORT a owl:Class ;
+	rdfs:subClassOf otl:Pile ;
+	rdfs:seeAlso ifc:SUPPORT ;
+	skos:prefLabel "Pile SUPPORT"@en .
+
+otl:Pile-DRIVEN a owl:Class ;
+	rdfs:subClassOf otl:Pile ;
+	rdfs:seeAlso ifc:DRIVEN ;
+	skos:prefLabel "Pile DRIVEN"@en .
+
+otl:Beam-HOLLOWCORE a owl:Class ;
+	rdfs:subClassOf otl:Beam ;
+	rdfs:seeAlso ifc:HOLLOWCORE ;
+	skos:prefLabel "Beam HOLLOWCORE"@en .
+
+otl:Beam a owl:Class ;
+	rdfs:subClassOf nen2660term:DiscreteObject ;
+	rdfs:seeAlso ifc:IfcBeam ;
+	skos:prefLabel "Beam"@en .
+
+otl:Beam-LINTEL a owl:Class ;
+	rdfs:subClassOf otl:Beam ;
+	rdfs:seeAlso ifc:LINTEL ;
+	skos:prefLabel "Beam LINTEL"@en .
+
+otl:Beam-SPANDREL a owl:Class ;
+	rdfs:subClassOf otl:Beam ;
+	rdfs:seeAlso ifc:SPANDREL ;
+	skos:prefLabel "Beam SPANDREL"@en .
+
+otl:Beam-BEAM a owl:Class ;
+	rdfs:subClassOf otl:Beam ;
+	rdfs:seeAlso ifc:BEAM ;
+	skos:prefLabel "Beam BEAM"@en .
+
+otl:Beam-JOIST a owl:Class ;
+	rdfs:subClassOf otl:Beam ;
+	rdfs:seeAlso ifc:JOIST ;
+	skos:prefLabel "Beam JOIST"@en .
+
+otl:Beam-T_BEAM a owl:Class ;
+	rdfs:subClassOf otl:Beam ;
+	rdfs:seeAlso ifc:T_BEAM ;
+	skos:prefLabel "Beam T BEAM"@en .
+
+otl:Door-GATE a owl:Class ;
+	rdfs:subClassOf otl:Door ;
+	rdfs:seeAlso ifc:GATE ;
+	skos:prefLabel "Door GATE"@en .
+
+otl:Door a owl:Class ;
+	rdfs:subClassOf nen2660term:DiscreteObject ;
+	rdfs:seeAlso ifc:IfcDoor ;
+	skos:prefLabel "Door"@en .
+
+otl:Door-TRAPDOOR a owl:Class ;
+	rdfs:subClassOf otl:Door ;
+	rdfs:seeAlso ifc:TRAPDOOR ;
+	skos:prefLabel "Door TRAPDOOR"@en .
+
+otl:Door-DOOR a owl:Class ;
+	rdfs:subClassOf otl:Door ;
+	rdfs:seeAlso ifc:DOOR ;
+	skos:prefLabel "Door DOOR"@en .
+
+otl:Door-SWING_FIXED_RIGHT a owl:Class ;
+	rdfs:subClassOf otl:Door ;
+	rdfs:seeAlso ifc:SWING_FIXED_RIGHT ;
+	skos:prefLabel "Door SWING FIXED RIGHT"@en .
+
+otl:Door-DOUBLE_SWING_LEFT a owl:Class ;
+	rdfs:subClassOf otl:Door ;
+	rdfs:seeAlso ifc:DOUBLE_SWING_LEFT ;
+	skos:prefLabel "Door DOUBLE SWING LEFT"@en .
+
+otl:Door-FOLDING_TO_LEFT a owl:Class ;
+	rdfs:subClassOf otl:Door ;
+	rdfs:seeAlso ifc:FOLDING_TO_LEFT ;
+	skos:prefLabel "Door FOLDING TO LEFT"@en .
+
+otl:Door-SWING_FIXED_LEFT a owl:Class ;
+	rdfs:subClassOf otl:Door ;
+	rdfs:seeAlso ifc:SWING_FIXED_LEFT ;
+	skos:prefLabel "Door SWING FIXED LEFT"@en .
+
+otl:Door-DOUBLE_DOOR_SINGLE_SWING_OPPOSITE_RIGHT a owl:Class ;
+	rdfs:subClassOf otl:Door ;
+	rdfs:seeAlso ifc:DOUBLE_DOOR_SINGLE_SWING_OPPOSITE_RIGHT ;
+	skos:prefLabel "Door DOUBLE DOOR SINGLE SWING OPPOSITE RIGHT"@en .
+
+otl:Door-DOUBLE_DOOR_SLIDING a owl:Class ;
+	rdfs:subClassOf otl:Door ;
+	rdfs:seeAlso ifc:DOUBLE_DOOR_SLIDING ;
+	skos:prefLabel "Door DOUBLE DOOR SLIDING"@en .
+
+otl:Door-REVOLVING a owl:Class ;
+	rdfs:subClassOf otl:Door ;
+	rdfs:seeAlso ifc:REVOLVING ;
+	skos:prefLabel "Door REVOLVING"@en .
+
+otl:Door-DOUBLE_DOOR_FOLDING a owl:Class ;
+	rdfs:subClassOf otl:Door ;
+	rdfs:seeAlso ifc:DOUBLE_DOOR_FOLDING ;
+	skos:prefLabel "Door DOUBLE DOOR FOLDING"@en .
+
+otl:Door-ROLLINGUP a owl:Class ;
+	rdfs:subClassOf otl:Door ;
+	rdfs:seeAlso ifc:ROLLINGUP ;
+	skos:prefLabel "Door ROLLINGUP"@en .
+
+otl:Door-DOUBLE_DOOR_DOUBLE_SWING a owl:Class ;
+	rdfs:subClassOf otl:Door ;
+	rdfs:seeAlso ifc:DOUBLE_DOOR_DOUBLE_SWING ;
+	skos:prefLabel "Door DOUBLE DOOR DOUBLE SWING"@en .
+
+otl:Door-SLIDING_TO_RIGHT a owl:Class ;
+	rdfs:subClassOf otl:Door ;
+	rdfs:seeAlso ifc:SLIDING_TO_RIGHT ;
+	skos:prefLabel "Door SLIDING TO RIGHT"@en .
+
+otl:Door-DOUBLE_SWING_RIGHT a owl:Class ;
+	rdfs:subClassOf otl:Door ;
+	rdfs:seeAlso ifc:DOUBLE_SWING_RIGHT ;
+	skos:prefLabel "Door DOUBLE SWING RIGHT"@en .
+
+otl:Door-DOUBLE_DOOR_SINGLE_SWING_OPPOSITE_LEFT a owl:Class ;
+	rdfs:subClassOf otl:Door ;
+	rdfs:seeAlso ifc:DOUBLE_DOOR_SINGLE_SWING_OPPOSITE_LEFT ;
+	skos:prefLabel "Door DOUBLE DOOR SINGLE SWING OPPOSITE LEFT"@en .
+
+otl:Door-FOLDING_TO_RIGHT a owl:Class ;
+	rdfs:subClassOf otl:Door ;
+	rdfs:seeAlso ifc:FOLDING_TO_RIGHT ;
+	skos:prefLabel "Door FOLDING TO RIGHT"@en .
+
+otl:Door-DOUBLE_DOOR_SINGLE_SWING a owl:Class ;
+	rdfs:subClassOf otl:Door ;
+	rdfs:seeAlso ifc:DOUBLE_DOOR_SINGLE_SWING ;
+	skos:prefLabel "Door DOUBLE DOOR SINGLE SWING"@en .
+
+otl:Door-SINGLE_SWING_LEFT a owl:Class ;
+	rdfs:subClassOf otl:Door ;
+	rdfs:seeAlso ifc:SINGLE_SWING_LEFT ;
+	skos:prefLabel "Door SINGLE SWING LEFT"@en .
+
+otl:Door-SLIDING_TO_LEFT a owl:Class ;
+	rdfs:subClassOf otl:Door ;
+	rdfs:seeAlso ifc:SLIDING_TO_LEFT ;
+	skos:prefLabel "Door SLIDING TO LEFT"@en .
+
+otl:Door-SINGLE_SWING_RIGHT a owl:Class ;
+	rdfs:subClassOf otl:Door ;
+	rdfs:seeAlso ifc:SINGLE_SWING_RIGHT ;
+	skos:prefLabel "Door SINGLE SWING RIGHT"@en .
+
+otl:Stair-DOUBLE_RETURN_STAIR a owl:Class ;
+	rdfs:subClassOf otl:Stair ;
+	rdfs:seeAlso ifc:DOUBLE_RETURN_STAIR ;
+	skos:prefLabel "Stair DOUBLE RETURN STAIR"@en .
+
+otl:Stair a owl:Class ;
+	rdfs:subClassOf nen2660term:DiscreteObject ;
+	rdfs:seeAlso ifc:IfcStair ;
+	skos:prefLabel "Stair"@en .
+
+otl:Stair-HALF_WINDING_STAIR a owl:Class ;
+	rdfs:subClassOf otl:Stair ;
+	rdfs:seeAlso ifc:HALF_WINDING_STAIR ;
+	skos:prefLabel "Stair HALF WINDING STAIR"@en .
+
+otl:Stair-THREE_QUARTER_TURN_STAIR a owl:Class ;
+	rdfs:subClassOf otl:Stair ;
+	rdfs:seeAlso ifc:THREE_QUARTER_TURN_STAIR ;
+	skos:prefLabel "Stair THREE QUARTER TURN STAIR"@en .
+
+otl:Stair-CURVED_RUN_STAIR a owl:Class ;
+	rdfs:subClassOf otl:Stair ;
+	rdfs:seeAlso ifc:CURVED_RUN_STAIR ;
+	skos:prefLabel "Stair CURVED RUN STAIR"@en .
+
+otl:Stair-THREE_QUARTER_WINDING_STAIR a owl:Class ;
+	rdfs:subClassOf otl:Stair ;
+	rdfs:seeAlso ifc:THREE_QUARTER_WINDING_STAIR ;
+	skos:prefLabel "Stair THREE QUARTER WINDING STAIR"@en .
+
+otl:Stair-SPIRAL_STAIR a owl:Class ;
+	rdfs:subClassOf otl:Stair ;
+	rdfs:seeAlso ifc:SPIRAL_STAIR ;
+	skos:prefLabel "Stair SPIRAL STAIR"@en .
+
+otl:Stair-TWO_STRAIGHT_RUN_STAIR a owl:Class ;
+	rdfs:subClassOf otl:Stair ;
+	rdfs:seeAlso ifc:TWO_STRAIGHT_RUN_STAIR ;
+	skos:prefLabel "Stair TWO STRAIGHT RUN STAIR"@en .
+
+otl:Stair-TWO_QUARTER_TURN_STAIR a owl:Class ;
+	rdfs:subClassOf otl:Stair ;
+	rdfs:seeAlso ifc:TWO_QUARTER_TURN_STAIR ;
+	skos:prefLabel "Stair TWO QUARTER TURN STAIR"@en .
+
+otl:Stair-TWO_QUARTER_WINDING_STAIR a owl:Class ;
+	rdfs:subClassOf otl:Stair ;
+	rdfs:seeAlso ifc:TWO_QUARTER_WINDING_STAIR ;
+	skos:prefLabel "Stair TWO QUARTER WINDING STAIR"@en .
+
+otl:Stair-HALF_TURN_STAIR a owl:Class ;
+	rdfs:subClassOf otl:Stair ;
+	rdfs:seeAlso ifc:HALF_TURN_STAIR ;
+	skos:prefLabel "Stair HALF TURN STAIR"@en .
+
+otl:Stair-TWO_CURVED_RUN_STAIR a owl:Class ;
+	rdfs:subClassOf otl:Stair ;
+	rdfs:seeAlso ifc:TWO_CURVED_RUN_STAIR ;
+	skos:prefLabel "Stair TWO CURVED RUN STAIR"@en .
+
+otl:Stair-STRAIGHT_RUN_STAIR a owl:Class ;
+	rdfs:subClassOf otl:Stair ;
+	rdfs:seeAlso ifc:STRAIGHT_RUN_STAIR ;
+	skos:prefLabel "Stair STRAIGHT RUN STAIR"@en .
+
+otl:Stair-QUARTER_TURN_STAIR a owl:Class ;
+	rdfs:subClassOf otl:Stair ;
+	rdfs:seeAlso ifc:QUARTER_TURN_STAIR ;
+	skos:prefLabel "Stair QUARTER TURN STAIR"@en .
+
+otl:Stair-QUARTER_WINDING_STAIR a owl:Class ;
+	rdfs:subClassOf otl:Stair ;
+	rdfs:seeAlso ifc:QUARTER_WINDING_STAIR ;
+	skos:prefLabel "Stair QUARTER WINDING STAIR"@en .
+
+otl:Chimney a owl:Class ;
+	rdfs:subClassOf nen2660term:DiscreteObject ;
+	rdfs:seeAlso ifc:IfcChimney ;
+	skos:prefLabel "Chimney"@en .
+
+otl:WindowStandardCase a owl:Class ;
+	rdfs:subClassOf nen2660term:DiscreteObject ;
+	rdfs:seeAlso ifc:IfcWindowStandardCase ;
+	skos:prefLabel "Window Standard Case"@en .
+
+otl:MemberStandardCase a owl:Class ;
+	rdfs:subClassOf nen2660term:DiscreteObject ;
+	rdfs:seeAlso ifc:IfcMemberStandardCase ;
+	skos:prefLabel "Member Standard Case"@en .
+
+otl:WallStandardCase a owl:Class ;
+	rdfs:subClassOf nen2660term:DiscreteObject ;
+	rdfs:seeAlso ifc:IfcWallStandardCase ;
+	skos:prefLabel "Wall Standard Case"@en .
+
+otl:WallElementedCase a owl:Class ;
+	rdfs:subClassOf nen2660term:DiscreteObject ;
+	rdfs:seeAlso ifc:IfcWallElementedCase ;
+	skos:prefLabel "Wall Elemented Case"@en .
+
+otl:SlabStandardCase a owl:Class ;
+	rdfs:subClassOf nen2660term:DiscreteObject ;
+	rdfs:seeAlso ifc:IfcSlabStandardCase ;
+	skos:prefLabel "Slab Standard Case"@en .
+
+otl:SlabElementedCase a owl:Class ;
+	rdfs:subClassOf nen2660term:DiscreteObject ;
+	rdfs:seeAlso ifc:IfcSlabElementedCase ;
+	skos:prefLabel "Slab Elemented Case"@en .
+
+otl:PlateStandardCase a owl:Class ;
+	rdfs:subClassOf nen2660term:DiscreteObject ;
+	rdfs:seeAlso ifc:IfcPlateStandardCase ;
+	skos:prefLabel "Plate Standard Case"@en .
+
+otl:ColumnStandardCase a owl:Class ;
+	rdfs:subClassOf nen2660term:DiscreteObject ;
+	rdfs:seeAlso ifc:IfcColumnStandardCase ;
+	skos:prefLabel "Column Standard Case"@en .
+
+otl:BeamStandardCase a owl:Class ;
+	rdfs:subClassOf nen2660term:DiscreteObject ;
+	rdfs:seeAlso ifc:IfcBeamStandardCase ;
+	skos:prefLabel "Beam Standard Case"@en .
+
+otl:DoorStandardCase a owl:Class ;
+	rdfs:subClassOf nen2660term:DiscreteObject ;
+	rdfs:seeAlso ifc:IfcDoorStandardCase ;
+	skos:prefLabel "Door Standard Case"@en .
+
+otl:DistributionElement a owl:Class ;
+	rdfs:subClassOf nen2660term:DiscreteObject ;
+	rdfs:seeAlso ifc:IfcDistributionElement ;
+	skos:prefLabel "Distribution Element"@en .
+
+otl:DistributionControlElement a owl:Class ;
+	rdfs:subClassOf nen2660term:DiscreteObject ;
+	rdfs:seeAlso ifc:IfcDistributionControlElement ;
+	skos:prefLabel "Distribution Control Element"@en .
+
+otl:DistributionFlowElement a owl:Class ;
+	rdfs:subClassOf nen2660term:DiscreteObject ;
+	rdfs:seeAlso ifc:IfcDistributionFlowElement ;
+	skos:prefLabel "Distribution Flow Element"@en .
+
+otl:Controller-TWOPOSITION a owl:Class ;
+	rdfs:subClassOf otl:Controller ;
+	rdfs:seeAlso ifc:TWOPOSITION ;
+	skos:prefLabel "Controller TWOPOSITION"@en .
+
+otl:Controller a owl:Class ;
+	rdfs:subClassOf nen2660term:DiscreteObject ;
+	rdfs:seeAlso ifc:IfcController ;
+	skos:prefLabel "Controller"@en .
+
+otl:Controller-PROGRAMMABLE a owl:Class ;
+	rdfs:subClassOf otl:Controller ;
+	rdfs:seeAlso ifc:PROGRAMMABLE ;
+	skos:prefLabel "Controller PROGRAMMABLE"@en .
+
+otl:Controller-MULTIPOSITION a owl:Class ;
+	rdfs:subClassOf otl:Controller ;
+	rdfs:seeAlso ifc:MULTIPOSITION ;
+	skos:prefLabel "Controller MULTIPOSITION"@en .
+
+otl:Controller-FLOATING a owl:Class ;
+	rdfs:subClassOf otl:Controller ;
+	rdfs:seeAlso ifc:FLOATING ;
+	skos:prefLabel "Controller FLOATING"@en .
+
+otl:Controller-PROPORTIONAL a owl:Class ;
+	rdfs:subClassOf otl:Controller ;
+	rdfs:seeAlso ifc:PROPORTIONAL ;
+	skos:prefLabel "Controller PROPORTIONAL"@en .
+
+otl:FlowInstrument-VOLTMETER_RMS a owl:Class ;
+	rdfs:subClassOf otl:FlowInstrument ;
+	rdfs:seeAlso ifc:VOLTMETER_RMS ;
+	skos:prefLabel "Flow Instrument VOLTMETER RMS"@en .
+
+otl:FlowInstrument a owl:Class ;
+	rdfs:subClassOf nen2660term:DiscreteObject ;
+	rdfs:seeAlso ifc:IfcFlowInstrument ;
+	skos:prefLabel "Flow Instrument"@en .
+
+otl:FlowInstrument-POWERFACTORMETER a owl:Class ;
+	rdfs:subClassOf otl:FlowInstrument ;
+	rdfs:seeAlso ifc:POWERFACTORMETER ;
+	skos:prefLabel "Flow Instrument POWERFACTORMETER"@en .
+
+otl:FlowInstrument-VOLTMETER_PEAK a owl:Class ;
+	rdfs:subClassOf otl:FlowInstrument ;
+	rdfs:seeAlso ifc:VOLTMETER_PEAK ;
+	skos:prefLabel "Flow Instrument VOLTMETER PEAK"@en .
+
+otl:FlowInstrument-PRESSUREGAUGE a owl:Class ;
+	rdfs:subClassOf otl:FlowInstrument ;
+	rdfs:seeAlso ifc:PRESSUREGAUGE ;
+	skos:prefLabel "Flow Instrument PRESSUREGAUGE"@en .
+
+otl:FlowInstrument-PHASEANGLEMETER a owl:Class ;
+	rdfs:subClassOf otl:FlowInstrument ;
+	rdfs:seeAlso ifc:PHASEANGLEMETER ;
+	skos:prefLabel "Flow Instrument PHASEANGLEMETER"@en .
+
+otl:FlowInstrument-AMMETER a owl:Class ;
+	rdfs:subClassOf otl:FlowInstrument ;
+	rdfs:seeAlso ifc:AMMETER ;
+	skos:prefLabel "Flow Instrument AMMETER"@en .
+
+otl:FlowInstrument-THERMOMETER a owl:Class ;
+	rdfs:subClassOf otl:FlowInstrument ;
+	rdfs:seeAlso ifc:THERMOMETER ;
+	skos:prefLabel "Flow Instrument THERMOMETER"@en .
+
+otl:FlowInstrument-FREQUENCYMETER a owl:Class ;
+	rdfs:subClassOf otl:FlowInstrument ;
+	rdfs:seeAlso ifc:FREQUENCYMETER ;
+	skos:prefLabel "Flow Instrument FREQUENCYMETER"@en .
+
+otl:Sensor-FLOWSENSOR a owl:Class ;
+	rdfs:subClassOf otl:Sensor ;
+	rdfs:seeAlso ifc:FLOWSENSOR ;
+	skos:prefLabel "Sensor FLOWSENSOR"@en .
+
+otl:Sensor a owl:Class ;
+	rdfs:subClassOf nen2660term:DiscreteObject ;
+	rdfs:seeAlso ifc:IfcSensor ;
+	skos:prefLabel "Sensor"@en .
+
+otl:Sensor-RADIATIONSENSOR a owl:Class ;
+	rdfs:subClassOf otl:Sensor ;
+	rdfs:seeAlso ifc:RADIATIONSENSOR ;
+	skos:prefLabel "Sensor RADIATIONSENSOR"@en .
+
+otl:Sensor-CONTACTSENSOR a owl:Class ;
+	rdfs:subClassOf otl:Sensor ;
+	rdfs:seeAlso ifc:CONTACTSENSOR ;
+	skos:prefLabel "Sensor CONTACTSENSOR"@en .
+
+otl:Sensor-IDENTIFIERSENSOR a owl:Class ;
+	rdfs:subClassOf otl:Sensor ;
+	rdfs:seeAlso ifc:IDENTIFIERSENSOR ;
+	skos:prefLabel "Sensor IDENTIFIERSENSOR"@en .
+
+otl:Sensor-PRESSURESENSOR a owl:Class ;
+	rdfs:subClassOf otl:Sensor ;
+	rdfs:seeAlso ifc:PRESSURESENSOR ;
+	skos:prefLabel "Sensor PRESSURESENSOR"@en .
+
+otl:Sensor-SMOKESENSOR a owl:Class ;
+	rdfs:subClassOf otl:Sensor ;
+	rdfs:seeAlso ifc:SMOKESENSOR ;
+	skos:prefLabel "Sensor SMOKESENSOR"@en .
+
+otl:Sensor-LEVELSENSOR a owl:Class ;
+	rdfs:subClassOf otl:Sensor ;
+	rdfs:seeAlso ifc:LEVELSENSOR ;
+	skos:prefLabel "Sensor LEVELSENSOR"@en .
+
+otl:Sensor-CONDUCTANCESENSOR a owl:Class ;
+	rdfs:subClassOf otl:Sensor ;
+	rdfs:seeAlso ifc:CONDUCTANCESENSOR ;
+	skos:prefLabel "Sensor CONDUCTANCESENSOR"@en .
+
+otl:Sensor-HEATSENSOR a owl:Class ;
+	rdfs:subClassOf otl:Sensor ;
+	rdfs:seeAlso ifc:HEATSENSOR ;
+	skos:prefLabel "Sensor HEATSENSOR"@en .
+
+otl:Sensor-COSENSOR a owl:Class ;
+	rdfs:subClassOf otl:Sensor ;
+	rdfs:seeAlso ifc:COSENSOR ;
+	skos:prefLabel "Sensor COSENSOR"@en .
+
+otl:Sensor-RADIOACTIVITYSENSOR a owl:Class ;
+	rdfs:subClassOf otl:Sensor ;
+	rdfs:seeAlso ifc:RADIOACTIVITYSENSOR ;
+	skos:prefLabel "Sensor RADIOACTIVITYSENSOR"@en .
+
+otl:Sensor-LIGHTSENSOR a owl:Class ;
+	rdfs:subClassOf otl:Sensor ;
+	rdfs:seeAlso ifc:LIGHTSENSOR ;
+	skos:prefLabel "Sensor LIGHTSENSOR"@en .
+
+otl:Sensor-HUMIDITYSENSOR a owl:Class ;
+	rdfs:subClassOf otl:Sensor ;
+	rdfs:seeAlso ifc:HUMIDITYSENSOR ;
+	skos:prefLabel "Sensor HUMIDITYSENSOR"@en .
+
+otl:Sensor-MOVEMENTSENSOR a owl:Class ;
+	rdfs:subClassOf otl:Sensor ;
+	rdfs:seeAlso ifc:MOVEMENTSENSOR ;
+	skos:prefLabel "Sensor MOVEMENTSENSOR"@en .
+
+otl:Sensor-GASSENSOR a owl:Class ;
+	rdfs:subClassOf otl:Sensor ;
+	rdfs:seeAlso ifc:GASSENSOR ;
+	skos:prefLabel "Sensor GASSENSOR"@en .
+
+otl:Sensor-SOUNDSENSOR a owl:Class ;
+	rdfs:subClassOf otl:Sensor ;
+	rdfs:seeAlso ifc:SOUNDSENSOR ;
+	skos:prefLabel "Sensor SOUNDSENSOR"@en .
+
+otl:Sensor-WINDSENSOR a owl:Class ;
+	rdfs:subClassOf otl:Sensor ;
+	rdfs:seeAlso ifc:WINDSENSOR ;
+	skos:prefLabel "Sensor WINDSENSOR"@en .
+
+otl:Sensor-PHSENSOR a owl:Class ;
+	rdfs:subClassOf otl:Sensor ;
+	rdfs:seeAlso ifc:PHSENSOR ;
+	skos:prefLabel "Sensor PHSENSOR"@en .
+
+otl:Sensor-CO2SENSOR a owl:Class ;
+	rdfs:subClassOf otl:Sensor ;
+	rdfs:seeAlso ifc:CO2SENSOR ;
+	skos:prefLabel "Sensor CO 2 SENSOR"@en .
+
+otl:Sensor-TEMPERATURESENSOR a owl:Class ;
+	rdfs:subClassOf otl:Sensor ;
+	rdfs:seeAlso ifc:TEMPERATURESENSOR ;
+	skos:prefLabel "Sensor TEMPERATURESENSOR"@en .
+
+otl:Sensor-IONCONCENTRATIONSENSOR a owl:Class ;
+	rdfs:subClassOf otl:Sensor ;
+	rdfs:seeAlso ifc:IONCONCENTRATIONSENSOR ;
+	skos:prefLabel "Sensor IONCONCENTRATIONSENSOR"@en .
+
+otl:Sensor-FIRESENSOR a owl:Class ;
+	rdfs:subClassOf otl:Sensor ;
+	rdfs:seeAlso ifc:FIRESENSOR ;
+	skos:prefLabel "Sensor FIRESENSOR"@en .
+
+otl:Sensor-FROSTSENSOR a owl:Class ;
+	rdfs:subClassOf otl:Sensor ;
+	rdfs:seeAlso ifc:FROSTSENSOR ;
+	skos:prefLabel "Sensor FROSTSENSOR"@en .
+
+otl:Sensor-MOISTURESENSOR a owl:Class ;
+	rdfs:subClassOf otl:Sensor ;
+	rdfs:seeAlso ifc:MOISTURESENSOR ;
+	skos:prefLabel "Sensor MOISTURESENSOR"@en .
+
+otl:ProtectiveDeviceTrippingUnit-ELECTRONIC a owl:Class ;
+	rdfs:subClassOf otl:ProtectiveDeviceTrippingUnit ;
+	rdfs:seeAlso ifc:ELECTRONIC ;
+	skos:prefLabel "Protective Device Tripping Unit ELECTRONIC"@en .
+
+otl:ProtectiveDeviceTrippingUnit a owl:Class ;
+	rdfs:subClassOf nen2660term:DiscreteObject ;
+	rdfs:seeAlso ifc:IfcProtectiveDeviceTrippingUnit ;
+	skos:prefLabel "Protective Device Tripping Unit"@en .
+
+otl:ProtectiveDeviceTrippingUnit-RESIDUALCURRENT a owl:Class ;
+	rdfs:subClassOf otl:ProtectiveDeviceTrippingUnit ;
+	rdfs:seeAlso ifc:RESIDUALCURRENT ;
+	skos:prefLabel "Protective Device Tripping Unit RESIDUALCURRENT"@en .
+
+otl:ProtectiveDeviceTrippingUnit-THERMAL a owl:Class ;
+	rdfs:subClassOf otl:ProtectiveDeviceTrippingUnit ;
+	rdfs:seeAlso ifc:THERMAL ;
+	skos:prefLabel "Protective Device Tripping Unit THERMAL"@en .
+
+otl:ProtectiveDeviceTrippingUnit-ELECTROMAGNETIC a owl:Class ;
+	rdfs:subClassOf otl:ProtectiveDeviceTrippingUnit ;
+	rdfs:seeAlso ifc:ELECTROMAGNETIC ;
+	skos:prefLabel "Protective Device Tripping Unit ELECTROMAGNETIC"@en .
+
+otl:Alarm-LIGHT a owl:Class ;
+	rdfs:subClassOf otl:Alarm ;
+	rdfs:seeAlso ifc:LIGHT ;
+	skos:prefLabel "Alarm LIGHT"@en .
+
+otl:Alarm a owl:Class ;
+	rdfs:subClassOf nen2660term:DiscreteObject ;
+	rdfs:seeAlso ifc:IfcAlarm ;
+	skos:prefLabel "Alarm"@en .
+
+otl:Alarm-SIREN a owl:Class ;
+	rdfs:subClassOf otl:Alarm ;
+	rdfs:seeAlso ifc:SIREN ;
+	skos:prefLabel "Alarm SIREN"@en .
+
+otl:Alarm-BREAKGLASSBUTTON a owl:Class ;
+	rdfs:subClassOf otl:Alarm ;
+	rdfs:seeAlso ifc:BREAKGLASSBUTTON ;
+	skos:prefLabel "Alarm BREAKGLASSBUTTON"@en .
+
+otl:Alarm-WHISTLE a owl:Class ;
+	rdfs:subClassOf otl:Alarm ;
+	rdfs:seeAlso ifc:WHISTLE ;
+	skos:prefLabel "Alarm WHISTLE"@en .
+
+otl:Alarm-MANUALPULLBOX a owl:Class ;
+	rdfs:subClassOf otl:Alarm ;
+	rdfs:seeAlso ifc:MANUALPULLBOX ;
+	skos:prefLabel "Alarm MANUALPULLBOX"@en .
+
+otl:Alarm-BELL a owl:Class ;
+	rdfs:subClassOf otl:Alarm ;
+	rdfs:seeAlso ifc:BELL ;
+	skos:prefLabel "Alarm BELL"@en .
+
+otl:UnitaryControlElement-ALARMPANEL a owl:Class ;
+	rdfs:subClassOf otl:UnitaryControlElement ;
+	rdfs:seeAlso ifc:ALARMPANEL ;
+	skos:prefLabel "Unitary Control Element ALARMPANEL"@en .
+
+otl:UnitaryControlElement a owl:Class ;
+	rdfs:subClassOf nen2660term:DiscreteObject ;
+	rdfs:seeAlso ifc:IfcUnitaryControlElement ;
+	skos:prefLabel "Unitary Control Element"@en .
+
+otl:UnitaryControlElement-CONTROLPANEL a owl:Class ;
+	rdfs:subClassOf otl:UnitaryControlElement ;
+	rdfs:seeAlso ifc:CONTROLPANEL ;
+	skos:prefLabel "Unitary Control Element CONTROLPANEL"@en .
+
+otl:UnitaryControlElement-GASDETECTIONPANEL a owl:Class ;
+	rdfs:subClassOf otl:UnitaryControlElement ;
+	rdfs:seeAlso ifc:GASDETECTIONPANEL ;
+	skos:prefLabel "Unitary Control Element GASDETECTIONPANEL"@en .
+
+otl:UnitaryControlElement-THERMOSTAT a owl:Class ;
+	rdfs:subClassOf otl:UnitaryControlElement ;
+	rdfs:seeAlso ifc:THERMOSTAT ;
+	skos:prefLabel "Unitary Control Element THERMOSTAT"@en .
+
+otl:UnitaryControlElement-HUMIDISTAT a owl:Class ;
+	rdfs:subClassOf otl:UnitaryControlElement ;
+	rdfs:seeAlso ifc:HUMIDISTAT ;
+	skos:prefLabel "Unitary Control Element HUMIDISTAT"@en .
+
+otl:UnitaryControlElement-INDICATORPANEL a owl:Class ;
+	rdfs:subClassOf otl:UnitaryControlElement ;
+	rdfs:seeAlso ifc:INDICATORPANEL ;
+	skos:prefLabel "Unitary Control Element INDICATORPANEL"@en .
+
+otl:UnitaryControlElement-WEATHERSTATION a owl:Class ;
+	rdfs:subClassOf otl:UnitaryControlElement ;
+	rdfs:seeAlso ifc:WEATHERSTATION ;
+	skos:prefLabel "Unitary Control Element WEATHERSTATION"@en .
+
+otl:UnitaryControlElement-MIMICPANEL a owl:Class ;
+	rdfs:subClassOf otl:UnitaryControlElement ;
+	rdfs:seeAlso ifc:MIMICPANEL ;
+	skos:prefLabel "Unitary Control Element MIMICPANEL"@en .
+
+otl:Actuator-THERMOSTATICACTUATOR a owl:Class ;
+	rdfs:subClassOf otl:Actuator ;
+	rdfs:seeAlso ifc:THERMOSTATICACTUATOR ;
+	skos:prefLabel "Actuator THERMOSTATICACTUATOR"@en .
+
+otl:Actuator a owl:Class ;
+	rdfs:subClassOf nen2660term:DiscreteObject ;
+	rdfs:seeAlso ifc:IfcActuator ;
+	skos:prefLabel "Actuator"@en .
+
+otl:Actuator-ELECTRICACTUATOR a owl:Class ;
+	rdfs:subClassOf otl:Actuator ;
+	rdfs:seeAlso ifc:ELECTRICACTUATOR ;
+	skos:prefLabel "Actuator ELECTRICACTUATOR"@en .
+
+otl:Actuator-HANDOPERATEDACTUATOR a owl:Class ;
+	rdfs:subClassOf otl:Actuator ;
+	rdfs:seeAlso ifc:HANDOPERATEDACTUATOR ;
+	skos:prefLabel "Actuator HANDOPERATEDACTUATOR"@en .
+
+otl:Actuator-HYDRAULICACTUATOR a owl:Class ;
+	rdfs:subClassOf otl:Actuator ;
+	rdfs:seeAlso ifc:HYDRAULICACTUATOR ;
+	skos:prefLabel "Actuator HYDRAULICACTUATOR"@en .
+
+otl:Actuator-PNEUMATICACTUATOR a owl:Class ;
+	rdfs:subClassOf otl:Actuator ;
+	rdfs:seeAlso ifc:PNEUMATICACTUATOR ;
+	skos:prefLabel "Actuator PNEUMATICACTUATOR"@en .
+
+otl:FlowTerminal a owl:Class ;
+	rdfs:subClassOf nen2660term:DiscreteObject ;
+	rdfs:seeAlso ifc:IfcFlowTerminal ;
+	skos:prefLabel "Flow Terminal"@en .
+
+otl:EnergyConversionDevice a owl:Class ;
+	rdfs:subClassOf nen2660term:DiscreteObject ;
+	rdfs:seeAlso ifc:IfcEnergyConversionDevice ;
+	skos:prefLabel "Energy Conversion Device"@en .
+
+otl:FlowTreatmentDevice a owl:Class ;
+	rdfs:subClassOf nen2660term:DiscreteObject ;
+	rdfs:seeAlso ifc:IfcFlowTreatmentDevice ;
+	skos:prefLabel "Flow Treatment Device"@en .
+
+otl:FlowController a owl:Class ;
+	rdfs:subClassOf nen2660term:DiscreteObject ;
+	rdfs:seeAlso ifc:IfcFlowController ;
+	skos:prefLabel "Flow Controller"@en .
+
+otl:FlowSegment a owl:Class ;
+	rdfs:subClassOf nen2660term:DiscreteObject ;
+	rdfs:seeAlso ifc:IfcFlowSegment ;
+	skos:prefLabel "Flow Segment"@en .
+
+otl:DistributionChamberElement-SUMP a owl:Class ;
+	rdfs:subClassOf otl:DistributionChamberElement ;
+	rdfs:seeAlso ifc:SUMP ;
+	skos:prefLabel "Distribution Chamber Element SUMP"@en .
+
+otl:DistributionChamberElement a owl:Class ;
+	rdfs:subClassOf nen2660term:DiscreteObject ;
+	rdfs:seeAlso ifc:IfcDistributionChamberElement ;
+	skos:prefLabel "Distribution Chamber Element"@en .
+
+otl:DistributionChamberElement-TRENCH a owl:Class ;
+	rdfs:subClassOf otl:DistributionChamberElement ;
+	rdfs:seeAlso ifc:TRENCH ;
+	skos:prefLabel "Distribution Chamber Element TRENCH"@en .
+
+otl:DistributionChamberElement-VALVECHAMBER a owl:Class ;
+	rdfs:subClassOf otl:DistributionChamberElement ;
+	rdfs:seeAlso ifc:VALVECHAMBER ;
+	skos:prefLabel "Distribution Chamber Element VALVECHAMBER"@en .
+
+otl:DistributionChamberElement-INSPECTIONCHAMBER a owl:Class ;
+	rdfs:subClassOf otl:DistributionChamberElement ;
+	rdfs:seeAlso ifc:INSPECTIONCHAMBER ;
+	skos:prefLabel "Distribution Chamber Element INSPECTIONCHAMBER"@en .
+
+otl:DistributionChamberElement-METERCHAMBER a owl:Class ;
+	rdfs:subClassOf otl:DistributionChamberElement ;
+	rdfs:seeAlso ifc:METERCHAMBER ;
+	skos:prefLabel "Distribution Chamber Element METERCHAMBER"@en .
+
+otl:DistributionChamberElement-INSPECTIONPIT a owl:Class ;
+	rdfs:subClassOf otl:DistributionChamberElement ;
+	rdfs:seeAlso ifc:INSPECTIONPIT ;
+	skos:prefLabel "Distribution Chamber Element INSPECTIONPIT"@en .
+
+otl:DistributionChamberElement-MANHOLE a owl:Class ;
+	rdfs:subClassOf otl:DistributionChamberElement ;
+	rdfs:seeAlso ifc:MANHOLE ;
+	skos:prefLabel "Distribution Chamber Element MANHOLE"@en .
+
+otl:DistributionChamberElement-FORMEDDUCT a owl:Class ;
+	rdfs:subClassOf otl:DistributionChamberElement ;
+	rdfs:seeAlso ifc:FORMEDDUCT ;
+	skos:prefLabel "Distribution Chamber Element FORMEDDUCT"@en .
+
+otl:FlowFitting a owl:Class ;
+	rdfs:subClassOf nen2660term:DiscreteObject ;
+	rdfs:seeAlso ifc:IfcFlowFitting ;
+	skos:prefLabel "Flow Fitting"@en .
+
+otl:FlowMovingDevice a owl:Class ;
+	rdfs:subClassOf nen2660term:DiscreteObject ;
+	rdfs:seeAlso ifc:IfcFlowMovingDevice ;
+	skos:prefLabel "Flow Moving Device"@en .
+
+otl:FlowStorageDevice a owl:Class ;
+	rdfs:subClassOf nen2660term:DiscreteObject ;
+	rdfs:seeAlso ifc:IfcFlowStorageDevice ;
+	skos:prefLabel "Flow Storage Device"@en .
+
+otl:SpaceHeater-CONVECTOR a owl:Class ;
+	rdfs:subClassOf otl:SpaceHeater ;
+	rdfs:seeAlso ifc:CONVECTOR ;
+	skos:prefLabel "Space Heater CONVECTOR"@en .
+
+otl:SpaceHeater a owl:Class ;
+	rdfs:subClassOf nen2660term:DiscreteObject ;
+	rdfs:seeAlso ifc:IfcSpaceHeater ;
+	skos:prefLabel "Space Heater"@en .
+
+otl:SpaceHeater-RADIATOR a owl:Class ;
+	rdfs:subClassOf otl:SpaceHeater ;
+	rdfs:seeAlso ifc:RADIATOR ;
+	skos:prefLabel "Space Heater RADIATOR"@en .
+
+otl:StackTerminal-COWL a owl:Class ;
+	rdfs:subClassOf otl:StackTerminal ;
+	rdfs:seeAlso ifc:COWL ;
+	skos:prefLabel "Stack Terminal COWL"@en .
+
+otl:StackTerminal a owl:Class ;
+	rdfs:subClassOf nen2660term:DiscreteObject ;
+	rdfs:seeAlso ifc:IfcStackTerminal ;
+	skos:prefLabel "Stack Terminal"@en .
+
+otl:StackTerminal-RAINWATERHOPPER a owl:Class ;
+	rdfs:subClassOf otl:StackTerminal ;
+	rdfs:seeAlso ifc:RAINWATERHOPPER ;
+	skos:prefLabel "Stack Terminal RAINWATERHOPPER"@en .
+
+otl:StackTerminal-BIRDCAGE a owl:Class ;
+	rdfs:subClassOf otl:StackTerminal ;
+	rdfs:seeAlso ifc:BIRDCAGE ;
+	skos:prefLabel "Stack Terminal BIRDCAGE"@en .
+
+otl:Lamp-COMPACTFLUORESCENT a owl:Class ;
+	rdfs:subClassOf otl:Lamp ;
+	rdfs:seeAlso ifc:COMPACTFLUORESCENT ;
+	skos:prefLabel "Lamp COMPACTFLUORESCENT"@en .
+
+otl:Lamp a owl:Class ;
+	rdfs:subClassOf nen2660term:DiscreteObject ;
+	rdfs:seeAlso ifc:IfcLamp ;
+	skos:prefLabel "Lamp"@en .
+
+otl:Lamp-HIGHPRESSURESODIUM a owl:Class ;
+	rdfs:subClassOf otl:Lamp ;
+	rdfs:seeAlso ifc:HIGHPRESSURESODIUM ;
+	skos:prefLabel "Lamp HIGHPRESSURESODIUM"@en .
+
+otl:Lamp-OLED a owl:Class ;
+	rdfs:subClassOf otl:Lamp ;
+	rdfs:seeAlso ifc:OLED ;
+	skos:prefLabel "Lamp OLED"@en .
+
+otl:Lamp-HIGHPRESSUREMERCURY a owl:Class ;
+	rdfs:subClassOf otl:Lamp ;
+	rdfs:seeAlso ifc:HIGHPRESSUREMERCURY ;
+	skos:prefLabel "Lamp HIGHPRESSUREMERCURY"@en .
+
+otl:Lamp-METALHALIDE a owl:Class ;
+	rdfs:subClassOf otl:Lamp ;
+	rdfs:seeAlso ifc:METALHALIDE ;
+	skos:prefLabel "Lamp METALHALIDE"@en .
+
+otl:Lamp-LED a owl:Class ;
+	rdfs:subClassOf otl:Lamp ;
+	rdfs:seeAlso ifc:LED ;
+	skos:prefLabel "Lamp LED"@en .
+
+otl:Lamp-TUNGSTENFILAMENT a owl:Class ;
+	rdfs:subClassOf otl:Lamp ;
+	rdfs:seeAlso ifc:TUNGSTENFILAMENT ;
+	skos:prefLabel "Lamp TUNGSTENFILAMENT"@en .
+
+otl:Lamp-FLUORESCENT a owl:Class ;
+	rdfs:subClassOf otl:Lamp ;
+	rdfs:seeAlso ifc:FLUORESCENT ;
+	skos:prefLabel "Lamp FLUORESCENT"@en .
+
+otl:Lamp-HALOGEN a owl:Class ;
+	rdfs:subClassOf otl:Lamp ;
+	rdfs:seeAlso ifc:HALOGEN ;
+	skos:prefLabel "Lamp HALOGEN"@en .
+
+otl:AirTerminal-REGISTER a owl:Class ;
+	rdfs:subClassOf otl:AirTerminal ;
+	rdfs:seeAlso ifc:REGISTER ;
+	skos:prefLabel "Air Terminal REGISTER"@en .
+
+otl:AirTerminal a owl:Class ;
+	rdfs:subClassOf nen2660term:DiscreteObject ;
+	rdfs:seeAlso ifc:IfcAirTerminal ;
+	skos:prefLabel "Air Terminal"@en .
+
+otl:AirTerminal-LOUVRE a owl:Class ;
+	rdfs:subClassOf otl:AirTerminal ;
+	rdfs:seeAlso ifc:LOUVRE ;
+	skos:prefLabel "Air Terminal LOUVRE"@en .
+
+otl:AirTerminal-GRILLE a owl:Class ;
+	rdfs:subClassOf otl:AirTerminal ;
+	rdfs:seeAlso ifc:GRILLE ;
+	skos:prefLabel "Air Terminal GRILLE"@en .
+
+otl:AirTerminal-DIFFUSER a owl:Class ;
+	rdfs:subClassOf otl:AirTerminal ;
+	rdfs:seeAlso ifc:DIFFUSER ;
+	skos:prefLabel "Air Terminal DIFFUSER"@en .
+
+otl:LightFixture-POINTSOURCE a owl:Class ;
+	rdfs:subClassOf otl:LightFixture ;
+	rdfs:seeAlso ifc:POINTSOURCE ;
+	skos:prefLabel "Light Fixture POINTSOURCE"@en .
+
+otl:LightFixture a owl:Class ;
+	rdfs:subClassOf nen2660term:DiscreteObject ;
+	rdfs:seeAlso ifc:IfcLightFixture ;
+	skos:prefLabel "Light Fixture"@en .
+
+otl:LightFixture-DIRECTIONSOURCE a owl:Class ;
+	rdfs:subClassOf otl:LightFixture ;
+	rdfs:seeAlso ifc:DIRECTIONSOURCE ;
+	skos:prefLabel "Light Fixture DIRECTIONSOURCE"@en .
+
+otl:LightFixture-SECURITYLIGHTING a owl:Class ;
+	rdfs:subClassOf otl:LightFixture ;
+	rdfs:seeAlso ifc:SECURITYLIGHTING ;
+	skos:prefLabel "Light Fixture SECURITYLIGHTING"@en .
+
+otl:CommunicationsAppliance-REPEATER a owl:Class ;
+	rdfs:subClassOf otl:CommunicationsAppliance ;
+	rdfs:seeAlso ifc:REPEATER ;
+	skos:prefLabel "Communications Appliance REPEATER"@en .
+
+otl:CommunicationsAppliance a owl:Class ;
+	rdfs:subClassOf nen2660term:DiscreteObject ;
+	rdfs:seeAlso ifc:IfcCommunicationsAppliance ;
+	skos:prefLabel "Communications Appliance"@en .
+
+otl:CommunicationsAppliance-NETWORKAPPLIANCE a owl:Class ;
+	rdfs:subClassOf otl:CommunicationsAppliance ;
+	rdfs:seeAlso ifc:NETWORKAPPLIANCE ;
+	skos:prefLabel "Communications Appliance NETWORKAPPLIANCE"@en .
+
+otl:CommunicationsAppliance-ROUTER a owl:Class ;
+	rdfs:subClassOf otl:CommunicationsAppliance ;
+	rdfs:seeAlso ifc:ROUTER ;
+	skos:prefLabel "Communications Appliance ROUTER"@en .
+
+otl:CommunicationsAppliance-PRINTER a owl:Class ;
+	rdfs:subClassOf otl:CommunicationsAppliance ;
+	rdfs:seeAlso ifc:PRINTER ;
+	skos:prefLabel "Communications Appliance PRINTER"@en .
+
+otl:CommunicationsAppliance-COMPUTER a owl:Class ;
+	rdfs:subClassOf otl:CommunicationsAppliance ;
+	rdfs:seeAlso ifc:COMPUTER ;
+	skos:prefLabel "Communications Appliance COMPUTER"@en .
+
+otl:CommunicationsAppliance-FAX a owl:Class ;
+	rdfs:subClassOf otl:CommunicationsAppliance ;
+	rdfs:seeAlso ifc:FAX ;
+	skos:prefLabel "Communications Appliance FAX"@en .
+
+otl:CommunicationsAppliance-SCANNER a owl:Class ;
+	rdfs:subClassOf otl:CommunicationsAppliance ;
+	rdfs:seeAlso ifc:SCANNER ;
+	skos:prefLabel "Communications Appliance SCANNER"@en .
+
+otl:CommunicationsAppliance-NETWORKBRIDGE a owl:Class ;
+	rdfs:subClassOf otl:CommunicationsAppliance ;
+	rdfs:seeAlso ifc:NETWORKBRIDGE ;
+	skos:prefLabel "Communications Appliance NETWORKBRIDGE"@en .
+
+otl:CommunicationsAppliance-GATEWAY a owl:Class ;
+	rdfs:subClassOf otl:CommunicationsAppliance ;
+	rdfs:seeAlso ifc:GATEWAY ;
+	skos:prefLabel "Communications Appliance GATEWAY"@en .
+
+otl:CommunicationsAppliance-MODEM a owl:Class ;
+	rdfs:subClassOf otl:CommunicationsAppliance ;
+	rdfs:seeAlso ifc:MODEM ;
+	skos:prefLabel "Communications Appliance MODEM"@en .
+
+otl:CommunicationsAppliance-NETWORKHUB a owl:Class ;
+	rdfs:subClassOf otl:CommunicationsAppliance ;
+	rdfs:seeAlso ifc:NETWORKHUB ;
+	skos:prefLabel "Communications Appliance NETWORKHUB"@en .
+
+otl:CommunicationsAppliance-ANTENNA a owl:Class ;
+	rdfs:subClassOf otl:CommunicationsAppliance ;
+	rdfs:seeAlso ifc:ANTENNA ;
+	skos:prefLabel "Communications Appliance ANTENNA"@en .
+
+otl:AudioVisualAppliance-SPEAKER a owl:Class ;
+	rdfs:subClassOf otl:AudioVisualAppliance ;
+	rdfs:seeAlso ifc:SPEAKER ;
+	skos:prefLabel "Audio Visual Appliance SPEAKER"@en .
+
+otl:AudioVisualAppliance a owl:Class ;
+	rdfs:subClassOf nen2660term:DiscreteObject ;
+	rdfs:seeAlso ifc:IfcAudioVisualAppliance ;
+	skos:prefLabel "Audio Visual Appliance"@en .
+
+otl:AudioVisualAppliance-DISPLAY a owl:Class ;
+	rdfs:subClassOf otl:AudioVisualAppliance ;
+	rdfs:seeAlso ifc:DISPLAY ;
+	skos:prefLabel "Audio Visual Appliance DISPLAY"@en .
+
+otl:AudioVisualAppliance-CAMERA a owl:Class ;
+	rdfs:subClassOf otl:AudioVisualAppliance ;
+	rdfs:seeAlso ifc:CAMERA ;
+	skos:prefLabel "Audio Visual Appliance CAMERA"@en .
+
+otl:AudioVisualAppliance-SWITCHER a owl:Class ;
+	rdfs:subClassOf otl:AudioVisualAppliance ;
+	rdfs:seeAlso ifc:SWITCHER ;
+	skos:prefLabel "Audio Visual Appliance SWITCHER"@en .
+
+otl:AudioVisualAppliance-RECEIVER a owl:Class ;
+	rdfs:subClassOf otl:AudioVisualAppliance ;
+	rdfs:seeAlso ifc:RECEIVER ;
+	skos:prefLabel "Audio Visual Appliance RECEIVER"@en .
+
+otl:AudioVisualAppliance-AMPLIFIER a owl:Class ;
+	rdfs:subClassOf otl:AudioVisualAppliance ;
+	rdfs:seeAlso ifc:AMPLIFIER ;
+	skos:prefLabel "Audio Visual Appliance AMPLIFIER"@en .
+
+otl:AudioVisualAppliance-TUNER a owl:Class ;
+	rdfs:subClassOf otl:AudioVisualAppliance ;
+	rdfs:seeAlso ifc:TUNER ;
+	skos:prefLabel "Audio Visual Appliance TUNER"@en .
+
+otl:AudioVisualAppliance-PLAYER a owl:Class ;
+	rdfs:subClassOf otl:AudioVisualAppliance ;
+	rdfs:seeAlso ifc:PLAYER ;
+	skos:prefLabel "Audio Visual Appliance PLAYER"@en .
+
+otl:AudioVisualAppliance-PROJECTOR a owl:Class ;
+	rdfs:subClassOf otl:AudioVisualAppliance ;
+	rdfs:seeAlso ifc:PROJECTOR ;
+	skos:prefLabel "Audio Visual Appliance PROJECTOR"@en .
+
+otl:AudioVisualAppliance-TELEPHONE a owl:Class ;
+	rdfs:subClassOf otl:AudioVisualAppliance ;
+	rdfs:seeAlso ifc:TELEPHONE ;
+	skos:prefLabel "Audio Visual Appliance TELEPHONE"@en .
+
+otl:AudioVisualAppliance-MICROPHONE a owl:Class ;
+	rdfs:subClassOf otl:AudioVisualAppliance ;
+	rdfs:seeAlso ifc:MICROPHONE ;
+	skos:prefLabel "Audio Visual Appliance MICROPHONE"@en .
+
+otl:Outlet-COMMUNICATIONSOUTLET a owl:Class ;
+	rdfs:subClassOf otl:Outlet ;
+	rdfs:seeAlso ifc:COMMUNICATIONSOUTLET ;
+	skos:prefLabel "Outlet COMMUNICATIONSOUTLET"@en .
+
+otl:Outlet a owl:Class ;
+	rdfs:subClassOf nen2660term:DiscreteObject ;
+	rdfs:seeAlso ifc:IfcOutlet ;
+	skos:prefLabel "Outlet"@en .
+
+otl:Outlet-AUDIOVISUALOUTLET a owl:Class ;
+	rdfs:subClassOf otl:Outlet ;
+	rdfs:seeAlso ifc:AUDIOVISUALOUTLET ;
+	skos:prefLabel "Outlet AUDIOVISUALOUTLET"@en .
+
+otl:Outlet-TELEPHONEOUTLET a owl:Class ;
+	rdfs:subClassOf otl:Outlet ;
+	rdfs:seeAlso ifc:TELEPHONEOUTLET ;
+	skos:prefLabel "Outlet TELEPHONEOUTLET"@en .
+
+otl:Outlet-POWEROUTLET a owl:Class ;
+	rdfs:subClassOf otl:Outlet ;
+	rdfs:seeAlso ifc:POWEROUTLET ;
+	skos:prefLabel "Outlet POWEROUTLET"@en .
+
+otl:Outlet-DATAOUTLET a owl:Class ;
+	rdfs:subClassOf otl:Outlet ;
+	rdfs:seeAlso ifc:DATAOUTLET ;
+	skos:prefLabel "Outlet DATAOUTLET"@en .
+
+otl:FireSuppressionTerminal-HOSEREEL a owl:Class ;
+	rdfs:subClassOf otl:FireSuppressionTerminal ;
+	rdfs:seeAlso ifc:HOSEREEL ;
+	skos:prefLabel "Fire Suppression Terminal HOSEREEL"@en .
+
+otl:FireSuppressionTerminal a owl:Class ;
+	rdfs:subClassOf nen2660term:DiscreteObject ;
+	rdfs:seeAlso ifc:IfcFireSuppressionTerminal ;
+	skos:prefLabel "Fire Suppression Terminal"@en .
+
+otl:FireSuppressionTerminal-SPRINKLERDEFLECTOR a owl:Class ;
+	rdfs:subClassOf otl:FireSuppressionTerminal ;
+	rdfs:seeAlso ifc:SPRINKLERDEFLECTOR ;
+	skos:prefLabel "Fire Suppression Terminal SPRINKLERDEFLECTOR"@en .
+
+otl:FireSuppressionTerminal-SPRINKLER a owl:Class ;
+	rdfs:subClassOf otl:FireSuppressionTerminal ;
+	rdfs:seeAlso ifc:SPRINKLER ;
+	skos:prefLabel "Fire Suppression Terminal SPRINKLER"@en .
+
+otl:FireSuppressionTerminal-FIREHYDRANT a owl:Class ;
+	rdfs:subClassOf otl:FireSuppressionTerminal ;
+	rdfs:seeAlso ifc:FIREHYDRANT ;
+	skos:prefLabel "Fire Suppression Terminal FIREHYDRANT"@en .
+
+otl:FireSuppressionTerminal-BREECHINGINLET a owl:Class ;
+	rdfs:subClassOf otl:FireSuppressionTerminal ;
+	rdfs:seeAlso ifc:BREECHINGINLET ;
+	skos:prefLabel "Fire Suppression Terminal BREECHINGINLET"@en .
+
+otl:WasteTerminal-WASTEDISPOSALUNIT a owl:Class ;
+	rdfs:subClassOf otl:WasteTerminal ;
+	rdfs:seeAlso ifc:WASTEDISPOSALUNIT ;
+	skos:prefLabel "Waste Terminal WASTEDISPOSALUNIT"@en .
+
+otl:WasteTerminal a owl:Class ;
+	rdfs:subClassOf nen2660term:DiscreteObject ;
+	rdfs:seeAlso ifc:IfcWasteTerminal ;
+	skos:prefLabel "Waste Terminal"@en .
+
+otl:WasteTerminal-GULLYSUMP a owl:Class ;
+	rdfs:subClassOf otl:WasteTerminal ;
+	rdfs:seeAlso ifc:GULLYSUMP ;
+	skos:prefLabel "Waste Terminal GULLYSUMP"@en .
+
+otl:WasteTerminal-FLOORTRAP a owl:Class ;
+	rdfs:subClassOf otl:WasteTerminal ;
+	rdfs:seeAlso ifc:FLOORTRAP ;
+	skos:prefLabel "Waste Terminal FLOORTRAP"@en .
+
+otl:WasteTerminal-GULLYTRAP a owl:Class ;
+	rdfs:subClassOf otl:WasteTerminal ;
+	rdfs:seeAlso ifc:GULLYTRAP ;
+	skos:prefLabel "Waste Terminal GULLYTRAP"@en .
+
+otl:WasteTerminal-WASTETRAP a owl:Class ;
+	rdfs:subClassOf otl:WasteTerminal ;
+	rdfs:seeAlso ifc:WASTETRAP ;
+	skos:prefLabel "Waste Terminal WASTETRAP"@en .
+
+otl:WasteTerminal-ROOFDRAIN a owl:Class ;
+	rdfs:subClassOf otl:WasteTerminal ;
+	rdfs:seeAlso ifc:ROOFDRAIN ;
+	skos:prefLabel "Waste Terminal ROOFDRAIN"@en .
+
+otl:WasteTerminal-FLOORWASTE a owl:Class ;
+	rdfs:subClassOf otl:WasteTerminal ;
+	rdfs:seeAlso ifc:FLOORWASTE ;
+	skos:prefLabel "Waste Terminal FLOORWASTE"@en .
+
+otl:MedicalDevice-AIRSTATION a owl:Class ;
+	rdfs:subClassOf otl:MedicalDevice ;
+	rdfs:seeAlso ifc:AIRSTATION ;
+	skos:prefLabel "Medical Device AIRSTATION"@en .
+
+otl:MedicalDevice a owl:Class ;
+	rdfs:subClassOf nen2660term:DiscreteObject ;
+	rdfs:seeAlso ifc:IfcMedicalDevice ;
+	skos:prefLabel "Medical Device"@en .
+
+otl:MedicalDevice-OXYGENGENERATOR a owl:Class ;
+	rdfs:subClassOf otl:MedicalDevice ;
+	rdfs:seeAlso ifc:OXYGENGENERATOR ;
+	skos:prefLabel "Medical Device OXYGENGENERATOR"@en .
+
+otl:MedicalDevice-FEEDAIRUNIT a owl:Class ;
+	rdfs:subClassOf otl:MedicalDevice ;
+	rdfs:seeAlso ifc:FEEDAIRUNIT ;
+	skos:prefLabel "Medical Device FEEDAIRUNIT"@en .
+
+otl:MedicalDevice-OXYGENPLANT a owl:Class ;
+	rdfs:subClassOf otl:MedicalDevice ;
+	rdfs:seeAlso ifc:OXYGENPLANT ;
+	skos:prefLabel "Medical Device OXYGENPLANT"@en .
+
+otl:MedicalDevice-VACUUMSTATION a owl:Class ;
+	rdfs:subClassOf otl:MedicalDevice ;
+	rdfs:seeAlso ifc:VACUUMSTATION ;
+	skos:prefLabel "Medical Device VACUUMSTATION"@en .
+
+otl:ElectricAppliance-TUMBLEDRYER a owl:Class ;
+	rdfs:subClassOf otl:ElectricAppliance ;
+	rdfs:seeAlso ifc:TUMBLEDRYER ;
+	skos:prefLabel "Electric Appliance TUMBLEDRYER"@en .
+
+otl:ElectricAppliance a owl:Class ;
+	rdfs:subClassOf nen2660term:DiscreteObject ;
+	rdfs:seeAlso ifc:IfcElectricAppliance ;
+	skos:prefLabel "Electric Appliance"@en .
+
+otl:ElectricAppliance-VENDINGMACHINE a owl:Class ;
+	rdfs:subClassOf otl:ElectricAppliance ;
+	rdfs:seeAlso ifc:VENDINGMACHINE ;
+	skos:prefLabel "Electric Appliance VENDINGMACHINE"@en .
+
+otl:ElectricAppliance-PHOTOCOPIER a owl:Class ;
+	rdfs:subClassOf otl:ElectricAppliance ;
+	rdfs:seeAlso ifc:PHOTOCOPIER ;
+	skos:prefLabel "Electric Appliance PHOTOCOPIER"@en .
+
+otl:ElectricAppliance-FREESTANDINGELECTRICHEATER a owl:Class ;
+	rdfs:subClassOf otl:ElectricAppliance ;
+	rdfs:seeAlso ifc:FREESTANDINGELECTRICHEATER ;
+	skos:prefLabel "Electric Appliance FREESTANDINGELECTRICHEATER"@en .
+
+otl:ElectricAppliance-ELECTRICCOOKER a owl:Class ;
+	rdfs:subClassOf otl:ElectricAppliance ;
+	rdfs:seeAlso ifc:ELECTRICCOOKER ;
+	skos:prefLabel "Electric Appliance ELECTRICCOOKER"@en .
+
+otl:ElectricAppliance-FREESTANDINGWATERHEATER a owl:Class ;
+	rdfs:subClassOf otl:ElectricAppliance ;
+	rdfs:seeAlso ifc:FREESTANDINGWATERHEATER ;
+	skos:prefLabel "Electric Appliance FREESTANDINGWATERHEATER"@en .
+
+otl:ElectricAppliance-DISHWASHER a owl:Class ;
+	rdfs:subClassOf otl:ElectricAppliance ;
+	rdfs:seeAlso ifc:DISHWASHER ;
+	skos:prefLabel "Electric Appliance DISHWASHER"@en .
+
+otl:ElectricAppliance-FREEZER a owl:Class ;
+	rdfs:subClassOf otl:ElectricAppliance ;
+	rdfs:seeAlso ifc:FREEZER ;
+	skos:prefLabel "Electric Appliance FREEZER"@en .
+
+otl:ElectricAppliance-REFRIGERATOR a owl:Class ;
+	rdfs:subClassOf otl:ElectricAppliance ;
+	rdfs:seeAlso ifc:REFRIGERATOR ;
+	skos:prefLabel "Electric Appliance REFRIGERATOR"@en .
+
+otl:ElectricAppliance-MICROWAVE a owl:Class ;
+	rdfs:subClassOf otl:ElectricAppliance ;
+	rdfs:seeAlso ifc:MICROWAVE ;
+	skos:prefLabel "Electric Appliance MICROWAVE"@en .
+
+otl:ElectricAppliance-FREESTANDINGWATERCOOLER a owl:Class ;
+	rdfs:subClassOf otl:ElectricAppliance ;
+	rdfs:seeAlso ifc:FREESTANDINGWATERCOOLER ;
+	skos:prefLabel "Electric Appliance FREESTANDINGWATERCOOLER"@en .
+
+otl:ElectricAppliance-WASHINGMACHINE a owl:Class ;
+	rdfs:subClassOf otl:ElectricAppliance ;
+	rdfs:seeAlso ifc:WASHINGMACHINE ;
+	skos:prefLabel "Electric Appliance WASHINGMACHINE"@en .
+
+otl:ElectricAppliance-KITCHENMACHINE a owl:Class ;
+	rdfs:subClassOf otl:ElectricAppliance ;
+	rdfs:seeAlso ifc:KITCHENMACHINE ;
+	skos:prefLabel "Electric Appliance KITCHENMACHINE"@en .
+
+otl:ElectricAppliance-FREESTANDINGFAN a owl:Class ;
+	rdfs:subClassOf otl:ElectricAppliance ;
+	rdfs:seeAlso ifc:FREESTANDINGFAN ;
+	skos:prefLabel "Electric Appliance FREESTANDINGFAN"@en .
+
+otl:ElectricAppliance-FRIDGE_FREEZER a owl:Class ;
+	rdfs:subClassOf otl:ElectricAppliance ;
+	rdfs:seeAlso ifc:FRIDGE_FREEZER ;
+	skos:prefLabel "Electric Appliance FRIDGE FREEZER"@en .
+
+otl:ElectricAppliance-HANDDRYER a owl:Class ;
+	rdfs:subClassOf otl:ElectricAppliance ;
+	rdfs:seeAlso ifc:HANDDRYER ;
+	skos:prefLabel "Electric Appliance HANDDRYER"@en .
+
+otl:SanitaryTerminal-WASHHANDBASIN a owl:Class ;
+	rdfs:subClassOf otl:SanitaryTerminal ;
+	rdfs:seeAlso ifc:WASHHANDBASIN ;
+	skos:prefLabel "Sanitary Terminal WASHHANDBASIN"@en .
+
+otl:SanitaryTerminal a owl:Class ;
+	rdfs:subClassOf nen2660term:DiscreteObject ;
+	rdfs:seeAlso ifc:IfcSanitaryTerminal ;
+	skos:prefLabel "Sanitary Terminal"@en .
+
+otl:SanitaryTerminal-WCSEAT a owl:Class ;
+	rdfs:subClassOf otl:SanitaryTerminal ;
+	rdfs:seeAlso ifc:WCSEAT ;
+	skos:prefLabel "Sanitary Terminal WCSEAT"@en .
+
+otl:SanitaryTerminal-SINK a owl:Class ;
+	rdfs:subClassOf otl:SanitaryTerminal ;
+	rdfs:seeAlso ifc:SINK ;
+	skos:prefLabel "Sanitary Terminal SINK"@en .
+
+otl:SanitaryTerminal-TOILETPAN a owl:Class ;
+	rdfs:subClassOf otl:SanitaryTerminal ;
+	rdfs:seeAlso ifc:TOILETPAN ;
+	skos:prefLabel "Sanitary Terminal TOILETPAN"@en .
+
+otl:SanitaryTerminal-BIDET a owl:Class ;
+	rdfs:subClassOf otl:SanitaryTerminal ;
+	rdfs:seeAlso ifc:BIDET ;
+	skos:prefLabel "Sanitary Terminal BIDET"@en .
+
+otl:SanitaryTerminal-CISTERN a owl:Class ;
+	rdfs:subClassOf otl:SanitaryTerminal ;
+	rdfs:seeAlso ifc:CISTERN ;
+	skos:prefLabel "Sanitary Terminal CISTERN"@en .
+
+otl:SanitaryTerminal-SANITARYFOUNTAIN a owl:Class ;
+	rdfs:subClassOf otl:SanitaryTerminal ;
+	rdfs:seeAlso ifc:SANITARYFOUNTAIN ;
+	skos:prefLabel "Sanitary Terminal SANITARYFOUNTAIN"@en .
+
+otl:SanitaryTerminal-URINAL a owl:Class ;
+	rdfs:subClassOf otl:SanitaryTerminal ;
+	rdfs:seeAlso ifc:URINAL ;
+	skos:prefLabel "Sanitary Terminal URINAL"@en .
+
+otl:SanitaryTerminal-SHOWER a owl:Class ;
+	rdfs:subClassOf otl:SanitaryTerminal ;
+	rdfs:seeAlso ifc:SHOWER ;
+	skos:prefLabel "Sanitary Terminal SHOWER"@en .
+
+otl:SanitaryTerminal-BATH a owl:Class ;
+	rdfs:subClassOf otl:SanitaryTerminal ;
+	rdfs:seeAlso ifc:BATH ;
+	skos:prefLabel "Sanitary Terminal BATH"@en .
+
+otl:Condenser-WATERCOOLEDSHELLCOIL a owl:Class ;
+	rdfs:subClassOf otl:Condenser ;
+	rdfs:seeAlso ifc:WATERCOOLEDSHELLCOIL ;
+	skos:prefLabel "Condenser WATERCOOLEDSHELLCOIL"@en .
+
+otl:Condenser a owl:Class ;
+	rdfs:subClassOf nen2660term:DiscreteObject ;
+	rdfs:seeAlso ifc:IfcCondenser ;
+	skos:prefLabel "Condenser"@en .
+
+otl:Condenser-WATERCOOLEDSHELLTUBE a owl:Class ;
+	rdfs:subClassOf otl:Condenser ;
+	rdfs:seeAlso ifc:WATERCOOLEDSHELLTUBE ;
+	skos:prefLabel "Condenser WATERCOOLEDSHELLTUBE"@en .
+
+otl:Condenser-WATERCOOLEDTUBEINTUBE a owl:Class ;
+	rdfs:subClassOf otl:Condenser ;
+	rdfs:seeAlso ifc:WATERCOOLEDTUBEINTUBE ;
+	skos:prefLabel "Condenser WATERCOOLEDTUBEINTUBE"@en .
+
+otl:Condenser-WATERCOOLEDBRAZEDPLATE a owl:Class ;
+	rdfs:subClassOf otl:Condenser ;
+	rdfs:seeAlso ifc:WATERCOOLEDBRAZEDPLATE ;
+	skos:prefLabel "Condenser WATERCOOLEDBRAZEDPLATE"@en .
+
+otl:Condenser-EVAPORATIVECOOLED a owl:Class ;
+	rdfs:subClassOf otl:Condenser ;
+	rdfs:seeAlso ifc:EVAPORATIVECOOLED ;
+	skos:prefLabel "Condenser EVAPORATIVECOOLED"@en .
+
+otl:Condenser-WATERCOOLED a owl:Class ;
+	rdfs:subClassOf otl:Condenser ;
+	rdfs:seeAlso ifc:WATERCOOLED ;
+	skos:prefLabel "Condenser WATERCOOLED"@en .
+
+otl:Condenser-AIRCOOLED a owl:Class ;
+	rdfs:subClassOf otl:Condenser ;
+	rdfs:seeAlso ifc:AIRCOOLED ;
+	skos:prefLabel "Condenser AIRCOOLED"@en .
+
+otl:HeatExchanger-SHELLANDTUBE a owl:Class ;
+	rdfs:subClassOf otl:HeatExchanger ;
+	rdfs:seeAlso ifc:SHELLANDTUBE ;
+	skos:prefLabel "Heat Exchanger SHELLANDTUBE"@en .
+
+otl:HeatExchanger a owl:Class ;
+	rdfs:subClassOf nen2660term:DiscreteObject ;
+	rdfs:seeAlso ifc:IfcHeatExchanger ;
+	skos:prefLabel "Heat Exchanger"@en .
+
+otl:HeatExchanger-PLATE a owl:Class ;
+	rdfs:subClassOf otl:HeatExchanger ;
+	rdfs:seeAlso ifc:PLATE ;
+	skos:prefLabel "Heat Exchanger PLATE"@en .
+
+otl:ElectricMotor-INDUCTION a owl:Class ;
+	rdfs:subClassOf otl:ElectricMotor ;
+	rdfs:seeAlso ifc:INDUCTION ;
+	skos:prefLabel "Electric Motor INDUCTION"@en .
+
+otl:ElectricMotor a owl:Class ;
+	rdfs:subClassOf nen2660term:DiscreteObject ;
+	rdfs:seeAlso ifc:IfcElectricMotor ;
+	skos:prefLabel "Electric Motor"@en .
+
+otl:ElectricMotor-RELUCTANCESYNCHRONOUS a owl:Class ;
+	rdfs:subClassOf otl:ElectricMotor ;
+	rdfs:seeAlso ifc:RELUCTANCESYNCHRONOUS ;
+	skos:prefLabel "Electric Motor RELUCTANCESYNCHRONOUS"@en .
+
+otl:ElectricMotor-POLYPHASE a owl:Class ;
+	rdfs:subClassOf otl:ElectricMotor ;
+	rdfs:seeAlso ifc:POLYPHASE ;
+	skos:prefLabel "Electric Motor POLYPHASE"@en .
+
+otl:ElectricMotor-DC a owl:Class ;
+	rdfs:subClassOf otl:ElectricMotor ;
+	rdfs:seeAlso ifc:DC ;
+	skos:prefLabel "Electric Motor DC"@en .
+
+otl:ElectricMotor-SYNCHRONOUS a owl:Class ;
+	rdfs:subClassOf otl:ElectricMotor ;
+	rdfs:seeAlso ifc:SYNCHRONOUS ;
+	skos:prefLabel "Electric Motor SYNCHRONOUS"@en .
+
+otl:MotorConnection-DIRECTDRIVE a owl:Class ;
+	rdfs:subClassOf otl:MotorConnection ;
+	rdfs:seeAlso ifc:DIRECTDRIVE ;
+	skos:prefLabel "Motor Connection DIRECTDRIVE"@en .
+
+otl:MotorConnection a owl:Class ;
+	rdfs:subClassOf nen2660term:DiscreteObject ;
+	rdfs:seeAlso ifc:IfcMotorConnection ;
+	skos:prefLabel "Motor Connection"@en .
+
+otl:MotorConnection-BELTDRIVE a owl:Class ;
+	rdfs:subClassOf otl:MotorConnection ;
+	rdfs:seeAlso ifc:BELTDRIVE ;
+	skos:prefLabel "Motor Connection BELTDRIVE"@en .
+
+otl:MotorConnection-COUPLING a owl:Class ;
+	rdfs:subClassOf otl:MotorConnection ;
+	rdfs:seeAlso ifc:COUPLING ;
+	skos:prefLabel "Motor Connection COUPLING"@en .
+
+otl:UnitaryEquipment-SPLITSYSTEM a owl:Class ;
+	rdfs:subClassOf otl:UnitaryEquipment ;
+	rdfs:seeAlso ifc:SPLITSYSTEM ;
+	skos:prefLabel "Unitary Equipment SPLITSYSTEM"@en .
+
+otl:UnitaryEquipment a owl:Class ;
+	rdfs:subClassOf nen2660term:DiscreteObject ;
+	rdfs:seeAlso ifc:IfcUnitaryEquipment ;
+	skos:prefLabel "Unitary Equipment"@en .
+
+otl:UnitaryEquipment-ROOFTOPUNIT a owl:Class ;
+	rdfs:subClassOf otl:UnitaryEquipment ;
+	rdfs:seeAlso ifc:ROOFTOPUNIT ;
+	skos:prefLabel "Unitary Equipment ROOFTOPUNIT"@en .
+
+otl:UnitaryEquipment-AIRCONDITIONINGUNIT a owl:Class ;
+	rdfs:subClassOf otl:UnitaryEquipment ;
+	rdfs:seeAlso ifc:AIRCONDITIONINGUNIT ;
+	skos:prefLabel "Unitary Equipment AIRCONDITIONINGUNIT"@en .
+
+otl:UnitaryEquipment-AIRHANDLER a owl:Class ;
+	rdfs:subClassOf otl:UnitaryEquipment ;
+	rdfs:seeAlso ifc:AIRHANDLER ;
+	skos:prefLabel "Unitary Equipment AIRHANDLER"@en .
+
+otl:UnitaryEquipment-DEHUMIDIFIER a owl:Class ;
+	rdfs:subClassOf otl:UnitaryEquipment ;
+	rdfs:seeAlso ifc:DEHUMIDIFIER ;
+	skos:prefLabel "Unitary Equipment DEHUMIDIFIER"@en .
+
+otl:Evaporator-SHELLANDCOIL a owl:Class ;
+	rdfs:subClassOf otl:Evaporator ;
+	rdfs:seeAlso ifc:SHELLANDCOIL ;
+	skos:prefLabel "Evaporator SHELLANDCOIL"@en .
+
+otl:Evaporator a owl:Class ;
+	rdfs:subClassOf nen2660term:DiscreteObject ;
+	rdfs:seeAlso ifc:IfcEvaporator ;
+	skos:prefLabel "Evaporator"@en .
+
+otl:Evaporator-DIRECTEXPANSIONSHELLANDTUBE a owl:Class ;
+	rdfs:subClassOf otl:Evaporator ;
+	rdfs:seeAlso ifc:DIRECTEXPANSIONSHELLANDTUBE ;
+	skos:prefLabel "Evaporator DIRECTEXPANSIONSHELLANDTUBE"@en .
+
+otl:Evaporator-DIRECTEXPANSION a owl:Class ;
+	rdfs:subClassOf otl:Evaporator ;
+	rdfs:seeAlso ifc:DIRECTEXPANSION ;
+	skos:prefLabel "Evaporator DIRECTEXPANSION"@en .
+
+otl:Evaporator-DIRECTEXPANSIONBRAZEDPLATE a owl:Class ;
+	rdfs:subClassOf otl:Evaporator ;
+	rdfs:seeAlso ifc:DIRECTEXPANSIONBRAZEDPLATE ;
+	skos:prefLabel "Evaporator DIRECTEXPANSIONBRAZEDPLATE"@en .
+
+otl:Evaporator-DIRECTEXPANSIONTUBEINTUBE a owl:Class ;
+	rdfs:subClassOf otl:Evaporator ;
+	rdfs:seeAlso ifc:DIRECTEXPANSIONTUBEINTUBE ;
+	skos:prefLabel "Evaporator DIRECTEXPANSIONTUBEINTUBE"@en .
+
+otl:Evaporator-FLOODEDSHELLANDTUBE a owl:Class ;
+	rdfs:subClassOf otl:Evaporator ;
+	rdfs:seeAlso ifc:FLOODEDSHELLANDTUBE ;
+	skos:prefLabel "Evaporator FLOODEDSHELLANDTUBE"@en .
+
+otl:TubeBundle-FINNED a owl:Class ;
+	rdfs:subClassOf otl:TubeBundle ;
+	rdfs:seeAlso ifc:FINNED ;
+	skos:prefLabel "Tube Bundle FINNED"@en .
+
+otl:TubeBundle a owl:Class ;
+	rdfs:subClassOf nen2660term:DiscreteObject ;
+	rdfs:seeAlso ifc:IfcTubeBundle ;
+	skos:prefLabel "Tube Bundle"@en .
+
+otl:Humidifier-ASSISTEDELECTRIC a owl:Class ;
+	rdfs:subClassOf otl:Humidifier ;
+	rdfs:seeAlso ifc:ASSISTEDELECTRIC ;
+	skos:prefLabel "Humidifier ASSISTEDELECTRIC"@en .
+
+otl:Humidifier a owl:Class ;
+	rdfs:subClassOf nen2660term:DiscreteObject ;
+	rdfs:seeAlso ifc:IfcHumidifier ;
+	skos:prefLabel "Humidifier"@en .
+
+otl:Humidifier-STEAMINJECTION a owl:Class ;
+	rdfs:subClassOf otl:Humidifier ;
+	rdfs:seeAlso ifc:STEAMINJECTION ;
+	skos:prefLabel "Humidifier STEAMINJECTION"@en .
+
+otl:Humidifier-ADIABATICRIGIDMEDIA a owl:Class ;
+	rdfs:subClassOf otl:Humidifier ;
+	rdfs:seeAlso ifc:ADIABATICRIGIDMEDIA ;
+	skos:prefLabel "Humidifier ADIABATICRIGIDMEDIA"@en .
+
+otl:Humidifier-ADIABATICWETTEDELEMENT a owl:Class ;
+	rdfs:subClassOf otl:Humidifier ;
+	rdfs:seeAlso ifc:ADIABATICWETTEDELEMENT ;
+	skos:prefLabel "Humidifier ADIABATICWETTEDELEMENT"@en .
+
+otl:Humidifier-ASSISTEDNATURALGAS a owl:Class ;
+	rdfs:subClassOf otl:Humidifier ;
+	rdfs:seeAlso ifc:ASSISTEDNATURALGAS ;
+	skos:prefLabel "Humidifier ASSISTEDNATURALGAS"@en .
+
+otl:Humidifier-ASSISTEDSTEAM a owl:Class ;
+	rdfs:subClassOf otl:Humidifier ;
+	rdfs:seeAlso ifc:ASSISTEDSTEAM ;
+	skos:prefLabel "Humidifier ASSISTEDSTEAM"@en .
+
+otl:Humidifier-ADIABATICPAN a owl:Class ;
+	rdfs:subClassOf otl:Humidifier ;
+	rdfs:seeAlso ifc:ADIABATICPAN ;
+	skos:prefLabel "Humidifier ADIABATICPAN"@en .
+
+otl:Humidifier-ASSISTEDBUTANE a owl:Class ;
+	rdfs:subClassOf otl:Humidifier ;
+	rdfs:seeAlso ifc:ASSISTEDBUTANE ;
+	skos:prefLabel "Humidifier ASSISTEDBUTANE"@en .
+
+otl:Humidifier-ASSISTEDPROPANE a owl:Class ;
+	rdfs:subClassOf otl:Humidifier ;
+	rdfs:seeAlso ifc:ASSISTEDPROPANE ;
+	skos:prefLabel "Humidifier ASSISTEDPROPANE"@en .
+
+otl:Humidifier-ADIABATICATOMIZING a owl:Class ;
+	rdfs:subClassOf otl:Humidifier ;
+	rdfs:seeAlso ifc:ADIABATICATOMIZING ;
+	skos:prefLabel "Humidifier ADIABATICATOMIZING"@en .
+
+otl:Humidifier-ADIABATICCOMPRESSEDAIRNOZZLE a owl:Class ;
+	rdfs:subClassOf otl:Humidifier ;
+	rdfs:seeAlso ifc:ADIABATICCOMPRESSEDAIRNOZZLE ;
+	skos:prefLabel "Humidifier ADIABATICCOMPRESSEDAIRNOZZLE"@en .
+
+otl:Humidifier-ADIABATICAIRWASHER a owl:Class ;
+	rdfs:subClassOf otl:Humidifier ;
+	rdfs:seeAlso ifc:ADIABATICAIRWASHER ;
+	skos:prefLabel "Humidifier ADIABATICAIRWASHER"@en .
+
+otl:Humidifier-ADIABATICULTRASONIC a owl:Class ;
+	rdfs:subClassOf otl:Humidifier ;
+	rdfs:seeAlso ifc:ADIABATICULTRASONIC ;
+	skos:prefLabel "Humidifier ADIABATICULTRASONIC"@en .
+
+otl:ElectricGenerator-CHP a owl:Class ;
+	rdfs:subClassOf otl:ElectricGenerator ;
+	rdfs:seeAlso ifc:CHP ;
+	skos:prefLabel "Electric Generator CHP"@en .
+
+otl:ElectricGenerator a owl:Class ;
+	rdfs:subClassOf nen2660term:DiscreteObject ;
+	rdfs:seeAlso ifc:IfcElectricGenerator ;
+	skos:prefLabel "Electric Generator"@en .
+
+otl:ElectricGenerator-STANDALONE a owl:Class ;
+	rdfs:subClassOf otl:ElectricGenerator ;
+	rdfs:seeAlso ifc:STANDALONE ;
+	skos:prefLabel "Electric Generator STANDALONE"@en .
+
+otl:ElectricGenerator-ENGINEGENERATOR a owl:Class ;
+	rdfs:subClassOf otl:ElectricGenerator ;
+	rdfs:seeAlso ifc:ENGINEGENERATOR ;
+	skos:prefLabel "Electric Generator ENGINEGENERATOR"@en .
+
+otl:CoolingTower-NATURALDRAFT a owl:Class ;
+	rdfs:subClassOf otl:CoolingTower ;
+	rdfs:seeAlso ifc:NATURALDRAFT ;
+	skos:prefLabel "Cooling Tower NATURALDRAFT"@en .
+
+otl:CoolingTower a owl:Class ;
+	rdfs:subClassOf nen2660term:DiscreteObject ;
+	rdfs:seeAlso ifc:IfcCoolingTower ;
+	skos:prefLabel "Cooling Tower"@en .
+
+otl:CoolingTower-MECHANICALINDUCEDDRAFT a owl:Class ;
+	rdfs:subClassOf otl:CoolingTower ;
+	rdfs:seeAlso ifc:MECHANICALINDUCEDDRAFT ;
+	skos:prefLabel "Cooling Tower MECHANICALINDUCEDDRAFT"@en .
+
+otl:CoolingTower-MECHANICALFORCEDDRAFT a owl:Class ;
+	rdfs:subClassOf otl:CoolingTower ;
+	rdfs:seeAlso ifc:MECHANICALFORCEDDRAFT ;
+	skos:prefLabel "Cooling Tower MECHANICALFORCEDDRAFT"@en .
+
+otl:CooledBeam-ACTIVE a owl:Class ;
+	rdfs:subClassOf otl:CooledBeam ;
+	rdfs:seeAlso ifc:ACTIVE ;
+	skos:prefLabel "Cooled Beam ACTIVE"@en .
+
+otl:CooledBeam a owl:Class ;
+	rdfs:subClassOf nen2660term:DiscreteObject ;
+	rdfs:seeAlso ifc:IfcCooledBeam ;
+	skos:prefLabel "Cooled Beam"@en .
+
+otl:CooledBeam-PASSIVE a owl:Class ;
+	rdfs:subClassOf otl:CooledBeam ;
+	rdfs:seeAlso ifc:PASSIVE ;
+	skos:prefLabel "Cooled Beam PASSIVE"@en .
+
+otl:Chiller-HEATRECOVERY a owl:Class ;
+	rdfs:subClassOf otl:Chiller ;
+	rdfs:seeAlso ifc:HEATRECOVERY ;
+	skos:prefLabel "Chiller HEATRECOVERY"@en .
+
+otl:Chiller a owl:Class ;
+	rdfs:subClassOf nen2660term:DiscreteObject ;
+	rdfs:seeAlso ifc:IfcChiller ;
+	skos:prefLabel "Chiller"@en .
+
+otl:Chiller-WATERCOOLED a owl:Class ;
+	rdfs:subClassOf otl:Chiller ;
+	rdfs:seeAlso ifc:WATERCOOLED ;
+	skos:prefLabel "Chiller WATERCOOLED"@en .
+
+otl:Chiller-AIRCOOLED a owl:Class ;
+	rdfs:subClassOf otl:Chiller ;
+	rdfs:seeAlso ifc:AIRCOOLED ;
+	skos:prefLabel "Chiller AIRCOOLED"@en .
+
+otl:Boiler-WATER a owl:Class ;
+	rdfs:subClassOf otl:Boiler ;
+	rdfs:seeAlso ifc:WATER ;
+	skos:prefLabel "Boiler WATER"@en .
+
+otl:Boiler a owl:Class ;
+	rdfs:subClassOf nen2660term:DiscreteObject ;
+	rdfs:seeAlso ifc:IfcBoiler ;
+	skos:prefLabel "Boiler"@en .
+
+otl:Boiler-STEAM a owl:Class ;
+	rdfs:subClassOf otl:Boiler ;
+	rdfs:seeAlso ifc:STEAM ;
+	skos:prefLabel "Boiler STEAM"@en .
+
+otl:AirToAirHeatRecovery-HEATPIPE a owl:Class ;
+	rdfs:subClassOf otl:AirToAirHeatRecovery ;
+	rdfs:seeAlso ifc:HEATPIPE ;
+	skos:prefLabel "Air To Air Heat Recovery HEATPIPE"@en .
+
+otl:AirToAirHeatRecovery a owl:Class ;
+	rdfs:subClassOf nen2660term:DiscreteObject ;
+	rdfs:seeAlso ifc:IfcAirToAirHeatRecovery ;
+	skos:prefLabel "Air To Air Heat Recovery"@en .
+
+otl:AirToAirHeatRecovery-TWINTOWERENTHALPYRECOVERYLOOPS a owl:Class ;
+	rdfs:subClassOf otl:AirToAirHeatRecovery ;
+	rdfs:seeAlso ifc:TWINTOWERENTHALPYRECOVERYLOOPS ;
+	skos:prefLabel "Air To Air Heat Recovery TWINTOWERENTHALPYRECOVERYLOOPS"@en .
+
+otl:AirToAirHeatRecovery-THERMOSIPHONSEALEDTUBEHEATEXCHANGERS a owl:Class ;
+	rdfs:subClassOf otl:AirToAirHeatRecovery ;
+	rdfs:seeAlso ifc:THERMOSIPHONSEALEDTUBEHEATEXCHANGERS ;
+	skos:prefLabel "Air To Air Heat Recovery THERMOSIPHONSEALEDTUBEHEATEXCHANGERS"@en .
+
+otl:AirToAirHeatRecovery-FIXEDPLATEPARALLELFLOWEXCHANGER a owl:Class ;
+	rdfs:subClassOf otl:AirToAirHeatRecovery ;
+	rdfs:seeAlso ifc:FIXEDPLATEPARALLELFLOWEXCHANGER ;
+	skos:prefLabel "Air To Air Heat Recovery FIXEDPLATEPARALLELFLOWEXCHANGER"@en .
+
+otl:AirToAirHeatRecovery-RUNAROUNDCOILLOOP a owl:Class ;
+	rdfs:subClassOf otl:AirToAirHeatRecovery ;
+	rdfs:seeAlso ifc:RUNAROUNDCOILLOOP ;
+	skos:prefLabel "Air To Air Heat Recovery RUNAROUNDCOILLOOP"@en .
+
+otl:AirToAirHeatRecovery-ROTARYWHEEL a owl:Class ;
+	rdfs:subClassOf otl:AirToAirHeatRecovery ;
+	rdfs:seeAlso ifc:ROTARYWHEEL ;
+	skos:prefLabel "Air To Air Heat Recovery ROTARYWHEEL"@en .
+
+otl:AirToAirHeatRecovery-FIXEDPLATECROSSFLOWEXCHANGER a owl:Class ;
+	rdfs:subClassOf otl:AirToAirHeatRecovery ;
+	rdfs:seeAlso ifc:FIXEDPLATECROSSFLOWEXCHANGER ;
+	skos:prefLabel "Air To Air Heat Recovery FIXEDPLATECROSSFLOWEXCHANGER"@en .
+
+otl:AirToAirHeatRecovery-THERMOSIPHONCOILTYPEHEATEXCHANGERS a owl:Class ;
+	rdfs:subClassOf otl:AirToAirHeatRecovery ;
+	rdfs:seeAlso ifc:THERMOSIPHONCOILTYPEHEATEXCHANGERS ;
+	skos:prefLabel "Air To Air Heat Recovery THERMOSIPHONCOILTYPEHEATEXCHANGERS"@en .
+
+otl:AirToAirHeatRecovery-FIXEDPLATECOUNTERFLOWEXCHANGER a owl:Class ;
+	rdfs:subClassOf otl:AirToAirHeatRecovery ;
+	rdfs:seeAlso ifc:FIXEDPLATECOUNTERFLOWEXCHANGER ;
+	skos:prefLabel "Air To Air Heat Recovery FIXEDPLATECOUNTERFLOWEXCHANGER"@en .
+
+otl:Coil-STEAMHEATINGCOIL a owl:Class ;
+	rdfs:subClassOf otl:Coil ;
+	rdfs:seeAlso ifc:STEAMHEATINGCOIL ;
+	skos:prefLabel "Coil STEAMHEATINGCOIL"@en .
+
+otl:Coil a owl:Class ;
+	rdfs:subClassOf nen2660term:DiscreteObject ;
+	rdfs:seeAlso ifc:IfcCoil ;
+	skos:prefLabel "Coil"@en .
+
+otl:Coil-WATERCOOLINGCOIL a owl:Class ;
+	rdfs:subClassOf otl:Coil ;
+	rdfs:seeAlso ifc:WATERCOOLINGCOIL ;
+	skos:prefLabel "Coil WATERCOOLINGCOIL"@en .
+
+otl:Coil-DXCOOLINGCOIL a owl:Class ;
+	rdfs:subClassOf otl:Coil ;
+	rdfs:seeAlso ifc:DXCOOLINGCOIL ;
+	skos:prefLabel "Coil DXCOOLINGCOIL"@en .
+
+otl:Coil-ELECTRICHEATINGCOIL a owl:Class ;
+	rdfs:subClassOf otl:Coil ;
+	rdfs:seeAlso ifc:ELECTRICHEATINGCOIL ;
+	skos:prefLabel "Coil ELECTRICHEATINGCOIL"@en .
+
+otl:Coil-GASHEATINGCOIL a owl:Class ;
+	rdfs:subClassOf otl:Coil ;
+	rdfs:seeAlso ifc:GASHEATINGCOIL ;
+	skos:prefLabel "Coil GASHEATINGCOIL"@en .
+
+otl:Coil-WATERHEATINGCOIL a owl:Class ;
+	rdfs:subClassOf otl:Coil ;
+	rdfs:seeAlso ifc:WATERHEATINGCOIL ;
+	skos:prefLabel "Coil WATERHEATINGCOIL"@en .
+
+otl:Coil-HYDRONICCOIL a owl:Class ;
+	rdfs:subClassOf otl:Coil ;
+	rdfs:seeAlso ifc:HYDRONICCOIL ;
+	skos:prefLabel "Coil HYDRONICCOIL"@en .
+
+otl:Burner a owl:Class ;
+	rdfs:subClassOf nen2660term:DiscreteObject ;
+	rdfs:seeAlso ifc:IfcBurner ;
+	skos:prefLabel "Burner"@en .
+
+otl:EvaporativeCooler-DIRECTEVAPORATIVERANDOMMEDIAAIRCOOLER a owl:Class ;
+	rdfs:subClassOf otl:EvaporativeCooler ;
+	rdfs:seeAlso ifc:DIRECTEVAPORATIVERANDOMMEDIAAIRCOOLER ;
+	skos:prefLabel "Evaporative Cooler DIRECTEVAPORATIVERANDOMMEDIAAIRCOOLER"@en .
+
+otl:EvaporativeCooler a owl:Class ;
+	rdfs:subClassOf nen2660term:DiscreteObject ;
+	rdfs:seeAlso ifc:IfcEvaporativeCooler ;
+	skos:prefLabel "Evaporative Cooler"@en .
+
+otl:EvaporativeCooler-DIRECTEVAPORATIVEPACKAGEDROTARYAIRCOOLER a owl:Class ;
+	rdfs:subClassOf otl:EvaporativeCooler ;
+	rdfs:seeAlso ifc:DIRECTEVAPORATIVEPACKAGEDROTARYAIRCOOLER ;
+	skos:prefLabel "Evaporative Cooler DIRECTEVAPORATIVEPACKAGEDROTARYAIRCOOLER"@en .
+
+otl:EvaporativeCooler-INDIRECTEVAPORATIVEPACKAGEAIRCOOLER a owl:Class ;
+	rdfs:subClassOf otl:EvaporativeCooler ;
+	rdfs:seeAlso ifc:INDIRECTEVAPORATIVEPACKAGEAIRCOOLER ;
+	skos:prefLabel "Evaporative Cooler INDIRECTEVAPORATIVEPACKAGEAIRCOOLER"@en .
+
+otl:EvaporativeCooler-INDIRECTEVAPORATIVEWETCOIL a owl:Class ;
+	rdfs:subClassOf otl:EvaporativeCooler ;
+	rdfs:seeAlso ifc:INDIRECTEVAPORATIVEWETCOIL ;
+	skos:prefLabel "Evaporative Cooler INDIRECTEVAPORATIVEWETCOIL"@en .
+
+otl:EvaporativeCooler-DIRECTEVAPORATIVESLINGERSPACKAGEDAIRCOOLER a owl:Class ;
+	rdfs:subClassOf otl:EvaporativeCooler ;
+	rdfs:seeAlso ifc:DIRECTEVAPORATIVESLINGERSPACKAGEDAIRCOOLER ;
+	skos:prefLabel "Evaporative Cooler DIRECTEVAPORATIVESLINGERSPACKAGEDAIRCOOLER"@en .
+
+otl:EvaporativeCooler-DIRECTEVAPORATIVERIGIDMEDIAAIRCOOLER a owl:Class ;
+	rdfs:subClassOf otl:EvaporativeCooler ;
+	rdfs:seeAlso ifc:DIRECTEVAPORATIVERIGIDMEDIAAIRCOOLER ;
+	skos:prefLabel "Evaporative Cooler DIRECTEVAPORATIVERIGIDMEDIAAIRCOOLER"@en .
+
+otl:EvaporativeCooler-DIRECTEVAPORATIVEAIRWASHER a owl:Class ;
+	rdfs:subClassOf otl:EvaporativeCooler ;
+	rdfs:seeAlso ifc:DIRECTEVAPORATIVEAIRWASHER ;
+	skos:prefLabel "Evaporative Cooler DIRECTEVAPORATIVEAIRWASHER"@en .
+
+otl:EvaporativeCooler-INDIRECTDIRECTCOMBINATION a owl:Class ;
+	rdfs:subClassOf otl:EvaporativeCooler ;
+	rdfs:seeAlso ifc:INDIRECTDIRECTCOMBINATION ;
+	skos:prefLabel "Evaporative Cooler INDIRECTDIRECTCOMBINATION"@en .
+
+otl:EvaporativeCooler-INDIRECTEVAPORATIVECOOLINGTOWERORCOILCOOLER a owl:Class ;
+	rdfs:subClassOf otl:EvaporativeCooler ;
+	rdfs:seeAlso ifc:INDIRECTEVAPORATIVECOOLINGTOWERORCOILCOOLER ;
+	skos:prefLabel "Evaporative Cooler INDIRECTEVAPORATIVECOOLINGTOWERORCOILCOOLER"@en .
+
+otl:SolarDevice-SOLARPANEL a owl:Class ;
+	rdfs:subClassOf otl:SolarDevice ;
+	rdfs:seeAlso ifc:SOLARPANEL ;
+	skos:prefLabel "Solar Device SOLARPANEL"@en .
+
+otl:SolarDevice a owl:Class ;
+	rdfs:subClassOf nen2660term:DiscreteObject ;
+	rdfs:seeAlso ifc:IfcSolarDevice ;
+	skos:prefLabel "Solar Device"@en .
+
+otl:SolarDevice-SOLARCOLLECTOR a owl:Class ;
+	rdfs:subClassOf otl:SolarDevice ;
+	rdfs:seeAlso ifc:SOLARCOLLECTOR ;
+	skos:prefLabel "Solar Device SOLARCOLLECTOR"@en .
+
+otl:Transformer-INVERTER a owl:Class ;
+	rdfs:subClassOf otl:Transformer ;
+	rdfs:seeAlso ifc:INVERTER ;
+	skos:prefLabel "Transformer INVERTER"@en .
+
+otl:Transformer a owl:Class ;
+	rdfs:subClassOf nen2660term:DiscreteObject ;
+	rdfs:seeAlso ifc:IfcTransformer ;
+	skos:prefLabel "Transformer"@en .
+
+otl:Transformer-FREQUENCY a owl:Class ;
+	rdfs:subClassOf otl:Transformer ;
+	rdfs:seeAlso ifc:FREQUENCY ;
+	skos:prefLabel "Transformer FREQUENCY"@en .
+
+otl:Transformer-RECTIFIER a owl:Class ;
+	rdfs:subClassOf otl:Transformer ;
+	rdfs:seeAlso ifc:RECTIFIER ;
+	skos:prefLabel "Transformer RECTIFIER"@en .
+
+otl:Transformer-CURRENT a owl:Class ;
+	rdfs:subClassOf otl:Transformer ;
+	rdfs:seeAlso ifc:CURRENT ;
+	skos:prefLabel "Transformer CURRENT"@en .
+
+otl:Transformer-VOLTAGE a owl:Class ;
+	rdfs:subClassOf otl:Transformer ;
+	rdfs:seeAlso ifc:VOLTAGE ;
+	skos:prefLabel "Transformer VOLTAGE"@en .
+
+otl:Engine-EXTERNALCOMBUSTION a owl:Class ;
+	rdfs:subClassOf otl:Engine ;
+	rdfs:seeAlso ifc:EXTERNALCOMBUSTION ;
+	skos:prefLabel "Engine EXTERNALCOMBUSTION"@en .
+
+otl:Engine a owl:Class ;
+	rdfs:subClassOf nen2660term:DiscreteObject ;
+	rdfs:seeAlso ifc:IfcEngine ;
+	skos:prefLabel "Engine"@en .
+
+otl:Engine-INTERNALCOMBUSTION a owl:Class ;
+	rdfs:subClassOf otl:Engine ;
+	rdfs:seeAlso ifc:INTERNALCOMBUSTION ;
+	skos:prefLabel "Engine INTERNALCOMBUSTION"@en .
+
+otl:Interceptor-OIL a owl:Class ;
+	rdfs:subClassOf otl:Interceptor ;
+	rdfs:seeAlso ifc:OIL ;
+	skos:prefLabel "Interceptor OIL"@en .
+
+otl:Interceptor a owl:Class ;
+	rdfs:subClassOf nen2660term:DiscreteObject ;
+	rdfs:seeAlso ifc:IfcInterceptor ;
+	skos:prefLabel "Interceptor"@en .
+
+otl:Interceptor-GREASE a owl:Class ;
+	rdfs:subClassOf otl:Interceptor ;
+	rdfs:seeAlso ifc:GREASE ;
+	skos:prefLabel "Interceptor GREASE"@en .
+
+otl:Interceptor-CYCLONIC a owl:Class ;
+	rdfs:subClassOf otl:Interceptor ;
+	rdfs:seeAlso ifc:CYCLONIC ;
+	skos:prefLabel "Interceptor CYCLONIC"@en .
+
+otl:Interceptor-PETROL a owl:Class ;
+	rdfs:subClassOf otl:Interceptor ;
+	rdfs:seeAlso ifc:PETROL ;
+	skos:prefLabel "Interceptor PETROL"@en .
+
+otl:DuctSilencer-ROUND a owl:Class ;
+	rdfs:subClassOf otl:DuctSilencer ;
+	rdfs:seeAlso ifc:ROUND ;
+	skos:prefLabel "Duct Silencer ROUND"@en .
+
+otl:DuctSilencer a owl:Class ;
+	rdfs:subClassOf nen2660term:DiscreteObject ;
+	rdfs:seeAlso ifc:IfcDuctSilencer ;
+	skos:prefLabel "Duct Silencer"@en .
+
+otl:DuctSilencer-RECTANGULAR a owl:Class ;
+	rdfs:subClassOf otl:DuctSilencer ;
+	rdfs:seeAlso ifc:RECTANGULAR ;
+	skos:prefLabel "Duct Silencer RECTANGULAR"@en .
+
+otl:DuctSilencer-FLATOVAL a owl:Class ;
+	rdfs:subClassOf otl:DuctSilencer ;
+	rdfs:seeAlso ifc:FLATOVAL ;
+	skos:prefLabel "Duct Silencer FLATOVAL"@en .
+
+otl:Filter-ODORFILTER a owl:Class ;
+	rdfs:subClassOf otl:Filter ;
+	rdfs:seeAlso ifc:ODORFILTER ;
+	skos:prefLabel "Filter ODORFILTER"@en .
+
+otl:Filter a owl:Class ;
+	rdfs:subClassOf nen2660term:DiscreteObject ;
+	rdfs:seeAlso ifc:IfcFilter ;
+	skos:prefLabel "Filter"@en .
+
+otl:Filter-AIRPARTICLEFILTER a owl:Class ;
+	rdfs:subClassOf otl:Filter ;
+	rdfs:seeAlso ifc:AIRPARTICLEFILTER ;
+	skos:prefLabel "Filter AIRPARTICLEFILTER"@en .
+
+otl:Filter-COMPRESSEDAIRFILTER a owl:Class ;
+	rdfs:subClassOf otl:Filter ;
+	rdfs:seeAlso ifc:COMPRESSEDAIRFILTER ;
+	skos:prefLabel "Filter COMPRESSEDAIRFILTER"@en .
+
+otl:Filter-WATERFILTER a owl:Class ;
+	rdfs:subClassOf otl:Filter ;
+	rdfs:seeAlso ifc:WATERFILTER ;
+	skos:prefLabel "Filter WATERFILTER"@en .
+
+otl:Filter-STRAINER a owl:Class ;
+	rdfs:subClassOf otl:Filter ;
+	rdfs:seeAlso ifc:STRAINER ;
+	skos:prefLabel "Filter STRAINER"@en .
+
+otl:Filter-OILFILTER a owl:Class ;
+	rdfs:subClassOf otl:Filter ;
+	rdfs:seeAlso ifc:OILFILTER ;
+	skos:prefLabel "Filter OILFILTER"@en .
+
+otl:SwitchingDevice-MOMENTARYSWITCH a owl:Class ;
+	rdfs:subClassOf otl:SwitchingDevice ;
+	rdfs:seeAlso ifc:MOMENTARYSWITCH ;
+	skos:prefLabel "Switching Device MOMENTARYSWITCH"@en .
+
+otl:SwitchingDevice a owl:Class ;
+	rdfs:subClassOf nen2660term:DiscreteObject ;
+	rdfs:seeAlso ifc:IfcSwitchingDevice ;
+	skos:prefLabel "Switching Device"@en .
+
+otl:SwitchingDevice-CONTACTOR a owl:Class ;
+	rdfs:subClassOf otl:SwitchingDevice ;
+	rdfs:seeAlso ifc:CONTACTOR ;
+	skos:prefLabel "Switching Device CONTACTOR"@en .
+
+otl:SwitchingDevice-SWITCHDISCONNECTOR a owl:Class ;
+	rdfs:subClassOf otl:SwitchingDevice ;
+	rdfs:seeAlso ifc:SWITCHDISCONNECTOR ;
+	skos:prefLabel "Switching Device SWITCHDISCONNECTOR"@en .
+
+otl:SwitchingDevice-TOGGLESWITCH a owl:Class ;
+	rdfs:subClassOf otl:SwitchingDevice ;
+	rdfs:seeAlso ifc:TOGGLESWITCH ;
+	skos:prefLabel "Switching Device TOGGLESWITCH"@en .
+
+otl:SwitchingDevice-SELECTORSWITCH a owl:Class ;
+	rdfs:subClassOf otl:SwitchingDevice ;
+	rdfs:seeAlso ifc:SELECTORSWITCH ;
+	skos:prefLabel "Switching Device SELECTORSWITCH"@en .
+
+otl:SwitchingDevice-DIMMERSWITCH a owl:Class ;
+	rdfs:subClassOf otl:SwitchingDevice ;
+	rdfs:seeAlso ifc:DIMMERSWITCH ;
+	skos:prefLabel "Switching Device DIMMERSWITCH"@en .
+
+otl:SwitchingDevice-KEYPAD a owl:Class ;
+	rdfs:subClassOf otl:SwitchingDevice ;
+	rdfs:seeAlso ifc:KEYPAD ;
+	skos:prefLabel "Switching Device KEYPAD"@en .
+
+otl:SwitchingDevice-EMERGENCYSTOP a owl:Class ;
+	rdfs:subClassOf otl:SwitchingDevice ;
+	rdfs:seeAlso ifc:EMERGENCYSTOP ;
+	skos:prefLabel "Switching Device EMERGENCYSTOP"@en .
+
+otl:SwitchingDevice-STARTER a owl:Class ;
+	rdfs:subClassOf otl:SwitchingDevice ;
+	rdfs:seeAlso ifc:STARTER ;
+	skos:prefLabel "Switching Device STARTER"@en .
+
+otl:Valve-DIVERTING a owl:Class ;
+	rdfs:subClassOf otl:Valve ;
+	rdfs:seeAlso ifc:DIVERTING ;
+	skos:prefLabel "Valve DIVERTING"@en .
+
+otl:Valve a owl:Class ;
+	rdfs:subClassOf nen2660term:DiscreteObject ;
+	rdfs:seeAlso ifc:IfcValve ;
+	skos:prefLabel "Valve"@en .
+
+otl:Valve-PRESSUREREDUCING a owl:Class ;
+	rdfs:subClassOf otl:Valve ;
+	rdfs:seeAlso ifc:PRESSUREREDUCING ;
+	skos:prefLabel "Valve PRESSUREREDUCING"@en .
+
+otl:Valve-CHECK a owl:Class ;
+	rdfs:subClassOf otl:Valve ;
+	rdfs:seeAlso ifc:CHECK ;
+	skos:prefLabel "Valve CHECK"@en .
+
+otl:Valve-GASCOCK a owl:Class ;
+	rdfs:subClassOf otl:Valve ;
+	rdfs:seeAlso ifc:GASCOCK ;
+	skos:prefLabel "Valve GASCOCK"@en .
+
+otl:Valve-MIXING a owl:Class ;
+	rdfs:subClassOf otl:Valve ;
+	rdfs:seeAlso ifc:MIXING ;
+	skos:prefLabel "Valve MIXING"@en .
+
+otl:Valve-CHANGEOVER a owl:Class ;
+	rdfs:subClassOf otl:Valve ;
+	rdfs:seeAlso ifc:CHANGEOVER ;
+	skos:prefLabel "Valve CHANGEOVER"@en .
+
+otl:Valve-ISOLATING a owl:Class ;
+	rdfs:subClassOf otl:Valve ;
+	rdfs:seeAlso ifc:ISOLATING ;
+	skos:prefLabel "Valve ISOLATING"@en .
+
+otl:Valve-SAFETYCUTOFF a owl:Class ;
+	rdfs:subClassOf otl:Valve ;
+	rdfs:seeAlso ifc:SAFETYCUTOFF ;
+	skos:prefLabel "Valve SAFETYCUTOFF"@en .
+
+otl:Valve-FLUSHING a owl:Class ;
+	rdfs:subClassOf otl:Valve ;
+	rdfs:seeAlso ifc:FLUSHING ;
+	skos:prefLabel "Valve FLUSHING"@en .
+
+otl:Valve-DOUBLECHECK a owl:Class ;
+	rdfs:subClassOf otl:Valve ;
+	rdfs:seeAlso ifc:DOUBLECHECK ;
+	skos:prefLabel "Valve DOUBLECHECK"@en .
+
+otl:Valve-ANTIVACUUM a owl:Class ;
+	rdfs:subClassOf otl:Valve ;
+	rdfs:seeAlso ifc:ANTIVACUUM ;
+	skos:prefLabel "Valve ANTIVACUUM"@en .
+
+otl:Valve-DRAWOFFCOCK a owl:Class ;
+	rdfs:subClassOf otl:Valve ;
+	rdfs:seeAlso ifc:DRAWOFFCOCK ;
+	skos:prefLabel "Valve DRAWOFFCOCK"@en .
+
+otl:Valve-COMMISSIONING a owl:Class ;
+	rdfs:subClassOf otl:Valve ;
+	rdfs:seeAlso ifc:COMMISSIONING ;
+	skos:prefLabel "Valve COMMISSIONING"@en .
+
+otl:Valve-FAUCET a owl:Class ;
+	rdfs:subClassOf otl:Valve ;
+	rdfs:seeAlso ifc:FAUCET ;
+	skos:prefLabel "Valve FAUCET"@en .
+
+otl:Valve-STEAMTRAP a owl:Class ;
+	rdfs:subClassOf otl:Valve ;
+	rdfs:seeAlso ifc:STEAMTRAP ;
+	skos:prefLabel "Valve STEAMTRAP"@en .
+
+otl:Valve-DOUBLEREGULATING a owl:Class ;
+	rdfs:subClassOf otl:Valve ;
+	rdfs:seeAlso ifc:DOUBLEREGULATING ;
+	skos:prefLabel "Valve DOUBLEREGULATING"@en .
+
+otl:Valve-GASTAP a owl:Class ;
+	rdfs:subClassOf otl:Valve ;
+	rdfs:seeAlso ifc:GASTAP ;
+	skos:prefLabel "Valve GASTAP"@en .
+
+otl:Valve-REGULATING a owl:Class ;
+	rdfs:subClassOf otl:Valve ;
+	rdfs:seeAlso ifc:REGULATING ;
+	skos:prefLabel "Valve REGULATING"@en .
+
+otl:Valve-STOPCOCK a owl:Class ;
+	rdfs:subClassOf otl:Valve ;
+	rdfs:seeAlso ifc:STOPCOCK ;
+	skos:prefLabel "Valve STOPCOCK"@en .
+
+otl:Valve-AIRRELEASE a owl:Class ;
+	rdfs:subClassOf otl:Valve ;
+	rdfs:seeAlso ifc:AIRRELEASE ;
+	skos:prefLabel "Valve AIRRELEASE"@en .
+
+otl:Valve-PRESSURERELIEF a owl:Class ;
+	rdfs:subClassOf otl:Valve ;
+	rdfs:seeAlso ifc:PRESSURERELIEF ;
+	skos:prefLabel "Valve PRESSURERELIEF"@en .
+
+otl:ElectricDistributionBoard-SWITCHBOARD a owl:Class ;
+	rdfs:subClassOf otl:ElectricDistributionBoard ;
+	rdfs:seeAlso ifc:SWITCHBOARD ;
+	skos:prefLabel "Electric Distribution Board SWITCHBOARD"@en .
+
+otl:ElectricDistributionBoard a owl:Class ;
+	rdfs:subClassOf nen2660term:DiscreteObject ;
+	rdfs:seeAlso ifc:IfcElectricDistributionBoard ;
+	skos:prefLabel "Electric Distribution Board"@en .
+
+otl:ElectricDistributionBoard-DISTRIBUTIONBOARD a owl:Class ;
+	rdfs:subClassOf otl:ElectricDistributionBoard ;
+	rdfs:seeAlso ifc:DISTRIBUTIONBOARD ;
+	skos:prefLabel "Electric Distribution Board DISTRIBUTIONBOARD"@en .
+
+otl:ElectricDistributionBoard-MOTORCONTROLCENTRE a owl:Class ;
+	rdfs:subClassOf otl:ElectricDistributionBoard ;
+	rdfs:seeAlso ifc:MOTORCONTROLCENTRE ;
+	skos:prefLabel "Electric Distribution Board MOTORCONTROLCENTRE"@en .
+
+otl:ElectricDistributionBoard-CONSUMERUNIT a owl:Class ;
+	rdfs:subClassOf otl:ElectricDistributionBoard ;
+	rdfs:seeAlso ifc:CONSUMERUNIT ;
+	skos:prefLabel "Electric Distribution Board CONSUMERUNIT"@en .
+
+otl:FlowMeter-GASMETER a owl:Class ;
+	rdfs:subClassOf otl:FlowMeter ;
+	rdfs:seeAlso ifc:GASMETER ;
+	skos:prefLabel "Flow Meter GASMETER"@en .
+
+otl:FlowMeter a owl:Class ;
+	rdfs:subClassOf nen2660term:DiscreteObject ;
+	rdfs:seeAlso ifc:IfcFlowMeter ;
+	skos:prefLabel "Flow Meter"@en .
+
+otl:FlowMeter-ENERGYMETER a owl:Class ;
+	rdfs:subClassOf otl:FlowMeter ;
+	rdfs:seeAlso ifc:ENERGYMETER ;
+	skos:prefLabel "Flow Meter ENERGYMETER"@en .
+
+otl:FlowMeter-OILMETER a owl:Class ;
+	rdfs:subClassOf otl:FlowMeter ;
+	rdfs:seeAlso ifc:OILMETER ;
+	skos:prefLabel "Flow Meter OILMETER"@en .
+
+otl:FlowMeter-WATERMETER a owl:Class ;
+	rdfs:subClassOf otl:FlowMeter ;
+	rdfs:seeAlso ifc:WATERMETER ;
+	skos:prefLabel "Flow Meter WATERMETER"@en .
+
+otl:Damper-GRAVITYDAMPER a owl:Class ;
+	rdfs:subClassOf otl:Damper ;
+	rdfs:seeAlso ifc:GRAVITYDAMPER ;
+	skos:prefLabel "Damper GRAVITYDAMPER"@en .
+
+otl:Damper a owl:Class ;
+	rdfs:subClassOf nen2660term:DiscreteObject ;
+	rdfs:seeAlso ifc:IfcDamper ;
+	skos:prefLabel "Damper"@en .
+
+otl:Damper-BACKDRAFTDAMPER a owl:Class ;
+	rdfs:subClassOf otl:Damper ;
+	rdfs:seeAlso ifc:BACKDRAFTDAMPER ;
+	skos:prefLabel "Damper BACKDRAFTDAMPER"@en .
+
+otl:Damper-FIREDAMPER a owl:Class ;
+	rdfs:subClassOf otl:Damper ;
+	rdfs:seeAlso ifc:FIREDAMPER ;
+	skos:prefLabel "Damper FIREDAMPER"@en .
+
+otl:Damper-BALANCINGDAMPER a owl:Class ;
+	rdfs:subClassOf otl:Damper ;
+	rdfs:seeAlso ifc:BALANCINGDAMPER ;
+	skos:prefLabel "Damper BALANCINGDAMPER"@en .
+
+otl:Damper-FUMEHOODEXHAUST a owl:Class ;
+	rdfs:subClassOf otl:Damper ;
+	rdfs:seeAlso ifc:FUMEHOODEXHAUST ;
+	skos:prefLabel "Damper FUMEHOODEXHAUST"@en .
+
+otl:Damper-RELIEFDAMPER a owl:Class ;
+	rdfs:subClassOf otl:Damper ;
+	rdfs:seeAlso ifc:RELIEFDAMPER ;
+	skos:prefLabel "Damper RELIEFDAMPER"@en .
+
+otl:Damper-FIRESMOKEDAMPER a owl:Class ;
+	rdfs:subClassOf otl:Damper ;
+	rdfs:seeAlso ifc:FIRESMOKEDAMPER ;
+	skos:prefLabel "Damper FIRESMOKEDAMPER"@en .
+
+otl:Damper-BLASTDAMPER a owl:Class ;
+	rdfs:subClassOf otl:Damper ;
+	rdfs:seeAlso ifc:BLASTDAMPER ;
+	skos:prefLabel "Damper BLASTDAMPER"@en .
+
+otl:Damper-SMOKEDAMPER a owl:Class ;
+	rdfs:subClassOf otl:Damper ;
+	rdfs:seeAlso ifc:SMOKEDAMPER ;
+	skos:prefLabel "Damper SMOKEDAMPER"@en .
+
+otl:Damper-GRAVITYRELIEFDAMPER a owl:Class ;
+	rdfs:subClassOf otl:Damper ;
+	rdfs:seeAlso ifc:GRAVITYRELIEFDAMPER ;
+	skos:prefLabel "Damper GRAVITYRELIEFDAMPER"@en .
+
+otl:Damper-CONTROLDAMPER a owl:Class ;
+	rdfs:subClassOf otl:Damper ;
+	rdfs:seeAlso ifc:CONTROLDAMPER ;
+	skos:prefLabel "Damper CONTROLDAMPER"@en .
+
+otl:AirTerminalBox-VARIABLEFLOWPRESSUREINDEPENDANT a owl:Class ;
+	rdfs:subClassOf otl:AirTerminalBox ;
+	rdfs:seeAlso ifc:VARIABLEFLOWPRESSUREINDEPENDANT ;
+	skos:prefLabel "Air Terminal Box VARIABLEFLOWPRESSUREINDEPENDANT"@en .
+
+otl:AirTerminalBox a owl:Class ;
+	rdfs:subClassOf nen2660term:DiscreteObject ;
+	rdfs:seeAlso ifc:IfcAirTerminalBox ;
+	skos:prefLabel "Air Terminal Box"@en .
+
+otl:AirTerminalBox-VARIABLEFLOWPRESSUREDEPENDANT a owl:Class ;
+	rdfs:subClassOf otl:AirTerminalBox ;
+	rdfs:seeAlso ifc:VARIABLEFLOWPRESSUREDEPENDANT ;
+	skos:prefLabel "Air Terminal Box VARIABLEFLOWPRESSUREDEPENDANT"@en .
+
+otl:AirTerminalBox-CONSTANTFLOW a owl:Class ;
+	rdfs:subClassOf otl:AirTerminalBox ;
+	rdfs:seeAlso ifc:CONSTANTFLOW ;
+	skos:prefLabel "Air Terminal Box CONSTANTFLOW"@en .
+
+otl:ElectricTimeControl-TIMECLOCK a owl:Class ;
+	rdfs:subClassOf otl:ElectricTimeControl ;
+	rdfs:seeAlso ifc:TIMECLOCK ;
+	skos:prefLabel "Electric Time Control TIMECLOCK"@en .
+
+otl:ElectricTimeControl a owl:Class ;
+	rdfs:subClassOf nen2660term:DiscreteObject ;
+	rdfs:seeAlso ifc:IfcElectricTimeControl ;
+	skos:prefLabel "Electric Time Control"@en .
+
+otl:ElectricTimeControl-TIMEDELAY a owl:Class ;
+	rdfs:subClassOf otl:ElectricTimeControl ;
+	rdfs:seeAlso ifc:TIMEDELAY ;
+	skos:prefLabel "Electric Time Control TIMEDELAY"@en .
+
+otl:ElectricTimeControl-RELAY a owl:Class ;
+	rdfs:subClassOf otl:ElectricTimeControl ;
+	rdfs:seeAlso ifc:RELAY ;
+	skos:prefLabel "Electric Time Control RELAY"@en .
+
+otl:ProtectiveDevice-EARTHINGSWITCH a owl:Class ;
+	rdfs:subClassOf otl:ProtectiveDevice ;
+	rdfs:seeAlso ifc:EARTHINGSWITCH ;
+	skos:prefLabel "Protective Device EARTHINGSWITCH"@en .
+
+otl:ProtectiveDevice a owl:Class ;
+	rdfs:subClassOf nen2660term:DiscreteObject ;
+	rdfs:seeAlso ifc:IfcProtectiveDevice ;
+	skos:prefLabel "Protective Device"@en .
+
+otl:ProtectiveDevice-RESIDUALCURRENTSWITCH a owl:Class ;
+	rdfs:subClassOf otl:ProtectiveDevice ;
+	rdfs:seeAlso ifc:RESIDUALCURRENTSWITCH ;
+	skos:prefLabel "Protective Device RESIDUALCURRENTSWITCH"@en .
+
+otl:ProtectiveDevice-CIRCUITBREAKER a owl:Class ;
+	rdfs:subClassOf otl:ProtectiveDevice ;
+	rdfs:seeAlso ifc:CIRCUITBREAKER ;
+	skos:prefLabel "Protective Device CIRCUITBREAKER"@en .
+
+otl:ProtectiveDevice-EARTHLEAKAGECIRCUITBREAKER a owl:Class ;
+	rdfs:subClassOf otl:ProtectiveDevice ;
+	rdfs:seeAlso ifc:EARTHLEAKAGECIRCUITBREAKER ;
+	skos:prefLabel "Protective Device EARTHLEAKAGECIRCUITBREAKER"@en .
+
+otl:ProtectiveDevice-RESIDUALCURRENTCIRCUITBREAKER a owl:Class ;
+	rdfs:subClassOf otl:ProtectiveDevice ;
+	rdfs:seeAlso ifc:RESIDUALCURRENTCIRCUITBREAKER ;
+	skos:prefLabel "Protective Device RESIDUALCURRENTCIRCUITBREAKER"@en .
+
+otl:ProtectiveDevice-VARISTOR a owl:Class ;
+	rdfs:subClassOf otl:ProtectiveDevice ;
+	rdfs:seeAlso ifc:VARISTOR ;
+	skos:prefLabel "Protective Device VARISTOR"@en .
+
+otl:ProtectiveDevice-FUSEDISCONNECTOR a owl:Class ;
+	rdfs:subClassOf otl:ProtectiveDevice ;
+	rdfs:seeAlso ifc:FUSEDISCONNECTOR ;
+	skos:prefLabel "Protective Device FUSEDISCONNECTOR"@en .
+
+otl:PipeSegment-CULVERT a owl:Class ;
+	rdfs:subClassOf otl:PipeSegment ;
+	rdfs:seeAlso ifc:CULVERT ;
+	skos:prefLabel "Pipe Segment CULVERT"@en .
+
+otl:PipeSegment a owl:Class ;
+	rdfs:subClassOf nen2660term:DiscreteObject ;
+	rdfs:seeAlso ifc:IfcPipeSegment ;
+	skos:prefLabel "Pipe Segment"@en .
+
+otl:PipeSegment-GUTTER a owl:Class ;
+	rdfs:subClassOf otl:PipeSegment ;
+	rdfs:seeAlso ifc:GUTTER ;
+	skos:prefLabel "Pipe Segment GUTTER"@en .
+
+otl:PipeSegment-RIGIDSEGMENT a owl:Class ;
+	rdfs:subClassOf otl:PipeSegment ;
+	rdfs:seeAlso ifc:RIGIDSEGMENT ;
+	skos:prefLabel "Pipe Segment RIGIDSEGMENT"@en .
+
+otl:PipeSegment-SPOOL a owl:Class ;
+	rdfs:subClassOf otl:PipeSegment ;
+	rdfs:seeAlso ifc:SPOOL ;
+	skos:prefLabel "Pipe Segment SPOOL"@en .
+
+otl:PipeSegment-FLEXIBLESEGMENT a owl:Class ;
+	rdfs:subClassOf otl:PipeSegment ;
+	rdfs:seeAlso ifc:FLEXIBLESEGMENT ;
+	skos:prefLabel "Pipe Segment FLEXIBLESEGMENT"@en .
+
+otl:CableSegment-CONDUCTORSEGMENT a owl:Class ;
+	rdfs:subClassOf otl:CableSegment ;
+	rdfs:seeAlso ifc:CONDUCTORSEGMENT ;
+	skos:prefLabel "Cable Segment CONDUCTORSEGMENT"@en .
+
+otl:CableSegment a owl:Class ;
+	rdfs:subClassOf nen2660term:DiscreteObject ;
+	rdfs:seeAlso ifc:IfcCableSegment ;
+	skos:prefLabel "Cable Segment"@en .
+
+otl:CableSegment-CORESEGMENT a owl:Class ;
+	rdfs:subClassOf otl:CableSegment ;
+	rdfs:seeAlso ifc:CORESEGMENT ;
+	skos:prefLabel "Cable Segment CORESEGMENT"@en .
+
+otl:CableSegment-BUSBARSEGMENT a owl:Class ;
+	rdfs:subClassOf otl:CableSegment ;
+	rdfs:seeAlso ifc:BUSBARSEGMENT ;
+	skos:prefLabel "Cable Segment BUSBARSEGMENT"@en .
+
+otl:CableSegment-CABLESEGMENT a owl:Class ;
+	rdfs:subClassOf otl:CableSegment ;
+	rdfs:seeAlso ifc:CABLESEGMENT ;
+	skos:prefLabel "Cable Segment CABLESEGMENT"@en .
+
+otl:CableCarrierSegment-CONDUITSEGMENT a owl:Class ;
+	rdfs:subClassOf otl:CableCarrierSegment ;
+	rdfs:seeAlso ifc:CONDUITSEGMENT ;
+	skos:prefLabel "Cable Carrier Segment CONDUITSEGMENT"@en .
+
+otl:CableCarrierSegment a owl:Class ;
+	rdfs:subClassOf nen2660term:DiscreteObject ;
+	rdfs:seeAlso ifc:IfcCableCarrierSegment ;
+	skos:prefLabel "Cable Carrier Segment"@en .
+
+otl:CableCarrierSegment-CABLELADDERSEGMENT a owl:Class ;
+	rdfs:subClassOf otl:CableCarrierSegment ;
+	rdfs:seeAlso ifc:CABLELADDERSEGMENT ;
+	skos:prefLabel "Cable Carrier Segment CABLELADDERSEGMENT"@en .
+
+otl:CableCarrierSegment-CABLETRAYSEGMENT a owl:Class ;
+	rdfs:subClassOf otl:CableCarrierSegment ;
+	rdfs:seeAlso ifc:CABLETRAYSEGMENT ;
+	skos:prefLabel "Cable Carrier Segment CABLETRAYSEGMENT"@en .
+
+otl:CableCarrierSegment-CABLETRUNKINGSEGMENT a owl:Class ;
+	rdfs:subClassOf otl:CableCarrierSegment ;
+	rdfs:seeAlso ifc:CABLETRUNKINGSEGMENT ;
+	skos:prefLabel "Cable Carrier Segment CABLETRUNKINGSEGMENT"@en .
+
+otl:DuctSegment-RIGIDSEGMENT a owl:Class ;
+	rdfs:subClassOf otl:DuctSegment ;
+	rdfs:seeAlso ifc:RIGIDSEGMENT ;
+	skos:prefLabel "Duct Segment RIGIDSEGMENT"@en .
+
+otl:DuctSegment a owl:Class ;
+	rdfs:subClassOf nen2660term:DiscreteObject ;
+	rdfs:seeAlso ifc:IfcDuctSegment ;
+	skos:prefLabel "Duct Segment"@en .
+
+otl:DuctSegment-FLEXIBLESEGMENT a owl:Class ;
+	rdfs:subClassOf otl:DuctSegment ;
+	rdfs:seeAlso ifc:FLEXIBLESEGMENT ;
+	skos:prefLabel "Duct Segment FLEXIBLESEGMENT"@en .
+
+otl:DuctFitting-EXIT a owl:Class ;
+	rdfs:subClassOf otl:DuctFitting ;
+	rdfs:seeAlso ifc:EXIT ;
+	skos:prefLabel "Duct Fitting EXIT"@en .
+
+otl:DuctFitting a owl:Class ;
+	rdfs:subClassOf nen2660term:DiscreteObject ;
+	rdfs:seeAlso ifc:IfcDuctFitting ;
+	skos:prefLabel "Duct Fitting"@en .
+
+otl:DuctFitting-TRANSITION a owl:Class ;
+	rdfs:subClassOf otl:DuctFitting ;
+	rdfs:seeAlso ifc:TRANSITION ;
+	skos:prefLabel "Duct Fitting TRANSITION"@en .
+
+otl:DuctFitting-JUNCTION a owl:Class ;
+	rdfs:subClassOf otl:DuctFitting ;
+	rdfs:seeAlso ifc:JUNCTION ;
+	skos:prefLabel "Duct Fitting JUNCTION"@en .
+
+otl:DuctFitting-CONNECTOR a owl:Class ;
+	rdfs:subClassOf otl:DuctFitting ;
+	rdfs:seeAlso ifc:CONNECTOR ;
+	skos:prefLabel "Duct Fitting CONNECTOR"@en .
+
+otl:DuctFitting-OBSTRUCTION a owl:Class ;
+	rdfs:subClassOf otl:DuctFitting ;
+	rdfs:seeAlso ifc:OBSTRUCTION ;
+	skos:prefLabel "Duct Fitting OBSTRUCTION"@en .
+
+otl:DuctFitting-BEND a owl:Class ;
+	rdfs:subClassOf otl:DuctFitting ;
+	rdfs:seeAlso ifc:BEND ;
+	skos:prefLabel "Duct Fitting BEND"@en .
+
+otl:DuctFitting-ENTRY a owl:Class ;
+	rdfs:subClassOf otl:DuctFitting ;
+	rdfs:seeAlso ifc:ENTRY ;
+	skos:prefLabel "Duct Fitting ENTRY"@en .
+
+otl:JunctionBox-POWER a owl:Class ;
+	rdfs:subClassOf otl:JunctionBox ;
+	rdfs:seeAlso ifc:POWER ;
+	skos:prefLabel "Junction Box POWER"@en .
+
+otl:JunctionBox a owl:Class ;
+	rdfs:subClassOf nen2660term:DiscreteObject ;
+	rdfs:seeAlso ifc:IfcJunctionBox ;
+	skos:prefLabel "Junction Box"@en .
+
+otl:JunctionBox-DATA a owl:Class ;
+	rdfs:subClassOf otl:JunctionBox ;
+	rdfs:seeAlso ifc:DATA ;
+	skos:prefLabel "Junction Box DATA"@en .
+
+otl:CableFitting-EXIT a owl:Class ;
+	rdfs:subClassOf otl:CableFitting ;
+	rdfs:seeAlso ifc:EXIT ;
+	skos:prefLabel "Cable Fitting EXIT"@en .
+
+otl:CableFitting a owl:Class ;
+	rdfs:subClassOf nen2660term:DiscreteObject ;
+	rdfs:seeAlso ifc:IfcCableFitting ;
+	skos:prefLabel "Cable Fitting"@en .
+
+otl:CableFitting-TRANSITION a owl:Class ;
+	rdfs:subClassOf otl:CableFitting ;
+	rdfs:seeAlso ifc:TRANSITION ;
+	skos:prefLabel "Cable Fitting TRANSITION"@en .
+
+otl:CableFitting-JUNCTION a owl:Class ;
+	rdfs:subClassOf otl:CableFitting ;
+	rdfs:seeAlso ifc:JUNCTION ;
+	skos:prefLabel "Cable Fitting JUNCTION"@en .
+
+otl:CableFitting-CONNECTOR a owl:Class ;
+	rdfs:subClassOf otl:CableFitting ;
+	rdfs:seeAlso ifc:CONNECTOR ;
+	skos:prefLabel "Cable Fitting CONNECTOR"@en .
+
+otl:CableFitting-ENTRY a owl:Class ;
+	rdfs:subClassOf otl:CableFitting ;
+	rdfs:seeAlso ifc:ENTRY ;
+	skos:prefLabel "Cable Fitting ENTRY"@en .
+
+otl:PipeFitting-EXIT a owl:Class ;
+	rdfs:subClassOf otl:PipeFitting ;
+	rdfs:seeAlso ifc:EXIT ;
+	skos:prefLabel "Pipe Fitting EXIT"@en .
+
+otl:PipeFitting a owl:Class ;
+	rdfs:subClassOf nen2660term:DiscreteObject ;
+	rdfs:seeAlso ifc:IfcPipeFitting ;
+	skos:prefLabel "Pipe Fitting"@en .
+
+otl:PipeFitting-TRANSITION a owl:Class ;
+	rdfs:subClassOf otl:PipeFitting ;
+	rdfs:seeAlso ifc:TRANSITION ;
+	skos:prefLabel "Pipe Fitting TRANSITION"@en .
+
+otl:PipeFitting-JUNCTION a owl:Class ;
+	rdfs:subClassOf otl:PipeFitting ;
+	rdfs:seeAlso ifc:JUNCTION ;
+	skos:prefLabel "Pipe Fitting JUNCTION"@en .
+
+otl:PipeFitting-CONNECTOR a owl:Class ;
+	rdfs:subClassOf otl:PipeFitting ;
+	rdfs:seeAlso ifc:CONNECTOR ;
+	skos:prefLabel "Pipe Fitting CONNECTOR"@en .
+
+otl:PipeFitting-OBSTRUCTION a owl:Class ;
+	rdfs:subClassOf otl:PipeFitting ;
+	rdfs:seeAlso ifc:OBSTRUCTION ;
+	skos:prefLabel "Pipe Fitting OBSTRUCTION"@en .
+
+otl:PipeFitting-BEND a owl:Class ;
+	rdfs:subClassOf otl:PipeFitting ;
+	rdfs:seeAlso ifc:BEND ;
+	skos:prefLabel "Pipe Fitting BEND"@en .
+
+otl:PipeFitting-ENTRY a owl:Class ;
+	rdfs:subClassOf otl:PipeFitting ;
+	rdfs:seeAlso ifc:ENTRY ;
+	skos:prefLabel "Pipe Fitting ENTRY"@en .
+
+otl:CableCarrierFitting-TEE a owl:Class ;
+	rdfs:subClassOf otl:CableCarrierFitting ;
+	rdfs:seeAlso ifc:TEE ;
+	skos:prefLabel "Cable Carrier Fitting TEE"@en .
+
+otl:CableCarrierFitting a owl:Class ;
+	rdfs:subClassOf nen2660term:DiscreteObject ;
+	rdfs:seeAlso ifc:IfcCableCarrierFitting ;
+	skos:prefLabel "Cable Carrier Fitting"@en .
+
+otl:CableCarrierFitting-CROSS a owl:Class ;
+	rdfs:subClassOf otl:CableCarrierFitting ;
+	rdfs:seeAlso ifc:CROSS ;
+	skos:prefLabel "Cable Carrier Fitting CROSS"@en .
+
+otl:CableCarrierFitting-BEND a owl:Class ;
+	rdfs:subClassOf otl:CableCarrierFitting ;
+	rdfs:seeAlso ifc:BEND ;
+	skos:prefLabel "Cable Carrier Fitting BEND"@en .
+
+otl:CableCarrierFitting-REDUCER a owl:Class ;
+	rdfs:subClassOf otl:CableCarrierFitting ;
+	rdfs:seeAlso ifc:REDUCER ;
+	skos:prefLabel "Cable Carrier Fitting REDUCER"@en .
+
+otl:Compressor-SEMIHERMETIC a owl:Class ;
+	rdfs:subClassOf otl:Compressor ;
+	rdfs:seeAlso ifc:SEMIHERMETIC ;
+	skos:prefLabel "Compressor SEMIHERMETIC"@en .
+
+otl:Compressor a owl:Class ;
+	rdfs:subClassOf nen2660term:DiscreteObject ;
+	rdfs:seeAlso ifc:IfcCompressor ;
+	skos:prefLabel "Compressor"@en .
+
+otl:Compressor-SINGLESCREW a owl:Class ;
+	rdfs:subClassOf otl:Compressor ;
+	rdfs:seeAlso ifc:SINGLESCREW ;
+	skos:prefLabel "Compressor SINGLESCREW"@en .
+
+otl:Compressor-SINGLESTAGE a owl:Class ;
+	rdfs:subClassOf otl:Compressor ;
+	rdfs:seeAlso ifc:SINGLESTAGE ;
+	skos:prefLabel "Compressor SINGLESTAGE"@en .
+
+otl:Compressor-SCROLL a owl:Class ;
+	rdfs:subClassOf otl:Compressor ;
+	rdfs:seeAlso ifc:SCROLL ;
+	skos:prefLabel "Compressor SCROLL"@en .
+
+otl:Compressor-DYNAMIC a owl:Class ;
+	rdfs:subClassOf otl:Compressor ;
+	rdfs:seeAlso ifc:DYNAMIC ;
+	skos:prefLabel "Compressor DYNAMIC"@en .
+
+otl:Compressor-BOOSTER a owl:Class ;
+	rdfs:subClassOf otl:Compressor ;
+	rdfs:seeAlso ifc:BOOSTER ;
+	skos:prefLabel "Compressor BOOSTER"@en .
+
+otl:Compressor-ROLLINGPISTON a owl:Class ;
+	rdfs:subClassOf otl:Compressor ;
+	rdfs:seeAlso ifc:ROLLINGPISTON ;
+	skos:prefLabel "Compressor ROLLINGPISTON"@en .
+
+otl:Compressor-OPENTYPE a owl:Class ;
+	rdfs:subClassOf otl:Compressor ;
+	rdfs:seeAlso ifc:OPENTYPE ;
+	skos:prefLabel "Compressor OPENTYPE"@en .
+
+otl:Compressor-WELDEDSHELLHERMETIC a owl:Class ;
+	rdfs:subClassOf otl:Compressor ;
+	rdfs:seeAlso ifc:WELDEDSHELLHERMETIC ;
+	skos:prefLabel "Compressor WELDEDSHELLHERMETIC"@en .
+
+otl:Compressor-ROTARYVANE a owl:Class ;
+	rdfs:subClassOf otl:Compressor ;
+	rdfs:seeAlso ifc:ROTARYVANE ;
+	skos:prefLabel "Compressor ROTARYVANE"@en .
+
+otl:Compressor-ROTARY a owl:Class ;
+	rdfs:subClassOf otl:Compressor ;
+	rdfs:seeAlso ifc:ROTARY ;
+	skos:prefLabel "Compressor ROTARY"@en .
+
+otl:Compressor-TROCHOIDAL a owl:Class ;
+	rdfs:subClassOf otl:Compressor ;
+	rdfs:seeAlso ifc:TROCHOIDAL ;
+	skos:prefLabel "Compressor TROCHOIDAL"@en .
+
+otl:Compressor-HERMETIC a owl:Class ;
+	rdfs:subClassOf otl:Compressor ;
+	rdfs:seeAlso ifc:HERMETIC ;
+	skos:prefLabel "Compressor HERMETIC"@en .
+
+otl:Compressor-RECIPROCATING a owl:Class ;
+	rdfs:subClassOf otl:Compressor ;
+	rdfs:seeAlso ifc:RECIPROCATING ;
+	skos:prefLabel "Compressor RECIPROCATING"@en .
+
+otl:Compressor-TWINSCREW a owl:Class ;
+	rdfs:subClassOf otl:Compressor ;
+	rdfs:seeAlso ifc:TWINSCREW ;
+	skos:prefLabel "Compressor TWINSCREW"@en .
+
+otl:Pump-SUBMERSIBLEPUMP a owl:Class ;
+	rdfs:subClassOf otl:Pump ;
+	rdfs:seeAlso ifc:SUBMERSIBLEPUMP ;
+	skos:prefLabel "Pump SUBMERSIBLEPUMP"@en .
+
+otl:Pump a owl:Class ;
+	rdfs:subClassOf nen2660term:DiscreteObject ;
+	rdfs:seeAlso ifc:IfcPump ;
+	skos:prefLabel "Pump"@en .
+
+otl:Pump-SUMPPUMP a owl:Class ;
+	rdfs:subClassOf otl:Pump ;
+	rdfs:seeAlso ifc:SUMPPUMP ;
+	skos:prefLabel "Pump SUMPPUMP"@en .
+
+otl:Pump-VERTICALTURBINE a owl:Class ;
+	rdfs:subClassOf otl:Pump ;
+	rdfs:seeAlso ifc:VERTICALTURBINE ;
+	skos:prefLabel "Pump VERTICALTURBINE"@en .
+
+otl:Pump-VERTICALINLINE a owl:Class ;
+	rdfs:subClassOf otl:Pump ;
+	rdfs:seeAlso ifc:VERTICALINLINE ;
+	skos:prefLabel "Pump VERTICALINLINE"@en .
+
+otl:Pump-ENDSUCTION a owl:Class ;
+	rdfs:subClassOf otl:Pump ;
+	rdfs:seeAlso ifc:ENDSUCTION ;
+	skos:prefLabel "Pump ENDSUCTION"@en .
+
+otl:Pump-CIRCULATOR a owl:Class ;
+	rdfs:subClassOf otl:Pump ;
+	rdfs:seeAlso ifc:CIRCULATOR ;
+	skos:prefLabel "Pump CIRCULATOR"@en .
+
+otl:Pump-SPLITCASE a owl:Class ;
+	rdfs:subClassOf otl:Pump ;
+	rdfs:seeAlso ifc:SPLITCASE ;
+	skos:prefLabel "Pump SPLITCASE"@en .
+
+otl:Fan-CENTRIFUGALAIRFOIL a owl:Class ;
+	rdfs:subClassOf otl:Fan ;
+	rdfs:seeAlso ifc:CENTRIFUGALAIRFOIL ;
+	skos:prefLabel "Fan CENTRIFUGALAIRFOIL"@en .
+
+otl:Fan a owl:Class ;
+	rdfs:subClassOf nen2660term:DiscreteObject ;
+	rdfs:seeAlso ifc:IfcFan ;
+	skos:prefLabel "Fan"@en .
+
+otl:Fan-CENTRIFUGALRADIAL a owl:Class ;
+	rdfs:subClassOf otl:Fan ;
+	rdfs:seeAlso ifc:CENTRIFUGALRADIAL ;
+	skos:prefLabel "Fan CENTRIFUGALRADIAL"@en .
+
+otl:Fan-CENTRIFUGALBACKWARDINCLINEDCURVED a owl:Class ;
+	rdfs:subClassOf otl:Fan ;
+	rdfs:seeAlso ifc:CENTRIFUGALBACKWARDINCLINEDCURVED ;
+	skos:prefLabel "Fan CENTRIFUGALBACKWARDINCLINEDCURVED"@en .
+
+otl:Fan-TUBEAXIAL a owl:Class ;
+	rdfs:subClassOf otl:Fan ;
+	rdfs:seeAlso ifc:TUBEAXIAL ;
+	skos:prefLabel "Fan TUBEAXIAL"@en .
+
+otl:Fan-CENTRIFUGALFORWARDCURVED a owl:Class ;
+	rdfs:subClassOf otl:Fan ;
+	rdfs:seeAlso ifc:CENTRIFUGALFORWARDCURVED ;
+	skos:prefLabel "Fan CENTRIFUGALFORWARDCURVED"@en .
+
+otl:Fan-PROPELLORAXIAL a owl:Class ;
+	rdfs:subClassOf otl:Fan ;
+	rdfs:seeAlso ifc:PROPELLORAXIAL ;
+	skos:prefLabel "Fan PROPELLORAXIAL"@en .
+
+otl:Fan-VANEAXIAL a owl:Class ;
+	rdfs:subClassOf otl:Fan ;
+	rdfs:seeAlso ifc:VANEAXIAL ;
+	skos:prefLabel "Fan VANEAXIAL"@en .
+
+otl:Tank-STORAGE a owl:Class ;
+	rdfs:subClassOf otl:Tank ;
+	rdfs:seeAlso ifc:STORAGE ;
+	skos:prefLabel "Tank STORAGE"@en .
+
+otl:Tank a owl:Class ;
+	rdfs:subClassOf nen2660term:DiscreteObject ;
+	rdfs:seeAlso ifc:IfcTank ;
+	skos:prefLabel "Tank"@en .
+
+otl:Tank-PRESSUREVESSEL a owl:Class ;
+	rdfs:subClassOf otl:Tank ;
+	rdfs:seeAlso ifc:PRESSUREVESSEL ;
+	skos:prefLabel "Tank PRESSUREVESSEL"@en .
+
+otl:Tank-BREAKPRESSURE a owl:Class ;
+	rdfs:subClassOf otl:Tank ;
+	rdfs:seeAlso ifc:BREAKPRESSURE ;
+	skos:prefLabel "Tank BREAKPRESSURE"@en .
+
+otl:Tank-BASIN a owl:Class ;
+	rdfs:subClassOf otl:Tank ;
+	rdfs:seeAlso ifc:BASIN ;
+	skos:prefLabel "Tank BASIN"@en .
+
+otl:Tank-VESSEL a owl:Class ;
+	rdfs:subClassOf otl:Tank ;
+	rdfs:seeAlso ifc:VESSEL ;
+	skos:prefLabel "Tank VESSEL"@en .
+
+otl:Tank-EXPANSION a owl:Class ;
+	rdfs:subClassOf otl:Tank ;
+	rdfs:seeAlso ifc:EXPANSION ;
+	skos:prefLabel "Tank EXPANSION"@en .
+
+otl:Tank-FEEDANDEXPANSION a owl:Class ;
+	rdfs:subClassOf otl:Tank ;
+	rdfs:seeAlso ifc:FEEDANDEXPANSION ;
+	skos:prefLabel "Tank FEEDANDEXPANSION"@en .
+
+otl:ElectricFlowStorageDevice-UPS a owl:Class ;
+	rdfs:subClassOf otl:ElectricFlowStorageDevice ;
+	rdfs:seeAlso ifc:UPS ;
+	skos:prefLabel "Electric Flow Storage Device UPS"@en .
+
+otl:ElectricFlowStorageDevice a owl:Class ;
+	rdfs:subClassOf nen2660term:DiscreteObject ;
+	rdfs:seeAlso ifc:IfcElectricFlowStorageDevice ;
+	skos:prefLabel "Electric Flow Storage Device"@en .
+
+otl:ElectricFlowStorageDevice-HARMONICFILTER a owl:Class ;
+	rdfs:subClassOf otl:ElectricFlowStorageDevice ;
+	rdfs:seeAlso ifc:HARMONICFILTER ;
+	skos:prefLabel "Electric Flow Storage Device HARMONICFILTER"@en .
+
+otl:ElectricFlowStorageDevice-BATTERY a owl:Class ;
+	rdfs:subClassOf otl:ElectricFlowStorageDevice ;
+	rdfs:seeAlso ifc:BATTERY ;
+	skos:prefLabel "Electric Flow Storage Device BATTERY"@en .
+
+otl:ElectricFlowStorageDevice-CAPACITORBANK a owl:Class ;
+	rdfs:subClassOf otl:ElectricFlowStorageDevice ;
+	rdfs:seeAlso ifc:CAPACITORBANK ;
+	skos:prefLabel "Electric Flow Storage Device CAPACITORBANK"@en .
+
+otl:ElectricFlowStorageDevice-INDUCTORBANK a owl:Class ;
+	rdfs:subClassOf otl:ElectricFlowStorageDevice ;
+	rdfs:seeAlso ifc:INDUCTORBANK ;
+	skos:prefLabel "Electric Flow Storage Device INDUCTORBANK"@en .
+
+otl:FurnishingElement a owl:Class ;
+	rdfs:subClassOf nen2660term:DiscreteObject ;
+	rdfs:seeAlso ifc:IfcFurnishingElement ;
+	skos:prefLabel "Furnishing Element"@en .
+
+otl:Furniture-DESK a owl:Class ;
+	rdfs:subClassOf otl:Furniture ;
+	rdfs:seeAlso ifc:DESK ;
+	skos:prefLabel "Furniture DESK"@en .
+
+otl:Furniture a owl:Class ;
+	rdfs:subClassOf nen2660term:DiscreteObject ;
+	rdfs:seeAlso ifc:IfcFurniture ;
+	skos:prefLabel "Furniture"@en .
+
+otl:Furniture-FILECABINET a owl:Class ;
+	rdfs:subClassOf otl:Furniture ;
+	rdfs:seeAlso ifc:FILECABINET ;
+	skos:prefLabel "Furniture FILECABINET"@en .
+
+otl:Furniture-CHAIR a owl:Class ;
+	rdfs:subClassOf otl:Furniture ;
+	rdfs:seeAlso ifc:CHAIR ;
+	skos:prefLabel "Furniture CHAIR"@en .
+
+otl:Furniture-SHELF a owl:Class ;
+	rdfs:subClassOf otl:Furniture ;
+	rdfs:seeAlso ifc:SHELF ;
+	skos:prefLabel "Furniture SHELF"@en .
+
+otl:Furniture-SOFA a owl:Class ;
+	rdfs:subClassOf otl:Furniture ;
+	rdfs:seeAlso ifc:SOFA ;
+	skos:prefLabel "Furniture SOFA"@en .
+
+otl:Furniture-BED a owl:Class ;
+	rdfs:subClassOf otl:Furniture ;
+	rdfs:seeAlso ifc:BED ;
+	skos:prefLabel "Furniture BED"@en .
+
+otl:Furniture-TABLE a owl:Class ;
+	rdfs:subClassOf otl:Furniture ;
+	rdfs:seeAlso ifc:TABLE ;
+	skos:prefLabel "Furniture TABLE"@en .
+
+otl:SystemFurnitureElement-WORKSURFACE a owl:Class ;
+	rdfs:subClassOf otl:SystemFurnitureElement ;
+	rdfs:seeAlso ifc:WORKSURFACE ;
+	skos:prefLabel "System Furniture Element WORKSURFACE"@en .
+
+otl:SystemFurnitureElement a owl:Class ;
+	rdfs:subClassOf nen2660term:DiscreteObject ;
+	rdfs:seeAlso ifc:IfcSystemFurnitureElement ;
+	skos:prefLabel "System Furniture Element"@en .
+
+otl:SystemFurnitureElement-PANEL a owl:Class ;
+	rdfs:subClassOf otl:SystemFurnitureElement ;
+	rdfs:seeAlso ifc:PANEL ;
+	skos:prefLabel "System Furniture Element PANEL"@en .
+
+otl:ElementComponent a owl:Class ;
+	rdfs:subClassOf nen2660term:DiscreteObject ;
+	rdfs:seeAlso ifc:IfcElementComponent ;
+	skos:prefLabel "Element Component"@en .
+
+otl:ReinforcingElement a owl:Class ;
+	rdfs:subClassOf nen2660term:DiscreteObject ;
+	rdfs:seeAlso ifc:IfcReinforcingElement ;
+	skos:prefLabel "Reinforcing Element"@en .
+
+otl:Fastener-MORTAR a owl:Class ;
+	rdfs:subClassOf otl:Fastener ;
+	rdfs:seeAlso ifc:MORTAR ;
+	skos:prefLabel "Fastener MORTAR"@en .
+
+otl:Fastener a owl:Class ;
+	rdfs:subClassOf nen2660term:DiscreteObject ;
+	rdfs:seeAlso ifc:IfcFastener ;
+	skos:prefLabel "Fastener"@en .
+
+otl:Fastener-WELD a owl:Class ;
+	rdfs:subClassOf otl:Fastener ;
+	rdfs:seeAlso ifc:WELD ;
+	skos:prefLabel "Fastener WELD"@en .
+
+otl:Fastener-GLUE a owl:Class ;
+	rdfs:subClassOf otl:Fastener ;
+	rdfs:seeAlso ifc:GLUE ;
+	skos:prefLabel "Fastener GLUE"@en .
+
+otl:BuildingElementPart-INSULATION a owl:Class ;
+	rdfs:subClassOf otl:BuildingElementPart ;
+	rdfs:seeAlso ifc:INSULATION ;
+	skos:prefLabel "Building Element Part INSULATION"@en .
+
+otl:BuildingElementPart a owl:Class ;
+	rdfs:subClassOf nen2660term:DiscreteObject ;
+	rdfs:seeAlso ifc:IfcBuildingElementPart ;
+	skos:prefLabel "Building Element Part"@en .
+
+otl:BuildingElementPart-PRECASTPANEL a owl:Class ;
+	rdfs:subClassOf otl:BuildingElementPart ;
+	rdfs:seeAlso ifc:PRECASTPANEL ;
+	skos:prefLabel "Building Element Part PRECASTPANEL"@en .
+
+otl:MechanicalFastener-SHEARCONNECTOR a owl:Class ;
+	rdfs:subClassOf otl:MechanicalFastener ;
+	rdfs:seeAlso ifc:SHEARCONNECTOR ;
+	skos:prefLabel "Mechanical Fastener SHEARCONNECTOR"@en .
+
+otl:MechanicalFastener a owl:Class ;
+	rdfs:subClassOf nen2660term:DiscreteObject ;
+	rdfs:seeAlso ifc:IfcMechanicalFastener ;
+	skos:prefLabel "Mechanical Fastener"@en .
+
+otl:MechanicalFastener-DOWEL a owl:Class ;
+	rdfs:subClassOf otl:MechanicalFastener ;
+	rdfs:seeAlso ifc:DOWEL ;
+	skos:prefLabel "Mechanical Fastener DOWEL"@en .
+
+otl:MechanicalFastener-BOLT a owl:Class ;
+	rdfs:subClassOf otl:MechanicalFastener ;
+	rdfs:seeAlso ifc:BOLT ;
+	skos:prefLabel "Mechanical Fastener BOLT"@en .
+
+otl:MechanicalFastener-STAPLE a owl:Class ;
+	rdfs:subClassOf otl:MechanicalFastener ;
+	rdfs:seeAlso ifc:STAPLE ;
+	skos:prefLabel "Mechanical Fastener STAPLE"@en .
+
+otl:MechanicalFastener-NAIL a owl:Class ;
+	rdfs:subClassOf otl:MechanicalFastener ;
+	rdfs:seeAlso ifc:NAIL ;
+	skos:prefLabel "Mechanical Fastener NAIL"@en .
+
+otl:MechanicalFastener-SCREW a owl:Class ;
+	rdfs:subClassOf otl:MechanicalFastener ;
+	rdfs:seeAlso ifc:SCREW ;
+	skos:prefLabel "Mechanical Fastener SCREW"@en .
+
+otl:MechanicalFastener-NAILPLATE a owl:Class ;
+	rdfs:subClassOf otl:MechanicalFastener ;
+	rdfs:seeAlso ifc:NAILPLATE ;
+	skos:prefLabel "Mechanical Fastener NAILPLATE"@en .
+
+otl:MechanicalFastener-STUDSHEARCONNECTOR a owl:Class ;
+	rdfs:subClassOf otl:MechanicalFastener ;
+	rdfs:seeAlso ifc:STUDSHEARCONNECTOR ;
+	skos:prefLabel "Mechanical Fastener STUDSHEARCONNECTOR"@en .
+
+otl:MechanicalFastener-ANCHORBOLT a owl:Class ;
+	rdfs:subClassOf otl:MechanicalFastener ;
+	rdfs:seeAlso ifc:ANCHORBOLT ;
+	skos:prefLabel "Mechanical Fastener ANCHORBOLT"@en .
+
+otl:MechanicalFastener-RIVET a owl:Class ;
+	rdfs:subClassOf otl:MechanicalFastener ;
+	rdfs:seeAlso ifc:RIVET ;
+	skos:prefLabel "Mechanical Fastener RIVET"@en .
+
+otl:DiscreteAccessory-ANCHORPLATE a owl:Class ;
+	rdfs:subClassOf otl:DiscreteAccessory ;
+	rdfs:seeAlso ifc:ANCHORPLATE ;
+	skos:prefLabel "Discrete Accessory ANCHORPLATE"@en .
+
+otl:DiscreteAccessory a owl:Class ;
+	rdfs:subClassOf nen2660term:DiscreteObject ;
+	rdfs:seeAlso ifc:IfcDiscreteAccessory ;
+	skos:prefLabel "Discrete Accessory"@en .
+
+otl:DiscreteAccessory-BRACKET a owl:Class ;
+	rdfs:subClassOf otl:DiscreteAccessory ;
+	rdfs:seeAlso ifc:BRACKET ;
+	skos:prefLabel "Discrete Accessory BRACKET"@en .
+
+otl:DiscreteAccessory-SHOE a owl:Class ;
+	rdfs:subClassOf otl:DiscreteAccessory ;
+	rdfs:seeAlso ifc:SHOE ;
+	skos:prefLabel "Discrete Accessory SHOE"@en .
+
+otl:VibrationIsolator-COMPRESSION a owl:Class ;
+	rdfs:subClassOf otl:VibrationIsolator ;
+	rdfs:seeAlso ifc:COMPRESSION ;
+	skos:prefLabel "Vibration Isolator COMPRESSION"@en .
+
+otl:VibrationIsolator a owl:Class ;
+	rdfs:subClassOf nen2660term:DiscreteObject ;
+	rdfs:seeAlso ifc:IfcVibrationIsolator ;
+	skos:prefLabel "Vibration Isolator"@en .
+
+otl:VibrationIsolator-SPRING a owl:Class ;
+	rdfs:subClassOf otl:VibrationIsolator ;
+	rdfs:seeAlso ifc:SPRING ;
+	skos:prefLabel "Vibration Isolator SPRING"@en .
+
+otl:ReinforcingMesh a owl:Class ;
+	rdfs:subClassOf nen2660term:DiscreteObject ;
+	rdfs:seeAlso ifc:IfcReinforcingMesh ;
+	skos:prefLabel "Reinforcing Mesh"@en .
+
+otl:Tendon-COATED a owl:Class ;
+	rdfs:subClassOf otl:Tendon ;
+	rdfs:seeAlso ifc:COATED ;
+	skos:prefLabel "Tendon COATED"@en .
+
+otl:Tendon a owl:Class ;
+	rdfs:subClassOf nen2660term:DiscreteObject ;
+	rdfs:seeAlso ifc:IfcTendon ;
+	skos:prefLabel "Tendon"@en .
+
+otl:Tendon-WIRE a owl:Class ;
+	rdfs:subClassOf otl:Tendon ;
+	rdfs:seeAlso ifc:WIRE ;
+	skos:prefLabel "Tendon WIRE"@en .
+
+otl:Tendon-STRAND a owl:Class ;
+	rdfs:subClassOf otl:Tendon ;
+	rdfs:seeAlso ifc:STRAND ;
+	skos:prefLabel "Tendon STRAND"@en .
+
+otl:Tendon-BAR a owl:Class ;
+	rdfs:subClassOf otl:Tendon ;
+	rdfs:seeAlso ifc:BAR ;
+	skos:prefLabel "Tendon BAR"@en .
+
+otl:TendonAnchor-TENSIONING_END a owl:Class ;
+	rdfs:subClassOf otl:TendonAnchor ;
+	rdfs:seeAlso ifc:TENSIONING_END ;
+	skos:prefLabel "Tendon Anchor TENSIONING END"@en .
+
+otl:TendonAnchor a owl:Class ;
+	rdfs:subClassOf nen2660term:DiscreteObject ;
+	rdfs:seeAlso ifc:IfcTendonAnchor ;
+	skos:prefLabel "Tendon Anchor"@en .
+
+otl:TendonAnchor-FIXED_END a owl:Class ;
+	rdfs:subClassOf otl:TendonAnchor ;
+	rdfs:seeAlso ifc:FIXED_END ;
+	skos:prefLabel "Tendon Anchor FIXED END"@en .
+
+otl:TendonAnchor-COUPLER a owl:Class ;
+	rdfs:subClassOf otl:TendonAnchor ;
+	rdfs:seeAlso ifc:COUPLER ;
+	skos:prefLabel "Tendon Anchor COUPLER"@en .
+
+otl:ReinforcingBar-PUNCHING a owl:Class ;
+	rdfs:subClassOf otl:ReinforcingBar ;
+	rdfs:seeAlso ifc:PUNCHING ;
+	skos:prefLabel "Reinforcing Bar PUNCHING"@en .
+
+otl:ReinforcingBar a owl:Class ;
+	rdfs:subClassOf nen2660term:DiscreteObject ;
+	rdfs:seeAlso ifc:IfcReinforcingBar ;
+	skos:prefLabel "Reinforcing Bar"@en .
+
+otl:ReinforcingBar-LIGATURE a owl:Class ;
+	rdfs:subClassOf otl:ReinforcingBar ;
+	rdfs:seeAlso ifc:LIGATURE ;
+	skos:prefLabel "Reinforcing Bar LIGATURE"@en .
+
+otl:ReinforcingBar-STUD a owl:Class ;
+	rdfs:subClassOf otl:ReinforcingBar ;
+	rdfs:seeAlso ifc:STUD ;
+	skos:prefLabel "Reinforcing Bar STUD"@en .
+
+otl:ReinforcingBar-SHEAR a owl:Class ;
+	rdfs:subClassOf otl:ReinforcingBar ;
+	rdfs:seeAlso ifc:SHEAR ;
+	skos:prefLabel "Reinforcing Bar SHEAR"@en .
+
+otl:ReinforcingBar-EDGE a owl:Class ;
+	rdfs:subClassOf otl:ReinforcingBar ;
+	rdfs:seeAlso ifc:EDGE ;
+	skos:prefLabel "Reinforcing Bar EDGE"@en .
+
+otl:ReinforcingBar-ANCHORING a owl:Class ;
+	rdfs:subClassOf otl:ReinforcingBar ;
+	rdfs:seeAlso ifc:ANCHORING ;
+	skos:prefLabel "Reinforcing Bar ANCHORING"@en .
+
+otl:ReinforcingBar-RING a owl:Class ;
+	rdfs:subClassOf otl:ReinforcingBar ;
+	rdfs:seeAlso ifc:RING ;
+	skos:prefLabel "Reinforcing Bar RING"@en .
+
+otl:ReinforcingBar-MAIN a owl:Class ;
+	rdfs:subClassOf otl:ReinforcingBar ;
+	rdfs:seeAlso ifc:MAIN ;
+	skos:prefLabel "Reinforcing Bar MAIN"@en .
+
+otl:ReinforcingBar-PLAIN a owl:Class ;
+	rdfs:subClassOf otl:ReinforcingBar ;
+	rdfs:seeAlso ifc:PLAIN ;
+	skos:prefLabel "Reinforcing Bar PLAIN"@en .
+
+otl:ReinforcingBar-TEXTURED a owl:Class ;
+	rdfs:subClassOf otl:ReinforcingBar ;
+	rdfs:seeAlso ifc:TEXTURED ;
+	skos:prefLabel "Reinforcing Bar TEXTURED"@en .
+
+otl:SpatialElement a owl:Class ;
+	rdfs:subClassOf nen2660term:SpatialRegion ;
+	rdfs:seeAlso ifc:IfcSpatialElement ;
+	skos:prefLabel "Spatial Element"@en .
+
+otl:SpatialStructureElement-PARTIAL a owl:Class ;
+	rdfs:subClassOf otl:SpatialStructureElement ;
+	rdfs:seeAlso ifc:PARTIAL ;
+	skos:prefLabel "Spatial Structure Element PARTIAL"@en .
+
+otl:SpatialStructureElement a owl:Class ;
+	rdfs:subClassOf nen2660term:SpatialRegion ;
+	rdfs:seeAlso ifc:IfcSpatialStructureElement ;
+	skos:prefLabel "Spatial Structure Element"@en .
+
+otl:SpatialStructureElement-ELEMENT a owl:Class ;
+	rdfs:subClassOf otl:SpatialStructureElement ;
+	rdfs:seeAlso ifc:ELEMENT ;
+	skos:prefLabel "Spatial Structure Element ELEMENT"@en .
+
+otl:SpatialStructureElement-COMPLEX a owl:Class ;
+	rdfs:subClassOf otl:SpatialStructureElement ;
+	rdfs:seeAlso ifc:COMPLEX ;
+	skos:prefLabel "Spatial Structure Element COMPLEX"@en .
+
+otl:ExternalSpatialStructureElement a owl:Class ;
+	rdfs:subClassOf nen2660term:SpatialRegion ;
+	rdfs:seeAlso ifc:IfcExternalSpatialStructureElement ;
+	skos:prefLabel "External Spatial Structure Element"@en .
+
+otl:SpatialZone-OCCUPANCY a owl:Class ;
+	rdfs:subClassOf otl:SpatialZone ;
+	rdfs:seeAlso ifc:OCCUPANCY ;
+	skos:prefLabel "Spatial Zone OCCUPANCY"@en .
+
+otl:SpatialZone a owl:Class ;
+	rdfs:subClassOf nen2660term:SpatialRegion ;
+	rdfs:seeAlso ifc:IfcSpatialZone ;
+	skos:prefLabel "Spatial Zone"@en .
+
+otl:SpatialZone-CONSTRUCTION a owl:Class ;
+	rdfs:subClassOf otl:SpatialZone ;
+	rdfs:seeAlso ifc:CONSTRUCTION ;
+	skos:prefLabel "Spatial Zone CONSTRUCTION"@en .
+
+otl:SpatialZone-VENTILATION a owl:Class ;
+	rdfs:subClassOf otl:SpatialZone ;
+	rdfs:seeAlso ifc:VENTILATION ;
+	skos:prefLabel "Spatial Zone VENTILATION"@en .
+
+otl:SpatialZone-THERMAL a owl:Class ;
+	rdfs:subClassOf otl:SpatialZone ;
+	rdfs:seeAlso ifc:THERMAL ;
+	skos:prefLabel "Spatial Zone THERMAL"@en .
+
+otl:SpatialZone-SECURITY a owl:Class ;
+	rdfs:subClassOf otl:SpatialZone ;
+	rdfs:seeAlso ifc:SECURITY ;
+	skos:prefLabel "Spatial Zone SECURITY"@en .
+
+otl:SpatialZone-FIRESAFETY a owl:Class ;
+	rdfs:subClassOf otl:SpatialZone ;
+	rdfs:seeAlso ifc:FIRESAFETY ;
+	skos:prefLabel "Spatial Zone FIRESAFETY"@en .
+
+otl:SpatialZone-LIGHTING a owl:Class ;
+	rdfs:subClassOf otl:SpatialZone ;
+	rdfs:seeAlso ifc:LIGHTING ;
+	skos:prefLabel "Spatial Zone LIGHTING"@en .
+
+otl:SpatialZone-TRANSPORT a owl:Class ;
+	rdfs:subClassOf otl:SpatialZone ;
+	rdfs:seeAlso ifc:TRANSPORT ;
+	skos:prefLabel "Spatial Zone TRANSPORT"@en .
+
+otl:Site a owl:Class ;
+	rdfs:subClassOf nen2660term:SpatialRegion ;
+	rdfs:seeAlso ifc:IfcSite ;
+	skos:prefLabel "Site"@en .
+
+otl:Space-GFA a owl:Class ;
+	rdfs:subClassOf otl:Space ;
+	rdfs:seeAlso ifc:GFA ;
+	skos:prefLabel "Space GFA"@en .
+
+otl:Space a owl:Class ;
+	rdfs:subClassOf nen2660term:SpatialRegion ;
+	rdfs:seeAlso ifc:IfcSpace ;
+	skos:prefLabel "Space"@en .
+
+otl:Space-EXTERNAL a owl:Class ;
+	rdfs:subClassOf otl:Space ;
+	rdfs:seeAlso ifc:EXTERNAL ;
+	skos:prefLabel "Space EXTERNAL"@en .
+
+otl:Space-PARKING a owl:Class ;
+	rdfs:subClassOf otl:Space ;
+	rdfs:seeAlso ifc:PARKING ;
+	skos:prefLabel "Space PARKING"@en .
+
+otl:Space-INTERNAL a owl:Class ;
+	rdfs:subClassOf otl:Space ;
+	rdfs:seeAlso ifc:INTERNAL ;
+	skos:prefLabel "Space INTERNAL"@en .
+
+otl:Space-SPACE a owl:Class ;
+	rdfs:subClassOf otl:Space ;
+	rdfs:seeAlso ifc:SPACE ;
+	skos:prefLabel "Space SPACE"@en .
+
+otl:Building a owl:Class ;
+	rdfs:subClassOf nen2660term:SpatialRegion ;
+	rdfs:seeAlso ifc:IfcBuilding ;
+	skos:prefLabel "Building"@en .
+
+otl:BuildingStorey a owl:Class ;
+	rdfs:subClassOf nen2660term:SpatialRegion ;
+	rdfs:seeAlso ifc:IfcBuildingStorey ;
+	skos:prefLabel "Building Storey"@en .
+
+otl:ExternalSpatialElement-EXTERNAL a owl:Class ;
+	rdfs:subClassOf otl:ExternalSpatialElement ;
+	rdfs:seeAlso ifc:EXTERNAL ;
+	skos:prefLabel "External Spatial Element EXTERNAL"@en .
+
+otl:ExternalSpatialElement a owl:Class ;
+	rdfs:subClassOf nen2660term:SpatialRegion ;
+	rdfs:seeAlso ifc:IfcExternalSpatialElement ;
+	skos:prefLabel "External Spatial Element"@en .
+
+otl:ExternalSpatialElement-EXTERNAL_FIRE a owl:Class ;
+	rdfs:subClassOf otl:ExternalSpatialElement ;
+	rdfs:seeAlso ifc:EXTERNAL_FIRE ;
+	skos:prefLabel "External Spatial Element EXTERNAL FIRE"@en .
+
+otl:ExternalSpatialElement-EXTERNAL_WATER a owl:Class ;
+	rdfs:subClassOf otl:ExternalSpatialElement ;
+	rdfs:seeAlso ifc:EXTERNAL_WATER ;
+	skos:prefLabel "External Spatial Element EXTERNAL WATER"@en .
+
+otl:ExternalSpatialElement-EXTERNAL_EARTH a owl:Class ;
+	rdfs:subClassOf otl:ExternalSpatialElement ;
+	rdfs:seeAlso ifc:EXTERNAL_EARTH ;
+	skos:prefLabel "External Spatial Element EXTERNAL EARTH"@en .
+

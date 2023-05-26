@@ -2,29 +2,33 @@ import namespace from "@rdfjs/namespace";
 import SparqlClient from "sparql-http-client";
 import cf from "clownface";
 import rdf from "rdf-ext";
-import toFile from "rdf-utils-fs/toFile.js";
 import _ from "lodash";
-import { skos, owl, rdfs } from '@tpluscode/rdf-ns-builders'
-import { rdf as rdff } from '@tpluscode/rdf-ns-builders'
+import { skos, owl, rdfs } from "@tpluscode/rdf-ns-builders";
+import { rdf as rdff } from "@tpluscode/rdf-ns-builders";
+import { Readable } from "readable-stream";
+import getStream from "get-stream";
+import {
+  TurtleSerializer,
+  JsonLdSerializer,
+} from "@rdfjs-elements/formats-pretty";
+import fs from "fs";
 
-
-//CREATE THE NAMESPACES
+// CREATE THE NAMESPACES
 const ns = {
-  ifc: namespace('https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2/OWL#'),
-  otl: namespace('https://otl.buildingsmart.org/IFC4_ADD2_TC1/def/'),
-  nen2660term: namespace('https://w3id.org/nen2660/term#')
-}
+  ifc: namespace("https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2/OWL#"),
+  otl: namespace("https://otl.buildingsmart.org/IFC4_ADD2_TC1/def/"),
+  nen2660term: namespace("https://w3id.org/nen2660/term#"),
+};
 
-
-//CREATE LOCAL SPARQL ENDPOINT
+// CREATE LOCAL SPARQL ENDPOINT
 const client = new SparqlClient({
   endpointUrl: "http://DESKTOP-SQ747CJ:7200/repositories/IFC",
 });
 
-//CREATE GRAPH
+// CREATE GRAPH
 const otlGraph = cf({ dataset: rdf.dataset() });
 
-//CREATE THE ARRAYS FOR QUERYING AND MAPPING
+// CREATE THE ARRAYS FOR QUERYING AND MAPPING
 const queriedElements = [
   "IfcBuildingElement",
   "IfcDistributionElement",
@@ -38,8 +42,9 @@ const IfcToDiscreteObjectArray = [
   "IfcDistributionElement",
   "IfcFurnishingElement",
   "IfcElementComponent",
+];
 
-];//CREATE QUERY
+// CREATE QUERY
 async function fullQuery(superclass) {
   const classStream = await client.query.select(`
   PREFIX nen2660: <https://w3id.org/nen2660/def#>
@@ -71,8 +76,7 @@ async function fullQuery(superclass) {
     }  
   `);
 
-  //RETURN AN ARRAY OF OBJECTS WITH THE QUERY RESULTS
-  let classArray = [];
+  const classArray = [];
 
   return new Promise((resolve) => {
     classStream
@@ -83,39 +87,47 @@ async function fullQuery(superclass) {
         resolve(classArray);
       });
   });
-};
+}
 
-
-//CREATE THE NODES
+// CREATE THE NODES
 function createNodeEnum(subject, object) {
-  const prefLabel = otlGraph.literal(_.startCase(`${object}`) + " " + _.startCase(`${subject}`), 'en');
+  const prefLabel = otlGraph.literal(
+    _.startCase(`${object}`) + " " + _.startCase(`${subject}`),
+    "en"
+  );
   const mainNode = ns.otl[`${object}-${subject}`];
   const otlObjectNode = ns.otl[`${object}`];
   const ifcEnNode = ns.ifc[`${subject}`];
   otlGraph
     .namedNode(mainNode)
-    .addOut(otlGraph.namedNode(rdff.type),otlGraph.namedNode(owl.Class))
-    .addOut(otlGraph.namedNode(rdfs.subClassOf), otlGraph.namedNode(otlObjectNode))
+    .addOut(otlGraph.namedNode(rdff.type), otlGraph.namedNode(owl.Class))
+    .addOut(
+      otlGraph.namedNode(rdfs.subClassOf),
+      otlGraph.namedNode(otlObjectNode)
+    )
     .addOut(otlGraph.namedNode(rdfs.seeAlso), otlGraph.namedNode(ifcEnNode))
     .addOut(otlGraph.namedNode(skos.prefLabel), prefLabel);
 }
 
 function createNodeClass(subject, nenEntity) {
-  const prefLabel = otlGraph.literal(_.startCase(`${subject.slice(3)}`), 'en');
+  const prefLabel = otlGraph.literal(_.startCase(`${subject.slice(3)}`), "en");
   const mainNode = ns.otl[`${subject.slice(3)}`];
   const ifcNode = ns.ifc[`${subject}`];
-  
-otlGraph
-  .namedNode(mainNode)
-  .addOut(otlGraph.namedNode(rdff.type), otlGraph.namedNode(owl.Class))
-  .addOut(otlGraph.namedNode(rdfs.subClassOf), otlGraph.namedNode(`${nenEntity}`))
-  .addOut(otlGraph.namedNode(rdfs.seeAlso), otlGraph.namedNode(ifcNode))
-  .addOut(otlGraph.namedNode(skos.prefLabel), prefLabel)
+
+  otlGraph
+    .namedNode(mainNode)
+    .addOut(otlGraph.namedNode(rdff.type), otlGraph.namedNode(owl.Class))
+    .addOut(
+      otlGraph.namedNode(rdfs.subClassOf),
+      otlGraph.namedNode(`${nenEntity}`)
+    )
+    .addOut(otlGraph.namedNode(rdfs.seeAlso), otlGraph.namedNode(ifcNode))
+    .addOut(otlGraph.namedNode(skos.prefLabel), prefLabel);
 }
 
-//CONSOLE LOG
+// CONSOLE LOG
 async function logGraph() {
-  const graphLog = await logicFunction(queriedElements);
+  await logicFunction(queriedElements);
   for (const quad of otlGraph.dataset) {
     console.log(
       `${quad.subject.value} ${quad.predicate.value} ${quad.object.value}`
@@ -123,13 +135,13 @@ async function logGraph() {
   }
 }
 
-//OPERATING - LOGIC FUNCTION
+// OPERATING - LOGIC FUNCTION
 async function logicFunction(queried) {
   for (const item of queried) {
     if (IfcToDiscreteObjectArray.includes(item)) {
-      let foundItems = await fullQuery(item);
-    
-      const discreteObject = ns.nen2660term.DiscreteObject
+      const foundItems = await fullQuery(item);
+
+      const discreteObject = ns.nen2660term.DiscreteObject;
       for (const item of foundItems) {
         if (item.enum?.value != undefined) {
           createNodeEnum(
@@ -138,35 +150,60 @@ async function logicFunction(queried) {
           );
           createNodeClass(
             item.subObject?.value.slice(45),
-            ns.nen2660term.DiscreteObject.value
+            discreteObject.value
+          );
+        } else {
+          createNodeClass(
+            item.subObject?.value.slice(45),
+            discreteObject.value
           );
         }
       }
     } else {
-      let foundItems = await fullQuery(item);
-      const spatialRegion = ns.nen2660term.SpatialRegion
+      const foundItems = await fullQuery(item);
+      const spatialRegion = ns.nen2660term.SpatialRegion;
       for (const item of foundItems) {
         if (item.enum?.value != undefined) {
           createNodeEnum(
             item.enum?.value.slice(45),
             item.subObject?.value.slice(48)
           );
-          createNodeClass(
-            item.subObject?.value.slice(45),
-            ns.nen2660term.SpatialRegion.value
-          );
+          createNodeClass(item.subObject?.value.slice(45), spatialRegion.value);
+        } else {
+          createNodeClass(item.subObject?.value.slice(45), spatialRegion.value);
         }
       }
     }
   }
 }
 
-//RUN
+// RUN
 async function runProgram() {
   await logicFunction(queriedElements);
-  await logGraph();
-  await toFile(otlGraph.dataset.toStream(), "test.ttl");
-  await toFile(otlGraph.dataset.toStream(), "test.jsonld");
+
+  const data = otlGraph.dataset;
+
+  const prefixes = {
+    rdf: "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    rdfs: "http://www.w3.org/2000/01/rdf-schema#",
+    skos: "http://www.w3.org/2004/02/skos/core#",
+    ifc: "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2/OWL#",
+    owl: "http://www.w3.org/2002/07/owl#",
+    otl: "https://otl.buildingsmart.org/IFC4_ADD2_TC1/def/",
+    nen2660term: "https://w3id.org/nen2660/term#",
+  };
+
+  const ttlsink = new TurtleSerializer({ prefixes });
+  const ldsink = new JsonLdSerializer({ prefixes });
+
+  const ttlStream = await ttlsink.import(Readable.from(data));
+  const ttlOutput = await getStream(ttlStream);
+
+  const ldStream = await ldsink.import(Readable.from(data));
+  const ldOutput = await getStream(ldStream);
+
+  fs.writeFileSync("IFC4OTL.ttl", ttlOutput);
+  fs.writeFileSync("IFC4OTL.jsonld", ldOutput);
 }
 
 runProgram();
