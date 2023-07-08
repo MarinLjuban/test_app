@@ -1,0 +1,122 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix ifc: <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2/OWL#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix otl: <https://otl.buildingsmart.org/IFC4_ADD2_TC1/def/> .
+@prefix nen2660term: <https://w3id.org/nen2660/term#> .
+
+otl:globalId a owl:ObjectProperty ;
+	skos:prefLabel "Global Id"@en .
+
+otl:name a owl:ObjectProperty ;
+	skos:prefLabel "Name"@en .
+
+otl:description a owl:ObjectProperty ;
+	skos:prefLabel "Description"@en .
+
+otl:objectType a owl:ObjectProperty ;
+	skos:prefLabel "Object Type"@en .
+
+otl:tag a owl:ObjectProperty ;
+	skos:prefLabel "Tag"@en .
+
+otl:predefinedType a owl:ObjectProperty ;
+	skos:prefLabel "Predefined Type"@en .
+
+otl:longName a owl:ObjectProperty ;
+	skos:prefLabel "Long Name"@en .
+
+otl:assemblyPlace a owl:ObjectProperty ;
+	skos:prefLabel "Assembly Place"@en .
+
+otl:partitioningType a owl:ObjectProperty ;
+	skos:prefLabel "Partitioning Type"@en .
+
+otl:userDefinedPartitioningType a owl:ObjectProperty ;
+	skos:prefLabel "User Defined Partitioning Type"@en .
+
+otl:overallWidth a owl:ObjectProperty ;
+	skos:prefLabel "Overall Width"@en .
+
+otl:overallHeight a owl:ObjectProperty ;
+	skos:prefLabel "Overall Height"@en .
+
+otl:treadLength a owl:ObjectProperty ;
+	skos:prefLabel "Tread Length"@en .
+
+otl:numberOfTreads a owl:ObjectProperty ;
+	skos:prefLabel "Number Of Treads"@en .
+
+otl:riserHeight a owl:ObjectProperty ;
+	skos:prefLabel "Riser Height"@en .
+
+otl:numberOfRisers a owl:ObjectProperty ;
+	skos:prefLabel "Number Of Risers"@en .
+
+otl:constructionType a owl:ObjectProperty ;
+	skos:prefLabel "Construction Type"@en .
+
+otl:userDefinedOperationType a owl:ObjectProperty ;
+	skos:prefLabel "User Defined Operation Type"@en .
+
+otl:operationType a owl:ObjectProperty ;
+	skos:prefLabel "Operation Type"@en .
+
+otl:steelGrade a owl:ObjectProperty ;
+	skos:prefLabel "Steel Grade"@en .
+
+otl:nominalDiameter a owl:ObjectProperty ;
+	skos:prefLabel "Nominal Diameter"@en .
+
+otl:nominalLength a owl:ObjectProperty ;
+	skos:prefLabel "Nominal Length"@en .
+
+otl:longitudinalBarSpacing a owl:ObjectProperty ;
+	skos:prefLabel "Longitudinal Bar Spacing"@en .
+
+otl:transverseBarSpacing a owl:ObjectProperty ;
+	skos:prefLabel "Transverse Bar Spacing"@en .
+
+otl:meshWidth a owl:ObjectProperty ;
+	skos:prefLabel "Mesh Width"@en .
+
+otl:longitudinalBarNominalDiameter a owl:ObjectProperty ;
+	skos:prefLabel "Longitudinal Bar Nominal Diameter"@en .
+
+otl:meshLength a owl:ObjectProperty ;
+	skos:prefLabel "Mesh Length"@en .
+
+otl:longitudinalBarCrossSectionArea a owl:ObjectProperty ;
+	skos:prefLabel "Longitudinal Bar Cross Section Area"@en .
+
+otl:transverseBarNominalDiameter a owl:ObjectProperty ;
+	skos:prefLabel "Transverse Bar Nominal Diameter"@en .
+
+otl:transverseBarCrossSectionArea a owl:ObjectProperty ;
+	skos:prefLabel "Transverse Bar Cross Section Area"@en .
+
+otl:preStress a owl:ObjectProperty ;
+	skos:prefLabel "Pre Stress"@en .
+
+otl:crossSectionArea a owl:ObjectProperty ;
+	skos:prefLabel "Cross Section Area"@en .
+
+otl:minCurvatureRadius a owl:ObjectProperty ;
+	skos:prefLabel "Min Curvature Radius"@en .
+
+otl:frictionCoefficient a owl:ObjectProperty ;
+	skos:prefLabel "Friction Coefficient"@en .
+
+otl:anchorageSlip a owl:ObjectProperty ;
+	skos:prefLabel "Anchorage Slip"@en .
+
+otl:tensionForce a owl:ObjectProperty ;
+	skos:prefLabel "Tension Force"@en .
+
+otl:barSurface a owl:ObjectProperty ;
+	skos:prefLabel "Bar Surface"@en .
+
+otl:barLength a owl:ObjectProperty ;
+	skos:prefLabel "Bar Length"@en .
+
