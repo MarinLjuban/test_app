@@ -5,11 +5,13 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix otl: <https://otl.buildingsmart.org/IFC4_ADD2_TC1/def/> .
 @prefix nen2660term: <https://w3id.org/nen2660/term#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 otl:BuildingElement a owl:Class ;
 	rdfs:subClassOf nen2660term:DiscreteObject ;
 	rdfs:seeAlso ifc:IfcBuildingElement ;
-	skos:prefLabel "Building Element"@en .
+	rdfs:prefLabel "Building Element"@en .
 
 otl:Covering-INSULATION a owl:Class ;
 	rdfs:subClassOf otl:Covering ;
@@ -66,60 +68,15 @@ otl:Covering-CLADDING a owl:Class ;
 	rdfs:seeAlso ifc:CLADDING ;
 	skos:prefLabel "Covering CLADDING"@en .
 
-otl:Window-TRIPLE_PANEL_RIGHT a owl:Class ;
+otl:Window-SKYLIGHT a owl:Class ;
 	rdfs:subClassOf otl:Window ;
-	rdfs:seeAlso ifc:TRIPLE_PANEL_RIGHT ;
-	skos:prefLabel "Window TRIPLE PANEL RIGHT"@en .
+	rdfs:seeAlso ifc:SKYLIGHT ;
+	skos:prefLabel "Window SKYLIGHT"@en .
 
 otl:Window a owl:Class ;
 	rdfs:subClassOf nen2660term:DiscreteObject ;
 	rdfs:seeAlso ifc:IfcWindow ;
 	skos:prefLabel "Window"@en .
-
-otl:Window-DOUBLE_PANEL_VERTICAL a owl:Class ;
-	rdfs:subClassOf otl:Window ;
-	rdfs:seeAlso ifc:DOUBLE_PANEL_VERTICAL ;
-	skos:prefLabel "Window DOUBLE PANEL VERTICAL"@en .
-
-otl:Window-TRIPLE_PANEL_HORIZONTAL a owl:Class ;
-	rdfs:subClassOf otl:Window ;
-	rdfs:seeAlso ifc:TRIPLE_PANEL_HORIZONTAL ;
-	skos:prefLabel "Window TRIPLE PANEL HORIZONTAL"@en .
-
-otl:Window-TRIPLE_PANEL_VERTICAL a owl:Class ;
-	rdfs:subClassOf otl:Window ;
-	rdfs:seeAlso ifc:TRIPLE_PANEL_VERTICAL ;
-	skos:prefLabel "Window TRIPLE PANEL VERTICAL"@en .
-
-otl:Window-TRIPLE_PANEL_BOTTOM a owl:Class ;
-	rdfs:subClassOf otl:Window ;
-	rdfs:seeAlso ifc:TRIPLE_PANEL_BOTTOM ;
-	skos:prefLabel "Window TRIPLE PANEL BOTTOM"@en .
-
-otl:Window-TRIPLE_PANEL_TOP a owl:Class ;
-	rdfs:subClassOf otl:Window ;
-	rdfs:seeAlso ifc:TRIPLE_PANEL_TOP ;
-	skos:prefLabel "Window TRIPLE PANEL TOP"@en .
-
-otl:Window-SINGLE_PANEL a owl:Class ;
-	rdfs:subClassOf otl:Window ;
-	rdfs:seeAlso ifc:SINGLE_PANEL ;
-	skos:prefLabel "Window SINGLE PANEL"@en .
-
-otl:Window-DOUBLE_PANEL_HORIZONTAL a owl:Class ;
-	rdfs:subClassOf otl:Window ;
-	rdfs:seeAlso ifc:DOUBLE_PANEL_HORIZONTAL ;
-	skos:prefLabel "Window DOUBLE PANEL HORIZONTAL"@en .
-
-otl:Window-TRIPLE_PANEL_LEFT a owl:Class ;
-	rdfs:subClassOf otl:Window ;
-	rdfs:seeAlso ifc:TRIPLE_PANEL_LEFT ;
-	skos:prefLabel "Window TRIPLE PANEL LEFT"@en .
-
-otl:Window-SKYLIGHT a owl:Class ;
-	rdfs:subClassOf otl:Window ;
-	rdfs:seeAlso ifc:SKYLIGHT ;
-	skos:prefLabel "Window SKYLIGHT"@en .
 
 otl:Window-WINDOW a owl:Class ;
 	rdfs:subClassOf otl:Window ;
@@ -324,7 +281,7 @@ otl:ShadingDevice-AWNING a owl:Class ;
 otl:CurtainWall a owl:Class ;
 	rdfs:subClassOf nen2660term:DiscreteObject ;
 	rdfs:seeAlso ifc:IfcCurtainWall ;
-	skos:prefLabel "Curtain Wall"@en .
+	rdfs:prefLabel "Curtain Wall"@en .
 
 otl:Plate-CURTAIN_PANEL a owl:Class ;
 	rdfs:subClassOf otl:Plate ;
@@ -556,35 +513,15 @@ otl:StairFlight-SPIRAL a owl:Class ;
 	rdfs:seeAlso ifc:SPIRAL ;
 	skos:prefLabel "Stair Flight SPIRAL"@en .
 
-otl:Pile-CAST_IN_PLACE a owl:Class ;
+otl:Pile-BORED a owl:Class ;
 	rdfs:subClassOf otl:Pile ;
-	rdfs:seeAlso ifc:CAST_IN_PLACE ;
-	skos:prefLabel "Pile CAST IN PLACE"@en .
+	rdfs:seeAlso ifc:BORED ;
+	skos:prefLabel "Pile BORED"@en .
 
 otl:Pile a owl:Class ;
 	rdfs:subClassOf nen2660term:DiscreteObject ;
 	rdfs:seeAlso ifc:IfcPile ;
 	skos:prefLabel "Pile"@en .
-
-otl:Pile-COMPOSITE a owl:Class ;
-	rdfs:subClassOf otl:Pile ;
-	rdfs:seeAlso ifc:COMPOSITE ;
-	skos:prefLabel "Pile COMPOSITE"@en .
-
-otl:Pile-PREFAB_STEEL a owl:Class ;
-	rdfs:subClassOf otl:Pile ;
-	rdfs:seeAlso ifc:PREFAB_STEEL ;
-	skos:prefLabel "Pile PREFAB STEEL"@en .
-
-otl:Pile-PRECAST_CONCRETE a owl:Class ;
-	rdfs:subClassOf otl:Pile ;
-	rdfs:seeAlso ifc:PRECAST_CONCRETE ;
-	skos:prefLabel "Pile PRECAST CONCRETE"@en .
-
-otl:Pile-BORED a owl:Class ;
-	rdfs:subClassOf otl:Pile ;
-	rdfs:seeAlso ifc:BORED ;
-	skos:prefLabel "Pile BORED"@en .
 
 otl:Pile-FRICTION a owl:Class ;
 	rdfs:subClassOf otl:Pile ;
@@ -666,96 +603,6 @@ otl:Door-DOOR a owl:Class ;
 	rdfs:seeAlso ifc:DOOR ;
 	skos:prefLabel "Door DOOR"@en .
 
-otl:Door-SWING_FIXED_RIGHT a owl:Class ;
-	rdfs:subClassOf otl:Door ;
-	rdfs:seeAlso ifc:SWING_FIXED_RIGHT ;
-	skos:prefLabel "Door SWING FIXED RIGHT"@en .
-
-otl:Door-DOUBLE_SWING_LEFT a owl:Class ;
-	rdfs:subClassOf otl:Door ;
-	rdfs:seeAlso ifc:DOUBLE_SWING_LEFT ;
-	skos:prefLabel "Door DOUBLE SWING LEFT"@en .
-
-otl:Door-FOLDING_TO_LEFT a owl:Class ;
-	rdfs:subClassOf otl:Door ;
-	rdfs:seeAlso ifc:FOLDING_TO_LEFT ;
-	skos:prefLabel "Door FOLDING TO LEFT"@en .
-
-otl:Door-SWING_FIXED_LEFT a owl:Class ;
-	rdfs:subClassOf otl:Door ;
-	rdfs:seeAlso ifc:SWING_FIXED_LEFT ;
-	skos:prefLabel "Door SWING FIXED LEFT"@en .
-
-otl:Door-DOUBLE_DOOR_SINGLE_SWING_OPPOSITE_RIGHT a owl:Class ;
-	rdfs:subClassOf otl:Door ;
-	rdfs:seeAlso ifc:DOUBLE_DOOR_SINGLE_SWING_OPPOSITE_RIGHT ;
-	skos:prefLabel "Door DOUBLE DOOR SINGLE SWING OPPOSITE RIGHT"@en .
-
-otl:Door-DOUBLE_DOOR_SLIDING a owl:Class ;
-	rdfs:subClassOf otl:Door ;
-	rdfs:seeAlso ifc:DOUBLE_DOOR_SLIDING ;
-	skos:prefLabel "Door DOUBLE DOOR SLIDING"@en .
-
-otl:Door-REVOLVING a owl:Class ;
-	rdfs:subClassOf otl:Door ;
-	rdfs:seeAlso ifc:REVOLVING ;
-	skos:prefLabel "Door REVOLVING"@en .
-
-otl:Door-DOUBLE_DOOR_FOLDING a owl:Class ;
-	rdfs:subClassOf otl:Door ;
-	rdfs:seeAlso ifc:DOUBLE_DOOR_FOLDING ;
-	skos:prefLabel "Door DOUBLE DOOR FOLDING"@en .
-
-otl:Door-ROLLINGUP a owl:Class ;
-	rdfs:subClassOf otl:Door ;
-	rdfs:seeAlso ifc:ROLLINGUP ;
-	skos:prefLabel "Door ROLLINGUP"@en .
-
-otl:Door-DOUBLE_DOOR_DOUBLE_SWING a owl:Class ;
-	rdfs:subClassOf otl:Door ;
-	rdfs:seeAlso ifc:DOUBLE_DOOR_DOUBLE_SWING ;
-	skos:prefLabel "Door DOUBLE DOOR DOUBLE SWING"@en .
-
-otl:Door-SLIDING_TO_RIGHT a owl:Class ;
-	rdfs:subClassOf otl:Door ;
-	rdfs:seeAlso ifc:SLIDING_TO_RIGHT ;
-	skos:prefLabel "Door SLIDING TO RIGHT"@en .
-
-otl:Door-DOUBLE_SWING_RIGHT a owl:Class ;
-	rdfs:subClassOf otl:Door ;
-	rdfs:seeAlso ifc:DOUBLE_SWING_RIGHT ;
-	skos:prefLabel "Door DOUBLE SWING RIGHT"@en .
-
-otl:Door-DOUBLE_DOOR_SINGLE_SWING_OPPOSITE_LEFT a owl:Class ;
-	rdfs:subClassOf otl:Door ;
-	rdfs:seeAlso ifc:DOUBLE_DOOR_SINGLE_SWING_OPPOSITE_LEFT ;
-	skos:prefLabel "Door DOUBLE DOOR SINGLE SWING OPPOSITE LEFT"@en .
-
-otl:Door-FOLDING_TO_RIGHT a owl:Class ;
-	rdfs:subClassOf otl:Door ;
-	rdfs:seeAlso ifc:FOLDING_TO_RIGHT ;
-	skos:prefLabel "Door FOLDING TO RIGHT"@en .
-
-otl:Door-DOUBLE_DOOR_SINGLE_SWING a owl:Class ;
-	rdfs:subClassOf otl:Door ;
-	rdfs:seeAlso ifc:DOUBLE_DOOR_SINGLE_SWING ;
-	skos:prefLabel "Door DOUBLE DOOR SINGLE SWING"@en .
-
-otl:Door-SINGLE_SWING_LEFT a owl:Class ;
-	rdfs:subClassOf otl:Door ;
-	rdfs:seeAlso ifc:SINGLE_SWING_LEFT ;
-	skos:prefLabel "Door SINGLE SWING LEFT"@en .
-
-otl:Door-SLIDING_TO_LEFT a owl:Class ;
-	rdfs:subClassOf otl:Door ;
-	rdfs:seeAlso ifc:SLIDING_TO_LEFT ;
-	skos:prefLabel "Door SLIDING TO LEFT"@en .
-
-otl:Door-SINGLE_SWING_RIGHT a owl:Class ;
-	rdfs:subClassOf otl:Door ;
-	rdfs:seeAlso ifc:SINGLE_SWING_RIGHT ;
-	skos:prefLabel "Door SINGLE SWING RIGHT"@en .
-
 otl:Stair-DOUBLE_RETURN_STAIR a owl:Class ;
 	rdfs:subClassOf otl:Stair ;
 	rdfs:seeAlso ifc:DOUBLE_RETURN_STAIR ;
@@ -834,72 +681,72 @@ otl:Stair-QUARTER_WINDING_STAIR a owl:Class ;
 otl:Chimney a owl:Class ;
 	rdfs:subClassOf nen2660term:DiscreteObject ;
 	rdfs:seeAlso ifc:IfcChimney ;
-	skos:prefLabel "Chimney"@en .
+	rdfs:prefLabel "Chimney"@en .
 
 otl:WindowStandardCase a owl:Class ;
 	rdfs:subClassOf nen2660term:DiscreteObject ;
 	rdfs:seeAlso ifc:IfcWindowStandardCase ;
-	skos:prefLabel "Window Standard Case"@en .
+	rdfs:prefLabel "Window Standard Case"@en .
 
 otl:MemberStandardCase a owl:Class ;
 	rdfs:subClassOf nen2660term:DiscreteObject ;
 	rdfs:seeAlso ifc:IfcMemberStandardCase ;
-	skos:prefLabel "Member Standard Case"@en .
+	rdfs:prefLabel "Member Standard Case"@en .
 
 otl:WallStandardCase a owl:Class ;
 	rdfs:subClassOf nen2660term:DiscreteObject ;
 	rdfs:seeAlso ifc:IfcWallStandardCase ;
-	skos:prefLabel "Wall Standard Case"@en .
+	rdfs:prefLabel "Wall Standard Case"@en .
 
 otl:WallElementedCase a owl:Class ;
 	rdfs:subClassOf nen2660term:DiscreteObject ;
 	rdfs:seeAlso ifc:IfcWallElementedCase ;
-	skos:prefLabel "Wall Elemented Case"@en .
+	rdfs:prefLabel "Wall Elemented Case"@en .
 
 otl:SlabStandardCase a owl:Class ;
 	rdfs:subClassOf nen2660term:DiscreteObject ;
 	rdfs:seeAlso ifc:IfcSlabStandardCase ;
-	skos:prefLabel "Slab Standard Case"@en .
+	rdfs:prefLabel "Slab Standard Case"@en .
 
 otl:SlabElementedCase a owl:Class ;
 	rdfs:subClassOf nen2660term:DiscreteObject ;
 	rdfs:seeAlso ifc:IfcSlabElementedCase ;
-	skos:prefLabel "Slab Elemented Case"@en .
+	rdfs:prefLabel "Slab Elemented Case"@en .
 
 otl:PlateStandardCase a owl:Class ;
 	rdfs:subClassOf nen2660term:DiscreteObject ;
 	rdfs:seeAlso ifc:IfcPlateStandardCase ;
-	skos:prefLabel "Plate Standard Case"@en .
+	rdfs:prefLabel "Plate Standard Case"@en .
 
 otl:ColumnStandardCase a owl:Class ;
 	rdfs:subClassOf nen2660term:DiscreteObject ;
 	rdfs:seeAlso ifc:IfcColumnStandardCase ;
-	skos:prefLabel "Column Standard Case"@en .
+	rdfs:prefLabel "Column Standard Case"@en .
 
 otl:BeamStandardCase a owl:Class ;
 	rdfs:subClassOf nen2660term:DiscreteObject ;
 	rdfs:seeAlso ifc:IfcBeamStandardCase ;
-	skos:prefLabel "Beam Standard Case"@en .
+	rdfs:prefLabel "Beam Standard Case"@en .
 
 otl:DoorStandardCase a owl:Class ;
 	rdfs:subClassOf nen2660term:DiscreteObject ;
 	rdfs:seeAlso ifc:IfcDoorStandardCase ;
-	skos:prefLabel "Door Standard Case"@en .
+	rdfs:prefLabel "Door Standard Case"@en .
 
 otl:DistributionElement a owl:Class ;
 	rdfs:subClassOf nen2660term:DiscreteObject ;
 	rdfs:seeAlso ifc:IfcDistributionElement ;
-	skos:prefLabel "Distribution Element"@en .
+	rdfs:prefLabel "Distribution Element"@en .
 
 otl:DistributionControlElement a owl:Class ;
 	rdfs:subClassOf nen2660term:DiscreteObject ;
 	rdfs:seeAlso ifc:IfcDistributionControlElement ;
-	skos:prefLabel "Distribution Control Element"@en .
+	rdfs:prefLabel "Distribution Control Element"@en .
 
 otl:DistributionFlowElement a owl:Class ;
 	rdfs:subClassOf nen2660term:DiscreteObject ;
 	rdfs:seeAlso ifc:IfcDistributionFlowElement ;
-	skos:prefLabel "Distribution Flow Element"@en .
+	rdfs:prefLabel "Distribution Flow Element"@en .
 
 otl:Controller-TWOPOSITION a owl:Class ;
 	rdfs:subClassOf otl:Controller ;
@@ -1239,27 +1086,27 @@ otl:Actuator-PNEUMATICACTUATOR a owl:Class ;
 otl:FlowTerminal a owl:Class ;
 	rdfs:subClassOf nen2660term:DiscreteObject ;
 	rdfs:seeAlso ifc:IfcFlowTerminal ;
-	skos:prefLabel "Flow Terminal"@en .
+	rdfs:prefLabel "Flow Terminal"@en .
 
 otl:EnergyConversionDevice a owl:Class ;
 	rdfs:subClassOf nen2660term:DiscreteObject ;
 	rdfs:seeAlso ifc:IfcEnergyConversionDevice ;
-	skos:prefLabel "Energy Conversion Device"@en .
+	rdfs:prefLabel "Energy Conversion Device"@en .
 
 otl:FlowTreatmentDevice a owl:Class ;
 	rdfs:subClassOf nen2660term:DiscreteObject ;
 	rdfs:seeAlso ifc:IfcFlowTreatmentDevice ;
-	skos:prefLabel "Flow Treatment Device"@en .
+	rdfs:prefLabel "Flow Treatment Device"@en .
 
 otl:FlowController a owl:Class ;
 	rdfs:subClassOf nen2660term:DiscreteObject ;
 	rdfs:seeAlso ifc:IfcFlowController ;
-	skos:prefLabel "Flow Controller"@en .
+	rdfs:prefLabel "Flow Controller"@en .
 
 otl:FlowSegment a owl:Class ;
 	rdfs:subClassOf nen2660term:DiscreteObject ;
 	rdfs:seeAlso ifc:IfcFlowSegment ;
-	skos:prefLabel "Flow Segment"@en .
+	rdfs:prefLabel "Flow Segment"@en .
 
 otl:DistributionChamberElement-SUMP a owl:Class ;
 	rdfs:subClassOf otl:DistributionChamberElement ;
@@ -1309,17 +1156,17 @@ otl:DistributionChamberElement-FORMEDDUCT a owl:Class ;
 otl:FlowFitting a owl:Class ;
 	rdfs:subClassOf nen2660term:DiscreteObject ;
 	rdfs:seeAlso ifc:IfcFlowFitting ;
-	skos:prefLabel "Flow Fitting"@en .
+	rdfs:prefLabel "Flow Fitting"@en .
 
 otl:FlowMovingDevice a owl:Class ;
 	rdfs:subClassOf nen2660term:DiscreteObject ;
 	rdfs:seeAlso ifc:IfcFlowMovingDevice ;
-	skos:prefLabel "Flow Moving Device"@en .
+	rdfs:prefLabel "Flow Moving Device"@en .
 
 otl:FlowStorageDevice a owl:Class ;
 	rdfs:subClassOf nen2660term:DiscreteObject ;
 	rdfs:seeAlso ifc:IfcFlowStorageDevice ;
-	skos:prefLabel "Flow Storage Device"@en .
+	rdfs:prefLabel "Flow Storage Device"@en .
 
 otl:SpaceHeater-CONVECTOR a owl:Class ;
 	rdfs:subClassOf otl:SpaceHeater ;
@@ -2279,7 +2126,7 @@ otl:Coil-HYDRONICCOIL a owl:Class ;
 otl:Burner a owl:Class ;
 	rdfs:subClassOf nen2660term:DiscreteObject ;
 	rdfs:seeAlso ifc:IfcBurner ;
-	skos:prefLabel "Burner"@en .
+	rdfs:prefLabel "Burner"@en .
 
 otl:EvaporativeCooler-DIRECTEVAPORATIVERANDOMMEDIAAIRCOOLER a owl:Class ;
 	rdfs:subClassOf otl:EvaporativeCooler ;
@@ -3299,7 +3146,7 @@ otl:ElectricFlowStorageDevice-INDUCTORBANK a owl:Class ;
 otl:FurnishingElement a owl:Class ;
 	rdfs:subClassOf nen2660term:DiscreteObject ;
 	rdfs:seeAlso ifc:IfcFurnishingElement ;
-	skos:prefLabel "Furnishing Element"@en .
+	rdfs:prefLabel "Furnishing Element"@en .
 
 otl:Furniture-DESK a owl:Class ;
 	rdfs:subClassOf otl:Furniture ;
@@ -3359,12 +3206,12 @@ otl:SystemFurnitureElement-PANEL a owl:Class ;
 otl:ElementComponent a owl:Class ;
 	rdfs:subClassOf nen2660term:DiscreteObject ;
 	rdfs:seeAlso ifc:IfcElementComponent ;
-	skos:prefLabel "Element Component"@en .
+	rdfs:prefLabel "Element Component"@en .
 
 otl:ReinforcingElement a owl:Class ;
 	rdfs:subClassOf nen2660term:DiscreteObject ;
 	rdfs:seeAlso ifc:IfcReinforcingElement ;
-	skos:prefLabel "Reinforcing Element"@en .
+	rdfs:prefLabel "Reinforcing Element"@en .
 
 otl:Fastener-MORTAR a owl:Class ;
 	rdfs:subClassOf otl:Fastener ;
@@ -3494,7 +3341,7 @@ otl:VibrationIsolator-SPRING a owl:Class ;
 otl:ReinforcingMesh a owl:Class ;
 	rdfs:subClassOf nen2660term:DiscreteObject ;
 	rdfs:seeAlso ifc:IfcReinforcingMesh ;
-	skos:prefLabel "Reinforcing Mesh"@en .
+	rdfs:prefLabel "Reinforcing Mesh"@en .
 
 otl:Tendon-COATED a owl:Class ;
 	rdfs:subClassOf otl:Tendon ;
@@ -3586,20 +3433,24 @@ otl:ReinforcingBar-MAIN a owl:Class ;
 	rdfs:seeAlso ifc:MAIN ;
 	skos:prefLabel "Reinforcing Bar MAIN"@en .
 
-otl:ReinforcingBar-PLAIN a owl:Class ;
-	rdfs:subClassOf otl:ReinforcingBar ;
-	rdfs:seeAlso ifc:PLAIN ;
-	skos:prefLabel "Reinforcing Bar PLAIN"@en .
+otl:OpeningElement-OPENING a owl:Class ;
+	rdfs:subClassOf otl:OpeningElement ;
+	rdfs:seeAlso ifc:OPENING ;
+	skos:prefLabel "Opening Element OPENING"@en .
 
-otl:ReinforcingBar-TEXTURED a owl:Class ;
-	rdfs:subClassOf otl:ReinforcingBar ;
-	rdfs:seeAlso ifc:TEXTURED ;
-	skos:prefLabel "Reinforcing Bar TEXTURED"@en .
+otl:OpeningElement a owl:Class ;
+	rdfs:subClassOf nen2660term:PhysicalObject, ifc:IfcOpeningElement, "Opening Element"@en .
+
+otl:OpeningElement-RECESS a owl:Class ;
+	rdfs:subClassOf otl:OpeningElement ;
+	rdfs:seeAlso ifc:RECESS ;
+	skos:prefLabel "Opening Element RECESS"@en .
+
+otl:OpeningStandardCase a owl:Class ;
+	rdfs:subClassOf nen2660term:PhysicalObject, ifc:IfcOpeningStandardCase, "Opening Standard Case"@en .
 
 otl:SpatialElement a owl:Class ;
-	rdfs:subClassOf nen2660term:SpatialRegion ;
-	rdfs:seeAlso ifc:IfcSpatialElement ;
-	skos:prefLabel "Spatial Element"@en .
+	rdfs:subClassOf nen2660term:SpatialRegion, ifc:IfcSpatialElement, "Spatial Element"@en .
 
 otl:SpatialStructureElement-PARTIAL a owl:Class ;
 	rdfs:subClassOf otl:SpatialStructureElement ;
@@ -3607,9 +3458,7 @@ otl:SpatialStructureElement-PARTIAL a owl:Class ;
 	skos:prefLabel "Spatial Structure Element PARTIAL"@en .
 
 otl:SpatialStructureElement a owl:Class ;
-	rdfs:subClassOf nen2660term:SpatialRegion ;
-	rdfs:seeAlso ifc:IfcSpatialStructureElement ;
-	skos:prefLabel "Spatial Structure Element"@en .
+	rdfs:subClassOf nen2660term:SpatialRegion, ifc:IfcSpatialStructureElement, "Spatial Structure Element"@en .
 
 otl:SpatialStructureElement-ELEMENT a owl:Class ;
 	rdfs:subClassOf otl:SpatialStructureElement ;
@@ -3622,9 +3471,7 @@ otl:SpatialStructureElement-COMPLEX a owl:Class ;
 	skos:prefLabel "Spatial Structure Element COMPLEX"@en .
 
 otl:ExternalSpatialStructureElement a owl:Class ;
-	rdfs:subClassOf nen2660term:SpatialRegion ;
-	rdfs:seeAlso ifc:IfcExternalSpatialStructureElement ;
-	skos:prefLabel "External Spatial Structure Element"@en .
+	rdfs:subClassOf nen2660term:SpatialRegion, ifc:IfcExternalSpatialStructureElement, "External Spatial Structure Element"@en .
 
 otl:SpatialZone-OCCUPANCY a owl:Class ;
 	rdfs:subClassOf otl:SpatialZone ;
@@ -3632,9 +3479,7 @@ otl:SpatialZone-OCCUPANCY a owl:Class ;
 	skos:prefLabel "Spatial Zone OCCUPANCY"@en .
 
 otl:SpatialZone a owl:Class ;
-	rdfs:subClassOf nen2660term:SpatialRegion ;
-	rdfs:seeAlso ifc:IfcSpatialZone ;
-	skos:prefLabel "Spatial Zone"@en .
+	rdfs:subClassOf nen2660term:SpatialRegion, ifc:IfcSpatialZone, "Spatial Zone"@en .
 
 otl:SpatialZone-CONSTRUCTION a owl:Class ;
 	rdfs:subClassOf otl:SpatialZone ;
@@ -3672,9 +3517,7 @@ otl:SpatialZone-TRANSPORT a owl:Class ;
 	skos:prefLabel "Spatial Zone TRANSPORT"@en .
 
 otl:Site a owl:Class ;
-	rdfs:subClassOf nen2660term:SpatialRegion ;
-	rdfs:seeAlso ifc:IfcSite ;
-	skos:prefLabel "Site"@en .
+	rdfs:subClassOf nen2660term:SpatialRegion, ifc:IfcSite, "Site"@en .
 
 otl:Space-GFA a owl:Class ;
 	rdfs:subClassOf otl:Space ;
@@ -3682,9 +3525,7 @@ otl:Space-GFA a owl:Class ;
 	skos:prefLabel "Space GFA"@en .
 
 otl:Space a owl:Class ;
-	rdfs:subClassOf nen2660term:SpatialRegion ;
-	rdfs:seeAlso ifc:IfcSpace ;
-	skos:prefLabel "Space"@en .
+	rdfs:subClassOf nen2660term:SpatialRegion, ifc:IfcSpace, "Space"@en .
 
 otl:Space-EXTERNAL a owl:Class ;
 	rdfs:subClassOf otl:Space ;
@@ -3707,14 +3548,10 @@ otl:Space-SPACE a owl:Class ;
 	skos:prefLabel "Space SPACE"@en .
 
 otl:Building a owl:Class ;
-	rdfs:subClassOf nen2660term:SpatialRegion ;
-	rdfs:seeAlso ifc:IfcBuilding ;
-	skos:prefLabel "Building"@en .
+	rdfs:subClassOf nen2660term:SpatialRegion, ifc:IfcBuilding, "Building"@en .
 
 otl:BuildingStorey a owl:Class ;
-	rdfs:subClassOf nen2660term:SpatialRegion ;
-	rdfs:seeAlso ifc:IfcBuildingStorey ;
-	skos:prefLabel "Building Storey"@en .
+	rdfs:subClassOf nen2660term:SpatialRegion, ifc:IfcBuildingStorey, "Building Storey"@en .
 
 otl:ExternalSpatialElement-EXTERNAL a owl:Class ;
 	rdfs:subClassOf otl:ExternalSpatialElement ;
@@ -3722,9 +3559,7 @@ otl:ExternalSpatialElement-EXTERNAL a owl:Class ;
 	skos:prefLabel "External Spatial Element EXTERNAL"@en .
 
 otl:ExternalSpatialElement a owl:Class ;
-	rdfs:subClassOf nen2660term:SpatialRegion ;
-	rdfs:seeAlso ifc:IfcExternalSpatialElement ;
-	skos:prefLabel "External Spatial Element"@en .
+	rdfs:subClassOf nen2660term:SpatialRegion, ifc:IfcExternalSpatialElement, "External Spatial Element"@en .
 
 otl:ExternalSpatialElement-EXTERNAL_FIRE a owl:Class ;
 	rdfs:subClassOf otl:ExternalSpatialElement ;
@@ -3740,4 +3575,533 @@ otl:ExternalSpatialElement-EXTERNAL_EARTH a owl:Class ;
 	rdfs:subClassOf otl:ExternalSpatialElement ;
 	rdfs:seeAlso ifc:EXTERNAL_EARTH ;
 	skos:prefLabel "External Spatial Element EXTERNAL EARTH"@en .
+
+otl:ElementAssembly-RIGID_FRAME a owl:Class ;
+	rdfs:subClassOf otl:ElementAssembly ;
+	rdfs:seeAlso ifc:RIGID_FRAME ;
+	skos:prefLabel "Element Assembly RIGID FRAME"@en .
+
+otl:ElementAssembly a owl:Class ;
+	rdfs:subClassOf nen2660term:DiscreteObject ;
+	rdfs:seeAlso ifc:IfcElementAssembly ;
+	skos:prefLabel "Element Assembly"@en .
+
+otl:ElementAssembly-BRACED_FRAME a owl:Class ;
+	rdfs:subClassOf otl:ElementAssembly ;
+	rdfs:seeAlso ifc:BRACED_FRAME ;
+	skos:prefLabel "Element Assembly BRACED FRAME"@en .
+
+otl:ElementAssembly-SLAB_FIELD a owl:Class ;
+	rdfs:subClassOf otl:ElementAssembly ;
+	rdfs:seeAlso ifc:SLAB_FIELD ;
+	skos:prefLabel "Element Assembly SLAB FIELD"@en .
+
+otl:ElementAssembly-GIRDER a owl:Class ;
+	rdfs:subClassOf otl:ElementAssembly ;
+	rdfs:seeAlso ifc:GIRDER ;
+	skos:prefLabel "Element Assembly GIRDER"@en .
+
+otl:ElementAssembly-ARCH a owl:Class ;
+	rdfs:subClassOf otl:ElementAssembly ;
+	rdfs:seeAlso ifc:ARCH ;
+	skos:prefLabel "Element Assembly ARCH"@en .
+
+otl:ElementAssembly-ACCESSORY_ASSEMBLY a owl:Class ;
+	rdfs:subClassOf otl:ElementAssembly ;
+	rdfs:seeAlso ifc:ACCESSORY_ASSEMBLY ;
+	skos:prefLabel "Element Assembly ACCESSORY ASSEMBLY"@en .
+
+otl:ElementAssembly-BEAM_GRID a owl:Class ;
+	rdfs:subClassOf otl:ElementAssembly ;
+	rdfs:seeAlso ifc:BEAM_GRID ;
+	skos:prefLabel "Element Assembly BEAM GRID"@en .
+
+otl:ElementAssembly-TRUSS a owl:Class ;
+	rdfs:subClassOf otl:ElementAssembly ;
+	rdfs:seeAlso ifc:TRUSS ;
+	skos:prefLabel "Element Assembly TRUSS"@en .
+
+otl:ElementAssembly-REINFORCEMENT_UNIT a owl:Class ;
+	rdfs:subClassOf otl:ElementAssembly ;
+	rdfs:seeAlso ifc:REINFORCEMENT_UNIT ;
+	skos:prefLabel "Element Assembly REINFORCEMENT UNIT"@en .
+
+otl:GlobalId a owl:DatatypeProperty .
+
+otl:Name a owl:DatatypeProperty .
+
+otl:Description a owl:DatatypeProperty .
+
+otl:ObjectType a owl:DatatypeProperty .
+
+otl:Tag a owl:DatatypeProperty .
+
+otl:LongName a owl:DatatypeProperty .
+
+otl:AssemblyPlace a owl:DatatypeProperty .
+
+otl:overallWidth a owl:ObjectProperty ;
+	<https://w3id.org/nen2660/def#hasQuantityKind> <http://qudt.org/2.1/vocab/quantitykind/Area> ;
+	rdfs:range <https://w3id.org/nen2660/def#QuantityValue> .
+
+otl:overallHeight a owl:ObjectProperty ;
+	<https://w3id.org/nen2660/def#hasQuantityKind> <http://qudt.org/2.1/vocab/quantitykind/Area> ;
+	rdfs:range <https://w3id.org/nen2660/def#QuantityValue> .
+
+otl:treadLength a owl:ObjectProperty ;
+	<https://w3id.org/nen2660/def#hasQuantityKind> <http://qudt.org/2.1/vocab/quantitykind/Area> ;
+	rdfs:range <https://w3id.org/nen2660/def#QuantityValue> .
+
+otl:riserHeight a owl:ObjectProperty ;
+	<https://w3id.org/nen2660/def#hasQuantityKind> <http://qudt.org/2.1/vocab/quantitykind/Area> ;
+	rdfs:range <https://w3id.org/nen2660/def#QuantityValue> .
+
+otl:nominalDiameter a owl:ObjectProperty ;
+	<https://w3id.org/nen2660/def#hasQuantityKind> <http://qudt.org/2.1/vocab/quantitykind/Area> ;
+	rdfs:range <https://w3id.org/nen2660/def#QuantityValue> .
+
+otl:nominalLength a owl:ObjectProperty ;
+	<https://w3id.org/nen2660/def#hasQuantityKind> <http://qudt.org/2.1/vocab/quantitykind/Area> ;
+	rdfs:range <https://w3id.org/nen2660/def#QuantityValue> .
+
+otl:longitudinalBarSpacing a owl:ObjectProperty ;
+	<https://w3id.org/nen2660/def#hasQuantityKind> <http://qudt.org/2.1/vocab/quantitykind/Area> ;
+	rdfs:range <https://w3id.org/nen2660/def#QuantityValue> .
+
+otl:transverseBarSpacing a owl:ObjectProperty ;
+	<https://w3id.org/nen2660/def#hasQuantityKind> <http://qudt.org/2.1/vocab/quantitykind/Area> ;
+	rdfs:range <https://w3id.org/nen2660/def#QuantityValue> .
+
+otl:meshWidth a owl:ObjectProperty ;
+	<https://w3id.org/nen2660/def#hasQuantityKind> <http://qudt.org/2.1/vocab/quantitykind/Area> ;
+	rdfs:range <https://w3id.org/nen2660/def#QuantityValue> .
+
+otl:longitudinalBarNominalDiameter a owl:ObjectProperty ;
+	<https://w3id.org/nen2660/def#hasQuantityKind> <http://qudt.org/2.1/vocab/quantitykind/Area> ;
+	rdfs:range <https://w3id.org/nen2660/def#QuantityValue> .
+
+otl:meshLength a owl:ObjectProperty ;
+	<https://w3id.org/nen2660/def#hasQuantityKind> <http://qudt.org/2.1/vocab/quantitykind/Area> ;
+	rdfs:range <https://w3id.org/nen2660/def#QuantityValue> .
+
+otl:longitudinalBarCrossSectionArea a owl:ObjectProperty ;
+	<https://w3id.org/nen2660/def#hasQuantityKind> <http://qudt.org/2.1/vocab/quantitykind/Force> ;
+	rdfs:range <https://w3id.org/nen2660/def#QuantityValue> .
+
+otl:transverseBarNominalDiameter a owl:ObjectProperty ;
+	<https://w3id.org/nen2660/def#hasQuantityKind> <http://qudt.org/2.1/vocab/quantitykind/Area> ;
+	rdfs:range <https://w3id.org/nen2660/def#QuantityValue> .
+
+otl:transverseBarCrossSectionArea a owl:ObjectProperty ;
+	<https://w3id.org/nen2660/def#hasQuantityKind> <http://qudt.org/2.1/vocab/quantitykind/Force> ;
+	rdfs:range <https://w3id.org/nen2660/def#QuantityValue> .
+
+otl:preStress a owl:ObjectProperty ;
+	<https://w3id.org/nen2660/def#hasQuantityKind> <http://qudt.org/2.1/vocab/quantitykind/Pressure> ;
+	rdfs:range <https://w3id.org/nen2660/def#QuantityValue> .
+
+otl:crossSectionArea a owl:ObjectProperty ;
+	<https://w3id.org/nen2660/def#hasQuantityKind> <http://qudt.org/2.1/vocab/quantitykind/Force> ;
+	rdfs:range <https://w3id.org/nen2660/def#QuantityValue> .
+
+otl:minCurvatureRadius a owl:ObjectProperty ;
+	<https://w3id.org/nen2660/def#hasQuantityKind> <http://qudt.org/2.1/vocab/quantitykind/Area> ;
+	rdfs:range <https://w3id.org/nen2660/def#QuantityValue> .
+
+otl:frictionCoefficient a owl:ObjectProperty ;
+	<https://w3id.org/nen2660/def#hasQuantityKind> <http://qudt.org/2.1/vocab/quantitykind/NormalizedDimensionlessRatio> ;
+	rdfs:range <https://w3id.org/nen2660/def#QuantityValue> .
+
+otl:anchorageSlip a owl:ObjectProperty ;
+	<https://w3id.org/nen2660/def#hasQuantityKind> <http://qudt.org/2.1/vocab/quantitykind/Area> ;
+	rdfs:range <https://w3id.org/nen2660/def#QuantityValue> .
+
+otl:tensionForce a owl:ObjectProperty ;
+	<https://w3id.org/nen2660/def#hasQuantityKind> <http://qudt.org/2.1/vocab/quantitykind/Force> ;
+	rdfs:range <https://w3id.org/nen2660/def#QuantityValue> .
+
+otl:barLength a owl:ObjectProperty ;
+	<https://w3id.org/nen2660/def#hasQuantityKind> <http://qudt.org/2.1/vocab/quantitykind/Area> ;
+	rdfs:range <https://w3id.org/nen2660/def#QuantityValue> .
+
+otl:assemblyPlace a owl:ObjectProperty .
+
+otl:AssemblyPlaceEnum a owl:Class, sh:NodeShape ;
+	rdfs:subClassOf <https://w3id.org/nen2660/def#EnumerationType> ;
+	skos:definition "This is an enumeration list of the assemblyPlace attribute of the otl:ElementAssembly class"@en ;
+	sh:in otl:AssemblyPlaceEnum-list-0 .
+
+otl:AssemblyPlaceEnum-list-0 a rdf:List ;
+	rdf:first otl:SITE ;
+	<https://www.w3.org/1999/02/22-rdf-syntax-ns#rest> otl:AssemblyPlaceEnum-list-1 .
+
+otl:assemblyPlace-ElementAssembly a sh:PropertyShape ;
+	sh:path otl:assemblyPlace ;
+	sh:class otl:AssemblyPlaceEnum ;
+	sh:minCount 0 ;
+	sh:maxCount 1 .
+
+otl:partitioningType a owl:ObjectProperty .
+
+otl:WindowTypePartitioningEnum a owl:Class, sh:NodeShape ;
+	rdfs:subClassOf <https://w3id.org/nen2660/def#EnumerationType> ;
+	skos:definition "This is an enumeration list of the partitioningType attribute of the otl:Window class"@en ;
+	sh:in otl:WindowTypePartitioningEnum-list-0 .
+
+otl:WindowTypePartitioningEnum-list-0 a rdf:List ;
+	rdf:first otl:NOTDEFINED ;
+	<https://www.w3.org/1999/02/22-rdf-syntax-ns#rest> otl:WindowTypePartitioningEnum-list-1 .
+
+otl:partitioningType-Window a sh:PropertyShape ;
+	sh:path otl:partitioningType ;
+	sh:class otl:WindowTypePartitioningEnum ;
+	sh:minCount 0 ;
+	sh:maxCount 1 .
+
+otl:constructionType a owl:ObjectProperty .
+
+otl:PileConstructionEnum a owl:Class, sh:NodeShape ;
+	rdfs:subClassOf <https://w3id.org/nen2660/def#EnumerationType> ;
+	skos:definition "This is an enumeration list of the constructionType attribute of the otl:Pile class"@en ;
+	sh:in otl:PileConstructionEnum-list-0 .
+
+otl:PileConstructionEnum-list-0 a rdf:List ;
+	rdf:first otl:CAST_IN_PLACE ;
+	<https://www.w3.org/1999/02/22-rdf-syntax-ns#rest> otl:PileConstructionEnum-list-1 .
+
+otl:constructionType-Pile a sh:PropertyShape ;
+	sh:path otl:constructionType ;
+	sh:class otl:PileConstructionEnum ;
+	sh:minCount 0 ;
+	sh:maxCount 1 .
+
+otl:operationType a owl:ObjectProperty .
+
+otl:DoorTypeOperationEnum a owl:Class, sh:NodeShape ;
+	rdfs:subClassOf <https://w3id.org/nen2660/def#EnumerationType> ;
+	skos:definition "This is an enumeration list of the operationType attribute of the otl:Door class"@en ;
+	sh:in otl:DoorTypeOperationEnum-list-0 .
+
+otl:DoorTypeOperationEnum-list-0 a rdf:List ;
+	rdf:first otl:SWING_FIXED_RIGHT ;
+	<https://www.w3.org/1999/02/22-rdf-syntax-ns#rest> otl:DoorTypeOperationEnum-list-1 .
+
+otl:operationType-Door a sh:PropertyShape ;
+	sh:path otl:operationType ;
+	sh:class otl:DoorTypeOperationEnum ;
+	sh:minCount 0 ;
+	sh:maxCount 1 .
+
+otl:barSurface a owl:ObjectProperty .
+
+otl:ReinforcingBarSurfaceEnum a owl:Class, sh:NodeShape ;
+	rdfs:subClassOf <https://w3id.org/nen2660/def#EnumerationType> ;
+	skos:definition "This is an enumeration list of the barSurface attribute of the otl:ReinforcingBar class"@en ;
+	sh:in otl:ReinforcingBarSurfaceEnum-list-0 .
+
+otl:ReinforcingBarSurfaceEnum-list-0 a rdf:List ;
+	rdf:first otl:PLAIN ;
+	<https://www.w3.org/1999/02/22-rdf-syntax-ns#rest> otl:ReinforcingBarSurfaceEnum-list-1 .
+
+otl:barSurface-ReinforcingBar a sh:PropertyShape ;
+	sh:path otl:barSurface ;
+	sh:class otl:ReinforcingBarSurfaceEnum ;
+	sh:minCount 0 ;
+	sh:maxCount 1 .
+
+otl:SITE a otl:assemblyPlace-ElementAssembly ;
+	skos:prefLabel "SITE"@en ;
+	skos:definition "This is an enumeration of the assemblyPlace attribute of the otl:ElementAssembly class"@en .
+
+otl:AssemblyPlaceEnum-list-1 a rdf:List ;
+	rdf:first otl:NOTDEFINED ;
+	<https://www.w3.org/1999/02/22-rdf-syntax-ns#rest> otl:AssemblyPlaceEnum-list-2 .
+
+otl:NOTDEFINED a otl:assemblyPlace-ElementAssembly, otl:partitioningType-Window, otl:constructionType-Pile, otl:operationType-Door ;
+	skos:prefLabel "NOTDEFINED"@en ;
+	skos:definition "This is an enumeration of the assemblyPlace attribute of the otl:ElementAssembly class"@en, "This is an enumeration of the partitioningType attribute of the otl:Window class"@en, "This is an enumeration of the constructionType attribute of the otl:Pile class"@en, "This is an enumeration of the operationType attribute of the otl:Door class"@en .
+
+otl:AssemblyPlaceEnum-list-2 a rdf:List ;
+	rdf:first otl:FACTORY ;
+	<https://www.w3.org/1999/02/22-rdf-syntax-ns#rest> rdf:nil .
+
+otl:FACTORY a otl:assemblyPlace-ElementAssembly ;
+	skos:prefLabel "FACTORY"@en ;
+	skos:definition "This is an enumeration of the assemblyPlace attribute of the otl:ElementAssembly class"@en .
+
+otl:WindowTypePartitioningEnum-list-1 a rdf:List ;
+	rdf:first otl:USERDEFINED ;
+	<https://www.w3.org/1999/02/22-rdf-syntax-ns#rest> otl:WindowTypePartitioningEnum-list-2 .
+
+otl:USERDEFINED a otl:partitioningType-Window, otl:constructionType-Pile, otl:operationType-Door ;
+	skos:prefLabel "USERDEFINED"@en ;
+	skos:definition "This is an enumeration of the partitioningType attribute of the otl:Window class"@en, "This is an enumeration of the constructionType attribute of the otl:Pile class"@en, "This is an enumeration of the operationType attribute of the otl:Door class"@en .
+
+otl:WindowTypePartitioningEnum-list-2 a rdf:List ;
+	rdf:first otl:TRIPLE_PANEL_RIGHT ;
+	<https://www.w3.org/1999/02/22-rdf-syntax-ns#rest> otl:WindowTypePartitioningEnum-list-3 .
+
+otl:TRIPLE_PANEL_RIGHT a otl:partitioningType-Window ;
+	skos:prefLabel "TRIPLE PANEL RIGHT"@en ;
+	skos:definition "This is an enumeration of the partitioningType attribute of the otl:Window class"@en .
+
+otl:WindowTypePartitioningEnum-list-3 a rdf:List ;
+	rdf:first otl:DOUBLE_PANEL_VERTICAL ;
+	<https://www.w3.org/1999/02/22-rdf-syntax-ns#rest> otl:WindowTypePartitioningEnum-list-4 .
+
+otl:DOUBLE_PANEL_VERTICAL a otl:partitioningType-Window ;
+	skos:prefLabel "DOUBLE PANEL VERTICAL"@en ;
+	skos:definition "This is an enumeration of the partitioningType attribute of the otl:Window class"@en .
+
+otl:WindowTypePartitioningEnum-list-4 a rdf:List ;
+	rdf:first otl:TRIPLE_PANEL_HORIZONTAL ;
+	<https://www.w3.org/1999/02/22-rdf-syntax-ns#rest> otl:WindowTypePartitioningEnum-list-5 .
+
+otl:TRIPLE_PANEL_HORIZONTAL a otl:partitioningType-Window ;
+	skos:prefLabel "TRIPLE PANEL HORIZONTAL"@en ;
+	skos:definition "This is an enumeration of the partitioningType attribute of the otl:Window class"@en .
+
+otl:WindowTypePartitioningEnum-list-5 a rdf:List ;
+	rdf:first otl:TRIPLE_PANEL_VERTICAL ;
+	<https://www.w3.org/1999/02/22-rdf-syntax-ns#rest> otl:WindowTypePartitioningEnum-list-6 .
+
+otl:TRIPLE_PANEL_VERTICAL a otl:partitioningType-Window ;
+	skos:prefLabel "TRIPLE PANEL VERTICAL"@en ;
+	skos:definition "This is an enumeration of the partitioningType attribute of the otl:Window class"@en .
+
+otl:WindowTypePartitioningEnum-list-6 a rdf:List ;
+	rdf:first otl:TRIPLE_PANEL_BOTTOM ;
+	<https://www.w3.org/1999/02/22-rdf-syntax-ns#rest> otl:WindowTypePartitioningEnum-list-7 .
+
+otl:TRIPLE_PANEL_BOTTOM a otl:partitioningType-Window ;
+	skos:prefLabel "TRIPLE PANEL BOTTOM"@en ;
+	skos:definition "This is an enumeration of the partitioningType attribute of the otl:Window class"@en .
+
+otl:WindowTypePartitioningEnum-list-7 a rdf:List ;
+	rdf:first otl:TRIPLE_PANEL_TOP ;
+	<https://www.w3.org/1999/02/22-rdf-syntax-ns#rest> otl:WindowTypePartitioningEnum-list-8 .
+
+otl:TRIPLE_PANEL_TOP a otl:partitioningType-Window ;
+	skos:prefLabel "TRIPLE PANEL TOP"@en ;
+	skos:definition "This is an enumeration of the partitioningType attribute of the otl:Window class"@en .
+
+otl:WindowTypePartitioningEnum-list-8 a rdf:List ;
+	rdf:first otl:SINGLE_PANEL ;
+	<https://www.w3.org/1999/02/22-rdf-syntax-ns#rest> otl:WindowTypePartitioningEnum-list-9 .
+
+otl:SINGLE_PANEL a otl:partitioningType-Window ;
+	skos:prefLabel "SINGLE PANEL"@en ;
+	skos:definition "This is an enumeration of the partitioningType attribute of the otl:Window class"@en .
+
+otl:WindowTypePartitioningEnum-list-9 a rdf:List ;
+	rdf:first otl:DOUBLE_PANEL_HORIZONTAL ;
+	<https://www.w3.org/1999/02/22-rdf-syntax-ns#rest> otl:WindowTypePartitioningEnum-list-10 .
+
+otl:DOUBLE_PANEL_HORIZONTAL a otl:partitioningType-Window ;
+	skos:prefLabel "DOUBLE PANEL HORIZONTAL"@en ;
+	skos:definition "This is an enumeration of the partitioningType attribute of the otl:Window class"@en .
+
+otl:WindowTypePartitioningEnum-list-10 a rdf:List ;
+	rdf:first otl:TRIPLE_PANEL_LEFT ;
+	<https://www.w3.org/1999/02/22-rdf-syntax-ns#rest> rdf:nil .
+
+otl:TRIPLE_PANEL_LEFT a otl:partitioningType-Window ;
+	skos:prefLabel "TRIPLE PANEL LEFT"@en ;
+	skos:definition "This is an enumeration of the partitioningType attribute of the otl:Window class"@en .
+
+otl:CAST_IN_PLACE a otl:constructionType-Pile ;
+	skos:prefLabel "CAST IN PLACE"@en ;
+	skos:definition "This is an enumeration of the constructionType attribute of the otl:Pile class"@en .
+
+otl:PileConstructionEnum-list-1 a rdf:List ;
+	rdf:first otl:NOTDEFINED ;
+	<https://www.w3.org/1999/02/22-rdf-syntax-ns#rest> otl:PileConstructionEnum-list-2 .
+
+otl:PileConstructionEnum-list-2 a rdf:List ;
+	rdf:first otl:USERDEFINED ;
+	<https://www.w3.org/1999/02/22-rdf-syntax-ns#rest> otl:PileConstructionEnum-list-3 .
+
+otl:PileConstructionEnum-list-3 a rdf:List ;
+	rdf:first otl:COMPOSITE ;
+	<https://www.w3.org/1999/02/22-rdf-syntax-ns#rest> otl:PileConstructionEnum-list-4 .
+
+otl:COMPOSITE a otl:constructionType-Pile ;
+	skos:prefLabel "COMPOSITE"@en ;
+	skos:definition "This is an enumeration of the constructionType attribute of the otl:Pile class"@en .
+
+otl:PileConstructionEnum-list-4 a rdf:List ;
+	rdf:first otl:PREFAB_STEEL ;
+	<https://www.w3.org/1999/02/22-rdf-syntax-ns#rest> otl:PileConstructionEnum-list-5 .
+
+otl:PREFAB_STEEL a otl:constructionType-Pile ;
+	skos:prefLabel "PREFAB STEEL"@en ;
+	skos:definition "This is an enumeration of the constructionType attribute of the otl:Pile class"@en .
+
+otl:PileConstructionEnum-list-5 a rdf:List ;
+	rdf:first otl:PRECAST_CONCRETE ;
+	<https://www.w3.org/1999/02/22-rdf-syntax-ns#rest> rdf:nil .
+
+otl:PRECAST_CONCRETE a otl:constructionType-Pile ;
+	skos:prefLabel "PRECAST CONCRETE"@en ;
+	skos:definition "This is an enumeration of the constructionType attribute of the otl:Pile class"@en .
+
+otl:SWING_FIXED_RIGHT a otl:operationType-Door ;
+	skos:prefLabel "SWING FIXED RIGHT"@en ;
+	skos:definition "This is an enumeration of the operationType attribute of the otl:Door class"@en .
+
+otl:DoorTypeOperationEnum-list-1 a rdf:List ;
+	rdf:first otl:NOTDEFINED ;
+	<https://www.w3.org/1999/02/22-rdf-syntax-ns#rest> otl:DoorTypeOperationEnum-list-2 .
+
+otl:DoorTypeOperationEnum-list-2 a rdf:List ;
+	rdf:first otl:USERDEFINED ;
+	<https://www.w3.org/1999/02/22-rdf-syntax-ns#rest> otl:DoorTypeOperationEnum-list-3 .
+
+otl:DoorTypeOperationEnum-list-3 a rdf:List ;
+	rdf:first otl:DOUBLE_SWING_LEFT ;
+	<https://www.w3.org/1999/02/22-rdf-syntax-ns#rest> otl:DoorTypeOperationEnum-list-4 .
+
+otl:DOUBLE_SWING_LEFT a otl:operationType-Door ;
+	skos:prefLabel "DOUBLE SWING LEFT"@en ;
+	skos:definition "This is an enumeration of the operationType attribute of the otl:Door class"@en .
+
+otl:DoorTypeOperationEnum-list-4 a rdf:List ;
+	rdf:first otl:FOLDING_TO_LEFT ;
+	<https://www.w3.org/1999/02/22-rdf-syntax-ns#rest> otl:DoorTypeOperationEnum-list-5 .
+
+otl:FOLDING_TO_LEFT a otl:operationType-Door ;
+	skos:prefLabel "FOLDING TO LEFT"@en ;
+	skos:definition "This is an enumeration of the operationType attribute of the otl:Door class"@en .
+
+otl:DoorTypeOperationEnum-list-5 a rdf:List ;
+	rdf:first otl:SWING_FIXED_LEFT ;
+	<https://www.w3.org/1999/02/22-rdf-syntax-ns#rest> otl:DoorTypeOperationEnum-list-6 .
+
+otl:SWING_FIXED_LEFT a otl:operationType-Door ;
+	skos:prefLabel "SWING FIXED LEFT"@en ;
+	skos:definition "This is an enumeration of the operationType attribute of the otl:Door class"@en .
+
+otl:DoorTypeOperationEnum-list-6 a rdf:List ;
+	rdf:first otl:DOUBLE_DOOR_SINGLE_SWING_OPPOSITE_RIGHT ;
+	<https://www.w3.org/1999/02/22-rdf-syntax-ns#rest> otl:DoorTypeOperationEnum-list-7 .
+
+otl:DOUBLE_DOOR_SINGLE_SWING_OPPOSITE_RIGHT a otl:operationType-Door ;
+	skos:prefLabel "DOUBLE DOOR SINGLE SWING OPPOSITE RIGHT"@en ;
+	skos:definition "This is an enumeration of the operationType attribute of the otl:Door class"@en .
+
+otl:DoorTypeOperationEnum-list-7 a rdf:List ;
+	rdf:first otl:DOUBLE_DOOR_SLIDING ;
+	<https://www.w3.org/1999/02/22-rdf-syntax-ns#rest> otl:DoorTypeOperationEnum-list-8 .
+
+otl:DOUBLE_DOOR_SLIDING a otl:operationType-Door ;
+	skos:prefLabel "DOUBLE DOOR SLIDING"@en ;
+	skos:definition "This is an enumeration of the operationType attribute of the otl:Door class"@en .
+
+otl:DoorTypeOperationEnum-list-8 a rdf:List ;
+	rdf:first otl:REVOLVING ;
+	<https://www.w3.org/1999/02/22-rdf-syntax-ns#rest> otl:DoorTypeOperationEnum-list-9 .
+
+otl:REVOLVING a otl:operationType-Door ;
+	skos:prefLabel "REVOLVING"@en ;
+	skos:definition "This is an enumeration of the operationType attribute of the otl:Door class"@en .
+
+otl:DoorTypeOperationEnum-list-9 a rdf:List ;
+	rdf:first otl:DOUBLE_DOOR_FOLDING ;
+	<https://www.w3.org/1999/02/22-rdf-syntax-ns#rest> otl:DoorTypeOperationEnum-list-10 .
+
+otl:DOUBLE_DOOR_FOLDING a otl:operationType-Door ;
+	skos:prefLabel "DOUBLE DOOR FOLDING"@en ;
+	skos:definition "This is an enumeration of the operationType attribute of the otl:Door class"@en .
+
+otl:DoorTypeOperationEnum-list-10 a rdf:List ;
+	rdf:first otl:ROLLINGUP ;
+	<https://www.w3.org/1999/02/22-rdf-syntax-ns#rest> otl:DoorTypeOperationEnum-list-11 .
+
+otl:ROLLINGUP a otl:operationType-Door ;
+	skos:prefLabel "ROLLINGUP"@en ;
+	skos:definition "This is an enumeration of the operationType attribute of the otl:Door class"@en .
+
+otl:DoorTypeOperationEnum-list-11 a rdf:List ;
+	rdf:first otl:DOUBLE_DOOR_DOUBLE_SWING ;
+	<https://www.w3.org/1999/02/22-rdf-syntax-ns#rest> otl:DoorTypeOperationEnum-list-12 .
+
+otl:DOUBLE_DOOR_DOUBLE_SWING a otl:operationType-Door ;
+	skos:prefLabel "DOUBLE DOOR DOUBLE SWING"@en ;
+	skos:definition "This is an enumeration of the operationType attribute of the otl:Door class"@en .
+
+otl:DoorTypeOperationEnum-list-12 a rdf:List ;
+	rdf:first otl:SLIDING_TO_RIGHT ;
+	<https://www.w3.org/1999/02/22-rdf-syntax-ns#rest> otl:DoorTypeOperationEnum-list-13 .
+
+otl:SLIDING_TO_RIGHT a otl:operationType-Door ;
+	skos:prefLabel "SLIDING TO RIGHT"@en ;
+	skos:definition "This is an enumeration of the operationType attribute of the otl:Door class"@en .
+
+otl:DoorTypeOperationEnum-list-13 a rdf:List ;
+	rdf:first otl:DOUBLE_SWING_RIGHT ;
+	<https://www.w3.org/1999/02/22-rdf-syntax-ns#rest> otl:DoorTypeOperationEnum-list-14 .
+
+otl:DOUBLE_SWING_RIGHT a otl:operationType-Door ;
+	skos:prefLabel "DOUBLE SWING RIGHT"@en ;
+	skos:definition "This is an enumeration of the operationType attribute of the otl:Door class"@en .
+
+otl:DoorTypeOperationEnum-list-14 a rdf:List ;
+	rdf:first otl:DOUBLE_DOOR_SINGLE_SWING_OPPOSITE_LEFT ;
+	<https://www.w3.org/1999/02/22-rdf-syntax-ns#rest> otl:DoorTypeOperationEnum-list-15 .
+
+otl:DOUBLE_DOOR_SINGLE_SWING_OPPOSITE_LEFT a otl:operationType-Door ;
+	skos:prefLabel "DOUBLE DOOR SINGLE SWING OPPOSITE LEFT"@en ;
+	skos:definition "This is an enumeration of the operationType attribute of the otl:Door class"@en .
+
+otl:DoorTypeOperationEnum-list-15 a rdf:List ;
+	rdf:first otl:FOLDING_TO_RIGHT ;
+	<https://www.w3.org/1999/02/22-rdf-syntax-ns#rest> otl:DoorTypeOperationEnum-list-16 .
+
+otl:FOLDING_TO_RIGHT a otl:operationType-Door ;
+	skos:prefLabel "FOLDING TO RIGHT"@en ;
+	skos:definition "This is an enumeration of the operationType attribute of the otl:Door class"@en .
+
+otl:DoorTypeOperationEnum-list-16 a rdf:List ;
+	rdf:first otl:DOUBLE_DOOR_SINGLE_SWING ;
+	<https://www.w3.org/1999/02/22-rdf-syntax-ns#rest> otl:DoorTypeOperationEnum-list-17 .
+
+otl:DOUBLE_DOOR_SINGLE_SWING a otl:operationType-Door ;
+	skos:prefLabel "DOUBLE DOOR SINGLE SWING"@en ;
+	skos:definition "This is an enumeration of the operationType attribute of the otl:Door class"@en .
+
+otl:DoorTypeOperationEnum-list-17 a rdf:List ;
+	rdf:first otl:SINGLE_SWING_LEFT ;
+	<https://www.w3.org/1999/02/22-rdf-syntax-ns#rest> otl:DoorTypeOperationEnum-list-18 .
+
+otl:SINGLE_SWING_LEFT a otl:operationType-Door ;
+	skos:prefLabel "SINGLE SWING LEFT"@en ;
+	skos:definition "This is an enumeration of the operationType attribute of the otl:Door class"@en .
+
+otl:DoorTypeOperationEnum-list-18 a rdf:List ;
+	rdf:first otl:SLIDING_TO_LEFT ;
+	<https://www.w3.org/1999/02/22-rdf-syntax-ns#rest> otl:DoorTypeOperationEnum-list-19 .
+
+otl:SLIDING_TO_LEFT a otl:operationType-Door ;
+	skos:prefLabel "SLIDING TO LEFT"@en ;
+	skos:definition "This is an enumeration of the operationType attribute of the otl:Door class"@en .
+
+otl:DoorTypeOperationEnum-list-19 a rdf:List ;
+	rdf:first otl:SINGLE_SWING_RIGHT ;
+	<https://www.w3.org/1999/02/22-rdf-syntax-ns#rest> rdf:nil .
+
+otl:SINGLE_SWING_RIGHT a otl:operationType-Door ;
+	skos:prefLabel "SINGLE SWING RIGHT"@en ;
+	skos:definition "This is an enumeration of the operationType attribute of the otl:Door class"@en .
+
+otl:PLAIN a otl:barSurface-ReinforcingBar ;
+	skos:prefLabel "PLAIN"@en ;
+	skos:definition "This is an enumeration of the barSurface attribute of the otl:ReinforcingBar class"@en .
+
+otl:ReinforcingBarSurfaceEnum-list-1 a rdf:List ;
+	rdf:first otl:TEXTURED ;
+	<https://www.w3.org/1999/02/22-rdf-syntax-ns#rest> rdf:nil .
+
+otl:TEXTURED a otl:barSurface-ReinforcingBar ;
+	skos:prefLabel "TEXTURED"@en ;
+	skos:definition "This is an enumeration of the barSurface attribute of the otl:ReinforcingBar class"@en .
 
